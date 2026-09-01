@@ -1,3 +1,4 @@
+# Bootstrap migration: once C++ is canonical here, future content edits happen in MainCourse first.
 name: Migrate C++ into MainCourse
 
 on:
