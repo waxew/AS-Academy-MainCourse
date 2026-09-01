@@ -1,0 +1,6 @@
+[
+{"id":"java-level-fundamentals","courseId":"java","type":"FUNDAMENTALS","title":"مبانی","order":0,"description":"Java از صفر، ابزارها، Syntax و حل مسئله پایه"},
+{"id":"java-level-beginner","courseId":"java","type":"BEGINNER","title":"مقدماتی","order":1,"description":"OOP، Collections، Exception و File I/O"},
+{"id":"java-level-advanced","courseId":"java","type":"ADVANCED","title":"پیشرفته","order":2,"description":"Modern Java، JVM، Concurrency، JDBC، Algorithm و Engineering"},
+{"id":"java-level-professional","courseId":"java","type":"SPECIALIST","title":"تخصصی","order":3,"description":"Spring Boot، REST، JPA، Security، Deployment و بازار کار"}
+]
