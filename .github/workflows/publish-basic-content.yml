@@ -28,12 +28,12 @@ jobs:
         with:
           path: AS-Academy-MainCourse
 
-      # Runtime content must be built with an immutable Core input so a published hash can be reproduced.
+      # Runtime content must be built with an immutable merged Core input so a published hash can be reproduced.
       - name: Checkout AS Academy Core
         uses: actions/checkout@v5
         with:
           repository: waxew/AS-Academy-Core
-          ref: eda732812e18816d524ce1e4ab74d72d04d823b1
+          ref: 38d54560e56479bd4e3d784dd1a9a65d8c9dd5fc
           path: AS-Academy-Core
 
       - name: Set up JDK 17
