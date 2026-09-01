@@ -1,0 +1,6 @@
+[
+  {"id":"cloud-foundation","courseId":"cloud-database-storage","type":"FOUNDATION","title":"مبانی","order":1,"description":"مفاهیم Cloud، BaaS، دیتابیس مدیریت‌شده، Object Storage، شبکه، امنیت و انتخاب سرویس."},
+  {"id":"cloud-beginner","courseId":"cloud-database-storage","type":"BEGINNER","title":"مقدماتی","order":2,"description":"راه‌اندازی عملی Supabase، Firebase، Appwrite، PocketBase، PostgreSQL، Auth و Storage."},
+  {"id":"cloud-advanced","courseId":"cloud-database-storage","type":"ADVANCED","title":"پیشرفته","order":3,"description":"RLS، Realtime، Edge Functions، Signed URL، S3/R2/MinIO، CDN و آپلود مقاوم در برابر قطع ارتباط."},
+  {"id":"cloud-specialist","courseId":"cloud-database-storage","type":"SPECIALIST","title":"تخصصی","order":4,"description":"معماری Production، امنیت چندمستاجری، مقیاس‌پذیری، هزینه، مانیتورینگ، مهاجرت، Disaster Recovery و طراحی سرویس اشتراک فایل."}
+]
