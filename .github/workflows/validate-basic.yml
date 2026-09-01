@@ -1,0 +1,50 @@
+name: Validate Basic Course Package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "courses/basic/**"
+      - ".github/workflows/validate-basic.yml"
+  pull_request:
+    paths:
+      - "courses/basic/**"
+      - ".github/workflows/validate-basic.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: maincourse-basic-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Core validate Basic
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MainCourse
+        uses: actions/checkout@v5
+        with:
+          path: AS-Academy-MainCourse
+
+      - name: Checkout AS Academy Core
+        uses: actions/checkout@v5
+        with:
+          repository: waxew/AS-Academy-Core
+          ref: main
+          path: AS-Academy-Core
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle cache
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Validate canonical Basic Course Package
+        working-directory: AS-Academy-Core
+        run: ./gradlew :tools:run --args="validate ../AS-Academy-MainCourse/courses/basic/course" --stacktrace
