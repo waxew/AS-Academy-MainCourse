@@ -1,0 +1,12 @@
+{
+  "id": "css",
+  "titleFa": "آموزش جامع CSS",
+  "repository": "AS-Academy-CSS",
+  "language": "fa",
+  "direction": "rtl",
+  "levels": ["foundation", "beginner", "advanced", "specialist"],
+  "contentRoot": "courses/css/course",
+  "uiSource": "AS-Academy-MainUi",
+  "coreSource": "as-academy-core",
+  "features": ["lessons", "examples", "exercises", "quizzes", "projects", "search", "progress", "bookmarks"]
+}
