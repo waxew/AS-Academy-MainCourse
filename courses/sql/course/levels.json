@@ -1,0 +1,7 @@
+[
+  {"id":"sql-fundamentals","title":"مبانی","description":"شناخت دیتابیس رابطه‌ای، SQL، ابزارها، Data Type، NULL، کلیدها و Constraintها","order":1},
+  {"id":"sql-beginner","title":"مقدماتی","description":"DDL، CRUD، SELECT، WHERE، مرتب‌سازی، توابع، Join و Group By","order":2},
+  {"id":"sql-advanced","title":"پیشرفته","description":"Subquery، CTE، View، Index، Transaction، Window Function و برنامه‌نویسی سمت دیتابیس","order":3},
+  {"id":"sql-specialist","title":"تخصصی","description":"Full-Text Search، Query Optimization، Execution Plan، Concurrency، امنیت و SQL در Backend واقعی","order":4},
+  {"id":"sql-projects","title":"پروژه‌ها","description":"پروژه‌های واقعی از طراحی Schema تا Performance Tuning و امنیت","order":5}
+]
