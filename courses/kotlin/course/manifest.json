@@ -1,0 +1,21 @@
+{
+  "courseId": "kotlin",
+  "titleFa": "آموزش جامع Kotlin",
+  "titleEn": "Kotlin Complete Course",
+  "version": "1.2.0",
+  "contentSchemaVersion": 1,
+  "minimumCoreVersion": "1.3.0",
+  "rtl": true,
+  "sourceRepository": "waxew/AS-Academy-Kotlin",
+  "migrationState": "in-progress",
+  "levels": ["kt-fnd", "kt-beg", "kt-adv", "kt-spc"],
+  "capabilities": {
+    "codeRunner": true,
+    "terminalExamples": true,
+    "diagrams": true,
+    "quizzes": true,
+    "exercises": true,
+    "projects": true,
+    "glossary": true
+  }
+}
