@@ -1,0 +1,10 @@
+{
+  "courseId":"nosql-cache-search",
+  "titleFa":"NoSQL، Cache و Search",
+  "titleEn":"NoSQL, Cache and Search Engineering",
+  "version":"1.0.0",
+  "contentSchemaVersion":1,
+  "minimumCoreVersion":"0.1.0",
+  "rtl":true,
+  "capabilities":{"codeRunner":false,"terminalExamples":true,"diagrams":true,"quizzes":true,"exercises":true,"projects":true,"glossary":true}
+}
