@@ -1,0 +1,6 @@
+[
+ {"id":"webops-project-foundation","level":"foundation","title":"طراحی Deployment Plan","deliverables":["نقشه DNS","انتخاب Hosting","تفکیک Dev/Staging/Prod","HTTPS plan","Backup plan","Rollback checklist"]},
+ {"id":"webops-project-beginner","level":"beginner","title":"استقرار روی Linux VPS","deliverables":["SSH hardening پایه","Firewall","Nginx یا Apache","HTTPS","Frontend deploy","Backend reverse proxy","Backup و Restore test"]},
+ {"id":"webops-project-advanced","level":"advanced","title":"Docker و CI/CD Production","deliverables":["Dockerfile","Compose","CI tests","versioned artifact","Staging deploy","Production approval","Monitoring","Rollback","Security checklist","Performance/SEO audit"]},
+ {"id":"webops-capstone","level":"specialist","title":"Production Engineering End-to-End","deliverables":["Architecture diagram","HA strategy","DNS/CDN/WAF","TLS","CI/CD","zero-downtime strategy","secret management","observability","SLI/SLO","incident runbook","RPO/RTO and DR","Core Web Vitals report","Technical SEO","Analytics/Privacy plan"]}
+]
