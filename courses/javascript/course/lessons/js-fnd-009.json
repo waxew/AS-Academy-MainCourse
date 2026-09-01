@@ -1,0 +1,11 @@
+{
+  "id":"js-fnd-009","chapterId":"js-fnd-syntax","title":"Type Conversion، Truthy/Falsy و Null Safety","summary":"تبدیل صریح و ضمنی نوع، truthy/falsy، ?? و optional chaining برای کد قابل پیش‌بینی‌تر.","order":6,"estimatedMinutes":38,
+  "blocks":[
+    {"id":"js-fnd-009-b01","type":"PARAGRAPH","content":"JavaScript در بعضی عملگرها نوع داده را به‌صورت ضمنی تبدیل می‌کند. شناخت coercion ضروری است، اما در کد حرفه‌ای بهتر است تبدیل‌های مهم را صریح انجام دهیم."},
+    {"id":"js-fnd-009-b02","type":"CODE","content":"console.log(Number('42'));\nconsole.log(String(42));\nconsole.log(Boolean(''));\nconsole.log(Boolean('0'));\nconsole.log(5 === '5');","metadata":{"language":"javascript"}},
+    {"id":"js-fnd-009-b03","type":"PARAGRAPH","content":"مقادیر false، 0، -0، 0n، رشته خالی، null، undefined و NaN در شرط falsy هستند. بیشتر مقادیر دیگر از جمله آرایه و object خالی truthy هستند."},
+    {"id":"js-fnd-009-b04","type":"CODE","content":"const settings = { profile: { nickname: '' } };\nconst nickname = settings.profile?.nickname ?? 'Guest';\nconst city = settings.profile?.address?.city ?? 'Unknown';\nconsole.log(nickname, city);","metadata":{"language":"javascript"}},
+    {"id":"js-fnd-009-b05","type":"IMPORTANT","content":"عملگر || بر اساس truthy/falsy تصمیم می‌گیرد، ولی ?? فقط null و undefined را نبود مقدار می‌داند. برای مقدارهای معتبر مثل 0 یا رشته خالی این تفاوت مهم است."},
+    {"id":"js-fnd-009-b06","type":"TIP","content":"Optional chaining را برای دسترسی امن به مسیرهای اختیاری object استفاده کنید؛ اما وجود داده‌های ضروری را با validation واقعی کنترل کنید."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id":"js-beg-001","chapterId":"js-beg-control","title":"شرط‌های if، else if و else","summary":"تصمیم‌گیری در برنامه بر اساس داده و وضعیت.","order":1,"estimatedMinutes":22,
+  "blocks":[
+    {"id":"js-beg-001-b01","type":"PARAGRAPH","content":"شرط به برنامه اجازه می‌دهد بر اساس یک عبارت Boolean مسیر متفاوتی را اجرا کند."},
+    {"id":"js-beg-001-b02","type":"CODE","content":"const score = 82;\nif (score >= 90) {\n  console.log('عالی');\n} else if (score >= 70) {\n  console.log('قبول');\n} else {\n  console.log('نیاز به تمرین بیشتر');\n}","metadata":{"language":"javascript"}},
+    {"id":"js-beg-001-b03","type":"EXERCISE","content":"برنامه‌ای بنویسید که سن کاربر را دریافت کند و گروه سنی او را مشخص کند."}
+  ]
+}

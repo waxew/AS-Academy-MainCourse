@@ -1,0 +1,8 @@
+{
+  "id":"js-adv-001","chapterId":"js-adv-async","title":"Promise و async/await","summary":"مدیریت عملیات غیرهمزمان با ساختار قابل‌خواندن.","order":1,"estimatedMinutes":32,
+  "blocks":[
+    {"id":"js-adv-001-b01","type":"PARAGRAPH","content":"Promise نماینده نتیجه‌ای است که ممکن است اکنون آماده نباشد. async/await syntax خواناتری برای کار با Promise فراهم می‌کند."},
+    {"id":"js-adv-001-b02","type":"CODE","content":"async function loadUser() {\n  try {\n    const response = await fetch('/api/user');\n    if (!response.ok) throw new Error('Request failed');\n    return await response.json();\n  } catch (error) {\n    console.error(error);\n  }\n}","metadata":{"language":"javascript"}},
+    {"id":"js-adv-001-b03","type":"WARNING","content":"await خطا را حذف نمی‌کند. شکست شبکه، پاسخ نامعتبر و خطاهای parsing باید مدیریت شوند."}
+  ]
+}

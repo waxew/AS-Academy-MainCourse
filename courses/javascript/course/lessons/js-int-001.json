@@ -1,0 +1,8 @@
+{
+  "id":"js-int-001","chapterId":"js-int-dom","title":"DOM چیست؟","summary":"اتصال JavaScript به عناصر صفحه وب.","order":1,"estimatedMinutes":25,
+  "blocks":[
+    {"id":"js-int-001-b01","type":"PARAGRAPH","content":"مرورگر HTML را به ساختاری درختی به نام DOM تبدیل می‌کند. JavaScript می‌تواند عناصر این درخت را پیدا، ویرایش، ایجاد یا حذف کند."},
+    {"id":"js-int-001-b02","type":"CODE","content":"const title = document.querySelector('#title');\ntitle.textContent = 'JavaScript را یاد می‌گیرم';","metadata":{"language":"javascript"}},
+    {"id":"js-int-001-b03","type":"IMPORTANT","content":"کد DOM فقط در محیط مرورگر اجرا می‌شود؛ console ساده بدون document نمی‌تواند این مثال را اجرا کند."}
+  ]
+}

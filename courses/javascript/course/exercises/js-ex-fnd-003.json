@@ -1,0 +1,13 @@
+{
+  "id":"js-ex-fnd-003",
+  "lessonId":"js-fnd-009",
+  "title":"نرمال‌سازی تنظیمات کاربر",
+  "description":"تابعی بسازید که ورودی خام تنظیمات را به مقادیر قابل پیش‌بینی تبدیل کند و تفاوت مقدارهای nullish با falsy را رعایت کند.",
+  "type":"WRITE_CODE",
+  "difficulty":"MEDIUM",
+  "starterCode":"function normalizeSettings(input) {\n  // theme، pageSize و nickname را برگردانید.\n}\n\nconsole.log(normalizeSettings({ theme: null, pageSize: 0, profile: { nickname: '' } }));",
+  "expectedOutput":"{ theme: 'system', pageSize: 0, nickname: '' }",
+  "hints":["برای theme از ?? استفاده کنید.","pageSize=0 باید حفظ شود، پس || انتخاب مناسبی نیست.","برای nickname از optional chaining همراه ?? استفاده کنید."],
+  "solution":"function normalizeSettings(input) {\n  return {\n    theme: input.theme ?? 'system',\n    pageSize: input.pageSize ?? 20,\n    nickname: input.profile?.nickname ?? 'Guest'\n  };\n}",
+  "explanation":"?? فقط null و undefined را fallback می‌کند؛ بنابراین 0 و رشته خالی که ممکن است مقادیر معتبر باشند حفظ می‌شوند."
+}

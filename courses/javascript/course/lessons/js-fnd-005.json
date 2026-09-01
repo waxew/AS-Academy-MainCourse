@@ -1,0 +1,8 @@
+{
+  "id":"js-fnd-005","chapterId":"js-fnd-syntax","title":"انواع داده در JavaScript","summary":"String، Number، Boolean، undefined، null، BigInt، Symbol و Object.","order":2,"estimatedMinutes":20,
+  "blocks":[
+    {"id":"js-fnd-005-b01","type":"PARAGRAPH","content":"JavaScript زبانی با نوع‌دهی پویاست؛ نوع به مقدار تعلق دارد و یک متغیر می‌تواند در زمان اجرا مقدارهایی از نوع‌های مختلف دریافت کند."},
+    {"id":"js-fnd-005-b02","type":"CODE","content":"const name = 'Sara';\nconst age = 24;\nconst active = true;\nlet score;\nconst empty = null;\nconsole.log(typeof name, typeof age, typeof active, typeof score);","metadata":{"language":"javascript"}},
+    {"id":"js-fnd-005-b03","type":"NOTE","content":"typeof null به دلایل تاریخی مقدار object برمی‌گرداند. این رفتار قدیمی بخشی از JavaScript باقی مانده است."}
+  ]
+}

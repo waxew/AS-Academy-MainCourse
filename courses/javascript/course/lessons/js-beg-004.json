@@ -1,0 +1,10 @@
+{
+  "id":"js-beg-004","chapterId":"js-beg-control","title":"switch، Guard Clause و طراحی شرط‌های خوانا","summary":"انتخاب بین چند حالت، کوتاه‌کردن تو در تویی شرط‌ها و طراحی جریان تصمیم‌گیری قابل نگهداری.","order":3,"estimatedMinutes":32,
+  "blocks":[
+    {"id":"js-beg-004-b01","type":"PARAGRAPH","content":"switch زمانی مناسب است که یک مقدار مشخص را با چند حالت ثابت مقایسه می‌کنید. برای شرط‌های پیچیده‌تر، if/else معمولاً خواناتر است."},
+    {"id":"js-beg-004-b02","type":"CODE","content":"const role = 'editor';\nswitch (role) {\n  case 'admin': console.log('full access'); break;\n  case 'editor': console.log('edit access'); break;\n  default: console.log('read only');\n}","metadata":{"language":"javascript"}},
+    {"id":"js-beg-004-b03","type":"PARAGRAPH","content":"Guard Clause یعنی شرایط نامعتبر یا خروج زودهنگام را در ابتدای تابع مدیریت کنیم تا کد اصلی کمتر تو در تو شود."},
+    {"id":"js-beg-004-b04","type":"CODE","content":"function checkout(cart) {\n  if (!cart) return 'cart missing';\n  if (cart.items.length === 0) return 'cart empty';\n  if (!cart.user?.active) return 'inactive user';\n  return 'ready';\n}","metadata":{"language":"javascript"}},
+    {"id":"js-beg-004-b05","type":"TIP","content":"اگر شرطی نیاز به توضیح طولانی دارد، آن را به تابع یا متغیر Boolean با نام معنی‌دار تبدیل کنید."}
+  ]
+}

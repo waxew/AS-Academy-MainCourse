@@ -1,0 +1,10 @@
+{
+  "id":"js-beg-007","chapterId":"js-beg-functions","title":"Parameters، Rest، Default و Composition","summary":"طراحی API تابع با پارامترهای پیش‌فرض، rest parameters، pure functions و ترکیب توابع.","order":3,"estimatedMinutes":40,
+  "blocks":[
+    {"id":"js-beg-007-b01","type":"PARAGRAPH","content":"Default parameter رفتار تابع را برای ورودی حذف‌شده مشخص می‌کند. Rest parameter تعداد متغیری از آرگومان‌ها را در یک Array جمع می‌کند."},
+    {"id":"js-beg-007-b02","type":"CODE","content":"function sum(multiplier = 1, ...numbers) {\n  return numbers.reduce((total, n) => total + n, 0) * multiplier;\n}\nconsole.log(sum(2, 1, 2, 3));","metadata":{"language":"javascript"}},
+    {"id":"js-beg-007-b03","type":"PARAGRAPH","content":"Pure Function برای ورودی یکسان خروجی یکسان می‌دهد و state بیرونی را تغییر نمی‌دهد. این ویژگی تست و reasoning را ساده‌تر می‌کند."},
+    {"id":"js-beg-007-b04","type":"CODE","content":"const addTax = price => price * 1.1;\nconst roundMoney = value => Math.round(value * 100) / 100;\nconst finalPrice = price => roundMoney(addTax(price));\nconsole.log(finalPrice(19.99));","metadata":{"language":"javascript"}},
+    {"id":"js-beg-007-b05","type":"TIP","content":"به جای تابعی با تعداد زیادی پارامتر positional، برای تنظیمات متعدد از object parameter با نام‌های روشن استفاده کنید."}
+  ]
+}

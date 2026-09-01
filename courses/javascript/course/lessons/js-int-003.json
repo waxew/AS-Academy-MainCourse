@@ -1,0 +1,10 @@
+{
+  "id":"js-int-003","chapterId":"js-int-data","title":"Object و مدل‌سازی اطلاعات","summary":"مدل‌سازی موجودیت‌ها با property و method و کار با Objectهای JavaScript.","order":2,"estimatedMinutes":30,
+  "blocks":[
+    {"id":"js-int-003-b01","type":"PARAGRAPH","content":"Object مجموعه‌ای از propertyهای key/value است و برای مدل‌سازی اطلاعات مرتبط مانند کاربر، محصول یا تنظیمات بسیار مناسب است."},
+    {"id":"js-int-003-b02","type":"CODE","content":"const student = {\n  name: 'Sara',\n  score: 92,\n  active: true,\n  introduce() {\n    return `${this.name}: ${this.score}`;\n  }\n};\nconsole.log(student.introduce());","metadata":{"language":"javascript"}},
+    {"id":"js-int-003-b03","type":"TIP","content":"برای استخراج propertyها می‌توانید از destructuring استفاده کنید: const { name, score } = student."},
+    {"id":"js-int-003-b04","type":"CODE","content":"const { name, score } = student;\nconst updated = { ...student, score: 95 };\nconsole.log(name, score, updated.score);","metadata":{"language":"javascript"}},
+    {"id":"js-int-003-b05","type":"EXERCISE","content":"یک Object برای محصول با name، price و stock بسازید و یک method برای محاسبه ارزش موجودی اضافه کنید."}
+  ]
+}

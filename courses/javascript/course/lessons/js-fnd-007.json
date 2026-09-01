@@ -1,0 +1,11 @@
+{
+  "id":"js-fnd-007","chapterId":"js-fnd-syntax","title":"String و Template Literal به‌صورت عمیق","summary":"کار با متن، escape، interpolation، متدهای مهم String و تفاوت primitive با object wrapper.","order":4,"estimatedMinutes":32,
+  "blocks":[
+    {"id":"js-fnd-007-b01","type":"PARAGRAPH","content":"String یکی از پرکاربردترین primitiveهای JavaScript است. متن را می‌توان با کوتیشن تکی، دوتایی یا backtick ساخت. backtick امکان interpolation و متن چندخطی را فراهم می‌کند."},
+    {"id":"js-fnd-007-b02","type":"CODE","content":"const name = 'Sara';\nconst score = 92;\nconst message = `${name} scored ${score}/100`;\nconsole.log(message);\nconsole.log(message.length);\nconsole.log(message.toUpperCase());","metadata":{"language":"javascript"}},
+    {"id":"js-fnd-007-b03","type":"PARAGRAPH","content":"Stringها immutable هستند؛ متدهایی مثل trim، replace، slice و toUpperCase مقدار اصلی را تغییر نمی‌دهند و یک String جدید تولید می‌کنند."},
+    {"id":"js-fnd-007-b04","type":"CODE","content":"const raw = '  AS Academy JavaScript  ';\nconst clean = raw.trim();\nconsole.log(clean.slice(0, 10));\nconsole.log(clean.includes('JavaScript'));\nconsole.log(clean.replace('JavaScript', 'JS'));","metadata":{"language":"javascript"}},
+    {"id":"js-fnd-007-b05","type":"TIP","content":"برای ساخت رشته از چند مقدار، Template Literal معمولاً خواناتر و امن‌تر از زنجیره طولانی عملگر + است."},
+    {"id":"js-fnd-007-b06","type":"IMPORTANT","content":"در JavaScript مقدار String primitive با new String(...) یکسان نیست. در کد معمولی از new String استفاده نکنید."}
+  ]
+}

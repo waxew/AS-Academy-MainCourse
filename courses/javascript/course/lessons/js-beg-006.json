@@ -1,0 +1,10 @@
+{
+  "id":"js-beg-006","chapterId":"js-beg-functions","title":"Function Mastery: Declaration، Expression و Arrow","summary":"مدل‌های تعریف تابع، return، hoisting، callback و تفاوت رفتاری Arrow Function.","order":2,"estimatedMinutes":42,
+  "blocks":[
+    {"id":"js-beg-006-b01","type":"PARAGRAPH","content":"تابع یک واحد قابل استفاده مجدد از رفتار است. Function Declaration پیش از خط تعریف نیز قابل فراخوانی است، اما Function Expression به چرخه مقداردهی متغیر وابسته است."},
+    {"id":"js-beg-006-b02","type":"CODE","content":"console.log(add(2, 3));\nfunction add(a, b) { return a + b; }\n\nconst multiply = function(a, b) { return a * b; };\nconst square = value => value * value;","metadata":{"language":"javascript"}},
+    {"id":"js-beg-006-b03","type":"IMPORTANT","content":"Arrow Function مقدار this مستقل ایجاد نمی‌کند و this را به‌صورت lexical از scope بیرونی می‌گیرد. بنابراین جایگزین مکانیکی همه functionها نیست."},
+    {"id":"js-beg-006-b04","type":"CODE","content":"function apply(value, operation) {\n  return operation(value);\n}\nconst result = apply(5, n => n * 2);\nconsole.log(result);","metadata":{"language":"javascript"}},
+    {"id":"js-beg-006-b05","type":"TIP","content":"هر تابع را تا حد ممکن حول یک مسئولیت روشن طراحی کنید و نام آن را بر اساس کاری که انجام می‌دهد انتخاب کنید."}
+  ]
+}

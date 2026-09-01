@@ -1,0 +1,10 @@
+{
+  "id":"js-int-004","chapterId":"js-int-dom","title":"Eventها و تعامل کاربر","summary":"مدیریت click، input، submit و Event Object در صفحات وب.","order":2,"estimatedMinutes":30,
+  "blocks":[
+    {"id":"js-int-004-b01","type":"PARAGRAPH","content":"Event رویدادی است که در Browser رخ می‌دهد؛ مانند کلیک، تایپ یا ارسال فرم. addEventListener رفتار برنامه را به این رویدادها متصل می‌کند."},
+    {"id":"js-int-004-b02","type":"CODE","content":"const button = document.querySelector('#save');\nbutton.addEventListener('click', event => {\n  console.log('saved', event.type);\n});","metadata":{"language":"javascript"}},
+    {"id":"js-int-004-b03","type":"PARAGRAPH","content":"در فرم‌ها معمولاً submit را مدیریت کرده و با preventDefault از ارسال پیش‌فرض صفحه جلوگیری می‌کنیم تا اعتبارسنجی و پردازش با JavaScript انجام شود."},
+    {"id":"js-int-004-b04","type":"CODE","content":"form.addEventListener('submit', event => {\n  event.preventDefault();\n  const value = input.value.trim();\n  if (!value) return;\n  console.log(value);\n});","metadata":{"language":"javascript"}},
+    {"id":"js-int-004-b05","type":"EXERCISE","content":"یک input و button بسازید که با کلیک روی دکمه، متن input را داخل یک عنصر p نمایش دهد."}
+  ]
+}

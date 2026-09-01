@@ -1,0 +1,10 @@
+{
+  "id":"js-beg-005","chapterId":"js-beg-control","title":"Loop Mastery: for، while، for...of، break و continue","summary":"انتخاب حلقه مناسب، کنترل iteration و جلوگیری از حلقه‌های بی‌نهایت.","order":4,"estimatedMinutes":38,
+  "blocks":[
+    {"id":"js-beg-005-b01","type":"PARAGRAPH","content":"for برای iteration با شمارنده، while برای تکرار وابسته به شرط و for...of برای پیمایش مقدارهای iterable مناسب است."},
+    {"id":"js-beg-005-b02","type":"CODE","content":"const scores = [91, 45, 78, 100];\nfor (const score of scores) {\n  if (score < 50) continue;\n  if (score === 100) { console.log('perfect'); break; }\n  console.log(score);\n}","metadata":{"language":"javascript"}},
+    {"id":"js-beg-005-b03","type":"WARNING","content":"در while همیشه مطمئن شوید شرایط خروج واقعاً قابل دستیابی است. حلقه بی‌نهایت می‌تواند thread اجرا را مسدود کند."},
+    {"id":"js-beg-005-b04","type":"PARAGRAPH","content":"break کل حلقه جاری را متوقف می‌کند؛ continue فقط iteration جاری را رد می‌کند و به iteration بعدی می‌رود."},
+    {"id":"js-beg-005-b05","type":"CODE","content":"let attempts = 0;\nwhile (attempts < 3) {\n  attempts += 1;\n  console.log(`attempt ${attempts}`);\n}","metadata":{"language":"javascript"}}
+  ]
+}

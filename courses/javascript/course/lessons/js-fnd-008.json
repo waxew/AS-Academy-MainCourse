@@ -1,0 +1,10 @@
+{
+  "id":"js-fnd-008","chapterId":"js-fnd-syntax","title":"Number، Math و دقت محاسبات","summary":"اعداد، NaN، Infinity، تبدیل عدد، Math و خطاهای floating-point.","order":5,"estimatedMinutes":34,
+  "blocks":[
+    {"id":"js-fnd-008-b01","type":"PARAGRAPH","content":"نوع Number هم اعداد صحیح و هم اعشاری را نمایش می‌دهد. بیشتر محاسبات بر پایه IEEE 754 انجام می‌شوند؛ بنابراین بعضی اعشارها دقیقاً در مبنای دودویی قابل نمایش نیستند."},
+    {"id":"js-fnd-008-b02","type":"CODE","content":"console.log(0.1 + 0.2);\nconsole.log(Number.isNaN(Number('hello')));\nconsole.log(Number.isFinite(42));\nconsole.log(Math.round(4.6));\nconsole.log(Math.max(12, 8, 27));","metadata":{"language":"javascript"}},
+    {"id":"js-fnd-008-b03","type":"WARNING","content":"برای پول، نتیجه محاسبات اعشاری را بدون طراحی سیاست rounding ذخیره نکنید. در بسیاری از سیستم‌ها نگهداری کوچک‌ترین واحد پول به‌صورت integer مناسب‌تر است."},
+    {"id":"js-fnd-008-b04","type":"CODE","content":"const priceCents = 1999;\nconst count = 3;\nconst totalCents = priceCents * count;\nconsole.log((totalCents / 100).toFixed(2));","metadata":{"language":"javascript"}},
+    {"id":"js-fnd-008-b05","type":"NOTE","content":"NaN با خودش برابر نیست. برای تشخیص معتبر NaN از Number.isNaN استفاده کنید."}
+  ]
+}

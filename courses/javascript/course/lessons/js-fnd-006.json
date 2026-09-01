@@ -1,0 +1,8 @@
+{
+  "id":"js-fnd-006","chapterId":"js-fnd-syntax","title":"عملگرها و مقایسه","summary":"محاسبات، مقایسه strict و عملگرهای منطقی.","order":3,"estimatedMinutes":20,
+  "blocks":[
+    {"id":"js-fnd-006-b01","type":"PARAGRAPH","content":"عملگرها برای محاسبه، مقایسه و ترکیب شرط‌ها استفاده می‌شوند. برای مقایسه معمولاً === و !== را به == و != ترجیح دهید تا تبدیل نوع ضمنی باعث نتیجه غیرمنتظره نشود."},
+    {"id":"js-fnd-006-b02","type":"CODE","content":"const price = 120;\nconst count = 3;\nconst total = price * count;\nconsole.log(total);\nconsole.log(total === 360);\nconsole.log(total > 300 && count === 3);","metadata":{"language":"javascript"}},
+    {"id":"js-fnd-006-b03","type":"TIP","content":"هنگام Debug کردن یک شرط پیچیده، هر بخش شرط را جداگانه در console بررسی کنید."}
+  ]
+}

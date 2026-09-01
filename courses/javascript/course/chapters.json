@@ -1,0 +1,14 @@
+[
+  {"id":"js-fnd-intro","levelId":"js-fundamentals","title":"آشنایی با JavaScript","description":"ماهیت JavaScript، کاربردها، محیط اجرا و آماده‌سازی ابزارها","order":1},
+  {"id":"js-fnd-syntax","levelId":"js-fundamentals","title":"ساختار و Syntax","description":"دستورات، کامنت، متغیرها، انواع داده و عملگرها","order":2},
+  {"id":"js-beg-control","levelId":"js-beginner","title":"کنترل جریان","description":"شرط‌ها، حلقه‌ها و مدیریت جریان برنامه","order":1},
+  {"id":"js-beg-functions","levelId":"js-beginner","title":"توابع","description":"تعریف تابع، پارامتر، مقدار بازگشتی و Arrow Function","order":2},
+  {"id":"js-int-data","levelId":"js-intermediate","title":"ساختارهای داده","description":"Array، Object، Map، Set و متدهای کاربردی","order":1},
+  {"id":"js-int-dom","levelId":"js-intermediate","title":"DOM و رویدادها","description":"تعامل JavaScript با صفحات وب و Eventها","order":2},
+  {"id":"js-adv-async","levelId":"js-advanced","title":"برنامه‌نویسی Asynchronous","description":"Promise، async/await، Fetch و Event Loop","order":1},
+  {"id":"js-adv-architecture","levelId":"js-advanced","title":"ماژول‌ها و معماری کد","description":"Modules، Error Handling، Clean Code و Patterns","order":2},
+  {"id":"js-sp-node","levelId":"js-specialist","title":"Node.js و Backend","description":"Node.js، HTTP، API و معماری Backend","order":1},
+  {"id":"js-sp-quality","levelId":"js-specialist","title":"Testing، Security و Performance","description":"تست، امنیت، Performance و Debugging تخصصی","order":2},
+  {"id":"js-prj-browser","levelId":"js-projects","title":"پروژه‌های Browser","description":"ساخت پروژه‌های واقعی سمت کاربر","order":1},
+  {"id":"js-prj-full","levelId":"js-projects","title":"پروژه‌های جامع","description":"پروژه‌های نهایی و Portfolio","order":2}
+]

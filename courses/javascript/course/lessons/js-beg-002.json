@@ -1,0 +1,7 @@
+{
+  "id":"js-beg-002","chapterId":"js-beg-control","title":"حلقه‌های for و while","summary":"تکرار کنترل‌شده عملیات و پیمایش داده‌ها.","order":2,"estimatedMinutes":24,
+  "blocks":[
+    {"id":"js-beg-002-b01","type":"PARAGRAPH","content":"حلقه زمانی مفید است که یک عملیات باید چند بار انجام شود. همیشه شرط پایان را بررسی کنید تا حلقه بی‌نهایت ایجاد نشود."},
+    {"id":"js-beg-002-b02","type":"CODE","content":"for (let i = 1; i <= 5; i++) {\n  console.log(`درس ${i}`);\n}\n\nlet count = 3;\nwhile (count > 0) {\n  console.log(count);\n  count--;\n}","metadata":{"language":"javascript"}}
+  ]
+}

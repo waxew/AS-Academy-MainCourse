@@ -1,0 +1,26 @@
+{
+  "id": "js-fnd-001",
+  "chapterId": "js-fnd-intro",
+  "title": "JavaScript چیست؟",
+  "summary": "آشنایی با نقش JavaScript، محل اجرا و جایگاه آن در توسعه نرم‌افزار.",
+  "order": 1,
+  "estimatedMinutes": 12,
+  "blocks": [
+    {
+      "id": "js-fnd-001-b01",
+      "type": "PARAGRAPH",
+      "content": "JavaScript یک زبان برنامه‌نویسی عمومی و یکی از فناوری‌های اصلی توسعه وب است. این زبان علاوه بر مرورگر، در محیط‌هایی مانند Node.js نیز اجرا می‌شود."
+    },
+    {
+      "id": "js-fnd-001-b02",
+      "type": "CODE",
+      "content": "console.log('Hello AS Academy');",
+      "metadata": {"language":"javascript"}
+    },
+    {
+      "id": "js-fnd-001-b03",
+      "type": "TIP",
+      "content": "در این دوره مثال‌ها به‌تدریج از اجرای ساده JavaScript به برنامه‌های Browser و Backend توسعه پیدا می‌کنند."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id":"js-qz-beg-002","lessonId":"js-beg-007","title":"ارزیابی Control Flow و Functions","passingScorePercent":75,
+  "questions":[
+    {"id":"js-qz-beg-002-q1","type":"MULTIPLE_CHOICE","question":"مزیت اصلی Guard Clause چیست؟","explanation":"Guard Clause مسیرهای خطا یا خروج را زود مدیریت می‌کند و nesting را کاهش می‌دهد.","tags":["control-flow","clean-code"],"answers":[{"id":"a","text":"کاهش nesting و روشن‌تر شدن مسیر اصلی","isCorrect":true},{"id":"b","text":"تبدیل خودکار if به switch","isCorrect":false},{"id":"c","text":"اجرای هم‌زمان شرط‌ها","isCorrect":false}]},
+    {"id":"js-qz-beg-002-q2","type":"CODE_OUTPUT","question":"خروجی (() => 2 * 3)() چیست؟","explanation":"Arrow function بلافاصله فراخوانی شده و 6 را برمی‌گرداند.","tags":["functions","arrow"],"answers":[{"id":"a","text":"6","isCorrect":true},{"id":"b","text":"undefined","isCorrect":false},{"id":"c","text":"function","isCorrect":false}]},
+    {"id":"js-qz-beg-002-q3","type":"MULTIPLE_CHOICE","question":"کدام عبارت درباره Arrow Function درست است؟","explanation":"Arrow Function this مستقل ایجاد نمی‌کند و this را از scope بیرونی می‌گیرد.","tags":["functions","this"],"answers":[{"id":"a","text":"this آن lexical است","isCorrect":true},{"id":"b","text":"همیشه hoist کامل می‌شود","isCorrect":false},{"id":"c","text":"فقط برای callback قابل استفاده است","isCorrect":false}]},
+    {"id":"js-qz-beg-002-q4","type":"MULTIPLE_CHOICE","question":"Rest parameter چه چیزی تولید می‌کند؟","explanation":"Rest parameter آرگومان‌های باقی‌مانده را در یک Array جمع می‌کند.","tags":["functions","parameters"],"answers":[{"id":"a","text":"Array","isCorrect":true},{"id":"b","text":"Set","isCorrect":false},{"id":"c","text":"String","isCorrect":false}]}
+  ]
+}

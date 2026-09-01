@@ -1,0 +1,8 @@
+{
+  "id":"js-beg-003","chapterId":"js-beg-functions","title":"توابع و پارامترها","summary":"تقسیم مسئله به واحدهای قابل استفاده مجدد.","order":1,"estimatedMinutes":25,
+  "blocks":[
+    {"id":"js-beg-003-b01","type":"PARAGRAPH","content":"تابع یک واحد مستقل از رفتار است. ورودی‌ها از طریق پارامتر وارد می‌شوند و نتیجه می‌تواند با return برگردانده شود."},
+    {"id":"js-beg-003-b02","type":"CODE","content":"function calculateTotal(price, count) {\n  return price * count;\n}\n\nconst total = calculateTotal(150, 4);\nconsole.log(total);","metadata":{"language":"javascript"}},
+    {"id":"js-beg-003-b03","type":"TIP","content":"هر تابع بهتر است یک مسئولیت مشخص داشته باشد و نام آن رفتار تابع را توضیح دهد."}
+  ]
+}

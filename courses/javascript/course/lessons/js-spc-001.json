@@ -1,0 +1,8 @@
+{
+  "id":"js-spc-001","chapterId":"js-sp-node","title":"ورود به Node.js","summary":"اجرای JavaScript خارج از مرورگر و ساخت برنامه‌های Backend.","order":1,"estimatedMinutes":30,
+  "blocks":[
+    {"id":"js-spc-001-b01","type":"PARAGRAPH","content":"Node.js یک runtime برای اجرای JavaScript خارج از مرورگر است. با آن می‌توان CLI، API، سرور، ابزار Build و سرویس Backend ساخت."},
+    {"id":"js-spc-001-b02","type":"CODE","content":"const http = require('node:http');\nconst server = http.createServer((req, res) => {\n  res.end('AS Academy API');\n});\nserver.listen(3000);","metadata":{"language":"javascript"}},
+    {"id":"js-spc-001-b03","type":"NOTE","content":"در بخش تخصصی، Node.js را همراه با HTTP، API، Database، Authentication، Testing و Deployment ادامه می‌دهیم."}
+  ]
+}

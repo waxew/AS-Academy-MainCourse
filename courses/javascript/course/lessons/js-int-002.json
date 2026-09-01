@@ -1,0 +1,10 @@
+{
+  "id":"js-int-002","chapterId":"js-int-data","title":"Array و مدیریت مجموعه داده‌ها","summary":"ساخت Array، دسترسی به عناصر و متدهای پرکاربرد برای مدیریت لیست‌ها.","order":1,"estimatedMinutes":28,
+  "blocks":[
+    {"id":"js-int-002-b01","type":"PARAGRAPH","content":"Array برای نگهداری یک مجموعه مرتب از مقادیر استفاده می‌شود. اندیس اولین عنصر صفر است و طول آرایه با length قابل دسترسی است."},
+    {"id":"js-int-002-b02","type":"CODE","content":"const lessons = ['Variables', 'Functions', 'Arrays'];\nlessons.push('Objects');\nconsole.log(lessons[0]);\nconsole.log(lessons.length);","metadata":{"language":"javascript"}},
+    {"id":"js-int-002-b03","type":"PARAGRAPH","content":"متدهای map، filter و find از مهم‌ترین ابزارهای کار با داده هستند. map آرایه جدید می‌سازد، filter عناصر مطابق شرط را نگه می‌دارد و find اولین عنصر مطابق شرط را پیدا می‌کند."},
+    {"id":"js-int-002-b04","type":"CODE","content":"const scores = [45, 80, 92, 60];\nconst passed = scores.filter(score => score >= 60);\nconst doubled = scores.map(score => score * 2);\nconsole.log(passed);\nconsole.log(doubled);","metadata":{"language":"javascript"}},
+    {"id":"js-int-002-b05","type":"EXERCISE","content":"یک Array از قیمت‌ها بسازید و با filter فقط قیمت‌های بیشتر از 100 را استخراج کنید."}
+  ]
+}

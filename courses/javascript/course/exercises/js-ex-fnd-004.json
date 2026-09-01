@@ -1,0 +1,13 @@
+{
+  "id":"js-ex-fnd-004",
+  "lessonId":"js-fnd-008",
+  "title":"محاسبه امن مبلغ فاکتور",
+  "description":"قیمت را به کوچک‌ترین واحد پول نگهداری کنید و subtotal، مالیات و مبلغ نهایی را بدون اتکا به جمع مستقیم اعشار محاسبه کنید.",
+  "type":"BUILD_FEATURE",
+  "difficulty":"MEDIUM",
+  "starterCode":"function invoiceTotal(unitPriceCents, quantity, taxPercent) {\n  // نتیجه را بر حسب cents برگردانید.\n}\n\nconsole.log(invoiceTotal(1999, 3, 10));",
+  "expectedOutput":"6597",
+  "hints":["subtotal را ابتدا با integer حساب کنید.","مالیات را از subtotal به دست آورید.","در نقطه مشخصی از Math.round استفاده کنید."],
+  "solution":"function invoiceTotal(unitPriceCents, quantity, taxPercent) {\n  const subtotal = unitPriceCents * quantity;\n  const tax = Math.round(subtotal * taxPercent / 100);\n  return subtotal + tax;\n}\nconsole.log(invoiceTotal(1999, 3, 10));",
+  "explanation":"نگهداری مبلغ به شکل integer بسیاری از خطاهای رایج floating-point در محاسبات پولی را کاهش می‌دهد."
+}
