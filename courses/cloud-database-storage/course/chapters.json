@@ -1,0 +1,27 @@
+[
+ {"id":"f01","levelId":"cloud-foundation","title":"ابر، BaaS و معماری داده","description":"از Client/Server تا Managed Database و Backend-as-a-Service.","order":1,"prerequisites":[]},
+ {"id":"f02","levelId":"cloud-foundation","title":"دیتابیس ابری و PostgreSQL مدیریت‌شده","description":"Compute، Storage، Connection، Backup و تفاوت سرویس مدیریت‌شده با Self-hosted.","order":2,"prerequisites":["f01"]},
+ {"id":"f03","levelId":"cloud-foundation","title":"Object Storage، S3 و CDN","description":"Bucket، Object، Key، Metadata، Endpoint، CDN و تفاوت فایل با رکورد دیتابیس.","order":3,"prerequisites":["f01"]},
+ {"id":"f04","levelId":"cloud-foundation","title":"هویت، مجوز و مدل تهدید","description":"Authentication، Authorization، Session، Token، Least Privilege و Shared Responsibility.","order":4,"prerequisites":["f01"]},
+
+ {"id":"b01","levelId":"cloud-beginner","title":"Supabase از صفر","description":"Project، PostgreSQL، Table، API، Auth، Storage و کلیدها.","order":1,"prerequisites":["f02","f04"]},
+ {"id":"b02","levelId":"cloud-beginner","title":"Firebase از صفر","description":"Firebase Project، Authentication، Firestore/Realtime Database و Storage.","order":2,"prerequisites":["f01","f04"]},
+ {"id":"b03","levelId":"cloud-beginner","title":"Appwrite و PocketBase","description":"BaaS متن‌باز، Collections، Auth، Storage و Self-hosting مقدماتی.","order":3,"prerequisites":["f01"]},
+ {"id":"b04","levelId":"cloud-beginner","title":"CRUD و اتصال کلاینت","description":"خواندن و نوشتن امن داده از Web/Android و مدیریت خطا و وضعیت شبکه.","order":4,"prerequisites":["b01"]},
+ {"id":"b05","levelId":"cloud-beginner","title":"Storage Bucket و مدیریت فایل","description":"آپلود، دانلود، حذف، Metadata، MIME Type، محدودیت اندازه و مسیر فایل.","order":5,"prerequisites":["f03","f04"]},
+
+ {"id":"a01","levelId":"cloud-advanced","title":"Row Level Security و Policy Design","description":"RLS در PostgreSQL/Supabase، USING/WITH CHECK، نقش‌ها و تست Policy.","order":1,"prerequisites":["b01","b04"]},
+ {"id":"a02","levelId":"cloud-advanced","title":"Realtime و همگام‌سازی","description":"Change streams، subscriptions، presence، conflict و offline-first.","order":2,"prerequisites":["b04"]},
+ {"id":"a03","levelId":"cloud-advanced","title":"Edge Functions و Backend امن","description":"اجرای منطق حساس سمت سرور، Secret، Webhook، Validation و Idempotency.","order":3,"prerequisites":["b04","f04"]},
+ {"id":"a04","levelId":"cloud-advanced","title":"Signed URL و اشتراک امن فایل","description":"URL امضاشده، زمان انقضا، scope، public/private bucket و download authorization.","order":4,"prerequisites":["b05","a01"]},
+ {"id":"a05","levelId":"cloud-advanced","title":"S3، Cloudflare R2 و MinIO","description":"API سازگار S3، Access Key، Presigned URL، R2 و Object Storage خودمیزبان.","order":5,"prerequisites":["f03","b05"]},
+ {"id":"a06","levelId":"cloud-advanced","title":"Multipart و Resumable Upload","description":"Chunk، Part، Upload ID، retry، checksum، resume و فایل‌های حجیم.","order":6,"prerequisites":["a05"]},
+ {"id":"a07","levelId":"cloud-advanced","title":"CDN، Cache و تحویل فایل","description":"Cache-Control، ETag، invalidation، origin، دامنه سفارشی و بهینه‌سازی هزینه egress.","order":7,"prerequisites":["a05"]},
+
+ {"id":"s01","levelId":"cloud-specialist","title":"معماری Production و Multi-tenant","description":"جداسازی tenant، ownership، namespace، policy و طراحی schema برای SaaS.","order":1,"prerequisites":["a01","a04"]},
+ {"id":"s02","levelId":"cloud-specialist","title":"امنیت تخصصی Cloud Data","description":"Secret management، key rotation، abuse prevention، audit، encryption و incident response.","order":2,"prerequisites":["s01"]},
+ {"id":"s03","levelId":"cloud-specialist","title":"Performance، Scale و Cost","description":"Index، pooling، caching، rate limit، quotas، lifecycle و کنترل هزینه.","order":3,"prerequisites":["s01","a07"]},
+ {"id":"s04","levelId":"cloud-specialist","title":"Backup، Migration و Disaster Recovery","description":"PITR، export/import، migration، replication concepts، RPO/RTO و بازیابی بحران.","order":4,"prerequisites":["s03"]},
+ {"id":"s05","levelId":"cloud-specialist","title":"Observability و عملیات","description":"Logs، metrics، tracing، alert، SLO و عیب‌یابی مسیر upload/download.","order":5,"prerequisites":["s03"]},
+ {"id":"s06","levelId":"cloud-specialist","title":"پروژه نهایی: فضای ذخیره‌سازی اشتراکی امن","description":"طراحی سامانه مشابه Drive/Dropbox با کاربر، گروه، پوشه، فایل، ACL، لینک امن و آپلود قابل ادامه.","order":6,"prerequisites":["s01","s02","s03","s04","s05"]}
+]
