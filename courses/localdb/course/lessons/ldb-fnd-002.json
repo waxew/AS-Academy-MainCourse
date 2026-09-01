@@ -1,0 +1,14 @@
+{
+  "id":"ldb-fnd-002",
+  "chapterId":"ldb-fnd-prefs",
+  "title":"SharedPreferences و DataStore",
+  "summary":"ذخیره تنظیمات سبک و مهاجرت از SharedPreferences به DataStore.",
+  "order":1,
+  "estimatedMinutes":20,
+  "blocks":[
+    {"id":"ldb-fnd-002-b01","type":"PARAGRAPH","content":"SharedPreferences روش قدیمی و ساده‌ای برای ذخیره جفت‌های key-value است. DataStore جایگزین مدرن‌تری است که با Coroutines و Flow سازگار است."},
+    {"id":"ldb-fnd-002-b02","type":"CODE","content":"val Context.dataStore by preferencesDataStore(name = \"settings\")","metadata":{"language":"kotlin"}},
+    {"id":"ldb-fnd-002-b03","type":"CODE","content":"val darkModeKey = booleanPreferencesKey(\"dark_mode\")\ncontext.dataStore.edit { settings -> settings[darkModeKey] = true }","metadata":{"language":"kotlin"}},
+    {"id":"ldb-fnd-002-b04","type":"TIP","content":"DataStore برای تنظیمات و داده‌های کوچک مناسب است؛ برای لیست‌های رابطه‌ای، فاکتورها یا هزاران رکورد از Room استفاده کنید."}
+  ]
+}

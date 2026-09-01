@@ -1,0 +1,8 @@
+{
+  "id":"ldb-beg-001","chapterId":"ldb-beg-sql","title":"SQL از صفر: جدول، رکورد و کلیدها","summary":"ساختار داده رابطه‌ای و دستورات اصلی SQL را با مثال‌های قابل استفاده در SQLite یاد می‌گیریم.","order":1,"estimatedMinutes":25,
+  "blocks":[
+    {"id":"ldb-beg-001-b1","type":"PARAGRAPH","content":"در دیتابیس رابطه‌ای، داده در جدول‌ها ذخیره می‌شود. هر سطر یک رکورد و هر ستون یک ویژگی است. Primary Key رکورد را یکتا می‌کند و Foreign Key ارتباط بین جدول‌ها را می‌سازد."},
+    {"id":"ldb-beg-001-b2","type":"CODE","content":"CREATE TABLE customer (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, phone TEXT UNIQUE);\nINSERT INTO customer(name, phone) VALUES ('Ali','09120000000');\nSELECT id,name,phone FROM customer ORDER BY name;","metadata":{"language":"sql"}},
+    {"id":"ldb-beg-001-b3","type":"TIP","content":"Schema را قبل از کدنویسی DAO طراحی کن؛ تغییر Schema در نسخه‌های بعدی نیازمند Migration است."}
+  ]
+}

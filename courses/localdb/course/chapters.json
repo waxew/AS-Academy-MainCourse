@@ -1,0 +1,18 @@
+[
+  {"id":"ldb-fnd-storage","levelId":"ldb-fundamentals","title":"مبانی ذخیره‌سازی محلی","description":"انواع داده محلی، چرخه عمر داده و انتخاب روش ذخیره‌سازی","order":1},
+  {"id":"ldb-fnd-prefs","levelId":"ldb-fundamentals","title":"SharedPreferences و DataStore","description":"ذخیره تنظیمات و داده‌های سبک با Preferences و Proto DataStore","order":2},
+  {"id":"ldb-beg-sql","levelId":"ldb-beginner","title":"SQL از صفر","description":"Table، Row، Column، Key، Constraint و Queryهای اصلی","order":1},
+  {"id":"ldb-beg-sqlite","levelId":"ldb-beginner","title":"SQLite در اندروید","description":"SQLiteOpenHelper، CRUD، Transaction و مدیریت اتصال","order":2},
+  {"id":"ldb-int-room","levelId":"ldb-intermediate","title":"Room Database","description":"Entity، DAO، Database، Repository و TypeConverter","order":1},
+  {"id":"ldb-int-crud","levelId":"ldb-intermediate","title":"CRUD، Search، Sort و Filter","description":"عملیات داده، Queryهای پویا، Index و Paging","order":2},
+  {"id":"ldb-adv-relations","levelId":"ldb-advanced","title":"Relationها و Transaction","description":"یک‌به‌یک، یک‌به‌چند، چندبه‌چند، Embedded و Junction","order":1},
+  {"id":"ldb-adv-migration","levelId":"ldb-advanced","title":"Migration و Versioning","description":"Auto Migration، Migration دستی و حفظ داده هنگام آپدیت","order":2},
+  {"id":"ldb-sp-backup","levelId":"ldb-specialist","title":"Backup، Restore، Import و Export","description":"پشتیبان‌گیری امن و انتقال داده با JSON، CSV و فایل دیتابیس","order":1},
+  {"id":"ldb-sp-security","levelId":"ldb-specialist","title":"Security و Encryption","description":"Keystore، رمزنگاری داده، SQLCipher و جلوگیری از SQL Injection","order":2},
+  {"id":"ldb-sp-performance","levelId":"ldb-specialist","title":"Testing و Performance","description":"Migration Test، DAO Test، Index، WAL، Profiling و دیتابیس بزرگ","order":3},
+  {"id":"ldb-sp-offline","levelId":"ldb-specialist","title":"Offline-first و Sync","description":"Cache Strategy، Sync با API و Conflict Resolution","order":4},
+  {"id":"ldb-prj-contact","levelId":"ldb-projects","title":"پروژه دفترچه تلفن","description":"CRUD، Search و Relation در یک برنامه واقعی","order":1},
+  {"id":"ldb-prj-expense","levelId":"ldb-projects","title":"پروژه مدیریت هزینه","description":"تراکنش‌ها، گزارش‌ها، فیلتر و بکاپ","order":2},
+  {"id":"ldb-prj-shop","levelId":"ldb-projects","title":"پروژه فروشگاه آفلاین","description":"محصول، مشتری، فاکتور، Relation و Migration","order":3},
+  {"id":"ldb-prj-final","levelId":"ldb-projects","title":"پروژه نهایی حسابداری آفلاین","description":"معماری کامل Local-first با امنیت، بکاپ و دیتابیس بزرگ","order":4}
+]

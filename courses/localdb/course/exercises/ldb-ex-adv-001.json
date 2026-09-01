@@ -1,0 +1,13 @@
+{
+  "id":"ldb-ex-adv-001",
+  "lessonId":"ldb-adv-003",
+  "title":"Migration امن از نسخه 2 به 3",
+  "description":"ستون createdAt را بدون حذف داده‌های قبلی به جدول customer اضافه کنید.",
+  "type":"WRITE_CODE",
+  "difficulty":"MEDIUM",
+  "starterCode":"val MIGRATION_2_3 = object : Migration(2, 3) {\n    override fun migrate(db: SupportSQLiteDatabase) {\n        // TODO\n    }\n}",
+  "expectedOutput":"جدول customer دارای ستون createdAt از نوع INTEGER، NOT NULL و مقدار پیش‌فرض 0 باشد و رکوردهای قبلی حفظ شوند.",
+  "hints":["از ALTER TABLE استفاده کنید.","برای ستون NOT NULL روی داده‌های موجود DEFAULT تعریف کنید."],
+  "solution":"db.execSQL(\"ALTER TABLE customer ADD COLUMN createdAt INTEGER NOT NULL DEFAULT 0\")",
+  "explanation":"افزودن DEFAULT باعث می‌شود ردیف‌های قدیمی نیز مقدار معتبر داشته باشند و Migration بدون پاک‌سازی دیتابیس انجام شود."
+}

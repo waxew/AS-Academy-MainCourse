@@ -1,0 +1,8 @@
+{
+  "id":"ldb-int-001","chapterId":"ldb-int-room","title":"Room: Entity، DAO و Database","summary":"ساخت اولین دیتابیس type-safe با Room و اتصال آن به Coroutines و Flow.","order":1,"estimatedMinutes":35,
+  "blocks":[
+    {"id":"ldb-int-001-b1","type":"PARAGRAPH","content":"Room لایه‌ای روی SQLite است که Schema، Query و Migration را قابل بررسی می‌کند. Entity جدول، DAO قرارداد دسترسی داده و RoomDatabase نقطه اصلی ساخت دیتابیس است."},
+    {"id":"ldb-int-001-b2","type":"CODE","content":"@Entity(tableName = \"contacts\")\ndata class Contact(@PrimaryKey(autoGenerate = true) val id: Long = 0, val name: String, val phone: String)\n\n@Dao\ninterface ContactDao {\n @Insert suspend fun insert(contact: Contact)\n @Query(\"SELECT * FROM contacts ORDER BY name\") fun observeAll(): Flow<List<Contact>>\n}","metadata":{"language":"kotlin"}},
+    {"id":"ldb-int-001-b3","type":"TIP","content":"DAO را کوچک و مبتنی بر use case نگه دار؛ UI نباید مستقیم SQL یا RoomDatabase را مدیریت کند."}
+  ]
+}

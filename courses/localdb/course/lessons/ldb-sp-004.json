@@ -1,0 +1,8 @@
+{
+  "id":"ldb-sp-004","chapterId":"ldb-sp-offline","title":"Offline-first، Sync و Conflict Resolution","summary":"دیتابیس محلی را منبع تجربه کاربر قرار می‌دهیم و همگام‌سازی قابل بازیابی طراحی می‌کنیم.","order":1,"estimatedMinutes":50,
+  "blocks":[
+    {"id":"ldb-sp-004-b1","type":"PARAGRAPH","content":"در معماری offline-first، UI از داده محلی می‌خواند و شبکه برای همگام‌سازی استفاده می‌شود. هر رکورد قابل Sync معمولاً به شناسه پایدار، زمان تغییر، وضعیت همگام‌سازی و سیاست حل تعارض نیاز دارد."},
+    {"id":"ldb-sp-004-b2","type":"CODE","content":"enum class SyncState { SYNCED, PENDING, FAILED }\ndata class SyncMeta(val updatedAt: Long, val state: SyncState)\n// write local -> mark PENDING -> enqueue sync -> server ack -> mark SYNCED","metadata":{"language":"kotlin"}},
+    {"id":"ldb-sp-004-b3","type":"TIP","content":"Conflict policy را صریح تعریف کن: last-write-wins، server-wins، client-wins یا merge دامنه‌ای؛ انتخاب آن وابسته به نوع داده است."}
+  ]
+}

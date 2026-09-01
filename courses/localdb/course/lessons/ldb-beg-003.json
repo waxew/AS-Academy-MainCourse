@@ -1,0 +1,13 @@
+{
+  "id":"ldb-beg-003",
+  "chapterId":"ldb-beg-sql",
+  "title":"JOIN، GROUP BY و Aggregate Functions",
+  "summary":"ترکیب چند جدول و ساخت گزارش‌های واقعی با JOIN و توابع تجمیعی SQL.",
+  "order":3,
+  "estimatedMinutes":40,
+  "blocks":[
+    {"id":"ldb-beg-003-p1","type":"PARAGRAPH","content":"دیتابیس واقعی معمولاً چند جدول مرتبط دارد. JOIN داده جدول‌ها را بر اساس کلیدها ترکیب می‌کند و GROUP BY همراه COUNT، SUM، AVG، MIN و MAX برای گزارش‌گیری استفاده می‌شود."},
+    {"id":"ldb-beg-003-code1","type":"CODE","content":"SELECT c.name, COUNT(o.id) AS order_count, SUM(o.total) AS total_spent\nFROM customers c\nLEFT JOIN orders o ON o.customer_id = c.id\nGROUP BY c.id, c.name\nORDER BY total_spent DESC;","metadata":{"language":"sql"}},
+    {"id":"ldb-beg-003-tip","type":"TIP","content":"LEFT JOIN مشتری بدون سفارش را هم نگه می‌دارد؛ INNER JOIN فقط ردیف‌هایی را برمی‌گرداند که در هر دو سمت تطابق دارند."}
+  ]
+}

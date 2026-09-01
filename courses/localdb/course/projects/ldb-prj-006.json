@@ -1,0 +1,1 @@
+{"id":"ldb-prj-006","title":"فروشگاه Local-first با Sync Queue","summary":"محصول، مشتری، فاکتور، موجودی و همگام‌سازی آفلاین.","difficulty":"SPECIALIST","steps":["Schema و Relation","Transaction فاکتور","موجودی اتمیک","Sync Queue","Conflict/soft delete","Backup و Migration Test","Paging/Index"]}

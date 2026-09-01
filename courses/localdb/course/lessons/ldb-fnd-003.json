@@ -1,0 +1,13 @@
+{
+  "id":"ldb-fnd-003",
+  "chapterId":"ldb-fnd-prefs",
+  "title":"Proto DataStore و مهاجرت از SharedPreferences",
+  "summary":"ذخیره تنظیمات type-safe با Proto DataStore و انتقال امن داده‌های قدیمی را یاد می‌گیریم.",
+  "order":3,
+  "estimatedMinutes":35,
+  "blocks":[
+    {"id":"ldb-fnd-003-p1","type":"PARAGRAPH","content":"Preferences DataStore برای key-value مناسب است، اما Proto DataStore با Schema مشخص و type safety برای تنظیمات ساخت‌یافته انتخاب بهتری است. در اپ‌های قدیمی می‌توان SharedPreferencesMigration تعریف کرد تا داده کاربر از بین نرود."},
+    {"id":"ldb-fnd-003-code1","type":"CODE","content":"val Context.settingsDataStore by dataStore(\n    fileName = \"settings.pb\",\n    serializer = SettingsSerializer\n)\n\nval settingsFlow = context.settingsDataStore.data","metadata":{"language":"kotlin"}},
+    {"id":"ldb-fnd-003-tip","type":"TIP","content":"برای تغییر Schema در Proto، شماره فیلدهای قبلی را دوباره استفاده نکنید و backward compatibility را حفظ کنید."}
+  ]
+}

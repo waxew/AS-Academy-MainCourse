@@ -1,0 +1,8 @@
+{
+  "id":"ldb-int-002","chapterId":"ldb-int-crud","title":"Search، Sort، Filter، Index و Paging","summary":"Queryهای واقعی برای لیست‌های بزرگ و جستجوی سریع را طراحی می‌کنیم.","order":1,"estimatedMinutes":35,
+  "blocks":[
+    {"id":"ldb-int-002-b1","type":"PARAGRAPH","content":"جستجو و مرتب‌سازی باید تا جای ممکن در موتور دیتابیس انجام شود، نه پس از دریافت کل جدول در حافظه. Index سرعت خواندن روی ستون‌های پرتکرار را بالا می‌برد ولی هزینه نوشتن و حجم دیتابیس دارد."},
+    {"id":"ldb-int-002-b2","type":"CODE","content":"@Query(\"SELECT * FROM contacts WHERE name LIKE '%' || :query || '%' ORDER BY name LIMIT :limit OFFSET :offset\")\nsuspend fun search(query: String, limit: Int, offset: Int): List<Contact>","metadata":{"language":"kotlin"}},
+    {"id":"ldb-int-002-b3","type":"TIP","content":"برای داده بسیار بزرگ از Paging و برای جستجوی متنی جدی از FTS استفاده کن؛ همه ستون‌ها را بی‌دلیل Index نکن."}
+  ]
+}

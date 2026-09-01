@@ -1,0 +1,8 @@
+{
+  "id":"ldb-adv-001","chapterId":"ldb-adv-relations","title":"Relationها و Transaction در Room","summary":"مدل‌سازی یک‌به‌یک، یک‌به‌چند و چندبه‌چند بدون خراب کردن مرزهای داده.","order":1,"estimatedMinutes":40,
+  "blocks":[
+    {"id":"ldb-adv-001-b1","type":"PARAGRAPH","content":"رابطه‌ها باید بر اساس واقعیت دامنه طراحی شوند. Foreign Key یکپارچگی را تقویت می‌کند. در Room برای خواندن آبجکت‌های رابطه‌ای از @Relation و برای چندبه‌چند از جدول واسط و @Junction استفاده می‌شود."},
+    {"id":"ldb-adv-001-b2","type":"CODE","content":"data class CustomerWithInvoices(\n @Embedded val customer: Customer,\n @Relation(parentColumn = \"id\", entityColumn = \"customerId\") val invoices: List<Invoice>\n)\n\n@Transaction\n@Query(\"SELECT * FROM customers WHERE id=:id\")\nsuspend fun customerWithInvoices(id: Long): CustomerWithInvoices","metadata":{"language":"kotlin"}},
+    {"id":"ldb-adv-001-b3","type":"TIP","content":"برای عملیات چندمرحله‌ای که باید همه یا هیچ‌کدام اجرا شوند Transaction ضروری است."}
+  ]
+}

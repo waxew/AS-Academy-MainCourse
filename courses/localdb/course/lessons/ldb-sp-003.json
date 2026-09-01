@@ -1,0 +1,8 @@
+{
+  "id":"ldb-sp-003","chapterId":"ldb-sp-performance","title":"Testing، WAL و Performance","summary":"دیتابیس را اندازه‌گیری، تست و برای بار واقعی بهینه می‌کنیم.","order":1,"estimatedMinutes":45,
+  "blocks":[
+    {"id":"ldb-sp-003-b1","type":"PARAGRAPH","content":"بهینه‌سازی باید با اندازه‌گیری شروع شود. Query plan، تعداد رکوردهای خوانده‌شده، Indexها، Transactionها و مصرف حافظه را بررسی کن. WAL می‌تواند همزمانی خواندن و نوشتن را بهتر کند اما باید بر اساس workload ارزیابی شود."},
+    {"id":"ldb-sp-003-b2","type":"CODE","content":"EXPLAIN QUERY PLAN SELECT id,name FROM contacts WHERE phone = ?;\nCREATE INDEX IF NOT EXISTS index_contacts_phone ON contacts(phone);","metadata":{"language":"sql"}},
+    {"id":"ldb-sp-003-b3","type":"TIP","content":"DAO، Migration، Backup/Restore و مسیرهای خرابی را تست کن؛ تست فقط happy path کافی نیست."}
+  ]
+}

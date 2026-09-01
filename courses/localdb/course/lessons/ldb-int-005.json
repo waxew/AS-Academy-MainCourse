@@ -1,0 +1,13 @@
+{
+  "id":"ldb-int-005",
+  "chapterId":"ldb-int-room",
+  "title":"Repository، Coroutines و Flow در Room",
+  "summary":"DAO را به Repository متصل می‌کنیم و داده واکنشی را با Flow به UI می‌رسانیم.",
+  "order":5,
+  "estimatedMinutes":45,
+  "blocks":[
+    {"id":"ldb-int-005-p1","type":"PARAGRAPH","content":"DAO نباید مستقیماً منطق کل برنامه را بر عهده بگیرد. Repository مرز دسترسی به داده را ایجاد می‌کند. Queryهای مشاهده‌ای Room می‌توانند Flow برگردانند تا با تغییر جدول، UI به‌صورت واکنشی به‌روز شود."},
+    {"id":"ldb-int-005-code1","type":"CODE","content":"@Dao\ninterface CustomerDao {\n    @Query(\"SELECT * FROM customer ORDER BY name\")\n    fun observeAll(): Flow<List<CustomerEntity>>\n}\n\nclass CustomerRepository(private val dao: CustomerDao) {\n    val customers = dao.observeAll()\n    suspend fun save(item: CustomerEntity) = dao.upsert(item)\n}","metadata":{"language":"kotlin"}},
+    {"id":"ldb-int-005-warning","type":"WARNING","content":"Database access سنگین را روی Main Thread اجرا نکنید. suspend، Flow و Dispatcher مناسب را بر اساس نوع عملیات استفاده کنید."}
+  ]
+}

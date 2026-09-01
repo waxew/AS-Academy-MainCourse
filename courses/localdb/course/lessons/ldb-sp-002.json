@@ -1,0 +1,8 @@
+{
+  "id":"ldb-sp-002","chapterId":"ldb-sp-security","title":"امنیت دیتابیس، Keystore و SQL Injection","summary":"مدل تهدید، نگهداری کلید و محافظت از داده حساس را بررسی می‌کنیم.","order":1,"estimatedMinutes":45,
+  "blocks":[
+    {"id":"ldb-sp-002-b1","type":"PARAGRAPH","content":"امنیت LocalDB چند لایه است: کمینه‌سازی داده حساس، محدود کردن export، رمزنگاری مناسب، نگهداری کلید در Android Keystore و استفاده از Queryهای پارامتری. رمزنگاری جایگزین کنترل دسترسی و طراحی امن نیست."},
+    {"id":"ldb-sp-002-b2","type":"CODE","content":"@Query(\"SELECT * FROM users WHERE username = :username\")\nsuspend fun findUser(username: String): User?","metadata":{"language":"kotlin"}},
+    {"id":"ldb-sp-002-b3","type":"TIP","content":"کلید رمزنگاری را به صورت ثابت داخل سورس یا SharedPreferences ذخیره نکن؛ برای اسرار کلیدی از Android Keystore استفاده کن."}
+  ]
+}

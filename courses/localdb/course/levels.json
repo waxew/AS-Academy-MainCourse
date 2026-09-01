@@ -1,0 +1,8 @@
+[
+  {"id":"ldb-fundamentals","courseId":"localdb","type":"FUNDAMENTALS","title":"مبانی","order":1},
+  {"id":"ldb-beginner","courseId":"localdb","type":"BEGINNER","title":"مقدماتی","order":2},
+  {"id":"ldb-intermediate","courseId":"localdb","type":"INTERMEDIATE","title":"متوسط","order":3},
+  {"id":"ldb-advanced","courseId":"localdb","type":"ADVANCED","title":"پیشرفته","order":4},
+  {"id":"ldb-specialist","courseId":"localdb","type":"SPECIALIST","title":"تخصصی","order":5},
+  {"id":"ldb-projects","courseId":"localdb","type":"PROJECT_BASED","title":"پروژه‌محور","order":6}
+]

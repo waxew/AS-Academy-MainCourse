@@ -1,0 +1,13 @@
+{
+  "id":"ldb-int-003",
+  "chapterId":"ldb-int-room",
+  "title":"Pre-populated Database و Seed Data در Room",
+  "summary":"یاد می‌گیرید دیتابیس اولیه را از assets بارگذاری کنید و Seed Data قابل کنترل بسازید.",
+  "order":3,
+  "estimatedMinutes":30,
+  "blocks":[
+    {"id":"ldb-int-003-p1","type":"PARAGRAPH","content":"گاهی برنامه باید از اولین اجرا داده آماده داشته باشد؛ مانند فرهنگ لغت، شهرها یا کاتالوگ آفلاین. Room می‌تواند دیتابیس از پیش ساخته‌شده را از assets باز کند یا داده اولیه را در Callback درج کند."},
+    {"id":"ldb-int-003-code1","type":"CODE","content":"Room.databaseBuilder(context, AppDatabase::class.java, \"academy.db\")\n    .createFromAsset(\"database/academy.db\")\n    .build()","metadata":{"language":"kotlin"}},
+    {"id":"ldb-int-003-tip","type":"TIP","content":"فایل دیتابیس اولیه باید با Schema و Version مورد انتظار Room هماهنگ باشد؛ در غیر این صورت اعتبارسنجی Schema شکست می‌خورد."}
+  ]
+}

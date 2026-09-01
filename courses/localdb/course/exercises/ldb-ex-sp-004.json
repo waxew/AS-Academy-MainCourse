@@ -1,0 +1,17 @@
+{
+  "id":"ldb-ex-sp-004",
+  "lessonId":"ldb-sp-008",
+  "title":"طراحی Recovery بدون حذف کورکورانه دیتابیس",
+  "description":"برای سناریویی که بازکردن دیتابیس با خطا روبه‌رو می‌شود، یک جریان بازیابی امن طراحی کنید که قبل از هر حذف، امکان تشخیص، Backup و Recovery را بررسی کند.",
+  "type":"DESIGN",
+  "difficulty":"HARD",
+  "starterCode":"",
+  "expectedOutput":"جریان تشخیص خطا، ثبت لاگ، تلاش برای export/backup در صورت امکان، اطلاع‌رسانی کنترل‌شده، و fallback مستند بدون حذف خودکار داده.",
+  "hints":[
+    "همه خطاهای بازشدن دیتابیس به معنی corruption نیستند.",
+    "حذف فایل دیتابیس نباید اولین اقدام باشد.",
+    "قبل از recovery destructive، امکان استخراج داده سالم را بررسی کنید."
+  ],
+  "solution":"Classify failure -> capture diagnostic details -> verify storage/permissions/schema -> attempt read-only/open recovery when possible -> export recoverable data -> rebuild into a fresh database -> validate restored records -> only allow destructive reset as an explicit last-resort user-visible action.",
+  "explanation":"Recovery امن بین خطای موقت، migration failure، کمبود فضا و corruption واقعی تفاوت می‌گذارد و از تبدیل یک خطای قابل بازیابی به از دست رفتن کامل داده جلوگیری می‌کند."
+}

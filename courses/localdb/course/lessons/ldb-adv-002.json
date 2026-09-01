@@ -1,0 +1,8 @@
+{
+  "id":"ldb-adv-002","chapterId":"ldb-adv-migration","title":"Migration بدون از دست رفتن اطلاعات","summary":"نسخه Schema را ارتقا می‌دهیم و داده کاربران را هنگام آپدیت APK حفظ می‌کنیم.","order":1,"estimatedMinutes":40,
+  "blocks":[
+    {"id":"ldb-adv-002-b1","type":"PARAGRAPH","content":"افزایش version دیتابیس بدون Migration معتبر می‌تواند برنامه را در دستگاه کاربران خراب کند. هر تغییر Schema باید مسیر مهاجرت مشخص و تست‌شده از نسخه‌های پشتیبانی‌شده داشته باشد."},
+    {"id":"ldb-adv-002-b2","type":"CODE","content":"val MIGRATION_1_2 = object : Migration(1, 2) {\n override fun migrate(db: SupportSQLiteDatabase) {\n  db.execSQL(\"ALTER TABLE contacts ADD COLUMN email TEXT\")\n }\n}\nRoom.databaseBuilder(context, AppDb::class.java, \"app.db\").addMigrations(MIGRATION_1_2).build()","metadata":{"language":"kotlin"}},
+    {"id":"ldb-adv-002-b3","type":"WARNING","content":"fallbackToDestructiveMigration داده کاربر را حذف می‌کند؛ در اپ واقعی فقط با تصمیم آگاهانه و برای داده قابل بازسازی استفاده شود."}
+  ]
+}

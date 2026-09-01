@@ -1,0 +1,8 @@
+{
+  "id":"ldb-sp-001","chapterId":"ldb-sp-backup","title":"Backup، Restore، Import و Export","summary":"پشتیبان قابل اعتماد می‌سازیم و قبل از Restore آن را اعتبارسنجی می‌کنیم.","order":1,"estimatedMinutes":40,
+  "blocks":[
+    {"id":"ldb-sp-001-b1","type":"PARAGRAPH","content":"Backup فقط کپی فایل نیست؛ باید نسخه Schema، زمان ایجاد، checksum و سازگاری داده مشخص باشد. برای انتقال کاربرپسند می‌توان JSON/CSV و Storage Access Framework را به کار برد."},
+    {"id":"ldb-sp-001-b2","type":"CODE","content":"data class BackupEnvelope(val schemaVersion: Int, val createdAt: Long, val contacts: List<Contact>)\n// قبل از restore: parse -> validate version -> validate records -> transaction -> verify","metadata":{"language":"kotlin"}},
+    {"id":"ldb-sp-001-b3","type":"WARNING","content":"Restore را مستقیم روی دیتابیس اصلی شروع نکن؛ ابتدا فایل، نسخه و ساختار را اعتبارسنجی و در صورت امکان نسخه امن قبلی را نگهداری کن."}
+  ]
+}

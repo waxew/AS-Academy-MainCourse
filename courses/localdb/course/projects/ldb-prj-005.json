@@ -1,0 +1,1 @@
+{"id":"ldb-prj-005","title":"یادداشت آفلاین حرفه‌ای","summary":"Room، Flow، Search، Paging، Backup و Migration.","difficulty":"INTERMEDIATE","steps":["Entity/DAO","Repository/Flow","Search/Sort","Migration","Export/Import","DAO/Migration tests"]}

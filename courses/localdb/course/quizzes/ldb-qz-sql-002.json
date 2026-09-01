@@ -1,0 +1,9 @@
+{
+  "id":"ldb-qz-sql-002",
+  "title":"آزمون JOIN و گزارش‌گیری SQL",
+  "passingScorePercent":70,
+  "questions":[
+    {"id":"ldb-qz-sql-002-q1","type":"MULTIPLE_CHOICE","question":"برای نمایش همه مشتری‌ها حتی اگر سفارشی نداشته باشند کدام JOIN مناسب است؟","answers":[{"id":"a","text":"INNER JOIN","isCorrect":false},{"id":"b","text":"LEFT JOIN","isCorrect":true},{"id":"c","text":"CROSS JOIN","isCorrect":false}],"explanation":"LEFT JOIN همه ردیف‌های جدول سمت چپ را نگه می‌دارد.","tags":["sql","join"]},
+    {"id":"ldb-qz-sql-002-q2","type":"MULTIPLE_CHOICE","question":"برای محاسبه مجموع مبلغ سفارش‌های هر مشتری معمولاً از چه ترکیبی استفاده می‌شود؟","answers":[{"id":"a","text":"SUM + GROUP BY","isCorrect":true},{"id":"b","text":"DELETE + LIMIT","isCorrect":false},{"id":"c","text":"ALTER + DISTINCT","isCorrect":false}],"explanation":"SUM مقدارها را تجمیع و GROUP BY نتیجه را برای هر گروه جدا می‌کند.","tags":["sql","aggregate"]}
+  ]
+}

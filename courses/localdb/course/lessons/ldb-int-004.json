@@ -1,0 +1,13 @@
+{
+  "id":"ldb-int-004",
+  "chapterId":"ldb-int-crud",
+  "title":"Full Text Search و جست‌وجوی سریع",
+  "summary":"FTS را برای جست‌وجوی متن در داده‌های بزرگ و تفاوت آن با LIKE بررسی می‌کنیم.",
+  "order":4,
+  "estimatedMinutes":35,
+  "blocks":[
+    {"id":"ldb-int-004-p1","type":"PARAGRAPH","content":"LIKE برای جست‌وجوی ساده مناسب است، اما با بزرگ شدن داده و نیاز به جست‌وجوی متنی حرفه‌ای، SQLite FTS گزینه تخصصی‌تری است. در Room می‌توان Entity مخصوص FTS تعریف کرد و Queryهای MATCH نوشت."},
+    {"id":"ldb-int-004-code1","type":"CODE","content":"@Fts4\n@Entity(tableName = \"contact_fts\")\ndata class ContactFts(\n    val name: String,\n    val phone: String\n)\n\n@Query(\"SELECT * FROM contact_fts WHERE contact_fts MATCH :query\")\nsuspend fun search(query: String): List<ContactFts>","metadata":{"language":"kotlin"}},
+    {"id":"ldb-int-004-tip","type":"TIP","content":"قبل از انتخاب FTS، حجم داده، زبان متن، نحوه Tokenization و نیاز واقعی جست‌وجو را اندازه‌گیری کنید؛ FTS جایگزین همه Indexها نیست."}
+  ]
+}

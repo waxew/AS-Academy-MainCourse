@@ -1,0 +1,13 @@
+{
+  "id":"ldb-adv-003",
+  "chapterId":"ldb-adv-migration",
+  "title":"Migration Test و تضمین حفظ اطلاعات",
+  "summary":"Migration را قبل از انتشار APK روی Schema واقعی نسخه‌های قبلی تست می‌کنیم.",
+  "order":3,
+  "estimatedMinutes":40,
+  "blocks":[
+    {"id":"ldb-adv-003-p1","type":"PARAGRAPH","content":"Migration فقط زمانی قابل اعتماد است که مسیر ارتقا از نسخه‌های نصب‌شده کاربران آزمایش شود. تست باید Schema مقصد، داده‌های قبلی و Constraintهای مهم را بررسی کند."},
+    {"id":"ldb-adv-003-code1","type":"CODE","content":"val db = helper.createDatabase(TEST_DB, 1)\ndb.execSQL(\"INSERT INTO customer(id, name) VALUES(1, 'Ali')\")\ndb.close()\n\nhelper.runMigrationsAndValidate(TEST_DB, 2, true, MIGRATION_1_2)","metadata":{"language":"kotlin"}},
+    {"id":"ldb-adv-003-warning","type":"WARNING","content":"موفق شدن Build به معنی امن بودن Migration نیست. تست مسیرهای 1→2، 1→3 و 2→3 را بر اساس نسخه‌هایی که واقعاً منتشر شده‌اند نگه دارید."}
+  ]
+}

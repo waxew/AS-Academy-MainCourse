@@ -1,0 +1,8 @@
+{
+  "id":"ldb-beg-002","chapterId":"ldb-beg-sqlite","title":"SQLite و CRUD در اندروید","summary":"ساخت دیتابیس SQLite، درج، خواندن، ویرایش، حذف و Transaction.","order":1,"estimatedMinutes":30,
+  "blocks":[
+    {"id":"ldb-beg-002-b1","type":"PARAGRAPH","content":"SQLite یک موتور embedded است و سرور جداگانه ندارد. در API خام اندروید می‌توان SQLiteOpenHelper را برای ایجاد و ارتقای دیتابیس استفاده کرد، هرچند برای پروژه‌های مدرن Room انتخاب امن‌تر و قابل نگهداری‌تری است."},
+    {"id":"ldb-beg-002-b2","type":"CODE","content":"val values = ContentValues().apply { put(\"name\", \"Sara\") }\ndb.insert(\"customer\", null, values)\nval cursor = db.query(\"customer\", null, null, null, null, null, \"name ASC\")","metadata":{"language":"kotlin"}},
+    {"id":"ldb-beg-002-b3","type":"TIP","content":"برای ورودی کاربر از selectionArgs یا APIهای parameterized استفاده کن و SQL را با الحاق رشته نساز."}
+  ]
+}
