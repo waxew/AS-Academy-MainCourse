@@ -1,0 +1,26 @@
+{
+ "id":"web-publishing-maintenance",
+ "title":"انتشار و نگهداری سایت",
+ "subtitle":"از خرید دامنه و راه‌اندازی Linux Server تا Production Engineering، امنیت، Performance، SEO و نگهداری حرفه‌ای",
+ "language":"fa-IR",
+ "direction":"rtl",
+ "audience":["توسعه‌دهندگان وب","Frontend Developers","Backend Developers","Full-stack Developers","مدیران فنی و DevOps تازه‌کار"],
+ "prerequisites":["مبانی وب و HTTP","آشنایی مقدماتی با Git","آشنایی با Frontend یا Backend","توانایی کار پایه با خط فرمان"],
+ "learningOutcomes":[
+  "انتخاب صحیح دامنه، DNS، هاست، VPS و معماری میزبانی",
+  "مدیریت Linux Server، SSH، Permission، Firewall و Serviceها",
+  "پیکربندی Apache و Nginx و HTTPS",
+  "استقرار Frontend، Backend و Database در محیط Production",
+  "استفاده از Docker و Docker Compose",
+  "ساخت CI/CD با GitHub Actions و مدیریت امن Secretها",
+  "راه‌اندازی Cloudflare/CDN/Cache/WAF",
+  "پیاده‌سازی Logging، Monitoring، Alerting و Incident Response",
+  "کاهش ریسک‌های OWASP و Hardening سرویس",
+  "بهبود Core Web Vitals و Performance",
+  "اجرای Technical SEO، Analytics و Privacy/Cookie Management",
+  "طراحی Backup، Restore، Disaster Recovery و Release Strategy"
+ ],
+ "assessment":{"quizzes":true,"exercises":true,"projects":true,"capstone":true},
+ "offlineFirst":true,
+ "searchable":true
+}
