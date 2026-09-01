@@ -53,7 +53,7 @@ jobs:
           - Shared engine/runtime: `AS-Academy-Core`
 
           تمام درس‌ها، فصل‌ها، تمرین‌ها، Quizها، پروژه‌ها، Capstone، Glossary و metadata آموزشی C از اینجا مدیریت می‌شوند.
-          پس از تکمیل مهاجرت، Course App محتوا را هنگام Build از این مسیر دریافت می‌کند و نباید fork مستقل محتوا داشته باشد.
+          Course App محتوا را هنگام Build از این مسیر دریافت می‌کند و نباید fork مستقل محتوا داشته باشد.
           EOF
 
       - name: Commit migrated content safely
@@ -69,5 +69,14 @@ jobs:
             exit 0
           fi
           git commit -m 'content: migrate complete C course into MainCourse'
-          git pull --rebase origin main
-          git push origin HEAD:main
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Concurrent MainCourse writer detected; retry $attempt/5"
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to publish C migration after retries.' >&2
+          exit 1
