@@ -1,0 +1,6 @@
+[
+  {"id":"php-fundamentals","courseId":"php","type":"FUNDAMENTALS","title":"مبانی","order":1},
+  {"id":"php-beginner","courseId":"php","type":"BEGINNER","title":"مقدماتی و دیتابیس","order":2},
+  {"id":"php-advanced","courseId":"php","type":"ADVANCED","title":"پیشرفته","order":3},
+  {"id":"php-specialist","courseId":"php","type":"SPECIALIST","title":"تخصصی و Production","order":4}
+]

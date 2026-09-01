@@ -1,0 +1,10 @@
+[
+  {"id":"php-fnd-start","levelId":"php-fundamentals","title":"شروع با PHP","description":"مفهوم PHP، نصب و اولین اجرا","order":1},
+  {"id":"php-fnd-language","levelId":"php-fundamentals","title":"هسته زبان","description":"Syntax، نوع داده، شرط، حلقه، آرایه و تابع","order":2},
+  {"id":"php-beg-web","levelId":"php-beginner","title":"PHP برای وب","description":"HTTP، فرم، Session و فایل","order":1},
+  {"id":"php-beg-db","levelId":"php-beginner","title":"دیتابیس و PDO","description":"SQL، طراحی دیتابیس و CRUD امن","order":2},
+  {"id":"php-adv-oop","levelId":"php-advanced","title":"PHP مدرن و OOP","description":"OOP، Composer، PSR و Exception","order":1},
+  {"id":"php-adv-arch","levelId":"php-advanced","title":"معماری، امنیت و API","description":"MVC، SOLID، Security و REST API","order":2},
+  {"id":"php-spc-laravel","levelId":"php-specialist","title":"Laravel","description":"ساخت Backend مدرن با Laravel","order":1},
+  {"id":"php-spc-prod","levelId":"php-specialist","title":"Production Engineering","description":"Testing، Redis، Queue، Docker، CI/CD و Deployment","order":2}
+]
