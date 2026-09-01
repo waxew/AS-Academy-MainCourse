@@ -1,0 +1,12 @@
+{
+ "id":"webops-course-quiz","title":"آزمون جامع انتشار و نگهداری سایت","questions":[
+  {"id":"q1","question":"کدام رکورد DNS معمولاً یک نام را مستقیماً به IPv4 نگاشت می‌کند؟","options":["A","MX","TXT","NS"],"answer":0,"explanation":"A record برای نگاشت hostname به IPv4 استفاده می‌شود."},
+  {"id":"q2","question":"Backup چه زمانی قابل اتکاتر است؟","options":["وقتی فایل آن وجود دارد","وقتی Restore آن دوره‌ای تست شده است","وقتی روی همان سرور است","وقتی نام فایل تاریخ دارد"],"answer":1,"explanation":"توانایی بازیابی باید با Restore Test اثبات شود."},
+  {"id":"q3","question":"کدام مورد Secret مناسب Git repository نیست؟","options":["README","API token واقعی","نمونه .env.example بدون secret","نام سرویس"],"answer":1,"explanation":"Secret واقعی باید خارج از source control مدیریت شود."},
+  {"id":"q4","question":"Reverse Proxy چه کاری می‌تواند انجام دهد؟","options":["درخواست را به Backend داخلی هدایت کند","DNS registrar را حذف کند","Backup را جایگزین کند","کد را کامپایل کند"],"answer":0,"explanation":"Nginx/Apache می‌توانند ترافیک ورودی را به upstream هدایت کنند."},
+  {"id":"q5","question":"سه Core Web Vital اصلی جاری کدام‌اند؟","options":["LCP, INP, CLS","TTFB, FPS, DNS","SEO, CTR, CPC","CPU, RAM, Disk"],"answer":0,"explanation":"LCP، INP و CLS شاخص‌های اصلی Core Web Vitals هستند."},
+  {"id":"q6","question":"RPO به چه چیزی مربوط است؟","options":["حداکثر داده قابل از دست رفتن","حداکثر CPU","زمان DNS","نسخه Docker"],"answer":0,"explanation":"RPO نقطه بازیابی هدف و میزان قابل قبول از دست رفتن داده را بیان می‌کند."},
+  {"id":"q7","question":"بهترین رویکرد برای Deploy Production چیست؟","options":["Build تصادفی روی سرور بدون نسخه","Artifact نسخه‌دار و تست‌شده با Rollback","کپی دستی بدون Log","استفاده از root برای همه چیز"],"answer":1,"explanation":"Artifact immutable و قابل ردیابی، ریسک و زمان Rollback را کاهش می‌دهد."},
+  {"id":"q8","question":"WAF چه نقشی دارد؟","options":["جایگزین کامل امنیت کد","یک لایه دفاعی مکمل","جایگزین TLS","جایگزین Authorization"],"answer":1,"explanation":"WAF مکمل دفاع است و ضعف طراحی/کدنویسی را به‌طور کامل حل نمی‌کند."}
+ ]
+}
