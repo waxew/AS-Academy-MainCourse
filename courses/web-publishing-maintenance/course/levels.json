@@ -1,0 +1,6 @@
+[
+  {"id":"webops-foundation","key":"foundation","title":"مبانی","order":1,"description":"شناخت اینترنت Production، دامنه، DNS، هاست، سرور و چرخه انتشار"},
+  {"id":"webops-beginner","key":"beginner","title":"مقدماتی","order":2,"description":"Linux، SSH، Apache/Nginx، SSL، استقرار، Cloudflare، Backup و نگهداری پایه"},
+  {"id":"webops-advanced","key":"advanced","title":"پیشرفته","order":3,"description":"Docker، CI/CD، Reverse Proxy، مانیتورینگ، امنیت، Performance، SEO و Analytics"},
+  {"id":"webops-specialist","key":"specialist","title":"تخصصی","order":4,"description":"Production Engineering، Zero Downtime، Hardening، Observability، Disaster Recovery و عملیات حرفه‌ای"}
+]
