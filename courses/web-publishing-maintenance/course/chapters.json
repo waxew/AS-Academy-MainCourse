@@ -1,0 +1,21 @@
+[
+ {"id":"webops-fnd-hosting","levelId":"webops-foundation","title":"از دامنه تا Production","description":"دامنه، Registrar، هاست، VPS، Cloud، DNS، IP، Port و چرخه Request","order":1},
+ {"id":"webops-fnd-planning","levelId":"webops-foundation","title":"معماری انتشار و محیط‌ها","description":"Development، Staging، Production، Release، Versioning و Checklist انتشار","order":2},
+ {"id":"webops-beg-linux","levelId":"webops-beginner","title":"Linux Server و SSH","description":"Shell، فایل‌ها، Permission، User، SSH، Package، Process، Service، systemd و Firewall","order":1},
+ {"id":"webops-beg-webserver","levelId":"webops-beginner","title":"Apache، Nginx و HTTPS","description":"Virtual Host، Server Block، Reverse Proxy، TLS/SSL، Let's Encrypt و Redirect","order":2},
+ {"id":"webops-beg-deploy","levelId":"webops-beginner","title":"استقرار Frontend، Backend و Database","description":"Static، SPA، SSR، API، Environment Variable، Migration، Process Manager و Rollback","order":3},
+ {"id":"webops-beg-edge","levelId":"webops-beginner","title":"Cloudflare، CDN و DNS عملی","description":"Proxy، Cache، CDN، DNS Records، WAF مقدماتی، Page Rules/Rules و Origin","order":4},
+ {"id":"webops-beg-backup","levelId":"webops-beginner","title":"Backup و نگهداری پایه","description":"Backup فایل و دیتابیس، Retention، Restore Test، Cron، Patch و Maintenance","order":5},
+ {"id":"webops-adv-docker","levelId":"webops-advanced","title":"Docker و Docker Compose","description":"Image، Container، Volume، Network، Compose، Registry و Production Compose","order":1},
+ {"id":"webops-adv-cicd","levelId":"webops-advanced","title":"CI/CD و GitHub Actions","description":"Pipeline، Build/Test/Deploy، Artifact، Secret، Environment، Approval و Rollback","order":2},
+ {"id":"webops-adv-observe","levelId":"webops-advanced","title":"Log، Monitoring و Observability","description":"Structured Logging، Metrics، Uptime، Alerting، Error Tracking و Incident","order":3},
+ {"id":"webops-adv-security","levelId":"webops-advanced","title":"امنیت وب و OWASP","description":"OWASP Top 10 2025، Hardening، Least Privilege، Secret، WAF، Rate Limit و Patch","order":4},
+ {"id":"webops-adv-performance","levelId":"webops-advanced","title":"Performance و Core Web Vitals","description":"LCP، INP، CLS، Cache، Compression، HTTP/2/3، Image، Font و Lighthouse","order":5},
+ {"id":"webops-adv-seo","levelId":"webops-advanced","title":"SEO فنی و محتوایی","description":"Crawl، Index، robots.txt، Sitemap، Canonical، Redirect، Structured Data و محتوا","order":6},
+ {"id":"webops-adv-analytics","levelId":"webops-advanced","title":"Analytics، Search Console و Privacy","description":"GA4، Event، Conversion، Search Console، Cookie Consent، Privacy و Data Minimization","order":7},
+ {"id":"webops-spc-architecture","levelId":"webops-specialist","title":"معماری Production و High Availability","description":"Load Balancing، Horizontal Scaling، Cache، Stateless App، Database HA و Failover","order":1},
+ {"id":"webops-spc-release","levelId":"webops-specialist","title":"Release Engineering حرفه‌ای","description":"Blue/Green، Canary، Zero-Downtime، Feature Flag، Semantic Versioning و Changelog","order":2},
+ {"id":"webops-spc-secops","levelId":"webops-specialist","title":"Security Operations و Hardening","description":"Threat Modeling، Supply Chain، Dependency، CSP، HSTS، SSH Hardening، Audit و Response","order":3},
+ {"id":"webops-spc-sre","levelId":"webops-specialist","title":"SRE، Incident و Disaster Recovery","description":"SLI/SLO، Alert Design، Runbook، Postmortem، RPO/RTO، DR و Restore Drill","order":4},
+ {"id":"webops-spc-capstone","levelId":"webops-specialist","title":"Capstone: انتشار کامل یک سامانه واقعی","description":"طراحی و اجرای End-to-End Production از DNS تا CI/CD، Security، Monitoring، Backup و SEO","order":5}
+]
