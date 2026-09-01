@@ -1,0 +1,7 @@
+[
+  {"id":"ff-foundation","courseId":"frontend-frameworks","type":"FUNDAMENTALS","title":"مبانی","order":1},
+  {"id":"ff-beginner","courseId":"frontend-frameworks","type":"BEGINNER","title":"مقدماتی","order":2},
+  {"id":"ff-advanced","courseId":"frontend-frameworks","type":"ADVANCED","title":"پیشرفته","order":3},
+  {"id":"ff-specialist","courseId":"frontend-frameworks","type":"SPECIALIST","title":"تخصصی","order":4},
+  {"id":"ff-projects","courseId":"frontend-frameworks","type":"PROJECT_BASED","title":"پروژه‌محور","order":5}
+]
