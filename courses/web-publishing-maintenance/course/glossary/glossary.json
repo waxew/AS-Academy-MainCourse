@@ -1,0 +1,20 @@
+[
+ {"term":"DNS","fa":"سامانه نام دامنه؛ نگاشت نام‌ها به مقصدهای شبکه"},
+ {"term":"TTL","fa":"مدت اعتبار Cache یک رکورد یا پاسخ"},
+ {"term":"VPS","fa":"سرور خصوصی مجازی"},
+ {"term":"Reverse Proxy","fa":"واسط ورودی که درخواست را به سرویس upstream هدایت می‌کند"},
+ {"term":"TLS","fa":"پروتکل رمزنگاری ارتباط که HTTPS بر آن متکی است"},
+ {"term":"CDN","fa":"شبکه توزیع محتوا برای تحویل Edge و کاهش فاصله/بار Origin"},
+ {"term":"CI/CD","fa":"خودکارسازی ادغام، آزمون و تحویل/استقرار نرم‌افزار"},
+ {"term":"Artifact","fa":"خروجی نسخه‌دار Build که برای انتشار استفاده می‌شود"},
+ {"term":"Observability","fa":"توان فهم وضعیت داخلی سیستم با سیگنال‌هایی مانند Log، Metric و Trace"},
+ {"term":"WAF","fa":"فایروال برنامه وب؛ لایه‌ای برای فیلتر بخشی از ترافیک مخرب"},
+ {"term":"LCP","fa":"Largest Contentful Paint؛ شاخص نمایش محتوای اصلی"},
+ {"term":"INP","fa":"Interaction to Next Paint؛ شاخص پاسخ‌گویی تعامل"},
+ {"term":"CLS","fa":"Cumulative Layout Shift؛ شاخص پایداری بصری"},
+ {"term":"RPO","fa":"Recovery Point Objective؛ میزان قابل قبول از دست رفتن داده"},
+ {"term":"RTO","fa":"Recovery Time Objective؛ زمان هدف برای بازیابی سرویس"},
+ {"term":"SLI","fa":"Service Level Indicator؛ شاخص اندازه‌گیری کیفیت سرویس"},
+ {"term":"SLO","fa":"Service Level Objective؛ هدف کیفیت سرویس"},
+ {"term":"SLA","fa":"Service Level Agreement؛ تعهد قراردادی سطح سرویس"}
+]
