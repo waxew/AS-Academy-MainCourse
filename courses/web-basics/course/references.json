@@ -1,0 +1,11 @@
+[
+{"id":"mdn","title":"MDN Web Docs","language":"en","type":"official","url":"https://developer.mozilla.org/","topics":["web","http","browser","accessibility"]},
+{"id":"webdev","title":"web.dev","language":"en","type":"official","url":"https://web.dev/","topics":["performance","core-web-vitals"]},
+{"id":"git-fa","title":"Pro Git — ترجمه فارسی","language":"fa","type":"book","url":"https://git-scm.com/book/fa/v2","topics":["git"]},
+{"id":"github-docs","title":"GitHub Docs","language":"en","type":"official","url":"https://docs.github.com/","topics":["github","pages"]},
+{"id":"owasp","title":"OWASP Top 10","language":"en","type":"security","url":"https://owasp.org/www-project-top-ten/","topics":["security"]},
+{"id":"faradars","title":"فرادرس","language":"fa","type":"persian-learning-provider","url":"https://faradars.org/","topics":["web","git"]},
+{"id":"roocket","title":"راکت","language":"fa","type":"persian-learning-provider","url":"https://roocket.ir/","topics":["web","frontend","backend"]},
+{"id":"7learn","title":"سون لرن","language":"fa","type":"persian-learning-provider","url":"https://7learn.com/","topics":["web","frontend","backend"]},
+{"id":"quera","title":"کوئرا بلاگ","language":"fa","type":"persian-learning-provider","url":"https://quera.org/blog/","topics":["programming","git","web"]}
+]
