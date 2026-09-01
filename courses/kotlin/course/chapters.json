@@ -1,0 +1,14 @@
+[
+ {"id":"kt-fnd-01","levelId":"kt-fnd","title":"شروع و ابزارها","order":1},
+ {"id":"kt-fnd-02","levelId":"kt-fnd","title":"زبان پایه","order":2},
+ {"id":"kt-fnd-03","levelId":"kt-fnd","title":"کنترل جریان و توابع","order":3},
+ {"id":"kt-beg-01","levelId":"kt-beg","title":"Collections و Functional Kotlin","order":4},
+ {"id":"kt-beg-02","levelId":"kt-beg","title":"شی‌گرایی Kotlin","order":5},
+ {"id":"kt-beg-03","levelId":"kt-beg","title":"خطا، فایل و تست","order":6},
+ {"id":"kt-adv-01","levelId":"kt-adv","title":"Type System پیشرفته","order":7},
+ {"id":"kt-adv-02","levelId":"kt-adv","title":"Asynchronous Kotlin","order":8},
+ {"id":"kt-adv-03","levelId":"kt-adv","title":"Build، DSL و Interop","order":9},
+ {"id":"kt-spc-01","levelId":"kt-spc","title":"Android و Compose","order":10},
+ {"id":"kt-spc-02","levelId":"kt-spc","title":"Backend","order":11},
+ {"id":"kt-spc-03","levelId":"kt-spc","title":"Multiplatform و Production","order":12}
+]
