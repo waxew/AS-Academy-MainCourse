@@ -1,0 +1,8 @@
+[
+  {"id":"seo-foundation","courseId":"seo-specialist","type":"FUNDAMENTALS","title":"مبانی","order":1},
+  {"id":"seo-beginner","courseId":"seo-specialist","type":"BEGINNER","title":"مقدماتی","order":2},
+  {"id":"seo-intermediate","courseId":"seo-specialist","type":"INTERMEDIATE","title":"متوسط","order":3},
+  {"id":"seo-advanced","courseId":"seo-specialist","type":"ADVANCED","title":"پیشرفته","order":4},
+  {"id":"seo-specialist-level","courseId":"seo-specialist","type":"SPECIALIST","title":"تخصصی","order":5},
+  {"id":"seo-projects","courseId":"seo-specialist","type":"PROJECT_BASED","title":"پروژه‌محور","order":6}
+]
