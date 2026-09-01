@@ -1,0 +1,18 @@
+{
+  "courseId": "frontend",
+  "titleFa": "طراحی و توسعه وب‌سایت — Frontend",
+  "titleEn": "AS Academy Frontend",
+  "version": "0.1.0",
+  "contentSchemaVersion": 1,
+  "minimumCoreVersion": "0.2.0",
+  "rtl": true,
+  "capabilities": {
+    "codeRunner": true,
+    "terminalExamples": true,
+    "diagrams": true,
+    "quizzes": true,
+    "exercises": true,
+    "projects": true,
+    "glossary": true
+  }
+}
