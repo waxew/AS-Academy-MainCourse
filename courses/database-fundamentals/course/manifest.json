@@ -1,0 +1,11 @@
+{
+  "courseId":"database-fundamentals",
+  "titleFa":"ذخیره‌سازی اطلاعات و دیتابیس / مفاهیم پایه",
+  "titleEn":"Data Storage and Database Fundamentals",
+  "version":"1.0.0",
+  "contentSchemaVersion":1,
+  "minimumCoreVersion":"0.1.0",
+  "rtl":true,
+  "language":"fa",
+  "capabilities":{"codeRunner":false,"terminalExamples":false,"diagrams":true,"quizzes":true,"exercises":true,"projects":true,"glossary":true,"search":true}
+}
