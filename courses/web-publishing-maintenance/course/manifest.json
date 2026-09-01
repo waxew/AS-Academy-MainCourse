@@ -1,0 +1,23 @@
+{
+  "courseId": "web-publishing-maintenance",
+  "titleFa": "انتشار و نگهداری سایت",
+  "titleEn": "Web Publishing & Maintenance",
+  "categoryFa": "طراحی و توسعه وب‌سایت",
+  "version": "0.1.0",
+  "contentSchemaVersion": 1,
+  "minimumCoreVersion": "0.2.0",
+  "rtl": true,
+  "levels": ["foundation", "beginner", "advanced", "specialist"],
+  "capabilities": {
+    "codeRunner": false,
+    "terminalExamples": true,
+    "diagrams": true,
+    "quizzes": true,
+    "exercises": true,
+    "projects": true,
+    "glossary": true
+  },
+  "sourceOfTruth": "AS-Academy-MainCourse",
+  "ui": "AS-Academy-MainUi",
+  "core": "AS-Academy-Core"
+}
