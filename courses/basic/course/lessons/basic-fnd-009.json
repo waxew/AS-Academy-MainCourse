@@ -1,0 +1,20 @@
+{
+  "id": "basic-fnd-009",
+  "chapterId": "basic-fnd-04-algorithms",
+  "title": "شبه‌کد؛ نوشتن منطق بدون وابستگی به زبان",
+  "summary": "قواعد عملی نوشتن Pseudocode خوانا برای شرط، تکرار، تابع و پردازش داده.",
+  "order": 2,
+  "estimatedMinutes": 30,
+  "tags": ["algorithm", "pseudocode", "readability", "control-flow"],
+  "prerequisites": ["basic-fnd-008"],
+  "blocks": [
+    {"id":"basic-fnd-009-title","type":"TITLE","content":"شبه‌کد؛ بین زبان طبیعی و کد واقعی","metadata":{}},
+    {"id":"basic-fnd-009-goal","type":"IMPORTANT","content":"هدف درس: یک راه‌حل را با شبه‌کد منظم و قابل Trace بنویسید، بدون اینکه درگیر Syntax زبان خاص شوید.","metadata":{}},
+    {"id":"basic-fnd-009-p1","type":"PARAGRAPH","content":"Pseudocode زبان برنامه‌نویسی استاندارد و واحدی نیست. هدف آن انتقال منطق است. بنابراین خوانایی و ثبات قرارداد از حفظ‌کردن کلمات خاص مهم‌تر است. تیم یا مدرس می‌تواند قراردادهایی مانند READ، WRITE، IF، ELSE، WHILE و FUNCTION را انتخاب کند.","metadata":{}},
+    {"id":"basic-fnd-009-rules","type":"LIST","content":"هر خط یک اقدام روشن داشته باشد\nتورفتگی ساختار شرط و حلقه را نشان دهد\nنام متغیرها معنی‌دار باشند\nجزئیات غیرضروری زبان مثل Semicolon حذف شوند\nورودی و خروجی مشخص باشند\nشرط پایان حلقه یا الگوریتم واضح باشد","metadata":{}},
+    {"id":"basic-fnd-009-example","type":"CODE","content":"READ count\nsum = 0\nFOR i FROM 1 TO count\n    READ score\n    sum = sum + score\nEND FOR\nIF count > 0 THEN\n    average = sum / count\n    WRITE average\nELSE\n    WRITE \"No scores\"\nEND IF","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-009-p2","type":"PARAGRAPH","content":"این شبه‌کد فقط میانگین را محاسبه نمی‌کند؛ حالت count برابر صفر را هم مشخص کرده است. شبه‌کد خوب باید ابهام تصمیم‌های مهم را قبل از پیاده‌سازی آشکار کند.","metadata":{}},
+    {"id":"basic-fnd-009-warning","type":"WARNING","content":"شبه‌کدی که تقریباً کپی Syntax یک زبان خاص باشد ارزش استقلال از زبان را از دست می‌دهد. منطق را بنویسید؛ جزئیات پیاده‌سازی را به مرحله کدنویسی بسپارید.","metadata":{}},
+    {"id":"basic-fnd-009-ex","type":"EXERCISE","content":"تمرین: شبه‌کدی بنویسید که سه قیمت را دریافت کند، مجموع را حساب کند و اگر مجموع از یک حد مشخص بیشتر بود پیام تخفیف نمایش دهد.","metadata":{"exerciseId":"basic-ex-008"}}
+  ]
+}

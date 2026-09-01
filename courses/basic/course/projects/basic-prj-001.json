@@ -1,0 +1,17 @@
+{
+  "id":"basic-prj-001",
+  "courseId":"basic",
+  "title":"کالبدشکافی یک نرم‌افزار روزمره",
+  "description":"یک نرم‌افزار واقعی را انتخاب کنید و بدون نوشتن کد، مدل ساده‌ای از ورودی، خروجی، فایل‌ها، Processها، نقش سیستم‌عامل و زیرمسئله‌های اصلی آن تهیه کنید.",
+  "difficulty":"EASY",
+  "estimatedMinutes":60,
+  "relatedLessonIds":["basic-fnd-001","basic-fnd-002","basic-fnd-005","basic-fnd-006"],
+  "milestones":[
+    {"id":"basic-prj-001-step-01","title":"انتخاب محصول و مرز مسئله","description":"محصول را انتخاب و مشخص کنید چه بخشی را تحلیل می‌کنید.","order":0,"acceptanceCriteria":["محصول مشخص باشد.","دامنه تحلیل در دو تا چهار جمله تعریف شده باشد."]},
+    {"id":"basic-prj-001-step-02","title":"مدل ورودی و خروجی","description":"ورودی‌ها، خروجی‌ها و داده‌های مهم را فهرست کنید.","order":1,"acceptanceCriteria":["حداقل سه ورودی یا منبع داده مشخص شده باشد.","حداقل دو خروجی مشخص شده باشد."]},
+    {"id":"basic-prj-001-step-03","title":"نقش سیستم و اجرا","description":"توضیح دهید فایل، RAM، CPU، Process و سیستم‌عامل در مدل ساده چه نقشی دارند.","order":2,"acceptanceCriteria":["Program و Process اشتباه گرفته نشده باشند.","نقش Storage و RAM تفکیک شده باشد."]},
+    {"id":"basic-prj-001-step-04","title":"تجزیه مسئله","description":"محصول را به زیرمسئله‌های قابل مدیریت تقسیم کنید.","order":3,"acceptanceCriteria":["حداقل چهار زیرمسئله مشخص شده باشد.","هر زیرمسئله یک مسئولیت روشن داشته باشد."]},
+    {"id":"basic-prj-001-step-05","title":"مرور و توضیح","description":"نتیجه را طوری بنویسید که فرد دیگری بدون دیدن محصول بتواند مدل شما را بفهمد.","order":4,"acceptanceCriteria":["اصطلاحات اصلی درست استفاده شده باشند.","ابهام‌های مهم مشخص شده باشند."]}
+  ],
+  "tags":["computer-literacy","problem-solving","capstone"]
+}

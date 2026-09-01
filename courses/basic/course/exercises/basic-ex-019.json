@@ -1,0 +1,3 @@
+{
+  "id":"basic-ex-019","courseId":"basic","lessonId":"basic-fnd-020","title":"بازنویسی Expressionهای مبهم","description":"پنج Expression حسابی یا منطقی بنویسید که بدون پرانتز مستعد برداشت اشتباه‌اند و سپس آن‌ها را با پرانتز یا متغیرهای میانی خواناتر کنید.","type":"READ_AND_ANSWER","difficulty":"HARD","hints":["ترکیب AND و OR مثال خوبی است.","جمع و ضرب را هم مقایسه کنید.","می‌توانید بخش‌های منطقی را به Boolean نام‌دار تبدیل کنید."],"solution":"نمونه: `isAdmin OR isActive AND hasLicense` را به `isAdmin OR (isActive AND hasLicense)` یا متغیر `activeLicensedUser = isActive AND hasLicense` و سپس `isAdmin OR activeLicensedUser` تبدیل کنید.","explanation":"هدف کاهش بار ذهنی خواننده و وابستگی کمتر به حفظ precedence است.","tags":["expression","precedence","readability"]
+}

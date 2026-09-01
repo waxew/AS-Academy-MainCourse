@@ -1,0 +1,13 @@
+{
+  "id":"basic-fnd-020","chapterId":"basic-fnd-06-operators","title":"عبارت‌ها، تقدم عملگرها و پرانتز","summary":"درک Expression، ترتیب ارزیابی و استفاده از Parentheses برای حذف ابهام و جلوگیری از خطا.","order":3,"estimatedMinutes":30,"tags":["operators","expression","precedence","parentheses"],"prerequisites":["basic-fnd-019"],
+  "blocks":[
+    {"id":"basic-fnd-020-title","type":"TITLE","content":"کدی که رایانه درست می‌فهمد ممکن است انسان اشتباه بخواند","metadata":{}},
+    {"id":"basic-fnd-020-goal","type":"IMPORTANT","content":"هدف درس: یک Expression را مرحله‌ای ارزیابی کنید، نقش precedence را بدانید و جایی که قصد منطقی مبهم است از پرانتز استفاده کنید.","metadata":{}},
+    {"id":"basic-fnd-020-p1","type":"PARAGRAPH","content":"Expression ترکیبی از مقدار، متغیر، فراخوانی و عملگر است که نتیجه‌ای تولید می‌کند. زبان‌ها برای جلوگیری از نیاز به پرانتز در همه‌جا، قواعد precedence و associativity دارند؛ اما جزئیات دقیق بین زبان‌ها می‌تواند فرق کند.","metadata":{}},
+    {"id":"basic-fnd-020-example","type":"TABLE","content":"| عبارت | برداشت |\n| 2 + 3 * 4 | معمولاً ضرب قبل از جمع → 14 |\n| (2 + 3) * 4 | پرانتز قصد را روشن می‌کند → 20 |\n| A OR B AND C | بدون دانستن precedence مستعد برداشت اشتباه |\n| A OR (B AND C) | قصد خواناتر است |","metadata":{}},
+    {"id":"basic-fnd-020-p2","type":"PARAGRAPH","content":"پرانتز فقط برای تغییر ترتیب نیست؛ برای مستندسازی قصد هم مفید است. حتی اگر precedence زبان را می‌دانید، شرط‌های ترکیبی مهم را طوری بنویسید که Review کننده مجبور به حفظ جدول تقدم نباشد.","metadata":{}},
+    {"id":"basic-fnd-020-warning","type":"WARNING","content":"به حافظه خود از precedence یک زبان دیگر اعتماد نکنید. در Expression حساس، پرانتز روشن اضافه کنید و در صورت تردید مستندات زبان را بررسی کنید.","metadata":{}},
+    {"id":"basic-fnd-020-quiz","type":"QUIZ","content":"آزمون فصل عملگرها و عبارت‌ها","metadata":{"quizId":"basic-qz-006"}},
+    {"id":"basic-fnd-020-ex","type":"EXERCISE","content":"تمرین: پنج Expression مبهم را با پرانتز یا متغیر میانی بازنویسی کنید تا قصدشان آشکار شود.","metadata":{"exerciseId":"basic-ex-019"}}
+  ]
+}

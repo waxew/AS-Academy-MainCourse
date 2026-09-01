@@ -1,0 +1,18 @@
+{
+  "id": "basic-fnd-003",
+  "chapterId": "basic-fnd-02-career",
+  "title": "برنامه‌نویسی چیست و چه شاخه‌هایی دارد؟",
+  "summary": "شناخت برنامه‌نویسی به‌عنوان حل مسئله و آشنایی با حوزه‌های اصلی توسعه نرم‌افزار.",
+  "order": 0,
+  "estimatedMinutes": 20,
+  "tags": ["career", "frontend", "backend", "mobile", "data", "embedded"],
+  "prerequisites": ["basic-fnd-002"],
+  "blocks": [
+    {"id":"basic-fnd-003-title","type":"TITLE","content":"برنامه‌نویسی فقط نوشتن کد نیست","metadata":{}},
+    {"id":"basic-fnd-003-p1","type":"PARAGRAPH","content":"کدنویسی تبدیل راه‌حل به دستورهای قابل فهم برای رایانه است؛ اما برنامه‌نویسی گسترده‌تر است و شامل فهم مسئله، طراحی راه‌حل، انتخاب ابزار، نوشتن کد، تست، دیباگ، نگهداری و همکاری با دیگران می‌شود.","metadata":{}},
+    {"id":"basic-fnd-003-list","type":"LIST","content":"Frontend/Web: رابط کاربر در وب\nBackend: منطق سرور، API و داده\nMobile: برنامه‌های Android و iOS\nDesktop: نرم‌افزارهای دسکتاپ\nData/AI: تحلیل داده، یادگیری ماشین و هوش مصنوعی\nGame: موتور و منطق بازی\nEmbedded/IoT: نرم‌افزار نزدیک به سخت‌افزار\nDevOps/Platform: Build، Deploy، Infrastructure و Automation\nSecurity: بررسی و ساخت نرم‌افزار امن","metadata":{}},
+    {"id":"basic-fnd-003-p2","type":"PARAGRAPH","content":"این شاخه‌ها مرز مطلق ندارند. یک پروژه واقعی ممکن است هم‌زمان برنامه موبایل، Backend، Database، CI/CD و امنیت نیاز داشته باشد. هدف Basic انتخاب یک شاخه برای شما نیست؛ هدف این است که مهارت‌های مشترک تمام این شاخه‌ها را بسازد.","metadata":{}},
+    {"id":"basic-fnd-003-warning","type":"WARNING","content":"انتخاب اولین زبان برنامه‌نویسی را با انتخاب شغل نهایی اشتباه نگیرید. زبان ابزار است؛ توانایی حل مسئله و یادگیری ابزار جدید مهارت ماندگارتر است.","metadata":{}},
+    {"id":"basic-fnd-003-ex","type":"EXERCISE","content":"تمرین: سه شاخه‌ای را که برایتان جذاب‌تر است انتخاب و برای هرکدام یک محصول واقعی مثال بزنید.","metadata":{"exerciseId":"basic-ex-003"}}
+  ]
+}

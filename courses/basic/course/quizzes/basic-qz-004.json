@@ -1,0 +1,18 @@
+{
+  "id": "basic-qz-004",
+  "courseId": "basic",
+  "lessonId": "basic-fnd-011",
+  "chapterId": "basic-fnd-04-algorithms",
+  "title": "آزمون: الگوریتم، فلوچارت و شبه‌کد",
+  "passingScorePercent": 75,
+  "shuffleQuestions": true,
+  "shuffleAnswers": true,
+  "questions": [
+    {"id":"basic-qz-004-q01","type":"MULTIPLE_CHOICE","question":"کدام تعریف برای الگوریتم دقیق‌تر است؟","explanation":"الگوریتم مجموعه‌ای از مراحل مشخص برای تبدیل ورودی به خروجی و حل مسئله است و به Syntax یک زبان خاص وابسته نیست.","tags":["algorithm"],"points":1,"answers":[{"id":"basic-qz-004-q01-a","text":"مراحل مشخص و متناهی برای حل مسئله","isCorrect":true},{"id":"basic-qz-004-q01-b","text":"فقط سورس‌کد نوشته‌شده با یک زبان","isCorrect":false},{"id":"basic-qz-004-q01-c","text":"فهرست نام متغیرها","isCorrect":false}]},
+    {"id":"basic-qz-004-q02","type":"MULTIPLE_SELECT","question":"کدام ویژگی‌ها برای الگوریتم خوب مهم‌اند؟","explanation":"دقت مراحل، خاتمه‌پذیری، ورودی/خروجی روشن و تولید نتیجه درست ویژگی‌های بنیادی‌اند.","tags":["algorithm","correctness"],"points":2,"answers":[{"id":"basic-qz-004-q02-a","text":"مراحل بدون ابهام کافی","isCorrect":true},{"id":"basic-qz-004-q02-b","text":"خاتمه برای ورودی معتبر","isCorrect":true},{"id":"basic-qz-004-q02-c","text":"وابستگی اجباری به یک IDE","isCorrect":false},{"id":"basic-qz-004-q02-d","text":"ورودی و خروجی روشن","isCorrect":true}]},
+    {"id":"basic-qz-004-q03","type":"MULTIPLE_CHOICE","question":"در فلوچارت، Decision معمولاً چه مفهومی را نمایش می‌دهد؟","explanation":"Decision نقطه‌ای است که نتیجه یک شرط مسیر جریان را تعیین می‌کند.","tags":["flowchart","decision"],"points":1,"answers":[{"id":"basic-qz-004-q03-a","text":"تصمیم یا شرط با چند مسیر","isCorrect":true},{"id":"basic-qz-004-q03-b","text":"فقط پایان برنامه","isCorrect":false},{"id":"basic-qz-004-q03-c","text":"ذخیره فایل","isCorrect":false}]},
+    {"id":"basic-qz-004-q04","type":"TRUE_FALSE","question":"Pseudocode یک زبان برنامه‌نویسی با Syntax استاندارد جهانی و Compiler مشخص است.","explanation":"شبه‌کد قرارداد آموزشی برای بیان منطق است و استاندارد Syntax واحدی ندارد.","tags":["pseudocode"],"points":1,"answers":[{"id":"basic-qz-004-q04-a","text":"درست","isCorrect":false},{"id":"basic-qz-004-q04-b","text":"نادرست","isCorrect":true}]},
+    {"id":"basic-qz-004-q05","type":"ORDER_STEPS","question":"ترتیب مناسب حل یک مسئله ساده را مرتب کنید.","explanation":"ابتدا مسئله و قرارداد آن روشن می‌شود، سپس راه‌حل طراحی، Trace و در نهایت پیاده‌سازی می‌شود.","tags":["problem-solving","algorithm"],"points":2,"answers":[{"id":"basic-qz-004-q05-a","text":"تعریف ورودی، خروجی و محدودیت‌ها","isCorrect":false,"order":0},{"id":"basic-qz-004-q05-b","text":"طراحی الگوریتم یا شبه‌کد","isCorrect":false,"order":1},{"id":"basic-qz-004-q05-c","text":"Dry Run و بررسی Test Case","isCorrect":false,"order":2},{"id":"basic-qz-004-q05-d","text":"پیاده‌سازی در زبان برنامه‌نویسی","isCorrect":false,"order":3}]},
+    {"id":"basic-qz-004-q06","type":"MULTIPLE_CHOICE","question":"چرا یک Test Case معمولی برای اثبات درستی الگوریتم کافی نیست؟","explanation":"ممکن است خطا فقط در مرزها، داده خالی، مقادیر برابر یا ورودی نامعتبر ظاهر شود.","tags":["edge-case","test-case"],"points":2,"answers":[{"id":"basic-qz-004-q06-a","text":"چون حالت‌های مرزی و نامعتبر ممکن است رفتار متفاوتی داشته باشند","isCorrect":true},{"id":"basic-qz-004-q06-b","text":"چون الگوریتم نباید تست شود","isCorrect":false},{"id":"basic-qz-004-q06-c","text":"چون فقط Compiler می‌تواند الگوریتم را بررسی کند","isCorrect":false}]}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "basic-fnd-010",
+  "chapterId": "basic-fnd-04-algorithms",
+  "title": "Dry Run و Trace Table؛ الگوریتم را با دست اجرا کن",
+  "summary": "یادگیری اجرای مرحله‌به‌مرحله الگوریتم و ثبت تغییر متغیرها برای کشف خطای منطقی.",
+  "order": 3,
+  "estimatedMinutes": 28,
+  "tags": ["algorithm", "dry-run", "trace-table", "debugging", "logic-error"],
+  "prerequisites": ["basic-fnd-009"],
+  "blocks": [
+    {"id":"basic-fnd-010-title","type":"TITLE","content":"قبل از اجرا روی رایانه، الگوریتم را خودت اجرا کن","metadata":{}},
+    {"id":"basic-fnd-010-goal","type":"IMPORTANT","content":"هدف درس: بتوانید برای یک الگوریتم کوچک Trace Table بسازید، مقدار متغیرها را در هر مرحله دنبال کنید و خطای منطقی را قبل از کدنویسی پیدا کنید.","metadata":{}},
+    {"id":"basic-fnd-010-p1","type":"PARAGRAPH","content":"Dry Run یعنی اجرای دستی مراحل الگوریتم با یک ورودی نمونه. Trace Table جدول ثبت وضعیت مهم در هر مرحله است. این تکنیک برای فهم حلقه‌ها، شرط‌ها، تغییر مقدار و پیدا کردن Off-by-one یا ترتیب اشتباه عملیات بسیار مؤثر است.","metadata":{}},
+    {"id":"basic-fnd-010-code","type":"CODE","content":"sum = 0\nFOR i FROM 1 TO 4\n    sum = sum + i\nEND FOR\nWRITE sum","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-010-table","type":"TABLE","content":"| مرحله | i | sum قبل | sum بعد |\n| شروع | - | - | 0 |\n| 1 | 1 | 0 | 1 |\n| 2 | 2 | 1 | 3 |\n| 3 | 3 | 3 | 6 |\n| 4 | 4 | 6 | 10 |","metadata":{}},
+    {"id":"basic-fnd-010-p2","type":"PARAGRAPH","content":"Trace Table لازم نیست تمام داده‌های برنامه را ثبت کند. فقط متغیرها و تصمیم‌هایی را ثبت کنید که برای اثبات رفتار الگوریتم مهم‌اند. در مثال بالا، i و sum برای فهم روند کافی‌اند.","metadata":{}},
+    {"id":"basic-fnd-010-tip","type":"TIP","content":"برای پیدا کردن باگ منطقی، ورودی‌ای انتخاب کنید که مسیرهای مختلف شرط‌ها را فعال کند. فقط یک ورودی معمولی کافی نیست.","metadata":{}},
+    {"id":"basic-fnd-010-ex","type":"EXERCISE","content":"تمرین: برای الگوریتمی که حاصل‌ضرب اعداد 1 تا 5 را محاسبه می‌کند Trace Table بسازید.","metadata":{"exerciseId":"basic-ex-009"}}
+  ]
+}

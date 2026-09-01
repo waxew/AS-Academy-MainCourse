@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-017","chapterId":"basic-fnd-06-operators","title":"عملگرهای حسابی؛ محاسبه فقط چهار عمل اصلی نیست","summary":"شناخت جمع، تفریق، ضرب، تقسیم، باقی‌مانده و تفاوت تقسیم صحیح و اعشاری در طراحی الگوریتم.","order":0,"estimatedMinutes":28,"tags":["operators","arithmetic","division","remainder"],"prerequisites":["basic-fnd-016"],
+  "blocks":[
+    {"id":"basic-fnd-017-title","type":"TITLE","content":"عملگرهای حسابی و معنای نتیجه","metadata":{}},
+    {"id":"basic-fnd-017-goal","type":"IMPORTANT","content":"هدف درس: عملگر حسابی مناسب را انتخاب کنید، تفاوت تقسیم صحیح و اعشاری را تشخیص دهید و از remainder برای مسائل دوره‌ای استفاده کنید.","metadata":{}},
+    {"id":"basic-fnd-017-p1","type":"PARAGRAPH","content":"عملگرهای حسابی روی مقدارهای عددی کار می‌کنند، اما نوع داده روی نتیجه اثر می‌گذارد. در برخی زبان‌ها تقسیم دو Integer نتیجه صحیح تولید می‌کند و بخش اعشاری حذف می‌شود؛ در برخی دیگر قواعد متفاوت است. بنابراین همیشه قرارداد زبان و نوع Operandها را بررسی کنید.","metadata":{}},
+    {"id":"basic-fnd-017-list","type":"LIST","content":"Addition: جمع مقادیر\nSubtraction: اختلاف یا کاهش\nMultiplication: تکرار/مقیاس‌کردن\nDivision: تقسیم با قواعد وابسته به نوع\nRemainder/Modulo: باقی‌مانده تقسیم برای الگوهای دوره‌ای\nUnary minus: تغییر علامت یک مقدار عددی","metadata":{}},
+    {"id":"basic-fnd-017-example","type":"NOTE","content":"برای تعیین زوج بودن عدد می‌توان remainder تقسیم بر 2 را بررسی کرد. برای چرخاندن index در یک مجموعه حلقوی نیز remainder می‌تواند مقدار را در یک بازه تکرارشونده نگه دارد.","metadata":{}},
+    {"id":"basic-fnd-017-warning","type":"WARNING","content":"تقسیم بر صفر، Overflow و از دست‌رفتن بخش اعشاری سه ریسک مهم‌اند. قبل از محاسبه فرضیات ورودی و نوع عددی را مشخص کنید.","metadata":{}},
+    {"id":"basic-fnd-017-ex","type":"EXERCISE","content":"تمرین: برای تبدیل تعداد کل ثانیه به ساعت، دقیقه و ثانیه باقی‌مانده الگوریتم طراحی کنید.","metadata":{"exerciseId":"basic-ex-016"}}
+  ]
+}

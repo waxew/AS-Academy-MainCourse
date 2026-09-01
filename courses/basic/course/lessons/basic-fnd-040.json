@@ -1,0 +1,13 @@
+{
+  "id":"basic-fnd-040","chapterId":"basic-fnd-10-functions","title":"تابع قابل تست؛ قرارداد، Edge Case و Composition","summary":"طراحی Function با قرارداد قابل سنجش و ترکیب Functionهای کوچک برای ساخت رفتار بزرگ‌تر.","order":5,"estimatedMinutes":36,"tags":["function","testing","contract","composition","edge-case"],"prerequisites":["basic-fnd-039"],
+  "blocks":[
+    {"id":"basic-fnd-040-title","type":"TITLE","content":"اگر نمی‌توانی رفتار تابع را توضیح و تست کنی، قرارداد هنوز مبهم است","metadata":{}},
+    {"id":"basic-fnd-040-goal","type":"IMPORTANT","content":"هدف درس: برای Function پیش‌شرط، خروجی و Edge Case تعریف کنید و چند Function کوچک را بدون وابستگی پنهان به یک Pipeline تبدیل کنید.","metadata":{}},
+    {"id":"basic-fnd-040-p1","type":"PARAGRAPH","content":"Function قابل تست ورودی و خروجی یا اثر مشخص دارد. هرچه وابستگی پنهان و Side Effect کمتر باشد، ساخت Test Case ساده‌تر است. این به معنای Pure بودن همه Functionها نیست؛ بلکه مرز I/O و منطق باید قابل مشاهده باشد.","metadata":{}},
+    {"id":"basic-fnd-040-code","type":"CODE","content":"rawInput = readInput()\nvalidated = validateInput(rawInput)\nresult = calculate(validated)\nformatted = formatResult(result)\nwriteOutput(formatted)","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-040-p2","type":"PARAGRAPH","content":"در این Pipeline، read/write Side Effect دارند ولی validate/calculate/format می‌توانند مستقل‌تر تست شوند. Composition یعنی ساخت رفتار بزرگ‌تر از واحدهایی با قرارداد روشن.","metadata":{}},
+    {"id":"basic-fnd-040-list","type":"LIST","content":"Normal input\nBoundary input\nInvalid input\nEmpty/missing input در صورت امکان\nتکرار فراخوانی با ورودی یکسان\nرفتار Dependency یا Side Effect در صورت وجود","metadata":{}},
+    {"id":"basic-fnd-040-quiz","type":"QUIZ","content":"آزمون فصل توابع و تفکیک مسئولیت","metadata":{"quizId":"basic-qz-010"}},
+    {"id":"basic-fnd-040-ex","type":"EXERCISE","content":"تمرین: Pipeline محاسبه فاکتور را به Functionهای قابل تست تقسیم و برای هرکدام Test Case تعریف کنید.","metadata":{"exerciseId":"basic-ex-039"}}
+  ]
+}

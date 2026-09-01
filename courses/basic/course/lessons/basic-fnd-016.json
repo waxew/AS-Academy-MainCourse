@@ -1,0 +1,22 @@
+{
+  "id": "basic-fnd-016",
+  "chapterId": "basic-fnd-05-data",
+  "title": "Scope، Lifetime و نام‌گذاری درست متغیرها",
+  "summary": "شناخت محدوده دسترسی، طول عمر داده و قواعد نام‌گذاری که کد را قابل فهم و امن‌تر می‌کنند.",
+  "order": 4,
+  "estimatedMinutes": 30,
+  "tags": ["scope", "lifetime", "naming", "variable", "constant", "state"],
+  "prerequisites": ["basic-fnd-015"],
+  "blocks": [
+    {"id":"basic-fnd-016-title","type":"TITLE","content":"هر متغیر باید تا جایی زنده و قابل دسترس باشد که لازم است","metadata":{}},
+    {"id":"basic-fnd-016-goal","type":"IMPORTANT","content":"هدف درس: Scope و Lifetime را از هم تفکیک کنید، از Global State بی‌دلیل پرهیز کنید و نام‌هایی انتخاب کنید که نقش داده را منتقل کنند.","metadata":{}},
+    {"id":"basic-fnd-016-scope","type":"PARAGRAPH","content":"Scope محدوده‌ای از کد است که یک نام در آن قابل دسترسی است. Lifetime مدت زمانی است که مقدار یا شیء مربوط در زمان اجرا وجود دارد. این دو مرتبط‌اند اما یکی نیستند؛ جزئیات دقیق در هر زبان و Runtime متفاوت است.","metadata":{}},
+    {"id":"basic-fnd-016-local","type":"PARAGRAPH","content":"متغیر محلی معمولاً نزدیک به محل استفاده تعریف می‌شود و فهم وابستگی‌ها را آسان‌تر می‌کند. Global State یا داده‌ای که بخش‌های زیادی می‌توانند تغییر دهند، ردیابی رفتار را سخت می‌کند و احتمال اثر جانبی ناخواسته را افزایش می‌دهد.","metadata":{}},
+    {"id":"basic-fnd-016-naming","type":"LIST","content":"نام بر اساس معنا و نقش انتخاب شود، نه نوع ظاهری\nاز مخفف مبهم دوری شود\nBoolean با نامی مانند isActive یا hasAccess پرسش منطقی بسازد\nواحد در نام متغیر در صورت ابهام مشخص شود؛ مثل timeoutSeconds\nConstant نامی داشته باشد که دلیل مقدار را روشن کند\nنام متغیر موقت کوتاه فقط در Scope بسیار کوچک پذیرفتنی است","metadata":{}},
+    {"id":"basic-fnd-016-example","type":"NOTE","content":"`d = 30` تقریباً هیچ زمینه‌ای منتقل نمی‌کند. `trialPeriodDays = 30` مشخص می‌کند مقدار چیست، واحد چیست و چرا در منطق وجود دارد.","metadata":{}},
+    {"id":"basic-fnd-016-warning","type":"WARNING","content":"افزایش Scope یک متغیر فقط برای اینکه «همه جا قابل دسترسی باشد» معمولاً بدهی طراحی ایجاد می‌کند. داده را تا حد ممکن نزدیک به مصرف‌کننده و با مالکیت روشن نگه دارید.","metadata":{}},
+    {"id":"basic-fnd-016-quiz","type":"QUIZ","content":"آزمون فصل متغیرها و انواع داده","metadata":{"quizId":"basic-qz-005"}},
+    {"id":"basic-fnd-016-ex","type":"EXERCISE","content":"تمرین: مجموعه‌ای از نام‌های مبهم متغیر را برای یک سیستم خرید بازطراحی و دلیل هر تغییر را توضیح دهید.","metadata":{"exerciseId":"basic-ex-015"}},
+    {"id":"basic-fnd-016-project","type":"PROJECT_LINK","content":"پروژه عملی: طراحی الگوریتم سامانه تحلیل نمرات","metadata":{"projectId":"basic-prj-002"}}
+  ]
+}

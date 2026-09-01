@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-030","chapterId":"basic-fnd-09-loops","title":"While و Sentinel؛ وقتی تعداد تکرار را از قبل نمی‌دانیم","summary":"طراحی حلقه شرطی، Sentinel value و قرارداد توقف قابل اثبات.","order":1,"estimatedMinutes":34,"tags":["loop","while","sentinel","termination"],"prerequisites":["basic-fnd-029"],
+  "blocks":[
+    {"id":"basic-fnd-030-title","type":"TITLE","content":"تا وقتی شرط برقرار است ادامه بده","metadata":{}},
+    {"id":"basic-fnd-030-goal","type":"IMPORTANT","content":"هدف درس: حلقه While را برای تکرار با تعداد نامعلوم طراحی و شرط توقفی بنویسید که در مسیرهای معتبر قابل دستیابی باشد.","metadata":{}},
+    {"id":"basic-fnd-030-p1","type":"PARAGRAPH","content":"While زمانی مناسب است که ادامه تکرار به یک وضعیت وابسته است و تعداد دورها از قبل مشخص نیست. شرط قبل از هر دور بررسی می‌شود؛ بنابراین ممکن است Body حتی یک بار هم اجرا نشود.","metadata":{}},
+    {"id":"basic-fnd-030-code","type":"CODE","content":"READ command\nWHILE command != \"exit\"\n    PROCESS command\n    READ command\nEND WHILE","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-030-p2","type":"PARAGRAPH","content":"در این مثال `exit` Sentinel است؛ مقداری که پایان جریان ورودی را اعلام می‌کند. Sentinel باید از داده معتبر عادی قابل تشخیص باشد یا قرارداد روشنی برای پایان داشته باشد.","metadata":{}},
+    {"id":"basic-fnd-030-warning","type":"WARNING","content":"هر While را با این سؤال بررسی کنید: چه چیزی شرط را تغییر می‌دهد؟ اگر پاسخ روشنی ندارید، خطر Infinite Loop وجود دارد.","metadata":{}},
+    {"id":"basic-fnd-030-ex","type":"EXERCISE","content":"تمرین: حلقه‌ای طراحی کنید که عددها را تا ورود Sentinel مشخص دریافت و مجموع آن‌ها را محاسبه کند.","metadata":{"exerciseId":"basic-ex-029"}}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "basic-fnd-004",
+  "chapterId": "basic-fnd-02-career",
+  "title": "مهارت‌های مشترک یک برنامه‌نویس",
+  "summary": "تفکیک مهارت‌های بنیادی از ابزارهای موقت و ساخت یک نقشه یادگیری قابل ادامه.",
+  "order": 1,
+  "estimatedMinutes": 16,
+  "tags": ["career", "learning", "developer-skills", "roadmap"],
+  "prerequisites": ["basic-fnd-003"],
+  "blocks": [
+    {"id":"basic-fnd-004-title","type":"TITLE","content":"چه چیزهایی بین همه برنامه‌نویس‌ها مشترک است؟","metadata":{}},
+    {"id":"basic-fnd-004-p1","type":"PARAGRAPH","content":"Frameworkها و ابزارها تغییر می‌کنند، اما مجموعه‌ای از مهارت‌ها در بیشتر مسیرها ثابت می‌ماند: تحلیل مسئله، الگوریتم، خواندن مستندات، دیباگ، تست، Git، ساختار داده، کیفیت کد، امنیت پایه و توانایی توضیح تصمیم فنی.","metadata":{}},
+    {"id":"basic-fnd-004-list","type":"LIST","content":"مهارت مفهومی: منطق، الگوریتم، داده و معماری\nمهارت اجرایی: کدنویسی، Debugging، Testing و Git\nمهارت یادگیری: Documentation، Experiment و Feedback\nمهارت حرفه‌ای: Communication، Review، Planning و Ownership","metadata":{}},
+    {"id":"basic-fnd-004-p2","type":"PARAGRAPH","content":"مسیر یادگیری خوب فقط لیست تکنولوژی نیست. باید بتوانید چیزی بسازید، خطای آن را پیدا کنید، دلیل تصمیم‌ها را توضیح دهید و با تغییر ابزار دوباره یاد بگیرید. به همین دلیل Basic قبل از دوره‌های زبان‌محور قرار می‌گیرد.","metadata":{}},
+    {"id":"basic-fnd-004-tip","type":"TIP","content":"برای هر موضوع سه خروجی بسازید: بتوانید توضیحش دهید، بتوانید در یک مثال استفاده کنید، و بتوانید خطای رایج آن را تشخیص دهید.","metadata":{}},
+    {"id":"basic-fnd-004-quiz","type":"QUIZ","content":"کوییز فصل: شاخه‌ها و مهارت‌های مشترک","metadata":{"quizId":"basic-qz-002"}}
+  ]
+}

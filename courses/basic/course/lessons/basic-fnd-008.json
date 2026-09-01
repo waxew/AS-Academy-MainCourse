@@ -1,0 +1,20 @@
+{
+  "id": "basic-fnd-008",
+  "chapterId": "basic-fnd-04-algorithms",
+  "title": "فلوچارت؛ دیدن مسیر اجرای الگوریتم",
+  "summary": "آشنایی با نمادهای اصلی فلوچارت و تبدیل تصمیم و تکرار به مسیرهای بصری.",
+  "order": 1,
+  "estimatedMinutes": 26,
+  "tags": ["algorithm", "flowchart", "decision", "process", "diagram"],
+  "prerequisites": ["basic-fnd-007"],
+  "blocks": [
+    {"id":"basic-fnd-008-title","type":"TITLE","content":"فلوچارت؛ نقشه حرکت داده و تصمیم","metadata":{}},
+    {"id":"basic-fnd-008-goal","type":"IMPORTANT","content":"هدف درس: نمادهای اصلی Start/End، Process، Input/Output و Decision را بشناسید و یک الگوریتم ساده را به جریان بصری تبدیل کنید.","metadata":{}},
+    {"id":"basic-fnd-008-p1","type":"PARAGRAPH","content":"فلوچارت نمایش بصری مسیر اجرای یک الگوریتم است. به‌جای خواندن مجموعه‌ای از جمله‌ها، می‌توانیم ببینیم جریان از کجا شروع می‌شود، چه داده‌ای دریافت می‌شود، کجا پردازش یا تصمیم انجام می‌شود و هر شاخه به کجا می‌رود.","metadata":{}},
+    {"id":"basic-fnd-008-symbols","type":"LIST","content":"Terminator / بیضی: شروع یا پایان\nProcess / مستطیل: محاسبه یا تغییر مقدار\nInput/Output / متوازی‌الاضلاع: دریافت یا نمایش داده\nDecision / لوزی: پرسش منطقی با مسیرهای متفاوت\nArrow / پیکان: جهت جریان اجرا","metadata":{}},
+    {"id":"basic-fnd-008-example","type":"CODE","content":"[Start]\n   |\n[Read age]\n   |\n<age >= 18?>\n  /       \\\nYes       No\n |         |\n[Adult]  [Minor]\n  \\       /\n    [End]","metadata":{"language":"flowchart-text"}},
+    {"id":"basic-fnd-008-p2","type":"PARAGRAPH","content":"فلوچارت بالا یک تصمیم دوشاخه دارد. مهم‌ترین نکته این است که هر مسیر Decision باید مشخص باشد و در یک نقطه منطقی ادامه پیدا کند یا خاتمه یابد. با پیچیده‌تر شدن مسئله، نام‌گذاری واضح شرط‌ها اهمیت بیشتری پیدا می‌کند.","metadata":{}},
+    {"id":"basic-fnd-008-tip","type":"TIP","content":"فلوچارت را برای روشن‌کردن منطق استفاده کنید، نه برای زیباتر کردن مستندات. اگر نمودار آن‌قدر شلوغ شده که دنبال‌کردنش سخت است، مسئله را به زیرمسئله‌های کوچک‌تر تقسیم کنید.","metadata":{}},
+    {"id":"basic-fnd-008-ex","type":"EXERCISE","content":"تمرین: فلوچارت متنی تعیین زوج یا فرد بودن یک عدد را طراحی کنید.","metadata":{"exerciseId":"basic-ex-007"}}
+  ]
+}

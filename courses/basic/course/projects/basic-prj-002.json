@@ -1,0 +1,18 @@
+{
+  "id":"basic-prj-002",
+  "courseId":"basic",
+  "title":"طراحی الگوریتم سامانه تحلیل نمرات",
+  "description":"بدون وابستگی به زبان برنامه‌نویسی، یک سامانه کوچک تحلیل نمرات را از قرارداد ورودی تا شبه‌کد، Trace، Test Case و مدل داده طراحی کنید.",
+  "difficulty":"MEDIUM",
+  "estimatedMinutes":120,
+  "relatedLessonIds":["basic-fnd-007","basic-fnd-008","basic-fnd-009","basic-fnd-010","basic-fnd-011","basic-fnd-012","basic-fnd-013","basic-fnd-014","basic-fnd-015","basic-fnd-016"],
+  "milestones":[
+    {"id":"basic-prj-002-step-01","title":"تعریف قرارداد مسئله","description":"ورودی‌ها، خروجی‌ها، بازه معتبر نمره و رفتار لیست خالی را مشخص کنید.","order":0,"acceptanceCriteria":["دامنه نمره مشخص باشد.","رفتار ورودی خالی و نامعتبر تعریف شده باشد.","خروجی‌های اصلی نوشته شده باشند."]},
+    {"id":"basic-prj-002-step-02","title":"طراحی مدل داده","description":"Variableها، Constantها و نوع مفهومی هر داده را تعیین کنید.","order":1,"acceptanceCriteria":["نام‌ها معنی‌دار باشند.","نوع هر داده دلیل داشته باشد.","Magic valueهای مهم نام‌گذاری شوند."]},
+    {"id":"basic-prj-002-step-03","title":"نوشتن شبه‌کد","description":"محاسبه میانگین، کمینه، بیشینه و وضعیت قبولی را با شبه‌کد طراحی کنید.","order":2,"acceptanceCriteria":["ورودی و خروجی واضح باشد.","شرط‌ها و تکرارها قابل Trace باشند.","ورودی نامعتبر مدیریت شود."]},
+    {"id":"basic-prj-002-step-04","title":"فلوچارت تصمیم قبولی","description":"جریان تصمیم برای قبولی/رد و ورودی نامعتبر را ترسیم یا به‌صورت متنی مدل کنید.","order":3,"acceptanceCriteria":["Start/End مشخص باشد.","Decisionها مسیرهای واضح داشته باشند."]},
+    {"id":"basic-prj-002-step-05","title":"Dry Run","description":"شبه‌کد را با حداقل دو مجموعه نمره مرحله‌به‌مرحله Trace کنید.","order":4,"acceptanceCriteria":["تغییر sum/min/max ثبت شده باشد.","خروجی نهایی با محاسبه دستی سازگار باشد."]},
+    {"id":"basic-prj-002-step-06","title":"طراحی Test Case","description":"حداقل هشت Test Case شامل Normal، Boundary، Empty، Equal و Invalid طراحی کنید.","order":5,"acceptanceCriteria":["هر Test ورودی و Expected Result داشته باشد.","حداقل یک ورودی نامعتبر وجود داشته باشد.","حالت‌های مرزی پوشش داده شوند."]}
+  ],
+  "tags":["algorithm","pseudocode","data-type","validation","project"]
+}

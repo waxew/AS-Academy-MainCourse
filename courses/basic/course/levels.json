@@ -1,0 +1,34 @@
+[
+  {
+    "id": "basic-fundamentals",
+    "courseId": "basic",
+    "type": "FUNDAMENTALS",
+    "title": "مبانی",
+    "order": 0,
+    "description": "ساخت ذهن برنامه‌نویسی؛ از سواد رایانه تا توابع و حل مسئله."
+  },
+  {
+    "id": "basic-beginner",
+    "courseId": "basic",
+    "type": "BEGINNER",
+    "title": "مقدماتی",
+    "order": 1,
+    "description": "ابزارهای روزمره برنامه‌نویسی، داده‌های ساخت‌یافته، فایل، Git، دیباگ و تست مقدماتی."
+  },
+  {
+    "id": "basic-advanced",
+    "courseId": "basic",
+    "type": "ADVANCED",
+    "title": "پیشرفته",
+    "order": 2,
+    "description": "پارادایم‌ها، ساختمان داده، الگوریتم، پیچیدگی، کیفیت کد و مهندسی نرم‌افزار."
+  },
+  {
+    "id": "basic-specialist",
+    "courseId": "basic",
+    "type": "SPECIALIST",
+    "title": "تخصصی و بازار کار",
+    "order": 3,
+    "description": "معماری، امنیت، همکاری تیمی، CI/CD، متن‌باز، نمونه‌کار و آمادگی مصاحبه."
+  }
+]

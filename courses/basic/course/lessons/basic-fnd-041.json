@@ -1,0 +1,30 @@
+{
+  "id":"basic-fnd-041","chapterId":"basic-fnd-10-functions","title":"جمع‌بندی سطح مبانی؛ از مسئله تا راه‌حل ساختاریافته","summary":"ترکیب حل مسئله، الگوریتم، داده، عملگر، I/O، شرط، حلقه و تابع در یک جریان کامل پیش از ورود به سطح مقدماتی.","order":6,"estimatedMinutes":60,"tags":["fundamentals","review","capstone","assessment"],"prerequisites":["basic-fnd-040"],
+  "blocks":[
+    {"id":"basic-fnd-041-title","type":"TITLE","content":"حالا اجزای پایه باید به یک سیستم واحد تبدیل شوند","metadata":{}},
+    {"id":"basic-fnd-041-goal","type":"IMPORTANT","content":"هدف درس: یک مسئله چندمرحله‌ای را از Requirement تا داده، الگوریتم، I/O، Branch، Loop و Function طراحی و تصمیم‌های خود را توضیح دهید.","metadata":{}},
+    {"id":"basic-fnd-041-flow","type":"CODE","content":"Understand problem\n  -> Define input/output/constraints\n  -> Model data\n  -> Design algorithm\n  -> Split responsibilities into functions\n  -> Validate input\n  -> Apply conditions and loops\n  -> Produce clear output\n  -> Dry run and test edge cases","metadata":{"language":"learning-flow"}},
+    {"id":"basic-fnd-041-p1","type":"PARAGRAPH","content":"هدف سطح مبانی حفظ Syntax نیست. باید بتوانید قبل از انتخاب زبان، مسئله را روشن کنید، داده را مدل کنید، مسیر اجرا را طراحی کنید، تکرار و تصمیم را کنترل کنید و مسئولیت‌ها را به واحدهای کوچک‌تر بشکنید.","metadata":{}},
+    {"id":"basic-fnd-041-list","type":"LIST","content":"می‌توانم ورودی/خروجی و محدودیت مسئله را تعریف کنم\nمی‌توانم الگوریتم و شبه‌کد بنویسم و Dry Run انجام دهم\nمی‌توانم نوع داده و نام مناسب انتخاب کنم\nمی‌توانم شرط و Loop را با Edge Case تست کنم\nمی‌توانم منطق را به Functionهای روشن تقسیم کنم\nمی‌توانم خروجی و خطای قابل فهم طراحی کنم","metadata":{}},
+    {"id":"basic-fnd-041-micro-title","type":"SUBTITLE","content":"Micro Quizهای تشخیص ضعف مبانی","metadata":{}},
+    {"id":"basic-fnd-041-micro001","type":"QUIZ","content":"Micro Quiz 1: داده و عملگرها","metadata":{"quizId":"basic-qz-micro-fnd-001"}},
+    {"id":"basic-fnd-041-micro002","type":"QUIZ","content":"Micro Quiz 2: ورودی و Validation","metadata":{"quizId":"basic-qz-micro-fnd-002"}},
+    {"id":"basic-fnd-041-micro003","type":"QUIZ","content":"Micro Quiz 3: شرط و تصمیم","metadata":{"quizId":"basic-qz-micro-fnd-003"}},
+    {"id":"basic-fnd-041-micro004","type":"QUIZ","content":"Micro Quiz 4: حلقه و State","metadata":{"quizId":"basic-qz-micro-fnd-004"}},
+    {"id":"basic-fnd-041-micro005","type":"QUIZ","content":"Micro Quiz 5: Function و Decomposition","metadata":{"quizId":"basic-qz-micro-fnd-005"}},
+    {"id":"basic-fnd-041-quiz","type":"QUIZ","content":"آزمون جامع پایان سطح مبانی","metadata":{"quizId":"basic-qz-011"}},
+    {"id":"basic-fnd-041-project","type":"PROJECT_LINK","content":"پروژه پایان سطح مبانی: سامانه مدیریت هزینه روزانه","metadata":{"projectId":"basic-prj-003"}},
+    {"id":"basic-fnd-041-challenge-title","type":"SUBTITLE","content":"Challenge Bank مبانی — ده مسئله چندموضوعی","metadata":{}},
+    {"id":"basic-fnd-041-ch156","type":"EXERCISE","content":"Challenge 156: خط لوله اعتبارسنجی ورودی","metadata":{"exerciseId":"basic-ex-156"}},
+    {"id":"basic-fnd-041-ch157","type":"EXERCISE","content":"Challenge 157: محاسبه هزینه ارسال چندقاعده‌ای","metadata":{"exerciseId":"basic-ex-157"}},
+    {"id":"basic-fnd-041-ch158","type":"EXERCISE","content":"Challenge 158: موتور طبقه‌بندی نمره","metadata":{"exerciseId":"basic-ex-158"}},
+    {"id":"basic-fnd-041-ch159","type":"EXERCISE","content":"Challenge 159: منوی تعاملی پایدار","metadata":{"exerciseId":"basic-ex-159"}},
+    {"id":"basic-fnd-041-ch160","type":"EXERCISE","content":"Challenge 160: تحلیل جریان تراکنش‌ها","metadata":{"exerciseId":"basic-ex-160"}},
+    {"id":"basic-fnd-041-ch161","type":"EXERCISE","content":"Challenge 161: بازی حدس عدد با Strategy","metadata":{"exerciseId":"basic-ex-161"}},
+    {"id":"basic-fnd-041-ch162","type":"EXERCISE","content":"Challenge 162: قوانین برداشت ATM","metadata":{"exerciseId":"basic-ex-162"}},
+    {"id":"basic-fnd-041-ch163","type":"EXERCISE","content":"Challenge 163: سیاست رمز عبور بدون Regex","metadata":{"exerciseId":"basic-ex-163"}},
+    {"id":"basic-fnd-041-ch164","type":"EXERCISE","content":"Challenge 164: تصمیم سفارش مجدد انبار","metadata":{"exerciseId":"basic-ex-164"}},
+    {"id":"basic-fnd-041-ch165","type":"EXERCISE","content":"Challenge 165: گزارش هزینه روزانه","metadata":{"exerciseId":"basic-ex-165"}},
+    {"id":"basic-fnd-041-note","type":"NOTE","content":"پس از موفقیت در Micro Quizها، آزمون، پروژه و Challengeهای این سطح، مسیر بعدی وارد Collection، String، Date/Time، Error Handling، File، Data Format، CLI، Git، Debugging و Testing می‌شود.","metadata":{}}
+  ]
+}

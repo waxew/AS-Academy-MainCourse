@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-023","chapterId":"basic-fnd-07-io","title":"Default، Missing و Empty؛ نبود داده را طراحی کن","summary":"تفکیک مقدار خالی، نبود مقدار، مقدار پیش‌فرض و ورودی اختیاری برای جلوگیری از رفتار مبهم.","order":2,"estimatedMinutes":28,"tags":["input","null","empty","default","optional"],"prerequisites":["basic-fnd-022"],
+  "blocks":[
+    {"id":"basic-fnd-023-title","type":"TITLE","content":"نبود داده خودش یک حالت مهم است","metadata":{}},
+    {"id":"basic-fnd-023-goal","type":"IMPORTANT","content":"هدف درس: بین Missing، Null/None، Empty String، Zero و Default تفاوت بگذارید و برای فیلد اختیاری قرارداد واضح تعریف کنید.","metadata":{}},
+    {"id":"basic-fnd-023-p1","type":"PARAGRAPH","content":"صفر، رشته خالی و نبود مقدار الزاماً معنی یکسان ندارند. برای مثال تخفیف صفر یعنی تخفیفی وجود ندارد، اما Missing discount ممکن است یعنی هنوز مقدار محاسبه نشده یا اطلاعات در دسترس نیست.","metadata":{}},
+    {"id":"basic-fnd-023-table","type":"TABLE","content":"| حالت | مثال | معنای احتمالی |\n| Zero | quantity=0 | مقدار معتبر صفر |\n| Empty | note=\"\" | متن حاضر اما خالی |\n| Missing | field absent | داده ارسال نشده |\n| Null/None | explicit no value | نبود مقدار طبق مدل |\n| Default | language=fa | مقدار جایگزین تعریف‌شده |","metadata":{}},
+    {"id":"basic-fnd-023-p2","type":"PARAGRAPH","content":"Default باید تصمیم محصول باشد، نه راهی برای مخفی‌کردن ورودی ناقص. اگر نبود یک مقدار خطاست، قرار دادن Default ممکن است مشکل را پنهان و داده اشتباه تولید کند.","metadata":{}},
+    {"id":"basic-fnd-023-tip","type":"TIP","content":"برای هر Input اختیاری بنویسید: اگر نیامد چه می‌شود؟ اگر خالی بود چه می‌شود؟ اگر نامعتبر بود چه می‌شود؟ این سه سؤال بسیاری از باگ‌های فرم و API را حذف می‌کنند.","metadata":{}},
+    {"id":"basic-fnd-023-ex","type":"EXERCISE","content":"تمرین: برای فرم ثبت پروفایل، فیلدهای اجباری و اختیاری و رفتار Missing/Empty هرکدام را تعریف کنید.","metadata":{"exerciseId":"basic-ex-022"}}
+  ]
+}

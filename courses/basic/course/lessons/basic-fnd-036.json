@@ -1,0 +1,11 @@
+{
+  "id":"basic-fnd-036","chapterId":"basic-fnd-10-functions","title":"Parameter و Argument؛ داده چگونه وارد تابع می‌شود؟","summary":"تفکیک پارامتر از آرگومان و طراحی ورودی‌هایی که وابستگی تابع را آشکار می‌کنند.","order":1,"estimatedMinutes":30,"tags":["function","parameter","argument","dependency"],"prerequisites":["basic-fnd-035"],
+  "blocks":[
+    {"id":"basic-fnd-036-title","type":"TITLE","content":"وابستگی تابع را از طریق ورودی‌هایش آشکار کن","metadata":{}},
+    {"id":"basic-fnd-036-goal","type":"IMPORTANT","content":"هدف درس: Parameter و Argument را از هم تفکیک کنید و از وابستگی پنهان تابع به Global State در مثال‌های ساده پرهیز کنید.","metadata":{}},
+    {"id":"basic-fnd-036-p1","type":"PARAGRAPH","content":"Parameter نام ورودی در تعریف تابع است؛ Argument مقدار واقعی‌ای است که هنگام فراخوانی ارسال می‌شود. مثلاً در `calculateTax(amount, rate)`، amount و rate پارامترند و در `calculateTax(1000, 9)` دو مقدار آرگومان‌اند.","metadata":{}},
+    {"id":"basic-fnd-036-p2","type":"PARAGRAPH","content":"پارامترها Dependencyهای تابع را واضح می‌کنند. اگر تابع برای محاسبه به نرخ مالیات نیاز دارد، دریافت rate به‌عنوان ورودی معمولاً قابل فهم‌تر و تست‌پذیرتر از خواندن یک متغیر Global ناشناخته است.","metadata":{}},
+    {"id":"basic-fnd-036-list","type":"LIST","content":"فقط داده لازم را بگیر\nنام پارامتر معنا را منتقل کند\nپارامترهای مرتبط را در صورت زیادشدن به مدل مناسب تبدیل کن\nقرارداد نوع و محدوده هر ورودی را مشخص کن\nاز Booleanهای متعدد بدون نام واضح پرهیز کن","metadata":{}},
+    {"id":"basic-fnd-036-ex","type":"EXERCISE","content":"تمرین: امضای مفهومی Function رزرو اتاق را طراحی کنید و ورودی‌های ضروری و غیرضروری را جدا کنید.","metadata":{"exerciseId":"basic-ex-035"}}
+  ]
+}

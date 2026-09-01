@@ -1,0 +1,16 @@
+{
+  "id": "basic-qz-003",
+  "courseId": "basic",
+  "lessonId": "basic-fnd-006",
+  "chapterId": "basic-fnd-03-problem-solving",
+  "title": "کوییز: تعریف مسئله، تجزیه و انتزاع",
+  "passingScorePercent": 70,
+  "shuffleQuestions": true,
+  "shuffleAnswers": true,
+  "questions": [
+    {"id":"basic-qz-003-q01","type":"MULTIPLE_CHOICE","question":"قبل از کدنویسی برای یک مسئله مبهم، بهترین اقدام چیست؟","explanation":"تعریف ورودی، خروجی، محدودیت و معیار موفقیت ابهام را کاهش می‌دهد.","tags":["requirements"],"points":1,"answers":[{"id":"basic-qz-003-q01-a","text":"تعریف دقیق مسئله و ورودی/خروجی","isCorrect":true},{"id":"basic-qz-003-q01-b","text":"نوشتن سریع بیشترین مقدار کد ممکن","isCorrect":false},{"id":"basic-qz-003-q01-c","text":"انتخاب رنگ رابط کاربری","isCorrect":false}]},
+    {"id":"basic-qz-003-q02","type":"MULTIPLE_CHOICE","question":"Decomposition چیست؟","explanation":"Decomposition یک مسئله بزرگ را به بخش‌های کوچک‌تر و قابل مدیریت تبدیل می‌کند.","tags":["decomposition"],"points":1,"answers":[{"id":"basic-qz-003-q02-a","text":"شکستن مسئله به زیرمسئله‌ها","isCorrect":true},{"id":"basic-qz-003-q02-b","text":"حذف تمام محدودیت‌ها","isCorrect":false},{"id":"basic-qz-003-q02-c","text":"تبدیل همه داده‌ها به متن","isCorrect":false}]},
+    {"id":"basic-qz-003-q03","type":"MULTIPLE_CHOICE","question":"هدف اصلی Abstraction در حل مسئله چیست؟","explanation":"انتزاع اجازه می‌دهد در هر سطح روی جزئیات مهم تمرکز کنیم.","tags":["abstraction"],"points":1,"answers":[{"id":"basic-qz-003-q03-a","text":"تمرکز بر جزئیات مهم و پنهان‌کردن جزئیات نامرتبط","isCorrect":true},{"id":"basic-qz-003-q03-b","text":"اضافه‌کردن جزئیات بیشتر در هر مرحله","isCorrect":false},{"id":"basic-qz-003-q03-c","text":"حذف کامل داده‌های ورودی","isCorrect":false}]},
+    {"id":"basic-qz-003-q04","type":"TRUE_FALSE","question":"هرچه یک راه‌حل عمومی‌تر باشد، بدون توجه به خوانایی و نیاز مسئله حتماً بهتر است.","explanation":"Generalization و Abstraction بیش‌ازحد می‌تواند راه‌حل را پیچیده‌تر و سخت‌فهم‌تر کند.","tags":["abstraction"],"points":1,"answers":[{"id":"basic-qz-003-q04-a","text":"درست","isCorrect":false},{"id":"basic-qz-003-q04-b","text":"نادرست","isCorrect":true}]}
+  ]
+}

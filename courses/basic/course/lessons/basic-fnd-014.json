@@ -1,0 +1,20 @@
+{
+  "id": "basic-fnd-014",
+  "chapterId": "basic-fnd-05-data",
+  "title": "محدوده، دقت و خطاهای عددی",
+  "summary": "درک Overflow، Precision و تفاوت نمایش اعداد صحیح، Floating-point و Decimal در سطح زبان‌مستقل.",
+  "order": 2,
+  "estimatedMinutes": 30,
+  "tags": ["numeric", "overflow", "precision", "floating-point", "decimal"],
+  "prerequisites": ["basic-fnd-013"],
+  "blocks": [
+    {"id":"basic-fnd-014-title","type":"TITLE","content":"رایانه «عدد» بی‌نهایت ندارد","metadata":{}},
+    {"id":"basic-fnd-014-goal","type":"IMPORTANT","content":"هدف درس: توضیح دهید چرا نوع عددی محدوده و دقت دارد و چرا Floating-point برای برخی محاسبات مالی انتخاب نامناسبی است.","metadata":{}},
+    {"id":"basic-fnd-014-p1","type":"PARAGRAPH","content":"حافظه محدود است و نمایش عدد در رایانه قواعد مشخصی دارد. یک Integer با تعداد بیت مشخص فقط بازه محدودی را نمایش می‌دهد. عبور از آن محدوده می‌تواند Overflow، Exception یا رفتار تعریف‌شده دیگری ایجاد کند؛ نتیجه دقیق به زبان و Runtime بستگی دارد.","metadata":{}},
+    {"id":"basic-fnd-014-float","type":"PARAGRAPH","content":"Floating-point بسیاری از عددهای اعشاری را به‌صورت تقریبی نمایش می‌دهد. به همین دلیل محاسبه‌ای که روی کاغذ دقیق است ممکن است در نمایش دودویی تقریب کوچکی داشته باشد. این مسئله با «اشتباه بودن CPU» فرق دارد؛ محدودیت مدل نمایش است.","metadata":{}},
+    {"id":"basic-fnd-014-note","type":"NOTE","content":"مثال مشهور: در بسیاری از زبان‌ها جمع 0.1 و 0.2 ممکن است دقیقاً با 0.3 برابر ذخیره نشود. برای مقایسه Floating-point معمولاً باید روش مناسب دامنه مانند tolerance را در نظر گرفت.","metadata":{}},
+    {"id":"basic-fnd-014-money","type":"PARAGRAPH","content":"در محاسبات مالی حساس معمولاً از نوع Decimal/Fixed-point مناسب یا ذخیره مبلغ در کوچک‌ترین واحد صحیح استفاده می‌شود. انتخاب دقیق به زبان، بانک اطلاعاتی و قوانین مالی پروژه بستگی دارد.","metadata":{}},
+    {"id":"basic-fnd-014-list","type":"LIST","content":"محدوده مورد انتظار داده را بشناس\nنوع عددی را متناسب با دامنه انتخاب کن\nFloating-point را بدون توجه به Precision برای پول استفاده نکن\nهنگام تبدیل نوع، Overflow و از دست‌رفتن بخش اعشاری را بررسی کن\nنتیجه عددی مرزی را تست کن","metadata":{}},
+    {"id":"basic-fnd-014-ex","type":"EXERCISE","content":"تمرین: سه سناریو بنویسید که انتخاب نوع عددی اشتباه می‌تواند در آن‌ها خطای واقعی ایجاد کند.","metadata":{"exerciseId":"basic-ex-013"}}
+  ]
+}

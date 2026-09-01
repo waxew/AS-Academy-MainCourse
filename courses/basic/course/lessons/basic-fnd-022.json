@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-022","chapterId":"basic-fnd-07-io","title":"Parse، Validate و Normalize؛ خط دفاع ورودی","summary":"ساخت Pipeline امن و قابل توضیح برای تبدیل داده خام به داده معتبر مورد استفاده منطق برنامه.","order":1,"estimatedMinutes":32,"tags":["input","parsing","validation","normalization","boundary"],"prerequisites":["basic-fnd-021"],
+  "blocks":[
+    {"id":"basic-fnd-022-title","type":"TITLE","content":"داده خام را مستقیم وارد منطق اصلی نکن","metadata":{}},
+    {"id":"basic-fnd-022-goal","type":"IMPORTANT","content":"هدف درس: سه مرحله Parsing، Validation و Normalization را از هم تفکیک و برای یک ورودی واقعی Pipeline طراحی کنید.","metadata":{}},
+    {"id":"basic-fnd-022-p1","type":"PARAGRAPH","content":"Parsing شکل خام داده را به ساختار قابل استفاده تبدیل می‌کند. Validation بررسی می‌کند مقدار با قرارداد فنی و کسب‌وکار سازگار است. Normalization نمایش‌های معادل را به شکل استاندارد داخلی تبدیل می‌کند، بدون اینکه معنا را تغییر دهد.","metadata":{}},
+    {"id":"basic-fnd-022-example","type":"NOTE","content":"مثال ایمیل: ورودی ابتدا String است؛ Validation قواعد موردنیاز سیستم را بررسی می‌کند؛ در صورت سیاست مشخص ممکن است فاصله ابتدا/انتها حذف یا بخش‌هایی Normalize شوند. اما Normalization نباید کورکورانه داده‌ای را تغییر دهد که در دامنه معنا دارد.","metadata":{}},
+    {"id":"basic-fnd-022-code","type":"CODE","content":"raw = READ input\nparsed = TRY_PARSE raw\nIF parsed failed THEN REPORT format error\nELSE IF parsed violates rules THEN REPORT validation error\nELSE normalized = NORMALIZE parsed\n     PROCESS normalized","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-022-warning","type":"WARNING","content":"Validation فقط برای جلوگیری از Crash نیست؛ برای حفظ صحت داده و امنیت نیز ضروری است. پیام خطا باید مفید باشد اما اطلاعات حساس داخلی را فاش نکند.","metadata":{}},
+    {"id":"basic-fnd-022-ex","type":"EXERCISE","content":"تمرین: Pipeline دریافت شماره تلفن را از متن خام تا نمایش استاندارد داخلی طراحی کنید.","metadata":{"exerciseId":"basic-ex-021"}}
+  ]
+}

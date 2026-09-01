@@ -1,0 +1,3 @@
+{
+  "id":"basic-ex-002","courseId":"basic","lessonId":"basic-fnd-002","title":"Program یا Process؟","description":"با یک مثال واقعی توضیح دهید Program و Process چه تفاوتی دارند و چرا ممکن است از یک Program چند Process یا نمونه اجرایی وجود داشته باشد.","type":"READ_AND_ANSWER","difficulty":"EASY","hints":["Program را به فایل/دستورهای ذخیره‌شده ربط دهید.","Process را به اجرای زنده و منابع زمان اجرا ربط دهید."],"solution":"Program مجموعه دستورهای ذخیره‌شده است؛ Process نمونه در حال اجرای آن است. برای مثال مرورگر نصب‌شده Program است و اجرای آن Process ایجاد می‌کند؛ بعضی مرورگرها حتی برای تب‌ها یا سرویس‌های داخلی چند Process می‌سازند.","explanation":"تفکیک این دو مفهوم در Debugging و بررسی مصرف منابع اهمیت زیادی دارد.","tags":["operating-system","process"]
+}

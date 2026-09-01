@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-037","chapterId":"basic-fnd-10-functions","title":"Return Value و Side Effect؛ تابع چه چیزی تحویل می‌دهد یا تغییر می‌دهد؟","summary":"تشخیص خروجی مستقیم تابع از اثر جانبی و معرفی مقدماتی Pure Function برای کاهش رفتار پنهان.","order":2,"estimatedMinutes":34,"tags":["function","return","side-effect","pure-function"],"prerequisites":["basic-fnd-036"],
+  "blocks":[
+    {"id":"basic-fnd-037-title","type":"TITLE","content":"نتیجه برگردان یا دنیا را تغییر بده؛ این دو را آگاهانه جدا کن","metadata":{}},
+    {"id":"basic-fnd-037-goal","type":"IMPORTANT","content":"هدف درس: Return Value و Side Effect را تفکیک کنید و برای محاسبات، در صورت مناسب بودن Function کم‌اثر و قابل تست طراحی کنید.","metadata":{}},
+    {"id":"basic-fnd-037-p1","type":"PARAGRAPH","content":"Return Value داده‌ای است که تابع به فراخواننده تحویل می‌دهد. Side Effect تغییری بیرون از نتیجه مستقیم است؛ مثل نوشتن فایل، تغییر State مشترک، ارسال شبکه یا نمایش پیام. Side Effect لازم است، اما باید مرز و مالکیت آن روشن باشد.","metadata":{}},
+    {"id":"basic-fnd-037-code","type":"CODE","content":"FUNCTION add(a, b)\n    RETURN a + b\nEND FUNCTION\n\nFUNCTION saveReport(report)\n    WRITE report TO file\nEND FUNCTION","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-037-p2","type":"PARAGRAPH","content":"تابع `add` برای ورودی یکسان نتیجه یکسان دارد و وضعیت بیرونی را تغییر نمی‌دهد؛ نمونه‌ای ساده از Pure Function است. `saveReport` ذاتاً Side Effect دارد. معماری خوب معمولاً محاسبه خالص را تا حد ممکن از I/O جدا می‌کند.","metadata":{}},
+    {"id":"basic-fnd-037-warning","type":"WARNING","content":"تابعی که هم محاسبه می‌کند، هم فایل می‌نویسد، هم State عمومی را تغییر می‌دهد و هم UI نشان می‌دهد چند مسئولیت پنهان دارد و تست آن سخت‌تر است.","metadata":{}},
+    {"id":"basic-fnd-037-ex","type":"EXERCISE","content":"تمرین: پنج Function فرضی را به محاسبه خالص و Side Effect دسته‌بندی و دو مورد ترکیبی را بازطراحی کنید.","metadata":{"exerciseId":"basic-ex-036"}}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-034","chapterId":"basic-fnd-09-loops","title":"Infinite Loop و Off-by-one؛ باگ‌های کلاسیک تکرار","summary":"کشف خطای شرط توقف، Update اشتباه و مرز یک واحدی با Dry Run و Test Case.","order":5,"estimatedMinutes":36,"tags":["loop","infinite-loop","off-by-one","debugging","boundary"],"prerequisites":["basic-fnd-033"],
+  "blocks":[
+    {"id":"basic-fnd-034-title","type":"TITLE","content":"یک علامت اشتباه می‌تواند Loop را یک بار کم، یک بار زیاد یا بی‌نهایت اجرا کند","metadata":{}},
+    {"id":"basic-fnd-034-goal","type":"IMPORTANT","content":"هدف درس: Infinite Loop و Off-by-one را با Trace شناسایی و برای ابتدا/انتها و مجموعه خالی Test Case طراحی کنید.","metadata":{}},
+    {"id":"basic-fnd-034-p1","type":"PARAGRAPH","content":"Off-by-one یعنی تعداد Iteration یا Index دقیقاً یک واحد با مقدار صحیح فاصله دارد. علت رایج، انتخاب اشتباه `<` در برابر `<=` یا شروع شمارنده از 0 در برابر 1 است. Infinite Loop زمانی رخ می‌دهد که شرط ادامه هرگز False نشود یا مسیر خروج قابل دستیابی نباشد.","metadata":{}},
+    {"id":"basic-fnd-034-checklist","type":"LIST","content":"مقدار اولیه شمارنده چیست؟\nاولین Iteration کدام مقدار را می‌بیند؟\nآخرین Iteration معتبر چیست؟\nUpdate در همه مسیرهای لازم اجرا می‌شود؟\nشرط توقف بالاخره قابل دستیابی است؟\nبرای ورودی صفر یا مجموعه خالی چه می‌شود؟","metadata":{}},
+    {"id":"basic-fnd-034-example","type":"NOTE","content":"اگر قصد داریم indexهای 0 تا 4 را پردازش کنیم، شرط `index < 5` پنج بار اجرا می‌شود. شرط `index <= 5` وارد index شماره 5 هم می‌شود و ممکن است خارج از محدوده باشد.","metadata":{}},
+    {"id":"basic-fnd-034-quiz","type":"QUIZ","content":"آزمون فصل حلقه‌ها و تکرار","metadata":{"quizId":"basic-qz-009"}},
+    {"id":"basic-fnd-034-ex","type":"EXERCISE","content":"تمرین: سه Loop دارای Off-by-one یا شرط توقف ناقص طراحی و سپس با Trace اصلاح کنید.","metadata":{"exerciseId":"basic-ex-033"}}
+  ]
+}

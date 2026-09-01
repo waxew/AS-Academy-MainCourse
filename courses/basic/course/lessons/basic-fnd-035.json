@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-035","chapterId":"basic-fnd-10-functions","title":"تابع چیست؟ نام‌گذاری یک مسئولیت قابل استفاده مجدد","summary":"تعریف Function به‌عنوان واحدی با نام، ورودی، خروجی و مسئولیت مشخص و تفاوت آن با کپی‌کردن کد.","order":0,"estimatedMinutes":32,"tags":["function","abstraction","reuse","responsibility"],"prerequisites":["basic-fnd-034"],
+  "blocks":[
+    {"id":"basic-fnd-035-title","type":"TITLE","content":"یک کار مشخص را نام‌گذاری کن و پشت یک قرارداد قرار بده","metadata":{}},
+    {"id":"basic-fnd-035-goal","type":"IMPORTANT","content":"هدف درس: یک بخش منطق را به Function با نام و مسئولیت روشن تبدیل کنید و توضیح دهید ورودی و خروجی آن چه قراردادی دارند.","metadata":{}},
+    {"id":"basic-fnd-035-p1","type":"PARAGRAPH","content":"Function واحدی از رفتار است که می‌توان آن را با نام فراخوانی کرد. تابع خوب یک مسئولیت قابل توضیح دارد، ورودی‌های لازم را می‌گیرد و در صورت نیاز نتیجه‌ای برمی‌گرداند یا اثر مشخصی ایجاد می‌کند.","metadata":{}},
+    {"id":"basic-fnd-035-code","type":"CODE","content":"FUNCTION calculateDiscountedPrice(price, discountPercent)\n    discount = price * discountPercent / 100\n    RETURN price - discount\nEND FUNCTION","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-035-p2","type":"PARAGRAPH","content":"مزیت تابع فقط reuse نیست. نام تابع می‌تواند جزئیات پیاده‌سازی را پنهان و قصد را روشن کند. `calculateDiscountedPrice` برای خواننده معنی‌دارتر از تکرار چند خط محاسبه در نقاط مختلف است.","metadata":{}},
+    {"id":"basic-fnd-035-warning","type":"WARNING","content":"هر سه خط کد را صرفاً برای کم‌کردن تعداد خطوط به Function تبدیل نکنید. مرز تابع باید یک مفهوم یا مسئولیت واقعی ایجاد کند.","metadata":{}},
+    {"id":"basic-fnd-035-ex","type":"EXERCISE","content":"تمرین: منطق تبدیل دما، محاسبه مالیات و بررسی سن را به سه Function مستقل با قرارداد روشن تبدیل کنید.","metadata":{"exerciseId":"basic-ex-034"}}
+  ]
+}

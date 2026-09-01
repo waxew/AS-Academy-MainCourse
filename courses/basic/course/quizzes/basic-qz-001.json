@@ -1,0 +1,16 @@
+{
+  "id": "basic-qz-001",
+  "courseId": "basic",
+  "lessonId": "basic-fnd-001",
+  "chapterId": "basic-fnd-01-computer-literacy",
+  "title": "کوییز: سخت‌افزار و اجرای برنامه",
+  "passingScorePercent": 70,
+  "shuffleQuestions": true,
+  "shuffleAnswers": true,
+  "questions": [
+    {"id":"basic-qz-001-q01","type":"MULTIPLE_CHOICE","question":"کدام گزینه معمولاً برای نگهداری موقت کد و دادهٔ در حال استفاده است؟","explanation":"RAM حافظهٔ کاری موقت سیستم است؛ فایل‌ها برای نگهداری پایدار روی Storage قرار می‌گیرند.","tags":["memory"],"points":1,"answers":[{"id":"basic-qz-001-q01-a","text":"RAM","isCorrect":true},{"id":"basic-qz-001-q01-b","text":"Storage","isCorrect":false},{"id":"basic-qz-001-q01-c","text":"Keyboard","isCorrect":false}]},
+    {"id":"basic-qz-001-q02","type":"MULTIPLE_CHOICE","question":"نقش اصلی CPU در مدل ساده این درس چیست؟","explanation":"CPU دستورها را اجرا و محاسبات را انجام می‌دهد.","tags":["cpu"],"points":1,"answers":[{"id":"basic-qz-001-q02-a","text":"اجرای دستورها","isCorrect":true},{"id":"basic-qz-001-q02-b","text":"ذخیره دائمی فایل‌ها","isCorrect":false},{"id":"basic-qz-001-q02-c","text":"فقط دریافت ورودی کاربر","isCorrect":false}]},
+    {"id":"basic-qz-001-q03","type":"TRUE_FALSE","question":"RAM و فضای ذخیره‌سازی مفهوم یکسانی دارند.","explanation":"RAM موقت و سریع است؛ Storage برای نگهداری پایدار استفاده می‌شود.","tags":["memory","storage"],"points":1,"answers":[{"id":"basic-qz-001-q03-a","text":"درست","isCorrect":false},{"id":"basic-qz-001-q03-b","text":"نادرست","isCorrect":true}]},
+    {"id":"basic-qz-001-q04","type":"MULTIPLE_CHOICE","question":"هنگام اجرای یک برنامه، کدام توصیف از همه دقیق‌تر است؟","explanation":"سیستم‌عامل منابع لازم را فراهم می‌کند و برنامه در قالب Process اجرا می‌شود.","tags":["execution"],"points":2,"answers":[{"id":"basic-qz-001-q04-a","text":"فایل برنامه بدون استفاده از حافظه مستقیماً روی دیسک اجرا می‌شود","isCorrect":false},{"id":"basic-qz-001-q04-b","text":"سیستم‌عامل برنامه را برای اجرا آماده و منابع زمان اجرا را مدیریت می‌کند","isCorrect":true},{"id":"basic-qz-001-q04-c","text":"برنامه فقط در صورت اتصال اینترنت اجرا می‌شود","isCorrect":false}]}
+  ]
+}

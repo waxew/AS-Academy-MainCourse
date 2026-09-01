@@ -1,0 +1,21 @@
+{
+  "id": "basic-fnd-012",
+  "chapterId": "basic-fnd-05-data",
+  "title": "مقدار، متغیر و ثابت؛ نام‌گذاری داده در حافظه",
+  "summary": "ساخت مدل ذهنی از Value، Variable، Assignment و Constant بدون وابستگی به Syntax زبان خاص.",
+  "order": 0,
+  "estimatedMinutes": 28,
+  "tags": ["variable", "value", "constant", "assignment", "memory"],
+  "prerequisites": ["basic-fnd-011"],
+  "blocks": [
+    {"id":"basic-fnd-012-title","type":"TITLE","content":"داده فقط عدد نیست؛ باید بدانیم چه چیزی را نگه می‌داریم","metadata":{}},
+    {"id":"basic-fnd-012-goal","type":"IMPORTANT","content":"هدف درس: تفاوت Value، Variable و Constant را توضیح دهید و تغییر مقدار یک متغیر را در طول اجرای الگوریتم Trace کنید.","metadata":{}},
+    {"id":"basic-fnd-012-p1","type":"PARAGRAPH","content":"Value خود داده است؛ مثلاً عدد 42 یا متن «Ali». Variable نامی است که در یک بخش از برنامه به یک مقدار یا محل نگهداری داده اشاره می‌کند. جزئیات دقیق مدل حافظه بین زبان‌ها متفاوت است، اما برای طراحی الگوریتم می‌توان متغیر را «نامی برای وضعیت قابل تغییر» در نظر گرفت.","metadata":{}},
+    {"id":"basic-fnd-012-assignment","type":"PARAGRAPH","content":"Assignment یعنی قرار دادن یا نسبت دادن یک مقدار به متغیر. در شبه‌کد `count = count + 1` علامت مساوی معادله ریاضی نیست؛ ابتدا سمت راست با مقدار فعلی count محاسبه می‌شود و نتیجه به count نسبت داده می‌شود.","metadata":{}},
+    {"id":"basic-fnd-012-code","type":"CODE","content":"count = 0\ncount = count + 1   // count becomes 1\ncount = count + 1   // count becomes 2","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-012-constant","type":"PARAGRAPH","content":"Constant نامی برای مقداری است که در قرارداد برنامه نباید بعد از تعریف تغییر کند. ثابت‌ها به خوانایی کمک می‌کنند و از پراکنده‌شدن Magic Number یا Magic String در منطق جلوگیری می‌کنند.","metadata":{}},
+    {"id":"basic-fnd-012-example","type":"NOTE","content":"به‌جای استفاده مکرر از عدد 60 در تبدیل دقیقه به ثانیه، می‌توان مفهومی مثل SECONDS_PER_MINUTE را تعریف کرد. نام ثابت دلیل وجود عدد را منتقل می‌کند.","metadata":{}},
+    {"id":"basic-fnd-012-warning","type":"WARNING","content":"نام متغیر بخشی از طراحی است. `x` در فرمول کوتاه ممکن است مناسب باشد، اما در منطق کسب‌وکار نام‌هایی مانند `totalPrice` یا `remainingAttempts` معمولاً اطلاعات بسیار بیشتری منتقل می‌کنند.","metadata":{}},
+    {"id":"basic-fnd-012-ex","type":"EXERCISE","content":"تمرین: وضعیت پنج متغیر مناسب برای یک برنامه سبد خرید را تعریف و مشخص کنید کدام مقدارها بهتر است Constant باشند.","metadata":{"exerciseId":"basic-ex-011"}}
+  ]
+}

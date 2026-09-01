@@ -1,0 +1,16 @@
+{
+  "id": "basic-qz-002",
+  "courseId": "basic",
+  "lessonId": "basic-fnd-004",
+  "chapterId": "basic-fnd-02-career",
+  "title": "کوییز: شاخه‌ها و مهارت‌های مشترک",
+  "passingScorePercent": 70,
+  "shuffleQuestions": true,
+  "shuffleAnswers": true,
+  "questions": [
+    {"id":"basic-qz-002-q01","type":"MULTIPLE_CHOICE","question":"کدام مورد مهارتی بنیادی‌تر و ماندگارتر از یک Framework خاص است؟","explanation":"Frameworkها تغییر می‌کنند اما حل مسئله و دیباگ در مسیرهای مختلف باقی می‌مانند.","tags":["developer-skills"],"points":1,"answers":[{"id":"basic-qz-002-q01-a","text":"حل مسئله و دیباگ","isCorrect":true},{"id":"basic-qz-002-q01-b","text":"حفظ نام تمام نسخه‌های یک Framework","isCorrect":false},{"id":"basic-qz-002-q01-c","text":"استفاده از یک IDE خاص","isCorrect":false}]},
+    {"id":"basic-qz-002-q02","type":"TRUE_FALSE","question":"انتخاب اولین زبان برنامه‌نویسی، شغل نهایی شما را برای همیشه تعیین می‌کند.","explanation":"زبان یک ابزار است و برنامه‌نویس می‌تواند با تغییر نیازها زبان‌ها و حوزه‌های جدید یاد بگیرد.","tags":["career"],"points":1,"answers":[{"id":"basic-qz-002-q02-a","text":"درست","isCorrect":false},{"id":"basic-qz-002-q02-b","text":"نادرست","isCorrect":true}]},
+    {"id":"basic-qz-002-q03","type":"MULTIPLE_CHOICE","question":"کدام حوزه معمولاً بیشتر با API، منطق سرور و داده سروکار دارد؟","explanation":"Backend مسئول منطق سمت سرور و ارتباط با سرویس‌ها و داده‌هاست.","tags":["backend"],"points":1,"answers":[{"id":"basic-qz-002-q03-a","text":"Backend","isCorrect":true},{"id":"basic-qz-002-q03-b","text":"فقط طراحی گرافیک","isCorrect":false},{"id":"basic-qz-002-q03-c","text":"تعمیر سخت‌افزار","isCorrect":false}]},
+    {"id":"basic-qz-002-q04","type":"MULTIPLE_SELECT","question":"کدام موارد در بیشتر مسیرهای برنامه‌نویسی مفیدند؟","explanation":"Git، Testing و Documentation مهارت‌های عمومی مهندسی نرم‌افزار هستند.","tags":["developer-skills"],"points":2,"answers":[{"id":"basic-qz-002-q04-a","text":"Git","isCorrect":true},{"id":"basic-qz-002-q04-b","text":"Testing","isCorrect":true},{"id":"basic-qz-002-q04-c","text":"خواندن Documentation","isCorrect":true},{"id":"basic-qz-002-q04-d","text":"وابستگی همیشگی به یک ابزار خاص","isCorrect":false}]}
+  ]
+}

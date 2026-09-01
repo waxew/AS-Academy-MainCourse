@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-025","chapterId":"basic-fnd-08-conditions","title":"If و Else؛ تبدیل سؤال منطقی به مسیر اجرا","summary":"ساخت تصمیم‌های دوشاخه با شرط Boolean، مسیر True/False و قرارداد روشن برای هر شاخه.","order":0,"estimatedMinutes":30,"tags":["condition","if","else","boolean","decision"],"prerequisites":["basic-fnd-024"],
+  "blocks":[
+    {"id":"basic-fnd-025-title","type":"TITLE","content":"برنامه چگونه تصمیم می‌گیرد؟","metadata":{}},
+    {"id":"basic-fnd-025-goal","type":"IMPORTANT","content":"هدف درس: یک قانون دوحالته را به شرط Boolean و دو مسیر روشن تبدیل کنید و برای مرز شرط Test Case بنویسید.","metadata":{}},
+    {"id":"basic-fnd-025-p1","type":"PARAGRAPH","content":"ساختار If یک Expression منطقی را ارزیابی می‌کند و بر اساس True یا False مسیر اجرا را انتخاب می‌کند. Else مسیر جایگزین است؛ یعنی رفتاری که وقتی شرط برقرار نیست اجرا می‌شود. اصل مهم، روشن بودن معنای هر شاخه است.","metadata":{}},
+    {"id":"basic-fnd-025-code","type":"CODE","content":"IF age >= 18 THEN\n    WRITE \"Adult\"\nELSE\n    WRITE \"Minor\"\nEND IF","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-025-p2","type":"PARAGRAPH","content":"شرط باید یک سؤال دقیق باشد. `age >= 18` را می‌توان با جمله «آیا سن حداقل 18 است؟» خواند. اگر نتوانید شرط را به یک پرسش روشن تبدیل کنید، احتمالاً Expression بیش‌ازحد پیچیده یا نام‌گذاری مبهم است.","metadata":{}},
+    {"id":"basic-fnd-025-warning","type":"WARNING","content":"شرط بدون Else لزوماً اشتباه نیست، اما باید آگاهانه باشد. اگر حالت False نیاز به رفتار مشخص دارد و آن را فراموش کنید، برنامه ممکن است سکوت یا وضعیت ناقص ایجاد کند.","metadata":{}},
+    {"id":"basic-fnd-025-ex","type":"EXERCISE","content":"تمرین: قانون ارسال رایگان بر اساس مبلغ سبد خرید را با شرط دوشاخه و Test Case مرزی طراحی کنید.","metadata":{"exerciseId":"basic-ex-024"}}
+  ]
+}

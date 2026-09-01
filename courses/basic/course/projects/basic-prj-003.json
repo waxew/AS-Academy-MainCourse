@@ -1,0 +1,16 @@
+{
+  "id":"basic-prj-003","courseId":"basic","title":"پروژه پایان سطح مبانی: سامانه مدیریت هزینه روزانه","description":"یک سامانه زبان‌مستقل برای ثبت و تحلیل هزینه‌های روزانه طراحی کنید. پروژه باید از تعریف مسئله تا مدل داده، Validation، شرط، Loop، Function، خروجی، Dry Run و Test Case کامل شود.","difficulty":"HARD","estimatedMinutes":240,
+  "relatedLessonIds":["basic-fnd-005","basic-fnd-007","basic-fnd-011","basic-fnd-013","basic-fnd-015","basic-fnd-019","basic-fnd-022","basic-fnd-028","basic-fnd-031","basic-fnd-034","basic-fnd-035","basic-fnd-040","basic-fnd-041"],
+  "milestones":[
+    {"id":"basic-prj-003-step-01","title":"تعریف Requirement و Scope","description":"قابلیت‌های نسخه پایه را دقیق تعریف کنید: ثبت هزینه، دسته‌بندی، جمع روزانه و گزارش ساده.","order":0,"acceptanceCriteria":["ورودی و خروجی مشخص باشد.","قواعد اعتبار هزینه مشخص باشد.","موارد خارج از Scope نوشته شده باشند."]},
+    {"id":"basic-prj-003-step-02","title":"مدل داده","description":"داده‌های Expense مانند amount، category، description و date را با نوع مفهومی و قواعد معتبر تعریف کنید.","order":1,"acceptanceCriteria":["نام داده‌ها معنی‌دار باشد.","نوع و محدودیت هر فیلد مشخص باشد.","Missing/Empty رفتار تعریف شده باشد."]},
+    {"id":"basic-prj-003-step-03","title":"Pipeline ورودی","description":"مراحل Read، Parse، Validate و Normalize برای ثبت هزینه را طراحی کنید.","order":2,"acceptanceCriteria":["مبلغ منفی یا نامعتبر رد شود.","دسته‌بندی نامعتبر رفتار مشخص داشته باشد.","پیام خطا قابل اقدام باشد."]},
+    {"id":"basic-prj-003-step-04","title":"الگوریتم گزارش روزانه","description":"با Loop مجموع هزینه، تعداد تراکنش و بیشترین هزینه را محاسبه کنید.","order":3,"acceptanceCriteria":["Accumulator و Counter درست مقداردهی شوند.","لیست خالی مدیریت شود.","max بدون Magic Number تصادفی طراحی شود."]},
+    {"id":"basic-prj-003-step-05","title":"قواعد شرطی","description":"برای هشدار بودجه، دسته‌بندی و وضعیت روز قواعد شرطی و Decision Table بسازید.","order":4,"acceptanceCriteria":["مرز بودجه Test شده باشد.","جدول تصمیم تناقض نداشته باشد."]},
+    {"id":"basic-prj-003-step-06","title":"تفکیک Functionها","description":"راه‌حل را به Functionهای Cohesive برای Validation، Calculation، Formatting و I/O تقسیم کنید.","order":5,"acceptanceCriteria":["هر Function یک مسئولیت روشن داشته باشد.","محاسبه از Side Effect تا حد ممکن جدا باشد.","ورودی/خروجی Functionها مشخص باشد."]},
+    {"id":"basic-prj-003-step-07","title":"شبه‌کد و Flow","description":"جریان کامل ثبت هزینه و تولید گزارش را با Pseudocode و فلوچارت متنی یا بصری ثبت کنید.","order":6,"acceptanceCriteria":["مسیر موفق و خطا هر دو مشخص باشند.","Loop و شرط‌ها قابل Trace باشند."]},
+    {"id":"basic-prj-003-step-08","title":"Dry Run و Test Matrix","description":"حداقل ده Test Case و دو Dry Run کامل اجرا کنید.","order":7,"acceptanceCriteria":["Normal، Boundary، Empty و Invalid پوشش داده شوند.","Expected Result برای هر Test نوشته شود.","حداقل یک Off-by-one/Loop boundary بررسی شود."]},
+    {"id":"basic-prj-003-step-09","title":"خروجی قابل فهم","description":"گزارش نهایی روزانه و پیام‌های خطا را با واحد، قالب مبلغ و متن قابل اقدام طراحی کنید.","order":8,"acceptanceCriteria":["مبلغ‌ها واحد و قالب روشن داشته باشند.","پیام خطا اطلاعات حساس غیرضروری ندهد.","نتیجه گزارش برای کاربر قابل فهم باشد."]}
+  ],
+  "tags":["fundamentals","capstone","problem-solving","algorithm","io","condition","loop","function"]
+}

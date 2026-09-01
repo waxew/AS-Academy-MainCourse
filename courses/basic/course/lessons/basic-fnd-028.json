@@ -1,0 +1,13 @@
+{
+  "id":"basic-fnd-028","chapterId":"basic-fnd-08-conditions","title":"Decision Table و انتخاب ساختار تصمیم مناسب","summary":"مدل‌کردن قواعد چندمتغیره با جدول تصمیم و انتخاب بین If chain، lookup و ساختارهای match/switch مفهومی.","order":3,"estimatedMinutes":36,"tags":["condition","decision-table","switch","match","business-rule"],"prerequisites":["basic-fnd-027"],
+  "blocks":[
+    {"id":"basic-fnd-028-title","type":"TITLE","content":"قبل از نوشتن ده شرط، قواعد را جدول کن","metadata":{}},
+    {"id":"basic-fnd-028-goal","type":"IMPORTANT","content":"هدف درس: برای قواعد چندمتغیره Decision Table بسازید و بر اساس شکل مسئله ساختار تصمیم خوانا انتخاب کنید.","metadata":{}},
+    {"id":"basic-fnd-028-p1","type":"PARAGRAPH","content":"Decision Table حالت‌های ورودی و نتیجه مورد انتظار را کنار هم قرار می‌دهد. وقتی چند Boolean یا Category هم‌زمان روی تصمیم اثر می‌گذارند، جدول کمک می‌کند ترکیب‌های جاافتاده یا متناقض را پیش از کدنویسی ببینیم.","metadata":{}},
+    {"id":"basic-fnd-028-table","type":"TABLE","content":"| Active | Paid | Blocked | Result |\n| Yes | Yes | No | Full access |\n| Yes | No | No | Limited access |\n| Yes | Any | Yes | Deny |\n| No | Any | Any | Deny |","metadata":{}},
+    {"id":"basic-fnd-028-p2","type":"PARAGRAPH","content":"اگر تصمیم بر اساس یک مقدار دسته‌ای مثل نقش کاربر یا وضعیت سفارش است، ساختارهایی مانند switch/match در زبان‌های پشتیبان ممکن است خواناتر باشند. اگر قواعد ترکیبی و پویا هستند، Decision Table، map یا Rule Engine می‌تواند مدل مناسب‌تری باشد. انتخاب ساختار باید از شکل مسئله بیاید.","metadata":{}},
+    {"id":"basic-fnd-028-tip","type":"TIP","content":"Decision Table علاوه بر طراحی، منبع عالی Test Case است: هر ردیف مهم جدول حداقل یک تست می‌خواهد.","metadata":{}},
+    {"id":"basic-fnd-028-quiz","type":"QUIZ","content":"آزمون فصل شرط‌ها و تصمیم‌گیری","metadata":{"quizId":"basic-qz-008"}},
+    {"id":"basic-fnd-028-ex","type":"EXERCISE","content":"تمرین: برای دسترسی یک کاربر بر اساس Active، Verified و Subscription یک Decision Table کامل بسازید.","metadata":{"exerciseId":"basic-ex-027"}}
+  ]
+}

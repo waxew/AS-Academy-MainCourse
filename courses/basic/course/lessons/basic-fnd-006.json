@@ -1,0 +1,21 @@
+{
+  "id": "basic-fnd-006",
+  "chapterId": "basic-fnd-03-problem-solving",
+  "title": "تشخیص الگو و انتزاع",
+  "summary": "یادگیری دو ابزار ذهنی مهم برای ساخت راه‌حل‌های عمومی‌تر و جلوگیری از تکرار.",
+  "order": 1,
+  "estimatedMinutes": 22,
+  "tags": ["problem-solving", "pattern-recognition", "abstraction", "generalization"],
+  "prerequisites": ["basic-fnd-005"],
+  "blocks": [
+    {"id":"basic-fnd-006-title","type":"TITLE","content":"از چند مسئله مشابه، یک راه‌حل عمومی بساز","metadata":{}},
+    {"id":"basic-fnd-006-pattern","type":"PARAGRAPH","content":"Pattern Recognition یعنی شباهت‌های بین مسئله‌ها یا داده‌ها را پیدا کنیم. اگر چند مسئله ساختار مشترکی دارند، احتمالاً می‌توان بخشی از راه‌حل را دوباره استفاده یا عمومی کرد.","metadata":{}},
+    {"id":"basic-fnd-006-abstraction","type":"PARAGRAPH","content":"Abstraction یعنی در هر سطح فقط جزئیات مهم را نگه داریم. هنگام طراحی یک ماشین‌حساب، در ابتدا مهم است بدانیم چه عملیات و چه ورودی/خروجی داریم؛ جزئیات نحوه ذخیره بیت‌های عدد در حافظه برای آن مرحله ضروری نیست.","metadata":{}},
+    {"id":"basic-fnd-006-example","type":"NOTE","content":"مثال: محاسبه قیمت بعد از تخفیف، مالیات و کارمزد همگی الگوی «دریافت مقدار پایه + اعمال یک نرخ + تولید مقدار جدید» دارند. تشخیص این الگو به طراحی تابع یا الگوریتم عمومی‌تر کمک می‌کند.","metadata":{}},
+    {"id":"basic-fnd-006-list","type":"LIST","content":"جزئیات ضروری برای تصمیم فعلی را نگه دار\nجزئیات نامرتبط را موقتاً پنهان کن\nشباهت بین نمونه‌ها را پیدا کن\nراه‌حل را برای بیش از یک نمونه آزمایش کن\nاگر عمومی‌سازی فهم را سخت‌تر کرد، بیش‌ازحد انتزاع کرده‌ای","metadata":{}},
+    {"id":"basic-fnd-006-tip","type":"TIP","content":"انتزاع خوب پیچیدگی را پنهان می‌کند؛ انتزاع بد فقط نام جدیدی روی پیچیدگی می‌گذارد.","metadata":{}},
+    {"id":"basic-fnd-006-quiz","type":"QUIZ","content":"کوییز فصل: تعریف مسئله، تجزیه، الگو و انتزاع","metadata":{"quizId":"basic-qz-003"}},
+    {"id":"basic-fnd-006-ex","type":"EXERCISE","content":"تمرین: سه مسئله روزمره پیدا کنید که یک الگوی مشترک داشته باشند و آن الگو را در یک جمله بنویسید.","metadata":{"exerciseId":"basic-ex-005"}},
+    {"id":"basic-fnd-006-project","type":"PROJECT_LINK","content":"پروژه عملی: کالبدشکافی یک نرم‌افزار روزمره","metadata":{"projectId":"basic-prj-001"}}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-029","chapterId":"basic-fnd-09-loops","title":"حلقه چیست؟ تکرار کنترل‌شده به جای کد تکراری","summary":"مدل ذهنی Initialization، Condition، Body و Update و تفاوت تکرار شمارشی با تکرار روی مجموعه.","order":0,"estimatedMinutes":32,"tags":["loop","iteration","for","counter"],"prerequisites":["basic-fnd-028"],
+  "blocks":[
+    {"id":"basic-fnd-029-title","type":"TITLE","content":"یک کار مشابه را چند بار انجام بده، اما با قرارداد روشن","metadata":{}},
+    {"id":"basic-fnd-029-goal","type":"IMPORTANT","content":"هدف درس: اجزای یک Loop را توضیح دهید، تکرار شمارشی را Trace کنید و به‌جای کپی‌کردن چندباره عملیات از Iteration استفاده کنید.","metadata":{}},
+    {"id":"basic-fnd-029-p1","type":"PARAGRAPH","content":"Loop ساختاری برای اجرای تکراری یک Block است. در مدل شمارشی معمولاً مقدار اولیه، شرط ادامه، Body و Update داریم. در مدل پیمایش Collection، زبان ممکن است این جزئیات را پشت ساختار for-each پنهان کند.","metadata":{}},
+    {"id":"basic-fnd-029-code","type":"CODE","content":"FOR i FROM 1 TO 5\n    WRITE i\nEND FOR","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-029-p2","type":"PARAGRAPH","content":"تعداد تکرار باید از مسئله بیاید. اگر دقیقاً می‌دانیم باید پنج بار اجرا شود، حلقه شمارشی طبیعی است. اگر می‌خواهیم روی تمام آیتم‌های یک List حرکت کنیم، پیمایش Collection معمولاً قصد را بهتر منتقل می‌کند.","metadata":{}},
+    {"id":"basic-fnd-029-warning","type":"WARNING","content":"Loop فقط برای کوتاه‌تر کردن کد نیست؛ رفتار تکرار را به یک قرارداد تبدیل می‌کند. اگر Update یا شرط ادامه اشتباه باشد، خطا می‌تواند چندین بار تکرار شود.","metadata":{}},
+    {"id":"basic-fnd-029-ex","type":"EXERCISE","content":"تمرین: الگوریتم چاپ جدول ضرب یک عدد از 1 تا 10 را با Loop طراحی و Trace کنید.","metadata":{"exerciseId":"basic-ex-028"}}
+  ]
+}

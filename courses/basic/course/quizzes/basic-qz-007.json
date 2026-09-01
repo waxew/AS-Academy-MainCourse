@@ -1,0 +1,91 @@
+{
+  "id": "basic-qz-007",
+  "courseId": "basic",
+  "lessonId": "basic-fnd-024",
+  "chapterId": "basic-fnd-07-io",
+  "title": "آزمون: ورودی و خروجی",
+  "passingScorePercent": 75,
+  "shuffleQuestions": true,
+  "shuffleAnswers": true,
+  "questions": [
+    {
+      "id": "basic-qz-007-q01",
+      "type": "MULTIPLE_SELECT",
+      "question": "کدام موارد می‌توانند منبع Input یک برنامه باشند؟",
+      "explanation": "Input فقط Keyboard نیست؛ فایل، API، Sensor و Event نیز می‌توانند داده وارد برنامه کنند.",
+      "tags": ["input", "io"],
+      "points": 2,
+      "answers": [
+        {"id":"basic-qz-007-q01-a","text":"فایل","isCorrect":true},
+        {"id":"basic-qz-007-q01-b","text":"API","isCorrect":true},
+        {"id":"basic-qz-007-q01-c","text":"Sensor","isCorrect":true},
+        {"id":"basic-qz-007-q01-d","text":"فقط صفحه‌کلید","isCorrect":false}
+      ]
+    },
+    {
+      "id": "basic-qz-007-q02",
+      "type": "MULTIPLE_CHOICE",
+      "question": "در Pipeline ورودی، Parsing چه کاری انجام می‌دهد؟",
+      "explanation": "Parsing نمایش خام را طبق قواعد مشخص به مقدار یا ساختار قابل استفاده تبدیل می‌کند.",
+      "tags": ["parsing", "input"],
+      "points": 1,
+      "answers": [
+        {"id":"basic-qz-007-q02-a","text":"تبدیل نمایش خام به ساختار یا مقدار معنی‌دار","isCorrect":true},
+        {"id":"basic-qz-007-q02-b","text":"تأیید قطعی همه قوانین کسب‌وکار","isCorrect":false},
+        {"id":"basic-qz-007-q02-c","text":"حذف تمام خطاها بدون بررسی","isCorrect":false}
+      ]
+    },
+    {
+      "id": "basic-qz-007-q03",
+      "type": "MULTIPLE_CHOICE",
+      "question": "کدام جمله درباره Validation درست‌تر است؟",
+      "explanation": "Validation بررسی می‌کند داده با قرارداد فنی و قواعد دامنه سازگار است؛ موفق بودن Parse به‌تنهایی کافی نیست.",
+      "tags": ["validation"],
+      "points": 1,
+      "answers": [
+        {"id":"basic-qz-007-q03-a","text":"پس از Parse نیز ممکن است مقدار از نظر دامنه نامعتبر باشد","isCorrect":true},
+        {"id":"basic-qz-007-q03-b","text":"Validation فقط برای زیبایی UI است","isCorrect":false},
+        {"id":"basic-qz-007-q03-c","text":"هر داده قابل Parse حتماً معتبر است","isCorrect":false}
+      ]
+    },
+    {
+      "id": "basic-qz-007-q04",
+      "type": "TRUE_FALSE",
+      "question": "Zero، Empty String و Missing همیشه یک معنای یکسان دارند.",
+      "explanation": "این حالت‌ها می‌توانند معنای کاملاً متفاوت داشته باشند و قرارداد برنامه باید تفاوتشان را مشخص کند.",
+      "tags": ["empty", "missing", "default"],
+      "points": 1,
+      "answers": [
+        {"id":"basic-qz-007-q04-a","text":"درست","isCorrect":false},
+        {"id":"basic-qz-007-q04-b","text":"نادرست","isCorrect":true}
+      ]
+    },
+    {
+      "id": "basic-qz-007-q05",
+      "type": "MULTIPLE_CHOICE",
+      "question": "کدام پیام خطا برای کاربر قابل اقدام‌تر است؟",
+      "explanation": "پیام خوب محل و قاعده خطا را تا حد امن مشخص می‌کند و به کاربر می‌گوید چه چیزی باید اصلاح شود.",
+      "tags": ["error-message", "output"],
+      "points": 1,
+      "answers": [
+        {"id":"basic-qz-007-q05-a","text":"درصد تخفیف باید بین 0 تا 100 باشد","isCorrect":true},
+        {"id":"basic-qz-007-q05-b","text":"Error","isCorrect":false},
+        {"id":"basic-qz-007-q05-c","text":"ورودی خراب است","isCorrect":false}
+      ]
+    },
+    {
+      "id": "basic-qz-007-q06",
+      "type": "MULTIPLE_SELECT",
+      "question": "برای Output حرفه‌ای کدام موارد مهم‌اند؟",
+      "explanation": "واحد، قالب مناسب مخاطب، قرارداد ساختاریافته و حفاظت از اطلاعات حساس همگی بخشی از طراحی خروجی‌اند.",
+      "tags": ["output", "formatting"],
+      "points": 2,
+      "answers": [
+        {"id":"basic-qz-007-q06-a","text":"نمایش واحد همراه مقدار در صورت نیاز","isCorrect":true},
+        {"id":"basic-qz-007-q06-b","text":"قالب متناسب با انسان یا سیستم مصرف‌کننده","isCorrect":true},
+        {"id":"basic-qz-007-q06-c","text":"عدم افشای جزئیات حساس در خطای کاربر","isCorrect":true},
+        {"id":"basic-qz-007-q06-d","text":"تغییر تصادفی قالب در هر اجرا","isCorrect":false}
+      ]
+    }
+  ]
+}

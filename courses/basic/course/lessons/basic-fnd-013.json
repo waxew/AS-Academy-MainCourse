@@ -1,0 +1,20 @@
+{
+  "id": "basic-fnd-013",
+  "chapterId": "basic-fnd-05-data",
+  "title": "انواع داده؛ عدد، منطق، متن و نبود مقدار",
+  "summary": "شناخت خانواده‌های رایج Data Type و دلیل اهمیت نوع برای عملیات، اعتبار و حافظه.",
+  "order": 1,
+  "estimatedMinutes": 32,
+  "tags": ["data-type", "integer", "floating-point", "boolean", "string", "null"],
+  "prerequisites": ["basic-fnd-012"],
+  "blocks": [
+    {"id":"basic-fnd-013-title","type":"TITLE","content":"نوع داده می‌گوید این مقدار چه معنایی دارد و چه کاری می‌توان با آن کرد","metadata":{}},
+    {"id":"basic-fnd-013-goal","type":"IMPORTANT","content":"هدف درس: برای یک داده واقعی نوع مفهومی مناسب انتخاب کنید و تفاوت عدد صحیح، اعشاری، Boolean، Character/String و نبود مقدار را توضیح دهید.","metadata":{}},
+    {"id":"basic-fnd-013-p1","type":"PARAGRAPH","content":"Data Type مجموعه‌ای از مقادیر ممکن و عملیات معنادار روی آن‌ها را مشخص می‌کند. زبان‌ها نام‌ها و اندازه‌های متفاوتی دارند، اما خانواده‌های اصلی داده در بیشتر محیط‌ها قابل تشخیص‌اند.","metadata":{}},
+    {"id":"basic-fnd-013-types","type":"LIST","content":"Integer: عدد صحیح بدون بخش اعشاری\nFloating-point/Decimal: مقدار دارای بخش اعشاری با مدل‌های مختلف دقت\nBoolean: معمولاً True یا False برای منطق تصمیم\nCharacter: یک واحد نویسه در زبان‌هایی که نوع مستقل دارند\nString/Text: دنباله‌ای از نویسه‌ها\nNull/None/Nil: نبود مقدار در مدل‌هایی که آن را پشتیبانی می‌کنند\nComposite types: ترکیب چند مقدار مانند Record/Object/Collection","metadata":{}},
+    {"id":"basic-fnd-013-example","type":"TABLE","content":"| داده | انتخاب مفهومی مناسب | دلیل |\n| تعداد کالا | Integer | شمارش کامل |\n| نام کاربر | String | متن |\n| فعال بودن حساب | Boolean | دو حالت منطقی |\n| تاریخ تولد | Date/structured value | معنا فراتر از متن ساده |\n| قیمت مالی | Decimal در سیستم‌های حساس | کنترل دقت محاسبه |","metadata":{}},
+    {"id":"basic-fnd-013-p2","type":"PARAGRAPH","content":"نوع مناسب فقط برای جلوگیری از خطای Syntax نیست. اگر شماره تلفن را Number فرض کنیم، ممکن است صفر ابتدای آن یا علامت + معنای خود را از دست بدهد. داده باید بر اساس معنای دامنه مدل شود، نه ظاهرش.","metadata":{}},
+    {"id":"basic-fnd-013-tip","type":"TIP","content":"سؤال بهتر از «این داده شبیه چه چیزی است؟» این است: «چه عملیات‌هایی روی این داده معتبرند؟». روی شماره ملی معمولاً جمع و تفریق معنادار نیست، حتی اگر فقط از رقم تشکیل شده باشد.","metadata":{}},
+    {"id":"basic-fnd-013-ex","type":"EXERCISE","content":"تمرین: برای ده داده در یک سیستم ثبت‌نام، نوع مفهومی انتخاب و دلیل انتخابتان را بنویسید.","metadata":{"exerciseId":"basic-ex-012"}}
+  ]
+}

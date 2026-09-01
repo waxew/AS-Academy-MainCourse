@@ -1,0 +1,13 @@
+{
+  "id":"basic-fnd-019","chapterId":"basic-fnd-06-operators","title":"منطق Boolean؛ AND، OR و NOT","summary":"ترکیب شرط‌ها با منطق بولی، Truth Table و آشنایی مقدماتی با De Morgan و Short-circuit.","order":2,"estimatedMinutes":34,"tags":["operators","boolean","and","or","not","short-circuit"],"prerequisites":["basic-fnd-018"],
+  "blocks":[
+    {"id":"basic-fnd-019-title","type":"TITLE","content":"شرط‌های واقعی معمولاً ترکیبی‌اند","metadata":{}},
+    {"id":"basic-fnd-019-goal","type":"IMPORTANT","content":"هدف درس: شرط‌های مرکب را با AND/OR/NOT طراحی، با Truth Table بررسی و عبارت‌های پیچیده را با نام‌گذاری یا شکستن به بخش‌های کوچک خواناتر کنید.","metadata":{}},
+    {"id":"basic-fnd-019-p1","type":"PARAGRAPH","content":"AND زمانی True است که همه شرط‌های موردنیاز True باشند. OR زمانی True است که حداقل یکی از گزینه‌ها برقرار باشد. NOT یک مقدار منطقی را معکوس می‌کند. ترکیب این سه ابزار می‌تواند قواعد کسب‌وکار پیچیده را مدل کند.","metadata":{}},
+    {"id":"basic-fnd-019-table","type":"TABLE","content":"| A | B | A AND B | A OR B |\n| False | False | False | False |\n| False | True | False | True |\n| True | False | False | True |\n| True | True | True | True |","metadata":{}},
+    {"id":"basic-fnd-019-example","type":"CODE","content":"isEligible = isActive AND (age >= 18) AND NOT isBlocked\ncanUseTrial = isNewUser OR hasPromoCode","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-019-short","type":"PARAGRAPH","content":"بسیاری از زبان‌ها AND/OR را به‌صورت Short-circuit ارزیابی می‌کنند؛ یعنی وقتی نتیجه نهایی از همان بخش اول مشخص شد بخش بعدی اجرا نمی‌شود. این رفتار می‌تواند برای جلوگیری از دسترسی نامعتبر مفید باشد، اما نباید Side Effect مهم را به اجرای اتفاقی یک شرط وابسته کرد.","metadata":{}},
+    {"id":"basic-fnd-019-tip","type":"TIP","content":"اگر شرط را نمی‌توان در یک نفس توضیح داد، آن را به Booleanهای نام‌دار یا توابع کوچک‌تر تبدیل کنید. خوانایی شرط بخشی از Correctness است.","metadata":{}},
+    {"id":"basic-fnd-019-ex","type":"EXERCISE","content":"تمرین: شرط دسترسی به یک محتوای ویژه را با ترکیب فعال بودن حساب، داشتن اشتراک یا کد هدیه و مسدود نبودن کاربر طراحی کنید.","metadata":{"exerciseId":"basic-ex-018"}}
+  ]
+}

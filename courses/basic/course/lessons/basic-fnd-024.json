@@ -1,0 +1,13 @@
+{
+  "id":"basic-fnd-024","chapterId":"basic-fnd-07-io","title":"خروجی خوب؛ Format، پیام خطا و بازخورد قابل فهم","summary":"طراحی خروجی برای انسان یا سیستم دیگر با قالب روشن، واحد مشخص و خطای قابل اقدام.","order":3,"estimatedMinutes":30,"tags":["output","formatting","error-message","user-feedback"],"prerequisites":["basic-fnd-023"],
+  "blocks":[
+    {"id":"basic-fnd-024-title","type":"TITLE","content":"درست بودن نتیجه کافی نیست؛ باید قابل فهم هم باشد","metadata":{}},
+    {"id":"basic-fnd-024-goal","type":"IMPORTANT","content":"هدف درس: خروجی را متناسب با مخاطب قالب‌بندی کنید، واحد و زمینه را حفظ کنید و پیام خطایی بنویسید که کاربر بتواند بر اساس آن اقدام کند.","metadata":{}},
+    {"id":"basic-fnd-024-p1","type":"PARAGRAPH","content":"Output می‌تواند برای انسان، فایل، API یا سیستم دیگری باشد. هرکدام قرارداد متفاوت دارند. متن رابط کاربر باید خوانا باشد؛ خروجی API باید ساختاریافته و پایدار باشد؛ Log باید برای Debugging مفید باشد و اطلاعات حساس را بی‌دلیل ثبت نکند.","metadata":{}},
+    {"id":"basic-fnd-024-list","type":"LIST","content":"واحد را همراه عدد مشخص کن\nتاریخ/زمان را با Locale و Time Zone درست نمایش بده\nعددهای مالی را با Precision مناسب Format کن\nپیام خطا بگوید چه چیزی اشتباه است و کاربر چه کند\nجزئیات فنی حساس را به کاربر نهایی نمایش نده\nخروجی Machine-readable قرارداد پایدار داشته باشد","metadata":{}},
+    {"id":"basic-fnd-024-example","type":"TABLE","content":"| خروجی ضعیف | خروجی بهتر |\n| Error 7 | درصد تخفیف باید بین 0 تا 100 باشد |\n| 1250000 | مبلغ نهایی: 1,250,000 تومان |\n| 5 | 5 دقیقه تا پایان |","metadata":{}},
+    {"id":"basic-fnd-024-warning","type":"WARNING","content":"پیام «ورودی نامعتبر است» وقتی چند فیلد وجود دارد قابل اقدام نیست. تا حد امن و لازم مشخص کنید کدام ورودی و چه قاعده‌ای نقض شده است.","metadata":{}},
+    {"id":"basic-fnd-024-quiz","type":"QUIZ","content":"آزمون فصل ورودی و خروجی","metadata":{"quizId":"basic-qz-007"}},
+    {"id":"basic-fnd-024-ex","type":"EXERCISE","content":"تمرین: پنج پیام خروجی یا خطای مبهم را به پیام‌های دقیق و قابل اقدام تبدیل کنید.","metadata":{"exerciseId":"basic-ex-023"}}
+  ]
+}

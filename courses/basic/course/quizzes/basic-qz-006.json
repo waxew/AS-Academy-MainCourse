@@ -1,0 +1,91 @@
+{
+  "id": "basic-qz-006",
+  "courseId": "basic",
+  "lessonId": "basic-fnd-020",
+  "chapterId": "basic-fnd-06-operators",
+  "title": "آزمون: عملگرها و عبارت‌ها",
+  "passingScorePercent": 75,
+  "shuffleQuestions": true,
+  "shuffleAnswers": true,
+  "questions": [
+    {
+      "id": "basic-qz-006-q01",
+      "type": "MULTIPLE_CHOICE",
+      "question": "برای تشخیص زوج یا فرد بودن یک عدد صحیح، کدام مفهوم معمولاً مستقیم‌تر است؟",
+      "explanation": "باقی‌ماندهٔ تقسیم بر 2 نشان می‌دهد عدد بر 2 بخش‌پذیر است یا نه.",
+      "tags": ["arithmetic", "remainder"],
+      "points": 1,
+      "answers": [
+        {"id":"basic-qz-006-q01-a","text":"بررسی remainder تقسیم بر 2","isCorrect":true},
+        {"id":"basic-qz-006-q01-b","text":"تبدیل عدد به String در همه شرایط","isCorrect":false},
+        {"id":"basic-qz-006-q01-c","text":"تقسیم عدد بر صفر","isCorrect":false}
+      ]
+    },
+    {
+      "id": "basic-qz-006-q02",
+      "type": "MULTIPLE_CHOICE",
+      "question": "شرط `age >= 18` چه تفاوتی با `age > 18` دارد؟",
+      "explanation": "عملگر >= مقدار 18 را نیز داخل محدودهٔ معتبر قرار می‌دهد؛ > آن را حذف می‌کند.",
+      "tags": ["comparison", "boundary"],
+      "points": 1,
+      "answers": [
+        {"id":"basic-qz-006-q02-a","text":"در >= مقدار 18 پذیرفته می‌شود","isCorrect":true},
+        {"id":"basic-qz-006-q02-b","text":"هیچ تفاوتی ندارند","isCorrect":false},
+        {"id":"basic-qz-006-q02-c","text":">= فقط برای String است","isCorrect":false}
+      ]
+    },
+    {
+      "id": "basic-qz-006-q03",
+      "type": "MULTIPLE_SELECT",
+      "question": "برای اینکه `canAccess` فقط وقتی True باشد که حساب فعال است، کاربر مسدود نیست و حداقل اشتراک یا کد هدیه دارد، کدام اجزا لازم‌اند؟",
+      "explanation": "قاعده را می‌توان به شکل isActive AND NOT isBlocked AND (hasSubscription OR hasGiftCode) مدل کرد.",
+      "tags": ["boolean", "and", "or", "not"],
+      "points": 2,
+      "answers": [
+        {"id":"basic-qz-006-q03-a","text":"isActive","isCorrect":true},
+        {"id":"basic-qz-006-q03-b","text":"NOT isBlocked","isCorrect":true},
+        {"id":"basic-qz-006-q03-c","text":"hasSubscription OR hasGiftCode","isCorrect":true},
+        {"id":"basic-qz-006-q03-d","text":"isBlocked بدون NOT","isCorrect":false}
+      ]
+    },
+    {
+      "id": "basic-qz-006-q04",
+      "type": "TRUE_FALSE",
+      "question": "در Short-circuit evaluation ممکن است بخش دوم یک AND یا OR اصلاً ارزیابی نشود.",
+      "explanation": "اگر نتیجهٔ نهایی از Operand اول معلوم باشد، بسیاری از زبان‌ها Operand بعدی را اجرا نمی‌کنند.",
+      "tags": ["short-circuit", "boolean"],
+      "points": 1,
+      "answers": [
+        {"id":"basic-qz-006-q04-a","text":"درست","isCorrect":true},
+        {"id":"basic-qz-006-q04-b","text":"نادرست","isCorrect":false}
+      ]
+    },
+    {
+      "id": "basic-qz-006-q05",
+      "type": "MULTIPLE_CHOICE",
+      "question": "چرا استفاده از پرانتز در Expressionهای منطقی پیچیده حتی وقتی precedence را می‌دانیم مفید است؟",
+      "explanation": "پرانتز قصد نویسنده را برای خواننده و Reviewer روشن و احتمال برداشت اشتباه را کمتر می‌کند.",
+      "tags": ["precedence", "readability"],
+      "points": 1,
+      "answers": [
+        {"id":"basic-qz-006-q05-a","text":"قصد و ترتیب منطقی را خواناتر می‌کند","isCorrect":true},
+        {"id":"basic-qz-006-q05-b","text":"همیشه سرعت CPU را دو برابر می‌کند","isCorrect":false},
+        {"id":"basic-qz-006-q05-c","text":"همه نوع‌های داده را به Boolean تبدیل می‌کند","isCorrect":false}
+      ]
+    },
+    {
+      "id": "basic-qz-006-q06",
+      "type": "MULTIPLE_SELECT",
+      "question": "کدام موارد هنگام محاسبات عددی باید بررسی شوند؟",
+      "explanation": "تقسیم بر صفر، محدوده نوع عددی و Precision می‌توانند نتیجه یا اجرای برنامه را خراب کنند.",
+      "tags": ["arithmetic", "numeric-safety"],
+      "points": 2,
+      "answers": [
+        {"id":"basic-qz-006-q06-a","text":"تقسیم بر صفر","isCorrect":true},
+        {"id":"basic-qz-006-q06-b","text":"Overflow یا خارج‌شدن از محدوده","isCorrect":true},
+        {"id":"basic-qz-006-q06-c","text":"Precision نوع عددی","isCorrect":true},
+        {"id":"basic-qz-006-q06-d","text":"رنگ آیکون برنامه","isCorrect":false}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-018","chapterId":"basic-fnd-06-operators","title":"مقایسه‌ها؛ ساختن سؤال‌های True/False","summary":"کار با equality، inequality و مقایسه ترتیبی و شناخت تفاوت برابری مقدار با هویت در زبان‌های مختلف.","order":1,"estimatedMinutes":28,"tags":["operators","comparison","boolean","equality"],"prerequisites":["basic-fnd-017"],
+  "blocks":[
+    {"id":"basic-fnd-018-title","type":"TITLE","content":"مقایسه، ورودی تصمیم‌گیری است","metadata":{}},
+    {"id":"basic-fnd-018-goal","type":"IMPORTANT","content":"هدف درس: شرط‌های مقایسه‌ای دقیق بسازید و مرزهای <، <=، >، >= و equality را بدون خطای دامنه انتخاب کنید.","metadata":{}},
+    {"id":"basic-fnd-018-p1","type":"PARAGRAPH","content":"عملگر مقایسه معمولاً یک Boolean تولید می‌کند. این نتیجه بعداً در IF، WHILE، Filter یا Validation استفاده می‌شود. تفاوت یک کاراکتر در شرط مرزی می‌تواند رفتار کل برنامه را تغییر دهد.","metadata":{}},
+    {"id":"basic-fnd-018-table","type":"TABLE","content":"| پرسش | مقایسه مفهومی |\n| سن حداقل 18 است؟ | age >= 18 |\n| موجودی تمام شده؟ | stock == 0 |\n| قیمت خارج از سقف است؟ | price > maxPrice |\n| دو مقدار متفاوت‌اند؟ | a != b |","metadata":{}},
+    {"id":"basic-fnd-018-equality","type":"PARAGRAPH","content":"در بعضی زبان‌ها «برابری مقدار» و «یکسان بودن Reference/Identity» عملیات متفاوتی هستند. در Basic اصل مهم این است: قبل از مقایسه بدانید می‌خواهید محتوا را مقایسه کنید یا هویت یک شیء را.","metadata":{}},
+    {"id":"basic-fnd-018-warning","type":"WARNING","content":"برای Floating-point مقایسه دقیق equality ممکن است به دلیل Precision مناسب نباشد. روش مقایسه باید با نوع و دامنه داده سازگار باشد.","metadata":{}},
+    {"id":"basic-fnd-018-ex","type":"EXERCISE","content":"تمرین: برای قوانین عضویت یک باشگاه پنج شرط مقایسه‌ای بنویسید و مرز هرکدام را توضیح دهید.","metadata":{"exerciseId":"basic-ex-017"}}
+  ]
+}

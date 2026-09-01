@@ -1,0 +1,11 @@
+{
+  "id":"basic-fnd-033","chapterId":"basic-fnd-09-loops","title":"Break و Continue؛ کنترل آگاهانه مسیر تکرار","summary":"استفاده محدود و خوانا از خروج زودهنگام Loop و ردکردن یک Iteration.","order":4,"estimatedMinutes":30,"tags":["loop","break","continue","control-flow"],"prerequisites":["basic-fnd-032"],
+  "blocks":[
+    {"id":"basic-fnd-033-title","type":"TITLE","content":"گاهی لازم نیست همه دورهای Loop اجرا شوند","metadata":{}},
+    {"id":"basic-fnd-033-goal","type":"IMPORTANT","content":"هدف درس: تفاوت Break و Continue را توضیح دهید و تشخیص دهید چه زمانی استفاده از آن‌ها خوانایی را بهتر یا بدتر می‌کند.","metadata":{}},
+    {"id":"basic-fnd-033-p1","type":"PARAGRAPH","content":"Break معمولاً Loop جاری را زود خاتمه می‌دهد. Continue باقی Body دور فعلی را رد می‌کند و به Iteration بعدی می‌رود. نام و جزئیات دقیق ممکن است در زبان‌ها تفاوت داشته باشد، اما این دو مفهوم رایج‌اند.","metadata":{}},
+    {"id":"basic-fnd-033-code","type":"CODE","content":"FOR EACH item IN items\n    IF item is invalid THEN\n        CONTINUE\n    END IF\n    IF item matches target THEN\n        found = item\n        BREAK\n    END IF\nEND FOR","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-033-p2","type":"PARAGRAPH","content":"خروج زودهنگام می‌تواند کار اضافه را حذف کند و Happy Path را ساده‌تر کند. اما اگر Loop چند Break و Continue پراکنده داشته باشد، دنبال‌کردن مسیر اجرا دشوار می‌شود. در آن حالت تقسیم منطق به Function یا بازطراحی شرط‌ها بهتر است.","metadata":{}},
+    {"id":"basic-fnd-033-ex","type":"EXERCISE","content":"تمرین: پیمایشی طراحی کنید که داده نامعتبر را رد کند و پس از یافتن اولین مقدار هدف متوقف شود.","metadata":{"exerciseId":"basic-ex-032"}}
+  ]
+}

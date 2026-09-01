@@ -1,0 +1,11 @@
+{
+  "id":"basic-fnd-031","chapterId":"basic-fnd-09-loops","title":"Counter، Accumulator و Current Best؛ الگوهای داخل حلقه","summary":"شناخت الگوهای شمارش، جمع‌سازی، min/max و نگهداری State در Iteration.","order":2,"estimatedMinutes":34,"tags":["loop","counter","accumulator","min-max","state"],"prerequisites":["basic-fnd-030"],
+  "blocks":[
+    {"id":"basic-fnd-031-title","type":"TITLE","content":"داخل Loop چه Stateای باید نگه داریم؟","metadata":{}},
+    {"id":"basic-fnd-031-goal","type":"IMPORTANT","content":"هدف درس: الگوهای Counter، Accumulator و Current Best را تشخیص دهید و مقدار اولیه صحیح هرکدام را انتخاب کنید.","metadata":{}},
+    {"id":"basic-fnd-031-list","type":"LIST","content":"Counter: تعداد رخدادهای مطابق شرط\nAccumulator: ترکیب تدریجی مقادیر مانند sum\nCurrent Best: بهترین مقدار دیده‌شده مانند min/max\nFlag: ثبت اینکه رویدادی رخ داده یا نه\nPrevious: نگهداری مقدار قبلی برای مقایسه با مقدار فعلی","metadata":{}},
+    {"id":"basic-fnd-031-code","type":"CODE","content":"sum = 0\ncount = 0\nFOR EACH score IN scores\n    IF score >= 10 THEN\n        count = count + 1\n    END IF\n    sum = sum + score\nEND FOR","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-031-p1","type":"PARAGRAPH","content":"مقدار اولیه بخشی از الگوریتم است. Sum معمولاً از 0 شروع می‌شود، Product از 1، و min/max نباید بدون توجه به دامنه با یک Magic Number تصادفی مقداردهی شوند. استفاده از اولین عنصر معتبر یا مقدار sentinel مناسب معمولاً امن‌تر است.","metadata":{}},
+    {"id":"basic-fnd-031-ex","type":"EXERCISE","content":"تمرین: در یک پیمایش، تعداد نمرات قبولی، مجموع نمرات و بیشترین نمره را هم‌زمان محاسبه کنید.","metadata":{"exerciseId":"basic-ex-030"}}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-026","chapterId":"basic-fnd-08-conditions","title":"چندشاخه‌ای‌ها؛ Else If و بازه‌های بدون شکاف","summary":"طراحی چند مسیر متقابلاً انحصاری و جلوگیری از شکاف یا هم‌پوشانی در Rangeها.","order":1,"estimatedMinutes":32,"tags":["condition","else-if","range","boundary"],"prerequisites":["basic-fnd-025"],
+  "blocks":[
+    {"id":"basic-fnd-026-title","type":"TITLE","content":"وقتی بیش از دو نتیجه داریم","metadata":{}},
+    {"id":"basic-fnd-026-goal","type":"IMPORTANT","content":"هدف درس: چند بازه یا حالت را طوری طراحی کنید که هر ورودی معتبر دقیقاً در مسیر موردنظر قرار گیرد و مرزها جا نیفتند.","metadata":{}},
+    {"id":"basic-fnd-026-p1","type":"PARAGRAPH","content":"زنجیره Else If برای انتخاب یک مسیر از چند حالت استفاده می‌شود. ترتیب شرط‌ها اهمیت دارد، چون در بیشتر ساختارها پس از اولین شرط True، شاخه‌های بعدی بررسی نمی‌شوند. بنابراین شرط عمومی نباید قبل از شرط خاصی قرار گیرد که آن را می‌پوشاند.","metadata":{}},
+    {"id":"basic-fnd-026-code","type":"CODE","content":"IF score >= 90 THEN\n    grade = \"A\"\nELSE IF score >= 80 THEN\n    grade = \"B\"\nELSE IF score >= 70 THEN\n    grade = \"C\"\nELSE\n    grade = \"Needs improvement\"\nEND IF","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-026-p2","type":"PARAGRAPH","content":"در مثال بالا لازم نیست در شاخه دوم دوباره `score < 90` نوشته شود، چون فقط وقتی به آن شاخه می‌رسیم که شرط اول False بوده است. فهم Context هر شاخه از تکرار شرط و خطای منطقی جلوگیری می‌کند.","metadata":{}},
+    {"id":"basic-fnd-026-list","type":"LIST","content":"بازه‌ها را روی کاغذ بنویس\nمرز پایین و بالا را مشخص کن\nمقادیر دقیق روی مرز را تست کن\nبررسی کن هیچ مقدار معتبر جا نیفتاده باشد\nبررسی کن هم‌پوشانی ناخواسته نداشته باشی\nشرط‌های خاص را پیش از شرط عمومی قرار بده","metadata":{}},
+    {"id":"basic-fnd-026-ex","type":"EXERCISE","content":"تمرین: سیستم دسته‌بندی دما به سرد، معتدل، گرم و بسیار گرم را با مرزهای دقیق طراحی کنید.","metadata":{"exerciseId":"basic-ex-025"}}
+  ]
+}

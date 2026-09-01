@@ -1,0 +1,18 @@
+{
+  "id": "basic-qz-005",
+  "courseId": "basic",
+  "lessonId": "basic-fnd-016",
+  "chapterId": "basic-fnd-05-data",
+  "title": "آزمون: متغیرها و انواع داده",
+  "passingScorePercent": 75,
+  "shuffleQuestions": true,
+  "shuffleAnswers": true,
+  "questions": [
+    {"id":"basic-qz-005-q01","type":"MULTIPLE_CHOICE","question":"در شبه‌کد `count = count + 1` چه اتفاقی می‌افتد؟","explanation":"سمت راست با مقدار فعلی محاسبه و سپس نتیجه به متغیر count نسبت داده می‌شود.","tags":["assignment","variable"],"points":1,"answers":[{"id":"basic-qz-005-q01-a","text":"مقدار فعلی count یک واحد افزایش و دوباره ذخیره می‌شود","isCorrect":true},{"id":"basic-qz-005-q01-b","text":"یک معادله ریاضی نامعتبر تعریف می‌شود","isCorrect":false},{"id":"basic-qz-005-q01-c","text":"count به متن تبدیل می‌شود","isCorrect":false}]},
+    {"id":"basic-qz-005-q02","type":"MULTIPLE_CHOICE","question":"برای شماره تلفن که فقط شامل رقم است، چرا String می‌تواند انتخاب بهتری از Number باشد؟","explanation":"شماره تلفن شناسه/متن ساختاریافته است و عملیات حسابی روی آن معنا ندارد؛ صفر ابتدا و + نیز ممکن است مهم باشند.","tags":["data-type","string"],"points":2,"answers":[{"id":"basic-qz-005-q02-a","text":"چون عملیات حسابی روی آن معنا ندارد و قالب اهمیت دارد","isCorrect":true},{"id":"basic-qz-005-q02-b","text":"چون String همیشه حافظه کمتری می‌گیرد","isCorrect":false},{"id":"basic-qz-005-q02-c","text":"چون Number نمی‌تواند رقم داشته باشد","isCorrect":false}]},
+    {"id":"basic-qz-005-q03","type":"TRUE_FALSE","question":"Floating-point می‌تواند همه کسرهای اعشاری را بدون هیچ تقریب ذخیره کند.","explanation":"بسیاری از مقادیر اعشاری در نمایش دودویی Floating-point تقریبی‌اند.","tags":["floating-point","precision"],"points":1,"answers":[{"id":"basic-qz-005-q03-a","text":"درست","isCorrect":false},{"id":"basic-qz-005-q03-b","text":"نادرست","isCorrect":true}]},
+    {"id":"basic-qz-005-q04","type":"MULTIPLE_SELECT","question":"برای دریافت سن از یک Text Field چه بررسی‌هایی منطقی‌اند؟","explanation":"ابتدا باید متن قابل Parse به عدد باشد و بعد مقدار عددی از نظر دامنه معتبر بررسی شود.","tags":["parsing","validation"],"points":2,"answers":[{"id":"basic-qz-005-q04-a","text":"قابل تبدیل بودن متن به Integer","isCorrect":true},{"id":"basic-qz-005-q04-b","text":"منفی نبودن مقدار","isCorrect":true},{"id":"basic-qz-005-q04-c","text":"فرض اینکه هر متن ورودی معتبر است","isCorrect":false},{"id":"basic-qz-005-q04-d","text":"بررسی محدودیت منطقی دامنه در صورت نیاز","isCorrect":true}]},
+    {"id":"basic-qz-005-q05","type":"MULTIPLE_CHOICE","question":"کدام توضیح Scope را بهتر بیان می‌کند؟","explanation":"Scope محدوده‌ای از کد است که یک نام در آن قابل دسترسی است.","tags":["scope"],"points":1,"answers":[{"id":"basic-qz-005-q05-a","text":"محدوده‌ای که یک نام در آن قابل دسترسی است","isCorrect":true},{"id":"basic-qz-005-q05-b","text":"تعداد بیت یک Integer","isCorrect":false},{"id":"basic-qz-005-q05-c","text":"سرعت اجرای CPU","isCorrect":false}]},
+    {"id":"basic-qz-005-q06","type":"MULTIPLE_CHOICE","question":"کدام نام متغیر اطلاعات بیشتری منتقل می‌کند؟","explanation":"نام خوب معنا و در صورت نیاز واحد را منتقل می‌کند.","tags":["naming"],"points":1,"answers":[{"id":"basic-qz-005-q06-a","text":"timeoutSeconds","isCorrect":true},{"id":"basic-qz-005-q06-b","text":"x","isCorrect":false},{"id":"basic-qz-005-q06-c","text":"data2","isCorrect":false}]}
+  ]
+}

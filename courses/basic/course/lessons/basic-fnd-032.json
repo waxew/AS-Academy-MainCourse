@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-032","chapterId":"basic-fnd-09-loops","title":"حلقه‌های تو در تو و رشد تعداد عملیات","summary":"فهم Nested Loop، جدول دوبعدی و شهود اولیه هزینه O(n²) بدون ورود کامل به فصل Complexity.","order":3,"estimatedMinutes":34,"tags":["loop","nested-loop","matrix","complexity-intuition"],"prerequisites":["basic-fnd-031"],
+  "blocks":[
+    {"id":"basic-fnd-032-title","type":"TITLE","content":"هر دور حلقه بیرونی می‌تواند یک حلقه کامل دیگر اجرا کند","metadata":{}},
+    {"id":"basic-fnd-032-goal","type":"IMPORTANT","content":"هدف درس: Nested Loop را Trace کنید و تعداد تقریبی اجرای Body داخلی را از اندازه ورودی تخمین بزنید.","metadata":{}},
+    {"id":"basic-fnd-032-code","type":"CODE","content":"FOR row FROM 1 TO 3\n    FOR column FROM 1 TO 4\n        PROCESS cell(row, column)\n    END FOR\nEND FOR","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-032-p1","type":"PARAGRAPH","content":"در مثال بالا Body داخلی 3×4 یعنی 12 بار اجرا می‌شود. اگر هر دو حلقه تا n بروند، تعداد اجرای تقریبی n² است. این شهود بعداً در فصل Big-O دقیق‌تر می‌شود.","metadata":{}},
+    {"id":"basic-fnd-032-use","type":"LIST","content":"پردازش جدول یا Matrix\nمقایسه هر آیتم با چند آیتم دیگر\nتولید ترکیب‌های دو بعدی\nشبکه‌ها و مختصات سطر/ستون","metadata":{}},
+    {"id":"basic-fnd-032-warning","type":"WARNING","content":"Nested Loop ذاتاً بد نیست. سؤال درست این است که آیا مسئله واقعاً به این تعداد ترکیب نیاز دارد و اندازه ورودی چقدر است.","metadata":{}},
+    {"id":"basic-fnd-032-ex","type":"EXERCISE","content":"تمرین: الگوریتم تولید یک جدول 5×5 و تعداد اجرای Body داخلی را محاسبه کنید.","metadata":{"exerciseId":"basic-ex-031"}}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "basic-fnd-002",
+  "chapterId": "basic-fnd-01-computer-literacy",
+  "title": "سیستم‌عامل، فایل، پردازش و کاربر",
+  "summary": "مدل ذهنی ضروری از نقش سیستم‌عامل و مفاهیمی که برنامه‌نویس هر روز با آن‌ها برخورد می‌کند.",
+  "order": 1,
+  "estimatedMinutes": 22,
+  "tags": ["operating-system", "file", "process", "user", "permissions"],
+  "prerequisites": ["basic-fnd-001"],
+  "blocks": [
+    {"id":"basic-fnd-002-title","type":"TITLE","content":"سیستم‌عامل چه کاری برای برنامه ما انجام می‌دهد؟","metadata":{}},
+    {"id":"basic-fnd-002-goal","type":"IMPORTANT","content":"هدف درس: تفاوت Program و Process، مفهوم Path و نقش Permission را در سطح مقدماتی توضیح دهید.","metadata":{}},
+    {"id":"basic-fnd-002-p1","type":"PARAGRAPH","content":"سیستم‌عامل واسطه اصلی بین برنامه‌ها و سخت‌افزار است. مدیریت پردازنده، حافظه، فایل‌ها، دستگاه‌ها، شبکه، کاربران و مجوزها از مسئولیت‌های اصلی آن است. برنامه‌نویس معمولاً مستقیماً با سخت‌افزار صحبت نمی‌کند؛ از امکاناتی استفاده می‌کند که سیستم‌عامل یا Runtime فراهم کرده است.","metadata":{}},
+    {"id":"basic-fnd-002-program-process","type":"PARAGRAPH","content":"Program معمولاً به فایل و دستورهای ذخیره‌شده اشاره دارد؛ Process نمونهٔ در حال اجرای آن برنامه است. ممکن است از یک برنامه چند Process یا چند نمونهٔ اجرایی وجود داشته باشد. Process دارای وضعیت، حافظه و منابع زمان اجرا است.","metadata":{}},
+    {"id":"basic-fnd-002-files","type":"LIST","content":"File: واحد ذخیره داده با نام و محتوا\nDirectory/Folder: ساختار دسته‌بندی فایل‌ها\nPath: آدرس یک فایل یا پوشه\nAbsolute Path: مسیر کامل از ریشه\nRelative Path: مسیر نسبت به محل فعلی","metadata":{}},
+    {"id":"basic-fnd-002-permission","type":"PARAGRAPH","content":"سیستم‌عامل مشخص می‌کند چه کاربری یا چه برنامه‌ای اجازه خواندن، نوشتن یا اجرا دارد. بسیاری از خطاهای واقعی برنامه‌نویسی ناشی از مسیر اشتباه، فایل مفقود یا Permission نامناسب‌اند، نه از الگوریتم برنامه.","metadata":{}},
+    {"id":"basic-fnd-002-example","type":"NOTE","content":"مثال: اگر برنامه بخواهد فایلی را از مسیری بخواند که وجود ندارد، یا کاربر اجازه دسترسی به آن را نداشته باشد، عملیات شکست می‌خورد حتی اگر کد خواندن فایل از نظر Syntax کاملاً درست باشد.","metadata":{}},
+    {"id":"basic-fnd-002-tip","type":"TIP","content":"از همین ابتدا عادت کنید هنگام خطا سه چیز را بررسی کنید: برنامه کجا اجرا می‌شود؟ به چه Pathی اشاره می‌کند؟ با چه مجوزی اجرا می‌شود؟","metadata":{}},
+    {"id":"basic-fnd-002-ex","type":"EXERCISE","content":"تمرین: Program و Process را با یک مثال واقعی مقایسه کنید.","metadata":{"exerciseId":"basic-ex-002"}}
+  ]
+}

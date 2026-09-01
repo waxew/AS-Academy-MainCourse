@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-021","chapterId":"basic-fnd-07-io","title":"ورودی و خروجی؛ مرز برنامه با دنیای بیرون","summary":"شناخت Input Source و Output Destination و مدل Pipeline داده از ورود تا پاسخ.","order":0,"estimatedMinutes":28,"tags":["input","output","io","boundary","data-flow"],"prerequisites":["basic-fnd-020"],
+  "blocks":[
+    {"id":"basic-fnd-021-title","type":"TITLE","content":"برنامه بدون ورودی و خروجی چگونه با جهان ارتباط دارد؟","metadata":{}},
+    {"id":"basic-fnd-021-goal","type":"IMPORTANT","content":"هدف درس: منابع ورودی و مقصدهای خروجی رایج را شناسایی و جریان داده را از دریافت تا پردازش و پاسخ ترسیم کنید.","metadata":{}},
+    {"id":"basic-fnd-021-p1","type":"PARAGRAPH","content":"Input هر داده‌ای است که از بیرون منطق فعلی وارد می‌شود؛ Output داده یا اثری است که برنامه به بیرون تحویل می‌دهد. Keyboard فقط یکی از ورودی‌هاست؛ فایل، Sensor، Database، API و Event نیز می‌توانند منبع داده باشند.","metadata":{}},
+    {"id":"basic-fnd-021-list","type":"LIST","content":"ورودی تعاملی: فرم، Keyboard، Touch\nورودی فایل: متن، JSON، تصویر یا Binary\nورودی شبکه: API، Message یا Stream\nورودی سیستم: زمان، Environment، Sensor\nخروجی UI: متن، نمودار، Notification\nخروجی ذخیره‌سازی: File یا Database\nخروجی شبکه: Request/Response یا Event","metadata":{}},
+    {"id":"basic-fnd-021-pipeline","type":"CODE","content":"Source -> Read -> Parse -> Validate -> Normalize -> Process -> Format -> Destination","metadata":{"language":"data-flow"}},
+    {"id":"basic-fnd-021-important","type":"IMPORTANT","content":"هر مرز ورودی یک Trust Boundary است: داده بیرونی را قبل از استفاده معتبر فرض نکنید. این اصل بعداً در فصل امنیت عمیق‌تر بررسی می‌شود.","metadata":{}},
+    {"id":"basic-fnd-021-ex","type":"EXERCISE","content":"تمرین: ورودی‌ها و خروجی‌های یک اپ آب‌وهوا و یک ماشین‌حساب آفلاین را مقایسه کنید.","metadata":{"exerciseId":"basic-ex-020"}}
+  ]
+}

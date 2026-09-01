@@ -1,0 +1,3 @@
+{
+  "id":"basic-ex-016","courseId":"basic","lessonId":"basic-fnd-017","title":"تبدیل ثانیه به ساعت، دقیقه و ثانیه","description":"الگوریتمی طراحی کنید که تعداد کل ثانیه را دریافت و آن را به ساعت، دقیقه و ثانیه باقی‌مانده تبدیل کند.","type":"READ_AND_ANSWER","difficulty":"MEDIUM","hints":["برای ساعت از تقسیم صحیح بر 3600 استفاده کنید.","برای باقی‌مانده از remainder استفاده کنید.","پس از جداکردن ساعت، دقیقه را از باقی‌مانده محاسبه کنید."],"solution":"hours = totalSeconds DIV 3600؛ remaining = totalSeconds MOD 3600؛ minutes = remaining DIV 60؛ seconds = remaining MOD 60. قبل از محاسبه منفی نبودن ورودی را طبق قرارداد بررسی کنید.","explanation":"این تمرین ترکیب division و remainder را در یک مسئله واقعی تمرین می‌دهد.","tags":["arithmetic","division","remainder"]
+}

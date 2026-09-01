@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-027","chapterId":"basic-fnd-08-conditions","title":"Nested Condition یا Guard Clause؟ تصمیم خواناتر بساز","summary":"شناخت هزینه شرط‌های تو در تو و استفاده مفهومی از Guard Clause برای رد زودهنگام حالت نامعتبر.","order":2,"estimatedMinutes":34,"tags":["condition","nested","guard-clause","readability"],"prerequisites":["basic-fnd-026"],
+  "blocks":[
+    {"id":"basic-fnd-027-title","type":"TITLE","content":"تو در تو شدن شرط‌ها، نقشه ذهنی را سنگین می‌کند","metadata":{}},
+    {"id":"basic-fnd-027-goal","type":"IMPORTANT","content":"هدف درس: شرط تو در تو را Trace کنید و وقتی مناسب است حالت‌های نامعتبر را زودتر رد کنید تا مسیر اصلی ساده‌تر شود.","metadata":{}},
+    {"id":"basic-fnd-027-p1","type":"PARAGRAPH","content":"Nested condition زمانی رخ می‌دهد که داخل یک شاخه شرط دیگری داریم. گاهی این ساختار طبیعی است، اما عمق زیاد باعث می‌شود برای فهم یک خط مجبور شویم چند شرط قبلی را هم‌زمان در ذهن نگه داریم.","metadata":{}},
+    {"id":"basic-fnd-027-code","type":"CODE","content":"IF NOT isActive THEN\n    REPORT \"Inactive account\"\n    STOP CURRENT OPERATION\nEND IF\nIF isBlocked THEN\n    REPORT \"Blocked account\"\n    STOP CURRENT OPERATION\nEND IF\nPROCESS request","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-027-p2","type":"PARAGRAPH","content":"Guard Clause حالتی را که اجازه ادامه ندارد زود بررسی و خارج می‌کند. نتیجه این است که Happy Path یا مسیر اصلی کمتر تورفتگی دارد. این تکنیک باید با قرارداد خروج از تابع یا عملیات سازگار باشد.","metadata":{}},
+    {"id":"basic-fnd-027-warning","type":"WARNING","content":"Guard Clause درمان همه شرط‌ها نیست. اگر چند حالت واقعاً شاخه‌های هم‌ارز یک تصمیم هستند، ساختار چندشاخه‌ای ممکن است واضح‌تر از چند خروج زودهنگام باشد.","metadata":{}},
+    {"id":"basic-fnd-027-ex","type":"EXERCISE","content":"تمرین: یک شرط سه‌لایه برای پردازش پرداخت را به نسخه‌ای خواناتر با Validation و Guardهای مناسب تبدیل کنید.","metadata":{"exerciseId":"basic-ex-026"}}
+  ]
+}

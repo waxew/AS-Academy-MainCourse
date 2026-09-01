@@ -1,0 +1,3 @@
+{
+  "id":"basic-ex-018","courseId":"basic","lessonId":"basic-fnd-019","title":"شرط دسترسی به محتوای ویژه","description":"شرطی طراحی کنید که فقط کاربر فعال و مسدودنشده‌ای را بپذیرد که یا اشتراک معتبر دارد یا کد هدیه معتبر.","type":"READ_AND_ANSWER","difficulty":"MEDIUM","hints":["اشتراک و کد هدیه داخل یک OR قرار می‌گیرند.","مسدود بودن باید با NOT معکوس شود.","برای خوانایی پرانتز اضافه کنید."],"solution":"canAccess = isActive AND NOT isBlocked AND (hasValidSubscription OR hasValidGiftCode)","explanation":"ساختار شرط، قواعد مستقل را واضح ترکیب می‌کند و نقطه مناسب برای Test Caseهای ترکیبی ایجاد می‌کند.","tags":["boolean","and","or","not"]
+}

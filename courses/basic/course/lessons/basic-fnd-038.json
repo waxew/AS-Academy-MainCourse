@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-038","chapterId":"basic-fnd-10-functions","title":"Scope تابع و Call Stack؛ هنگام فراخوانی چه می‌شود؟","summary":"مدل مقدماتی Frame فراخوانی، متغیر محلی، Return و Call Stack بدون ورود عمیق به مدیریت حافظه.","order":3,"estimatedMinutes":34,"tags":["function","scope","call-stack","local-variable"],"prerequisites":["basic-fnd-037"],
+  "blocks":[
+    {"id":"basic-fnd-038-title","type":"TITLE","content":"هر فراخوانی فضای منطقی خودش را دارد","metadata":{}},
+    {"id":"basic-fnd-038-goal","type":"IMPORTANT","content":"هدف درس: فراخوانی توابع را روی Call Stack ساده Trace کنید و توضیح دهید چرا متغیر محلی یک فراخوانی الزاماً در تابع دیگری قابل دسترسی نیست.","metadata":{}},
+    {"id":"basic-fnd-038-p1","type":"PARAGRAPH","content":"در مدل ساده، هنگام فراخوانی Function اطلاعاتی مانند محل بازگشت، پارامترها و متغیرهای محلی در یک Frame اجرایی نگهداری می‌شوند. فراخوانی تابع دیگر Frame جدیدی ایجاد می‌کند و پس از Return کنترل به فراخواننده برمی‌گردد.","metadata":{}},
+    {"id":"basic-fnd-038-code","type":"CODE","content":"main()\n  -> calculateTotal()\n       -> calculateTax()\n       <- return tax\n  <- return total","metadata":{"language":"call-trace"}},
+    {"id":"basic-fnd-038-p2","type":"PARAGRAPH","content":"این مدل دقیق تمام Runtimeها نیست، اما برای فهم Scope، nested calls و Recursion آینده مفید است. فصل مدیریت حافظه بعداً تفاوت Stack، Heap و Lifetime را عمیق‌تر بررسی می‌کند.","metadata":{}},
+    {"id":"basic-fnd-038-tip","type":"TIP","content":"هنگام Debugging اگر نمی‌دانید برنامه چطور به خط فعلی رسیده، Call Stack یکی از اولین ابزارهایی است که باید بررسی کنید.","metadata":{}},
+    {"id":"basic-fnd-038-ex","type":"EXERCISE","content":"تمرین: زنجیره سه Function برای محاسبه مبلغ نهایی را رسم و ترتیب ورود/خروج Frameها را Trace کنید.","metadata":{"exerciseId":"basic-ex-037"}}
+  ]
+}

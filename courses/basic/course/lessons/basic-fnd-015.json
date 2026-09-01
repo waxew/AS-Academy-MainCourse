@@ -1,0 +1,20 @@
+{
+  "id": "basic-fnd-015",
+  "chapterId": "basic-fnd-05-data",
+  "title": "تبدیل نوع، Parsing و Validation",
+  "summary": "تفکیک تبدیل داده از اعتبارسنجی و یادگیری برخورد ایمن با ورودی متنی.",
+  "order": 3,
+  "estimatedMinutes": 32,
+  "tags": ["type-conversion", "parsing", "casting", "validation", "input"],
+  "prerequisites": ["basic-fnd-014"],
+  "blocks": [
+    {"id":"basic-fnd-015-title","type":"TITLE","content":"متن «42» با عدد 42 یک چیز نیست","metadata":{}},
+    {"id":"basic-fnd-015-goal","type":"IMPORTANT","content":"هدف درس: تفاوت Parsing، Conversion و Cast را در سطح مفهومی بدانید و برای ورودی نامعتبر مسیر خطای امن طراحی کنید.","metadata":{}},
+    {"id":"basic-fnd-015-p1","type":"PARAGRAPH","content":"داده ورودی از فرم، فایل یا شبکه اغلب ابتدا متن یا ساختار عمومی است. برای محاسبه باید آن را به نوع مناسب تبدیل کنیم. Parsing یعنی تفسیر یک نمایش مانند متن به ساختار یا مقدار معنی‌دار؛ Conversion تبدیل بین دو نمایش یا نوع سازگار است؛ Cast در برخی زبان‌ها اعلام یا بررسی نوع در یک سلسله‌مراتب است.","metadata":{}},
+    {"id":"basic-fnd-015-code","type":"CODE","content":"READ rawAge\nIF rawAge can be parsed as integer THEN\n    age = parseInteger(rawAge)\n    IF age >= 0 THEN\n        USE age\n    ELSE\n        REPORT \"Age cannot be negative\"\n    END IF\nELSE\n    REPORT \"Age must be a number\"\nEND IF","metadata":{"language":"pseudocode"}},
+    {"id":"basic-fnd-015-p2","type":"PARAGRAPH","content":"موفق بودن Parsing فقط یعنی شکل داده قابل تبدیل است؛ هنوز ممکن است مقدار از نظر کسب‌وکار نامعتبر باشد. مثلاً متن «-5» ممکن است به Integer تبدیل شود، اما برای سن انسان قرارداد برنامه آن را رد کند.","metadata":{}},
+    {"id":"basic-fnd-015-warning","type":"WARNING","content":"تبدیل اجباری بدون بررسی می‌تواند باعث Crash، از دست‌رفتن داده یا نتیجه اشتباه شود. همیشه مشخص کنید در شکست Conversion چه رفتاری انتظار می‌رود.","metadata":{}},
+    {"id":"basic-fnd-015-tip","type":"TIP","content":"Validation را در مرز ورود داده انجام دهید و بعد از آن تا حد ممکن با نوع معتبر و قرارداد روشن کار کنید. این کار شرط‌های تکراری را در عمق برنامه کاهش می‌دهد.","metadata":{}},
+    {"id":"basic-fnd-015-ex","type":"EXERCISE","content":"تمرین: الگوریتم ایمن دریافت سن، درصد تخفیف و ایمیل را طراحی کنید و برای هرکدام تفاوت Parsing و Validation را مشخص کنید.","metadata":{"exerciseId":"basic-ex-014"}}
+  ]
+}

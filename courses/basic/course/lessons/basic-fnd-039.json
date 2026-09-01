@@ -1,0 +1,12 @@
+{
+  "id":"basic-fnd-039","chapterId":"basic-fnd-10-functions","title":"Decomposition و Cohesion؛ مسئله بزرگ را به تابع‌های درست بشکن","summary":"تقسیم مسئله بر اساس مسئولیت، جلوگیری از God Function و حفظ Cohesion در هر واحد رفتاری.","order":4,"estimatedMinutes":36,"tags":["function","decomposition","cohesion","clean-code"],"prerequisites":["basic-fnd-038"],
+  "blocks":[
+    {"id":"basic-fnd-039-title","type":"TITLE","content":"تابع‌ها باید مرزهای طبیعی مسئله را نشان دهند","metadata":{}},
+    {"id":"basic-fnd-039-goal","type":"IMPORTANT","content":"هدف درس: یک مسئله چندمرحله‌ای را بر اساس مسئولیت به Functionهای Cohesive تقسیم و Functionهایی را که کارهای نامرتبط انجام می‌دهند تشخیص دهید.","metadata":{}},
+    {"id":"basic-fnd-039-p1","type":"PARAGRAPH","content":"Cohesion بالا یعنی بخش‌های داخل یک Function برای یک هدف مشترک کار می‌کنند. تابعی که Validate input، محاسبه قیمت، ذخیره Database، ارسال Email و ساخت UI را با هم انجام می‌دهد معمولاً چند مسئولیت را مخلوط کرده است.","metadata":{}},
+    {"id":"basic-fnd-039-example","type":"LIST","content":"validateOrderInput\ncalculateOrderTotal\npersistOrder\nsendOrderConfirmation\nrenderOrderSummary","metadata":{}},
+    {"id":"basic-fnd-039-p2","type":"PARAGRAPH","content":"تقسیم بیش‌ازحد هم می‌تواند بد باشد. اگر هر خط ساده را به Function جدا تبدیل کنیم، خواننده برای فهم جریان مجبور به پرش مداوم می‌شود. مرز مناسب جایی است که یک مفهوم، تصمیم یا مسئولیت مستقل شکل می‌گیرد.","metadata":{}},
+    {"id":"basic-fnd-039-warning","type":"WARNING","content":"تعداد خطوط معیار قطعی اندازه Function نیست. مسئولیت، خوانایی، سطح انتزاع و تست‌پذیری معیارهای مهم‌تری‌اند.","metadata":{}},
+    {"id":"basic-fnd-039-ex","type":"EXERCISE","content":"تمرین: فرآیند ثبت سفارش را به Functionهای Cohesive تقسیم و وابستگی بین آن‌ها را مشخص کنید.","metadata":{"exerciseId":"basic-ex-038"}}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "basic-fnd-011",
+  "chapterId": "basic-fnd-04-algorithms",
+  "title": "درستی الگوریتم، حالت مرزی و ورودی بد",
+  "summary": "طراحی Test Case برای سنجش Correctness و جلوگیری از راه‌حل‌هایی که فقط در مثال معمولی کار می‌کنند.",
+  "order": 4,
+  "estimatedMinutes": 32,
+  "tags": ["algorithm", "correctness", "edge-case", "validation", "test-case"],
+  "prerequisites": ["basic-fnd-010"],
+  "blocks": [
+    {"id":"basic-fnd-011-title","type":"TITLE","content":"یک مثال موفق، الگوریتم را ثابت نمی‌کند","metadata":{}},
+    {"id":"basic-fnd-011-goal","type":"IMPORTANT","content":"هدف درس: برای یک الگوریتم مجموعه‌ای از Test Caseهای معمولی، مرزی و نامعتبر طراحی کنید و تفاوت Precondition با Validation را در سطح مقدماتی توضیح دهید.","metadata":{}},
+    {"id":"basic-fnd-011-p1","type":"PARAGRAPH","content":"اگر الگوریتم برای ورودی 5 جواب درست داد، هنوز نمی‌دانیم برای 0، عدد منفی، مقدار بسیار بزرگ، ورودی تکراری یا داده نامعتبر چه می‌کند. Correctness یعنی رفتار الگوریتم برای دامنه‌ای که مسئله تعریف کرده درست باشد، نه فقط برای نمونه‌ای که اتفاقاً امتحان کرده‌ایم.","metadata":{}},
+    {"id":"basic-fnd-011-cases","type":"LIST","content":"Normal case: ورودی معمولی و رایج\nBoundary case: کمینه، بیشینه، صفر یا مرز تغییر رفتار\nEmpty case: لیست یا ورودی خالی در صورت امکان\nDuplicate/equal case: مقادیر برابر یا تکراری\nInvalid case: نوع یا مقدار خارج از قرارداد\nStress case: اندازه بزرگ برای بررسی محدودیت زمان و حافظه","metadata":{}},
+    {"id":"basic-fnd-011-example","type":"NOTE","content":"برای الگوریتم «بزرگ‌ترین عدد بین سه مقدار»، فقط 3، 7، 2 را تست نکنید. نمونه‌هایی مانند 7، 7، 2؛ عددهای منفی؛ سه مقدار برابر؛ و ترتیب‌های مختلف بزرگ‌ترین مقدار را هم بررسی کنید.","metadata":{}},
+    {"id":"basic-fnd-011-precondition","type":"PARAGRAPH","content":"Precondition شرطی است که مسئله یا تابع فرض می‌کند قبل از اجرا برقرار است؛ Validation بررسی می‌کند ورودی واقعاً آن شرط را رعایت کرده یا نه. در برنامه واقعی باید تصمیم بگیریم ورودی نامعتبر رد، اصلاح یا به خطای قابل فهم تبدیل شود.","metadata":{}},
+    {"id":"basic-fnd-011-warning","type":"WARNING","content":"اضافه‌کردن Validation بدون تعریف قرارداد ورودی می‌تواند به مجموعه‌ای از شرط‌های تصادفی تبدیل شود. ابتدا بگویید چه ورودی‌ای معتبر است، سپس آن را بررسی کنید.","metadata":{}},
+    {"id":"basic-fnd-011-quiz","type":"QUIZ","content":"آزمون فصل الگوریتم، فلوچارت و شبه‌کد","metadata":{"quizId":"basic-qz-004"}},
+    {"id":"basic-fnd-011-ex","type":"EXERCISE","content":"تمرین: برای محاسبه میانگین نمرات حداقل شش Test Case شامل حالت معمولی، مرزی و نامعتبر طراحی کنید.","metadata":{"exerciseId":"basic-ex-010"}}
+  ]
+}
