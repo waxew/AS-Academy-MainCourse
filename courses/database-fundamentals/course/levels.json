@@ -1,0 +1,7 @@
+[
+  {"id":"dbf-fundamentals","title":"مبانی","order":1,"description":"شناخت داده، روش‌های ذخیره‌سازی، DBMS و واژگان اصلی"},
+  {"id":"dbf-beginner","title":"مقدماتی","order":2,"description":"مدل رابطه‌ای، کلیدها، ERD، روابط و نرمال‌سازی"},
+  {"id":"dbf-advanced","title":"پیشرفته","order":3,"description":"Transaction، ACID، Isolation، Locking، Concurrency و Index"},
+  {"id":"dbf-specialist","title":"تخصصی","order":4,"description":"NoSQL، CAP، Replication، Sharding، Availability، Security و انتخاب معماری"},
+  {"id":"dbf-projects","title":"پروژه‌ها","order":5,"description":"تمرین‌های طراحی و تصمیم‌گیری معماری در سناریوهای واقعی"}
+]
