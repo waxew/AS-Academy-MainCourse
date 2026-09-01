@@ -1,0 +1,1 @@
+{"themeKey":"web-basics","direction":"rtl","locale":"fa","uiProfile":"mainui-default","iconHint":"language","accentRole":"course","supportsDarkMode":true,"supportsDynamicType":true,"notes":"تمام Navigation، typography، cards، lesson renderer، search، progress و quiz UI از AS-Academy-MainUi/Core دریافت شود؛ Course فقط metadata و content نگه می‌دارد."}
