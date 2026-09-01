@@ -1,0 +1,17 @@
+{
+  "courseId":"iot",
+  "version":"1.2.0",
+  "policy":"هر مسیر آموزشی از Lesson به Lab/Example، سپس Exercise، Quiz و در پایان Mini Project یا Project متصل می‌شود.",
+  "tracks":[
+    {"id":"iot-track-fundamentals","levelId":"iot-fundamentals","lessonIds":["iot-v2-f-01","iot-v2-f-02","iot-v2-f-03","iot-v2-f-04"],"labIds":["iot-lab-01","iot-lab-02","iot-lab-03"],"exerciseIds":["iot-ex-04","iot-ex-05","iot-ex-06"],"quizId":"iot-q-01","projectIds":["iot-project-04"]},
+    {"id":"iot-track-firmware","levelId":"iot-beginner","lessonIds":["iot-v2-b-01","iot-v2-b-02"],"labIds":["iot-lab-04","iot-lab-05","iot-lab-06"],"exerciseIds":["iot-ex-07","iot-ex-08","iot-ex-09"],"quizId":"iot-q-02","projectIds":["iot-project-05"]},
+    {"id":"iot-track-network","levelId":"iot-beginner","lessonIds":["iot-v2-b-03","iot-v2-b-04"],"labIds":["iot-lab-07","iot-lab-08","iot-lab-09"],"exerciseIds":["iot-ex-10","iot-ex-11","iot-ex-12"],"quizId":"iot-q-03","projectIds":["iot-project-01"]},
+    {"id":"iot-track-backend","levelId":"iot-intermediate","lessonIds":["iot-v2-i-01","iot-v2-i-02","iot-v2-i-03","iot-v2-i-04"],"labIds":["iot-lab-10","iot-lab-11","iot-lab-12"],"exerciseIds":["iot-ex-13","iot-ex-14","iot-ex-15"],"quizId":"iot-q-04","projectIds":["iot-project-06"]},
+    {"id":"iot-track-lpwan","levelId":"iot-intermediate","lessonIds":["iot-v2-i-05"],"labIds":["iot-lab-13"],"exerciseIds":["iot-ex-16"],"quizId":"iot-q-04","projectIds":["iot-project-08"]},
+    {"id":"iot-track-security","levelId":"iot-advanced","lessonIds":["iot-v2-a-01","iot-v2-a-02"],"labIds":["iot-lab-14","iot-lab-15"],"exerciseIds":["iot-ex-17","iot-ex-18"],"quizId":"iot-q-05","projectIds":["iot-project-10"]},
+    {"id":"iot-track-reliability","levelId":"iot-advanced","lessonIds":["iot-v2-a-03","iot-v2-a-04","iot-v2-a-05"],"labIds":["iot-lab-16","iot-lab-17","iot-lab-18"],"exerciseIds":["iot-ex-19","iot-ex-20","iot-ex-21"],"quizId":"iot-q-06","projectIds":["iot-project-02","iot-project-09"]},
+    {"id":"iot-track-iiot-matter","levelId":"iot-specialist","lessonIds":["iot-v2-s-01","iot-v2-s-02"],"labIds":["iot-lab-19","iot-lab-20"],"exerciseIds":["iot-ex-22","iot-ex-23"],"quizId":"iot-q-07","projectIds":["iot-project-11"]},
+    {"id":"iot-track-cloud-ai-product","levelId":"iot-specialist","lessonIds":["iot-v2-s-03","iot-v2-s-04","iot-v2-s-05"],"labIds":["iot-lab-21","iot-lab-22","iot-lab-23"],"exerciseIds":["iot-ex-24","iot-ex-25","iot-ex-26"],"quizId":"iot-q-08","projectIds":["iot-project-12","iot-project-13"]},
+    {"id":"iot-track-capstone","levelId":"iot-projects","lessonIds":["iot-v2-p-01","iot-v2-p-02","iot-v2-p-03"],"labIds":["iot-lab-24"],"exerciseIds":["iot-ex-27","iot-ex-28"],"quizId":"iot-q-08","projectIds":["iot-project-03","iot-project-14"]}
+  ]
+}
