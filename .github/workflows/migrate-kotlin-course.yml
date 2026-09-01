@@ -1,0 +1,83 @@
+name: Migrate Kotlin Course
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/migrate-kotlin-course.yml'
+      - 'migration/kotlin-source-sync.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout MainCourse
+        uses: actions/checkout@v4
+        with:
+          path: maincourse
+
+      - name: Checkout Kotlin source repository
+        uses: actions/checkout@v4
+        with:
+          repository: waxew/AS-Academy-Kotlin
+          path: kotlin-source
+
+      - name: Replace MainCourse Kotlin package from source
+        run: |
+          rm -rf maincourse/courses/kotlin/course
+          mkdir -p maincourse/courses/kotlin/course
+          cp -R kotlin-source/course/. maincourse/courses/kotlin/course/
+
+      - name: Patch MainCourse ownership metadata
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('maincourse/courses/kotlin/course')
+          course_file = root / 'course.json'
+          course = json.loads(course_file.read_text(encoding='utf-8'))
+          course['runtime'] = {
+              'coreRepository': 'AS-Academy-Core',
+              'uiRepository': 'AS-Academy-MainUi'
+          }
+          course['contentRepository'] = 'AS-Academy-MainCourse'
+          course_file.write_text(json.dumps(course, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+          manifest_file = root / 'manifest.json'
+          manifest = json.loads(manifest_file.read_text(encoding='utf-8'))
+          manifest['contentSource'] = 'AS-Academy-MainCourse/courses/kotlin/course'
+          manifest_file.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+      - name: Verify migration inventory
+        run: |
+          test -f maincourse/courses/kotlin/course/manifest.json
+          test -f maincourse/courses/kotlin/course/course.json
+          test -f maincourse/courses/kotlin/course/levels.json
+          test -f maincourse/courses/kotlin/course/chapters.json
+          test -f maincourse/courses/kotlin/course/exercises/exercises.json
+          test -f maincourse/courses/kotlin/course/quizzes/quizzes.json
+          test -f maincourse/courses/kotlin/course/projects/projects.json
+          test -f maincourse/courses/kotlin/course/glossary/glossary.json
+          LESSONS=$(find maincourse/courses/kotlin/course/lessons -type f -name '*.json' | wc -l)
+          echo "Migrated lessons: $LESSONS"
+          test "$LESSONS" -ge 46
+
+      - name: Commit complete Kotlin migration
+        working-directory: maincourse
+        run: |
+          git config user.name 'AS Academy Automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add courses/kotlin/course
+          if git diff --cached --quiet; then
+            echo 'No migration changes to commit.'
+          else
+            git commit -m 'Migrate complete Kotlin course package into MainCourse'
+            git push
+          fi
