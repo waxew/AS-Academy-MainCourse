@@ -4,11 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - "courses/basic/**"
+      - "courses/basic/course/**"
       - ".github/workflows/publish-basic-content.yml"
   pull_request:
     paths:
-      - "courses/basic/**"
+      - "courses/basic/course/**"
       - ".github/workflows/publish-basic-content.yml"
   workflow_dispatch:
 
@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v5
         with:
           repository: waxew/AS-Academy-Core
-          ref: 6ab793a351180697e59de13b8cb770a7d1dff54b
+          ref: d8b42beb42894452d9420b8bf3200847c6294fb9
           path: AS-Academy-Core
 
       - name: Set up JDK 17
