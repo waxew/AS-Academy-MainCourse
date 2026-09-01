@@ -1,0 +1,22 @@
+[
+{"id":"ncs-fnd-nosql","levelId":"ncs-fundamentals","title":"مبانی NoSQL و مدل‌های داده","description":"SQL در برابر NoSQL، Document، Key-Value، Wide-Column، Graph و Time-Series، CAP، ACID/BASE و Consistency","order":1},
+{"id":"ncs-fnd-architecture","levelId":"ncs-fundamentals","title":"معماری و انتخاب دیتابیس","description":"Replication، Partitioning، Sharding، Horizontal Scaling، Polyglot Persistence و معیارهای انتخاب","order":2},
+{"id":"ncs-beg-mongodb","levelId":"ncs-beginner","title":"MongoDB","description":"BSON، Collection/Document، CRUD، Query، Schema Design، Index، Aggregation، Transaction، Replica Set و Sharding","order":1},
+{"id":"ncs-beg-redis","levelId":"ncs-beginner","title":"Redis و Valkey","description":"Data Typeها، TTL، Cache، Session، Rate Limit، Pub/Sub، Streams، Persistence، Sentinel و Cluster","order":2},
+{"id":"ncs-beg-firebase","levelId":"ncs-beginner","title":"Firebase Realtime Database و Cloud Firestore","description":"Realtime، Offline، Query، Security Rules، Transaction، Data Modeling و انتخاب بین RTDB و Firestore","order":3},
+{"id":"ncs-adv-cassandra","levelId":"ncs-advanced","title":"Apache Cassandra","description":"CQL، Partition/Clustering Key، Query-driven Modeling، Replication، Consistency، Compaction و Tombstone","order":1},
+{"id":"ncs-adv-dynamodb","levelId":"ncs-advanced","title":"Amazon DynamoDB","description":"Partition/Sort Key، Query/Scan، GSI/LSI، Capacity، Transaction، Streams، Global Tables و Single-table Design","order":2},
+{"id":"ncs-adv-graph","levelId":"ncs-advanced","title":"Neo4j و Graph Database","description":"Node، Relationship، Cypher، Graph Modeling، Path Finding، Recommendation، Fraud Detection و Knowledge Graph","order":3},
+{"id":"ncs-adv-elastic","levelId":"ncs-advanced","title":"Elasticsearch","description":"Index/Document، Mapping، Analyzer، Inverted Index، Query DSL، Full-Text، Aggregation، Relevance، Cluster و Snapshot","order":4},
+{"id":"ncs-adv-opensearch","levelId":"ncs-advanced","title":"OpenSearch","description":"Indexing، Query DSL، Aggregation، Dashboards، Security، Alerting و مهاجرت از Elasticsearch","order":5},
+{"id":"ncs-adv-timeseries","levelId":"ncs-advanced","title":"Time-Series و InfluxDB","description":"Metric/Tag/Field، Retention، Downsampling، Window، Telemetry، IoT، Query و اتصال به Grafana","order":6},
+{"id":"ncs-sp-cache","levelId":"ncs-specialist","title":"Cache Engineering","description":"Cache-Aside، Read/Write Through، Write-Behind، Invalidation، Warming، LRU/LFU، Stampede، Avalanche و Multi-Level Cache","order":1},
+{"id":"ncs-sp-search","levelId":"ncs-specialist","title":"Search Engineering","description":"Tokenization، Stemming، Ranking، Precision/Recall، Typo Tolerance، Autocomplete، Facet، فارسی، Semantic/Vector/Hybrid Search و RAG","order":2},
+{"id":"ncs-sp-scale","levelId":"ncs-specialist","title":"NoSQL در مقیاس بالا","description":"Consistent Hashing، Quorum، Leader/Follower، Leaderless، Failover، Multi-Region و Disaster Recovery","order":3},
+{"id":"ncs-sp-security","levelId":"ncs-specialist","title":"امنیت دیتابیس‌های NoSQL","description":"Authentication، Authorization، Encryption، Secrets، Network Security، Audit، Least Privilege و NoSQL Injection","order":4},
+{"id":"ncs-sp-performance","levelId":"ncs-specialist","title":"Performance، Monitoring و Observability","description":"Profiling، Slow Query، Index Optimization، Memory/CPU/Disk، Load Test، Benchmark، Capacity Planning و Alerting","order":5},
+{"id":"ncs-prj-realtime","levelId":"ncs-projects","title":"پروژه Chat بلادرنگ","description":"Firebase Authentication، Realtime Data، Presence، Offline و Security Rules","order":1},
+{"id":"ncs-prj-shop","levelId":"ncs-projects","title":"پروژه فروشگاه و Search","description":"MongoDB برای Catalog، Redis برای Cache و Elasticsearch/OpenSearch برای جست‌وجو","order":2},
+{"id":"ncs-prj-iot","levelId":"ncs-projects","title":"پروژه IoT و Time-Series","description":"ثبت Telemetry در InfluxDB، Retention، Aggregation، Dashboard و Alert","order":3},
+{"id":"ncs-prj-final","levelId":"ncs-projects","title":"Capstone معماری چنددیتابیسی SaaS","description":"PostgreSQL + MongoDB + Redis/Valkey + Elasticsearch/OpenSearch + Object Storage با Observability و Security","order":4}
+]
