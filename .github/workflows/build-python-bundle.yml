@@ -1,0 +1,64 @@
+name: Build Python Course Bundle
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'courses/python/course/**'
+      - '.github/workflows/build-python-bundle.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MainCourse
+        uses: actions/checkout@v4
+        with:
+          path: maincourse
+
+      - name: Checkout AS Academy Core compiler
+        uses: actions/checkout@v4
+        with:
+          repository: waxew/AS-Academy-Core
+          ref: main
+          path: core
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Validate Python Course Package with Core
+        working-directory: core
+        run: ./gradlew :tools:run --args="validate ../maincourse/courses/python/course" --stacktrace
+
+      - name: Compile Python bundle.json with Core
+        working-directory: core
+        run: ./gradlew :tools:run --args="compile ../maincourse/courses/python/course ../maincourse/dist/python/bundle.json" --stacktrace
+
+      - name: Verify compiled bundle is Python
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          bundle = json.loads(Path('maincourse/dist/python/bundle.json').read_text(encoding='utf-8'))
+          assert bundle['manifest']['courseId'] == 'python'
+          assert len(bundle['levels']) == 6
+          assert bundle['chapters'], 'chapters must not be empty'
+          assert bundle['lessons'], 'lessons must not be empty'
+          print('Python bundle runtime verification passed.')
+          PY
+
+      - name: Upload app-consumable Python bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: AS-Academy-Python-MainCourse-bundle
+          path: maincourse/dist/python/bundle.json
+          if-no-files-found: error
+          retention-days: 90
