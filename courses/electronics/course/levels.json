@@ -1,0 +1,8 @@
+[
+  {"id":"el-fundamentals","courseId":"electronics","type":"FUNDAMENTALS","title":"مبانی","order":1,"description":"ایمنی، برق، مدار، قطعات، نقشه‌خوانی و ابزارهای پایه"},
+  {"id":"el-beginner","courseId":"electronics","type":"BEGINNER","title":"مقدماتی","order":2,"description":"مدارهای عملی، اندازه‌گیری، آنالوگ و دیجیتال مقدماتی"},
+  {"id":"el-intermediate","courseId":"electronics","type":"INTERMEDIATE","title":"متوسط","order":3,"description":"میکروکنترلر، Embedded، سنسورها، موتورها و ارتباطات"},
+  {"id":"el-advanced","courseId":"electronics","type":"ADVANCED","title":"پیشرفته","order":4,"description":"PCB، RTOS، Embedded Linux، DSP، کنترل، توان و EMC"},
+  {"id":"el-specialist","courseId":"electronics","type":"SPECIALIST","title":"تخصصی","order":5,"description":"RF، FPGA، خودرو، صنعت، IoT، تعمیر، تولید و طراحی محصول"},
+  {"id":"el-projects","courseId":"electronics","type":"PROJECT_BASED","title":"پروژه‌محور","order":6,"description":"پروژه‌های مرحله‌ای از مدار ساده تا محصول قابل تولید"}
+]
