@@ -2,7 +2,7 @@
   "courseId": "iot",
   "titleFa": "آموزش جامع اینترنت اشیا (IoT)",
   "titleEn": "AS Academy IoT",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "contentSchemaVersion": 1,
   "minimumCoreVersion": "0.1.0",
   "rtl": true,
@@ -21,7 +21,7 @@
   },
   "defaultLocale": "fa",
   "supportedLocales": ["fa"],
-  "curriculumVersion": "1.0.0",
+  "curriculumVersion": "1.1.0",
   "publisherId": "as-team",
   "packageSha256": null
 }
