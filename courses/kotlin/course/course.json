@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "courseId": "kotlin",
+  "slug": "as-academy-kotlin",
+  "title": "آموزش جامع Kotlin",
+  "language": "fa",
+  "contentLanguage": "fa-IR",
+  "programmingLanguage": "Kotlin",
+  "referenceVersion": "2.4.10",
+  "levels": [
+    {"id":"kt-fnd","title":"مبانی","order":1},
+    {"id":"kt-beg","title":"مقدماتی","order":2},
+    {"id":"kt-adv","title":"پیشرفته","order":3},
+    {"id":"kt-spc","title":"تخصصی","order":4}
+  ],
+  "runtime": {
+    "coreRepository": "AS-Academy-Core",
+    "uiRepository": "AS-Academy-MainUi"
+  }
+}
