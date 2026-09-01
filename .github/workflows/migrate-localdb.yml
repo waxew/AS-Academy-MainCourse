@@ -1,0 +1,61 @@
+name: Migrate LocalDB into MainCourse
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/migrate-localdb.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MainCourse
+        uses: actions/checkout@v5
+        with:
+          path: main-course
+
+      - name: Checkout LocalDB source
+        uses: actions/checkout@v5
+        with:
+          repository: waxew/-AS-Academy-LocalDB
+          ref: main
+          path: localdb-source
+          submodules: false
+
+      - name: Import LocalDB Course Package
+        run: |
+          set -euo pipefail
+          mkdir -p main-course/courses/localdb/course
+          rm -rf main-course/courses/localdb/course/*
+          cp -a localdb-source/course/localdb/. main-course/courses/localdb/course/
+          cat > main-course/courses/localdb/README.md <<'EOF'
+          # LocalDB Course
+
+          منبع واحد محتوای دوره «دیتابیس داخلی اندروید» در معماری جدید AS Academy.
+
+          - Runtime/Engine: `AS-Academy-Core`
+          - Shared UI/UX: `AS-Academy-MainUi`
+          - Course content: همین مسیر در `AS-Academy-MainCourse`
+          - Thin host app: `-AS-Academy-LocalDB`
+
+          پس از این مهاجرت، تغییرات جدید درس‌ها، فصل‌ها، Quizها، تمرین‌ها و پروژه‌ها باید ابتدا در MainCourse انجام شوند.
+          EOF
+
+      - name: Commit imported content
+        working-directory: main-course
+        run: |
+          set -euo pipefail
+          git config user.name "AS Academy Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add courses/localdb
+          if git diff --cached --quiet; then
+            echo "LocalDB content is already synchronized."
+            exit 0
+          fi
+          git commit -m "Import LocalDB course into MainCourse"
+          git push
