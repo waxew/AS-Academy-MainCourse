@@ -1,0 +1,22 @@
+[
+  {"id":"ff-ch01","levelId":"ff-foundation","title":"پیش‌نیازها و معماری Frontend مدرن","order":1},
+  {"id":"ff-ch02","levelId":"ff-foundation","title":"انتخاب Framework و Rendering Strategy","order":2},
+  {"id":"ff-ch03","levelId":"ff-beginner","title":"React","order":3},
+  {"id":"ff-ch04","levelId":"ff-beginner","title":"Next.js","order":4},
+  {"id":"ff-ch05","levelId":"ff-beginner","title":"Vue","order":5},
+  {"id":"ff-ch06","levelId":"ff-beginner","title":"Nuxt","order":6},
+  {"id":"ff-ch07","levelId":"ff-beginner","title":"Angular","order":7},
+  {"id":"ff-ch08","levelId":"ff-beginner","title":"Svelte","order":8},
+  {"id":"ff-ch09","levelId":"ff-beginner","title":"SvelteKit","order":9},
+  {"id":"ff-ch10","levelId":"ff-advanced","title":"State Management و Server State","order":10},
+  {"id":"ff-ch11","levelId":"ff-advanced","title":"فرم‌ها و Validation پیشرفته","order":11},
+  {"id":"ff-ch12","levelId":"ff-advanced","title":"SSR، SSG، ISR، Hydration و Streaming","order":12},
+  {"id":"ff-ch13","levelId":"ff-advanced","title":"Performance و Core Web Vitals","order":13},
+  {"id":"ff-ch14","levelId":"ff-advanced","title":"Testing","order":14},
+  {"id":"ff-ch15","levelId":"ff-specialist","title":"Design System و Component Library","order":15},
+  {"id":"ff-ch16","levelId":"ff-specialist","title":"معماری Frontend در مقیاس بزرگ","order":16},
+  {"id":"ff-ch17","levelId":"ff-specialist","title":"امنیت Frontend","order":17},
+  {"id":"ff-ch18","levelId":"ff-specialist","title":"Production، CI/CD و Deployment","order":18},
+  {"id":"ff-ch19","levelId":"ff-specialist","title":"Migration و Technical Debt","order":19},
+  {"id":"ff-ch20","levelId":"ff-projects","title":"پروژه‌های نهایی و Capstone","order":20}
+]
