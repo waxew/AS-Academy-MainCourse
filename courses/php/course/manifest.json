@@ -1,0 +1,21 @@
+{
+  "courseId": "php",
+  "titleFa": "آموزش جامع PHP",
+  "titleEn": "AS Academy PHP",
+  "version": "0.4.0",
+  "contentSchemaVersion": 1,
+  "minimumCoreVersion": "0.2.0",
+  "rtl": true,
+  "levels": ["foundation", "beginner", "advanced", "specialist"],
+  "capabilities": {
+    "codeRunner": true,
+    "terminalExamples": true,
+    "diagrams": true,
+    "quizzes": true,
+    "exercises": true,
+    "projects": true,
+    "glossary": true
+  },
+  "sourceOfTruth": "AS-Academy-MainCourse",
+  "legacySource": "AS-Academy-php/app/src/main/assets/course/php"
+}
