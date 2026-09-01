@@ -1,0 +1,12 @@
+{
+  "id": "cloud-database-storage",
+  "courseId": "cloud-database-storage",
+  "title": "دیتابیس و ذخیره‌سازی ابری",
+  "language": "fa",
+  "direction": "rtl",
+  "version": "1.0.0",
+  "levels": ["foundation", "beginner", "advanced", "specialist"],
+  "contentRoot": "course/cloud-database-storage",
+  "mainUiCompatible": true,
+  "description": "مسیر جامع فارسی دیتابیس، Backend-as-a-Service و ذخیره‌سازی ابری از مبانی تا معماری تخصصی"
+}
