@@ -9,7 +9,11 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: python-course-distribution
+  cancel-in-progress: false
 
 jobs:
   compile-python:
@@ -41,24 +45,70 @@ jobs:
         working-directory: core
         run: ./gradlew :tools:run --args="compile ../maincourse/courses/python/course ../maincourse/dist/python/bundle.json" --stacktrace
 
-      - name: Verify compiled bundle is Python
+      - name: Build runtime release metadata
         shell: bash
         run: |
           python - <<'PY'
+          import hashlib
           import json
           from pathlib import Path
-          bundle = json.loads(Path('maincourse/dist/python/bundle.json').read_text(encoding='utf-8'))
+
+          bundle_path = Path('maincourse/dist/python/bundle.json')
+          bundle = json.loads(bundle_path.read_text(encoding='utf-8'))
+
           assert bundle['manifest']['courseId'] == 'python'
           assert len(bundle['levels']) == 6
           assert bundle['chapters'], 'chapters must not be empty'
           assert bundle['lessons'], 'lessons must not be empty'
-          print('Python bundle runtime verification passed.')
+
+          digest = hashlib.sha256(bundle_path.read_bytes()).hexdigest()
+          release = {
+              'courseId': 'python',
+              'version': bundle['manifest']['version'],
+              'minimumCoreVersion': bundle['manifest']['minimumCoreVersion'],
+              'sha256': digest,
+              'downloadUrl': 'https://raw.githubusercontent.com/waxew/AS-Academy-MainCourse/main/distributions/python/bundle.json'
+          }
+
+          release_path = Path('maincourse/dist/python/release.json')
+          release_path.write_text(json.dumps(release, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(f"Python bundle runtime verification passed: {len(bundle['lessons'])} lessons, sha256={digest}")
           PY
 
-      - name: Upload app-consumable Python bundle
+      - name: Publish stable runtime distribution in MainCourse
+        shell: bash
+        working-directory: maincourse
+        run: |
+          set -euo pipefail
+          mkdir -p distributions/python
+          cp dist/python/bundle.json distributions/python/bundle.json
+          cp dist/python/release.json distributions/python/release.json
+
+          git config user.name 'AS Academy Automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add distributions/python
+          if git diff --cached --quiet; then
+            echo 'Python runtime distribution already up to date.'
+          else
+            git commit -m 'dist: publish Python app runtime bundle'
+            for attempt in 1 2 3; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              git fetch origin main
+              git rebase origin/main
+              sleep 2
+            done
+            echo 'Unable to publish Python runtime distribution after retries.' >&2
+            exit 1
+          fi
+
+      - name: Upload app-consumable Python distribution
         uses: actions/upload-artifact@v4
         with:
-          name: AS-Academy-Python-MainCourse-bundle
-          path: maincourse/dist/python/bundle.json
+          name: AS-Academy-Python-MainCourse-runtime
+          path: |
+            maincourse/dist/python/bundle.json
+            maincourse/dist/python/release.json
           if-no-files-found: error
           retention-days: 90
