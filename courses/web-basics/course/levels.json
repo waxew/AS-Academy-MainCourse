@@ -1,0 +1,6 @@
+[
+  {"id":"web-fundamentals","key":"foundation","title":"مبانی","order":0,"description":"درک اینترنت، وب، شبکه و چرخه درخواست تا نمایش صفحه."},
+  {"id":"web-beginner","key":"beginner","title":"مقدماتی","order":1,"description":"ابزار توسعه، DevTools، Git، API و اصول ساخت تجربه وب فارسی."},
+  {"id":"web-advanced","key":"advanced","title":"پیشرفته","order":2,"description":"امنیت، Performance، Accessibility، SEO، Cache/CDN و تحلیل شبکه."},
+  {"id":"web-specialist","key":"specialist","title":"تخصصی","order":3,"description":"Production، Deploy، DNS/TLS عملی، معماری و عیب‌یابی سیستم وب."}
+]
