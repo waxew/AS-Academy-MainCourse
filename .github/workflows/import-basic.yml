@@ -1,7 +1,7 @@
 name: Import Basic course into MainCourse
 
 on:
-  # This push trigger bootstraps the migration when the workflow is first added.
+  # This push trigger bootstraps/retries the migration when this workflow changes.
   # Future content changes are authored directly in MainCourse, so normal course commits do not loop back to Basic.
   push:
     branches: [main]
@@ -25,6 +25,7 @@ jobs:
         uses: actions/checkout@v5
         with:
           path: AS-Academy-MainCourse
+          fetch-depth: 0
 
       - name: Checkout Basic source
         uses: actions/checkout@v5
@@ -82,4 +83,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add courses/basic
           git commit -m "feat(courses): migrate Basic course into MainCourse"
-          git push origin HEAD:main
+
+          # Other Course migrations can update main concurrently. Rebase the isolated Basic commit before publish.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push race detected; retrying after latest main (attempt ${attempt}/3)."
+            sleep $((attempt * 2))
+          done
+          echo "Could not publish Basic migration after retries." >&2
+          exit 1
