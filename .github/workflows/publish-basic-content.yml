@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v5
         with:
           repository: waxew/AS-Academy-Core
-          ref: 38d54560e56479bd4e3d784dd1a9a65d8c9dd5fc
+          ref: 6ab793a351180697e59de13b8cb770a7d1dff54b
           path: AS-Academy-Core
 
       - name: Set up JDK 17
