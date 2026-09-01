@@ -1,0 +1,3 @@
+{
+  "courseId":"java","titleFa":"آموزش جامع Java","titleEn":"Java","version":"2.0.0","curriculumVersion":"2.0.0","contentSchemaVersion":1,"minimumCoreVersion":"1.0.0","publisherId":"as-team","rtl":true,"defaultLocale":"fa","supportedLocales":["fa"],"capabilities":{"codeRunner":true,"terminalExamples":true,"diagrams":true,"quizzes":true,"exercises":true,"projects":true,"glossary":true,"bookmarks":true,"userNotes":true,"achievements":true,"offlineContent":true}
+}
