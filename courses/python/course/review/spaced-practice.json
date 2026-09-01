@@ -1,0 +1,15 @@
+{
+  "strategy":"mastery-spaced-review",
+  "minimumMasteryPercent":80,
+  "scheduleDays":[1,2,3,7,10,14,21,30,45,60],
+  "rules":{"minimumCheckpointPercent":80,"retryAfterWrongAnswer":true,"mixPreviousLevels":true},
+  "reviewSets":[
+    {"id":"review-fundamentals","afterLevel":"python-fundamentals","reviewAfterDays":[1,3,7,14],"skills":["variables","types","operators","conditions","loops","collections","functions"],"tasks":["trace-code","fix-bug","write-function","mini-problem"]},
+    {"id":"review-beginner","afterLevel":"python-beginner","reviewAfterDays":[2,7,21],"skills":["modules","venv","files","json","csv","exceptions","debugging","comprehensions"],"tasks":["refactor-script","recover-corrupt-input","package-small-cli"]},
+    {"id":"review-intermediate","afterLevel":"python-intermediate","reviewAfterDays":[3,10,30],"skills":["oop","dataclass","protocol","generic","iterator","generator"],"tasks":["model-domain","replace-inheritance-with-composition","design-repository-contract"]},
+    {"id":"review-advanced","afterLevel":"python-advanced","reviewAfterDays":[3,14,30],"skills":["decorator","context-manager","threading","lock","asyncio","pytest","packaging","complexity"],"tasks":["debug-race-condition","write-async-timeout","test-with-fixture-and-mock","profile-hot-path"]},
+    {"id":"review-specialist","afterLevel":"python-specialist","reviewAfterDays":[7,21,45],"skills":["database","api","auth","gui","automation","bots","data","ml","ai","network","security","deployment"],"tasks":["architecture-review","security-review","production-debugging","design-deployment","evaluate-ai-system"]},
+    {"id":"review-final","afterLevel":"python-projects","reviewAfterDays":[14,30,60],"skills":["architecture","testing","security","deployment","documentation","tradeoffs"],"tasks":["capstone-retrospective","incident-simulation","change-requirement","performance-review"]}
+  ],
+  "checkpoints":["review-fundamentals","review-beginner","review-intermediate","review-advanced","review-specialist","review-final"]
+}

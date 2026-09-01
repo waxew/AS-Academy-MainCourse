@@ -1,0 +1,7 @@
+{
+  "courseVersion":"2.7.0",
+  "requiredPath":["python-fundamentals","python-beginner","python-intermediate","python-advanced","python-specialist","python-projects"],
+  "graduation":{"minimumFinalExamPercent":70,"minimumReviewCheckpointPercent":80,"capstoneRequired":true,"requiredLevelProjects":true,"spacedReviewRequired":true},
+  "certificateEligibility":{"allRequiredLessons":true,"allRequiredProjects":true,"reviewCheckpointsPassed":true,"finalExamPassed":true,"capstonePassed":true},
+  "recommendedPortfolio":["cli-finance","library-manager","inventory-tests","billing-api","desktop-crm","browser-automation","telegram-reminder","data-dashboard","ml-predictor","pytorch-classifier","rag-assistant","model-serving-api","docker-fastapi","capstone-production"]
+}

@@ -1,0 +1,8 @@
+{
+  "unlockMode": "sequential-with-review",
+  "lessonCompletion": {"requiresOpen": true, "requiresQuizWhenPresent": true, "minimumQuizPercent": 70},
+  "chapterCompletion": {"requiresAllLessons": true, "requiresMiniProjectWhenPresent": true},
+  "levelCompletion": {"requiresAllChapters": true, "requiresProject": true},
+  "capstoneUnlock": {"requiredLevels":["python-fundamentals","python-beginner","python-intermediate","python-advanced"],"specialistMinimumPercent":60},
+  "review": {"spacedReviewEnabled": true, "weakTopicThresholdPercent": 70}
+}

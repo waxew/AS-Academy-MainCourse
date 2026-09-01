@@ -1,0 +1,18 @@
+[
+  {"term":"Interpreter","fa":"مفسر","definition":"برنامه‌ای که کد Python را اجرا می‌کند."},
+  {"term":"Variable","fa":"متغیر","definition":"نامی که به یک مقدار اشاره می‌کند."},
+  {"term":"Function","fa":"تابع","definition":"بخش نام‌دار و قابل استفاده مجدد از منطق برنامه."},
+  {"term":"Module","fa":"ماژول","definition":"یک فایل Python که کد قابل import در خود دارد."},
+  {"term":"Package","fa":"پکیج","definition":"مجموعه‌ای سازمان‌یافته از moduleهای مرتبط."},
+  {"term":"Exception","fa":"استثنا/خطا","definition":"رویدادی که جریان عادی اجرا را قطع می‌کند و قابل مدیریت است."},
+  {"term":"Class","fa":"کلاس","definition":"قالب تعریف state و behavior برای objectها."},
+  {"term":"Object","fa":"شیء","definition":"نمونه‌ای ساخته‌شده از class."},
+  {"term":"Generator","fa":"مولد","definition":"تابعی که مقادیر را به‌صورت lazy با yield تولید می‌کند."},
+  {"term":"Decorator","fa":"دکوراتور","definition":"الگویی برای افزودن رفتار به callable یا class بدون تغییر مستقیم بدنه."},
+  {"term":"Coroutine","fa":"کوروتین","definition":"واحد async که می‌تواند با await متوقف و ادامه پیدا کند."},
+  {"term":"ORM","fa":"نگاشت شیء-رابطه‌ای","definition":"لایه نگاشت modelهای برنامه به جداول دیتابیس."},
+  {"term":"REST","fa":"رست","definition":"سبک طراحی API مبتنی بر resource و semantics پروتکل HTTP."},
+  {"term":"Embedding","fa":"بردار معنایی","definition":"نمایش عددی داده برای مقایسه شباهت معنایی."},
+  {"term":"RAG","fa":"تولید تقویت‌شده با بازیابی","definition":"ترکیب retrieval دانش مرتبط با generation مدل زبانی."},
+  {"term":"Container","fa":"کانتینر","definition":"محیط اجرای ایزوله‌شده ساخته‌شده از image."}
+]

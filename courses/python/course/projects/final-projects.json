@@ -1,0 +1,12 @@
+[
+{"id":"cli-finance","title":"مدیریت هزینه CLI","level":"BEGINNER","deliverables":["JSON persistence","search/filter","exception handling","report"]},
+{"id":"library-manager","title":"مدیریت کتابخانه","level":"INTERMEDIATE","deliverables":["OOP domain","borrow/return rules","custom exceptions","tests"]},
+{"id":"desktop-crm","title":"CRM دسکتاپ","level":"SPECIALIST","deliverables":["PySide UI","SQLite","service/repository","search"]},
+{"id":"fastapi-crm","title":"CRM API","level":"SPECIALIST","deliverables":["FastAPI","PostgreSQL","JWT","tests","Docker"]},
+{"id":"django-commerce","title":"فروشگاه Django","level":"SPECIALIST","deliverables":["catalog","cart/order","admin","auth","DRF"]},
+{"id":"scraper-monitor","title":"مانیتور تغییرات وب مجاز","level":"SPECIALIST","deliverables":["requests/playwright","rate limit","change detection","notification"]},
+{"id":"data-dashboard","title":"داشبورد تحلیل فروش","level":"SPECIALIST","deliverables":["Pandas","cleaning","KPIs","charts"]},
+{"id":"ml-predictor","title":"پیش‌بینی با ML","level":"SPECIALIST","deliverables":["pipeline","cross validation","metrics","model artifact"]},
+{"id":"rag-assistant","title":"دستیار RAG","level":"SPECIALIST","deliverables":["ingestion","chunking","embedding","retrieval","citations","evaluation"]},
+{"id":"production-capstone","title":"سیستم Production نهایی","level":"PROJECT_BASED","deliverables":["architecture","database","API","auth","testing","Docker","CI","documentation"]}
+]

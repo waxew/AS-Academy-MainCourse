@@ -1,0 +1,8 @@
+[
+  {"id":"python-fundamentals","courseId":"python","type":"FUNDAMENTALS","title":"مبانی","order":1},
+  {"id":"python-beginner","courseId":"python","type":"BEGINNER","title":"مقدماتی","order":2},
+  {"id":"python-intermediate","courseId":"python","type":"INTERMEDIATE","title":"متوسط","order":3},
+  {"id":"python-advanced","courseId":"python","type":"ADVANCED","title":"پیشرفته","order":4},
+  {"id":"python-specialist","courseId":"python","type":"SPECIALIST","title":"تخصصی","order":5},
+  {"id":"python-projects","courseId":"python","type":"PROJECT_BASED","title":"پروژه‌محور","order":6}
+]

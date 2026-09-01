@@ -1,0 +1,18 @@
+[
+  {"id":"calculator","title":"ماشین حساب","level":"FUNDAMENTALS","skills":["input","if","function"],"required":true},
+  {"id":"guess-number","title":"بازی حدس عدد","level":"FUNDAMENTALS","skills":["loop","condition","random"],"required":true},
+  {"id":"shopping-cart","title":"سبد خرید","level":"FUNDAMENTALS","skills":["list","dict","function"],"required":true},
+  {"id":"contacts-json","title":"دفترچه تلفن JSON","level":"BEGINNER","skills":["file","json","exception"],"required":true},
+  {"id":"todo-cli","title":"مدیریت کارهای روزانه CLI","level":"BEGINNER","skills":["module","file","function"],"required":true},
+  {"id":"invoice-domain","title":"مدل دامنه فاکتور","level":"INTERMEDIATE","skills":["oop","dataclass","composition"],"required":true},
+  {"id":"inventory-tests","title":"انبار همراه تست","level":"ADVANCED","skills":["oop","pytest","mock"],"required":true},
+  {"id":"library-sqlite","title":"کتابخانه SQLite","level":"SPECIALIST","skills":["sql","sqlite","transaction"],"required":false},
+  {"id":"billing-api","title":"REST API فاکتور","level":"SPECIALIST","skills":["fastapi","sqlalchemy","auth","test"],"required":true},
+  {"id":"django-shop-api","title":"فروشگاه Django/DRF","level":"SPECIALIST","skills":["django","drf","orm"],"required":false},
+  {"id":"desktop-expense","title":"مدیریت هزینه دسکتاپ","level":"SPECIALIST","skills":["gui","sqlite"],"required":false},
+  {"id":"telegram-reminder","title":"ربات یادآور","level":"SPECIALIST","skills":["bot","state","sqlite"],"required":false},
+  {"id":"sales-analysis","title":"تحلیل فروش","level":"SPECIALIST","skills":["pandas","kpi"],"required":false},
+  {"id":"classification-project","title":"پروژه Classification","level":"SPECIALIST","skills":["sklearn","metrics"],"required":false},
+  {"id":"academy-rag","title":"RAG آموزشی","level":"SPECIALIST","skills":["embedding","retrieval","evaluation"],"required":false},
+  {"id":"capstone-production","title":"Capstone Production","level":"PROJECT_BASED","skills":["architecture","database","api","auth","tests","docker","ci"],"required":true}
+]

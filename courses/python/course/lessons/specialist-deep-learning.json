@@ -1,0 +1,90 @@
+[
+  {
+    "id":"py-s-09-l05",
+    "chapterId":"py-s-09",
+    "title":"شبکه عصبی و فرایند آموزش",
+    "summary":"Neuron، Layer، Loss، Optimizer و Backpropagation",
+    "order":5,
+    "estimatedMinutes":90,
+    "blocks":[
+      {"id":"b1","type":"PARAGRAPH","content":"شبکه عصبی از لایه‌هایی تشکیل می‌شود که ورودی را به نمایش‌های جدید تبدیل می‌کنند. در training، خروجی مدل با target مقایسه می‌شود، loss محاسبه می‌شود و optimizer پارامترها را با استفاده از gradient به‌روزرسانی می‌کند.","metadata":{}},
+      {"id":"b2","type":"DIAGRAM","content":"Input -> Linear/Activation -> Hidden Layers -> Output -> Loss -> Backpropagation -> Optimizer Step","metadata":{}},
+      {"id":"b3","type":"LIST","content":"Tensor\nWeight/Bias\nActivation\nForward Pass\nLoss Function\nGradient\nBackpropagation\nOptimizer\nEpoch/Batch","metadata":{}},
+      {"id":"b4","type":"EXERCISE","content":"برای یک مسئله classification ساده، ورودی، خروجی، loss مناسب و metric ارزیابی را مشخص کنید.","metadata":{"difficulty":"specialist"}},
+      {"id":"b5","type":"QUIZ","content":"Optimizer در training چه کاری انجام می‌دهد؟ | پارامترهای مدل را با استفاده از gradient به‌روزرسانی می‌کند | فقط dataset را ذخیره می‌کند | UI را رسم می‌کند | migration اجرا می‌کند","metadata":{"answer":"پارامترهای مدل را با استفاده از gradient به‌روزرسانی می‌کند"}}
+    ]
+  },
+  {
+    "id":"py-s-09-l06",
+    "chapterId":"py-s-09",
+    "title":"PyTorch Fundamentals",
+    "summary":"Tensor، Module، DataLoader و Training Loop",
+    "order":6,
+    "estimatedMinutes":100,
+    "blocks":[
+      {"id":"b1","type":"CODE","content":"import torch\nfrom torch import nn\n\nmodel = nn.Sequential(\n    nn.Linear(4, 16),\n    nn.ReLU(),\n    nn.Linear(16, 3),\n)\n\nx = torch.randn(8, 4)\nlogits = model(x)\nprint(logits.shape)","metadata":{"language":"python"}},
+      {"id":"b2","type":"OUTPUT","content":"torch.Size([8, 3])","metadata":{}},
+      {"id":"b3","type":"PARAGRAPH","content":"در PyTorch مدل معمولاً از nn.Module ساخته می‌شود. Tensor داده اصلی محاسباتی است و autograd gradientها را برای پارامترهایی که نیاز به gradient دارند محاسبه می‌کند.","metadata":{}},
+      {"id":"b4","type":"EXERCISE","content":"یک مدل دو لایه برای classification سه‌کلاسه بسازید و تعداد featureهای ورودی را قابل تنظیم کنید.","metadata":{"difficulty":"specialist"}},
+      {"id":"b5","type":"PROJECT","content":"یک classifier کوچک PyTorch با train/validation split، loss، optimizer و ذخیره checkpoint بسازید.","metadata":{"projectId":"pytorch-classifier"}}
+    ]
+  },
+  {
+    "id":"py-s-09-l07",
+    "chapterId":"py-s-09",
+    "title":"TensorFlow و Keras",
+    "summary":"Sequential/Functional API، compile و fit",
+    "order":7,
+    "estimatedMinutes":90,
+    "blocks":[
+      {"id":"b1","type":"CODE","content":"from tensorflow import keras\n\nmodel = keras.Sequential([\n    keras.layers.Input(shape=(4,)),\n    keras.layers.Dense(16, activation=\"relu\"),\n    keras.layers.Dense(3, activation=\"softmax\"),\n])\nmodel.compile(optimizer=\"adam\", loss=\"sparse_categorical_crossentropy\", metrics=[\"accuracy\"])","metadata":{"language":"python"}},
+      {"id":"b2","type":"PARAGRAPH","content":"Keras لایه سطح‌بالا برای تعریف و آموزش مدل در اکوسیستم TensorFlow است. compile قرارداد loss، optimizer و metric را مشخص می‌کند و fit چرخه training را اجرا می‌کند.","metadata":{}},
+      {"id":"b3","type":"EXERCISE","content":"مدل بالا را برای binary classification بازطراحی کنید و خروجی و loss مناسب را توضیح دهید.","metadata":{"difficulty":"specialist"}},
+      {"id":"b4","type":"QUIZ","content":"در binary classification با یک خروجی sigmoid معمولاً کدام loss استفاده می‌شود؟ | binary crossentropy | mean absolute percentage error | categorical hinge همیشه | هیچ loss لازم نیست","metadata":{"answer":"binary crossentropy"}}
+    ]
+  },
+  {
+    "id":"py-s-09-l08",
+    "chapterId":"py-s-09",
+    "title":"NLP و Transformer Workflow",
+    "summary":"Tokenization، Embedding، Attention و Fine-tuning مفهومی",
+    "order":8,
+    "estimatedMinutes":95,
+    "blocks":[
+      {"id":"b1","type":"LIST","content":"Tokenization\nVocabulary\nEmbedding\nAttention\nTransformer Encoder/Decoder\nPretraining\nFine-tuning\nInference\nEvaluation","metadata":{}},
+      {"id":"b2","type":"PARAGRAPH","content":"Transformer وابستگی بین tokenها را با attention مدل می‌کند. در کاربردهای واقعی باید تفاوت بین استفاده مستقیم از مدل pretrained، fine-tuning و RAG را بر اساس هزینه، داده و نیاز به به‌روزرسانی دانش درک کنیم.","metadata":{}},
+      {"id":"b3","type":"DIAGRAM","content":"Text -> Tokenizer -> Token IDs -> Transformer -> Task Head / Embeddings -> Prediction","metadata":{}},
+      {"id":"b4","type":"EXERCISE","content":"برای یک مسئله دسته‌بندی متن توضیح دهید چه زمانی مدل pretrained کافی است و چه زمانی fine-tuning منطقی‌تر است.","metadata":{"difficulty":"specialist"}},
+      {"id":"b5","type":"PROJECT","content":"یک text classifier آموزشی با یک مدل pretrained و مجموعه داده کوچک بسازید و precision/recall/F1 را گزارش کنید.","metadata":{"projectId":"nlp-text-classifier"}}
+    ]
+  },
+  {
+    "id":"py-s-09-l09",
+    "chapterId":"py-s-09",
+    "title":"Computer Vision با OpenCV و Deep Learning",
+    "summary":"پردازش تصویر، tensor image و inference pipeline",
+    "order":9,
+    "estimatedMinutes":95,
+    "blocks":[
+      {"id":"b1","type":"PARAGRAPH","content":"Computer Vision می‌تواند از پردازش کلاسیک تصویر و مدل‌های یادگیری عمیق استفاده کند. pipeline استاندارد شامل خواندن تصویر، preprocessing، inference، postprocessing و ارزیابی است.","metadata":{}},
+      {"id":"b2","type":"CODE","content":"import cv2\n\nimage = cv2.imread(\"sample.jpg\")\nif image is None:\n    raise FileNotFoundError(\"sample.jpg\")\ngray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)\nprint(gray.shape)","metadata":{"language":"python"}},
+      {"id":"b3","type":"LIST","content":"Resize/Normalize\nColor Spaces\nAugmentation\nClassification\nDetection\nSegmentation\nPrecision/Recall/IoU","metadata":{}},
+      {"id":"b4","type":"EXERCISE","content":"pipeline preprocessing تصویری طراحی کنید که resize و normalization آن با ورودی مدل سازگار باشد.","metadata":{"difficulty":"specialist"}},
+      {"id":"b5","type":"PROJECT","content":"یک image classifier آموزشی با مدل آماده بسازید و inference چند تصویر را همراه confidence نمایش دهید.","metadata":{"projectId":"vision-image-classifier"}}
+    ]
+  },
+  {
+    "id":"py-s-09-l10",
+    "chapterId":"py-s-09",
+    "title":"ارزیابی و استقرار مدل AI",
+    "summary":"Reproducibility، Drift، Latency و Model Serving",
+    "order":10,
+    "estimatedMinutes":85,
+    "blocks":[
+      {"id":"b1","type":"LIST","content":"Train/Validation/Test\nSeed/Reproducibility\nModel Artifact\nInference API\nBatch vs Online Inference\nLatency\nThroughput\nData/Concept Drift\nMonitoring\nRollback","metadata":{}},
+      {"id":"b2","type":"PARAGRAPH","content":"مدلی که metric آزمایشگاهی خوبی دارد لزوماً در production موفق نیست. latency، کیفیت داده ورودی، drift، هزینه و امکان rollback بخشی از طراحی deployment هستند.","metadata":{}},
+      {"id":"b3","type":"PROJECT","content":"یکی از مدل‌های دوره را پشت API قرار دهید، ورودی را validate کنید و latency و نسخه مدل را در log ثبت کنید.","metadata":{"projectId":"model-serving-api"}},
+      {"id":"b4","type":"QUIZ","content":"Data drift به چه معناست؟ | توزیع داده ورودی نسبت به داده مرجع تغییر کرده است | فایل Python rename شده | Docker خاموش است | تعداد classها همیشه صفر شده","metadata":{"answer":"توزیع داده ورودی نسبت به داده مرجع تغییر کرده است"}}
+    ]
+  }
+]
