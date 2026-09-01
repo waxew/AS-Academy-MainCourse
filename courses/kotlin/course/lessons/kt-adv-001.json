@@ -1,0 +1,23 @@
+{
+  "id":"kt-adv-001",
+  "chapterId":"kt-adv-01",
+  "title":"Generics، Variance و Sealed Types عمیق",
+  "order":12,
+  "durationMin":190,
+  "objectives":["generic constraints","declaration-site variance","use-site projections","type-safe APIs","exhaustive sealed modeling"],
+  "blocks":[
+    {"type":"PARAGRAPH","text":"Generics زمانی ارزشمندند که API عمومی بتواند بدون از دست دادن type safety روی چند نوع کار کند. طراحی generic خوب باید variance، ownership داده و جهت خواندن/نوشتن را روشن کند."},
+    {"type":"SUBTITLE","text":"Generic constraints"},
+    {"type":"CODE","language":"kotlin","code":"fun <T> maxOfItems(items: List<T>): T where T : Comparable<T> =\n    items.maxOrNull() ?: error(\"empty list\")"},
+    {"type":"SUBTITLE","text":"Variance: out و in"},
+    {"type":"PARAGRAPH","text":"اگر یک type فقط T تولید می‌کند معمولاً producer است و out مناسب است. اگر فقط T مصرف می‌کند consumer است و in مناسب است. این همان قاعده PECS به زبان Kotlin است."},
+    {"type":"CODE","language":"kotlin","code":"interface Source<out T> { fun next(): T }\ninterface Sink<in T> { fun accept(value: T) }"},
+    {"type":"LIST","items":["out اجازه می‌دهد Source<Dog> به عنوان Source<Animal> استفاده شود.","in اجازه می‌دهد Sink<Animal> در جای Sink<Dog> استفاده شود.","اگر type همزمان producer و consumer است invariant بماند.","use-site projection را فقط وقتی قرارداد declaration-site کافی نیست استفاده کنید."]},
+    {"type":"SUBTITLE","text":"Star projection"},
+    {"type":"PARAGRAPH","text":"Foo<*> وقتی مفید است که نوع دقیق generic ناشناخته است اما هنوز می‌خواهید با API ایمن کار کنید. از cast بی‌دلیل به Any یا unchecked cast پرهیز کنید."},
+    {"type":"SUBTITLE","text":"Sealed hierarchy"},
+    {"type":"CODE","language":"kotlin","code":"sealed interface Result<out T> {\n    data class Success<T>(val value: T) : Result<T>\n    data class Failure(val error: DomainError) : Result<Nothing>\n}\n\nfun render(result: Result<User>) = when (result) {\n    is Result.Success -> result.value.name\n    is Result.Failure -> result.error.message\n}"},
+    {"type":"IMPORTANT","text":"Sealed type برای مجموعه حالت محدود عالی است. اگر consumer مجبور به else شد، معمولاً بخشی از exhaustiveness یا محل hierarchy نیاز به بازنگری دارد."},
+    {"type":"EXERCISE","text":"یک API generic Repository و Result hierarchy طراحی کنید که read-only projection، write sink، constraints و exhaustive error modeling داشته باشد. چند سناریوی compile-time safety را نیز مستند کنید."}
+  ]
+}
