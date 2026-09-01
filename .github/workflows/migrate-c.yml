@@ -1,0 +1,73 @@
+name: Migrate C Course to MainCourse
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/migrate-c.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: maincourse-content-writes
+  cancel-in-progress: false
+
+jobs:
+  migrate-c:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MainCourse
+        uses: actions/checkout@v4
+        with:
+          path: maincourse
+          fetch-depth: 0
+
+      - name: Checkout current C course source
+        uses: actions/checkout@v4
+        with:
+          repository: waxew/AS-Academy-C
+          ref: main
+          path: c-source
+
+      - name: Migrate complete C Course Package
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE='c-source/app/src/main/assets/course/as-academy-c'
+          TARGET='maincourse/courses/c/course'
+          test -f "$SOURCE/manifest.json"
+          test -d "$SOURCE/lessons"
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+          cp -a "$SOURCE"/. "$TARGET"/
+          cat > maincourse/courses/c/README.md <<'EOF'
+          # C Course Package
+
+          این پوشه منبع واحد محتوای آموزشی زبان C در AS Academy است.
+
+          - Source of Truth: `AS-Academy-MainCourse/courses/c/course`
+          - Course app/repository: `AS-Academy-C`
+          - Shared UI: `AS-Academy-MainUi`
+          - Shared engine/runtime: `AS-Academy-Core`
+
+          تمام درس‌ها، فصل‌ها، تمرین‌ها، Quizها، پروژه‌ها، Capstone، Glossary و metadata آموزشی C از اینجا مدیریت می‌شوند.
+          پس از تکمیل مهاجرت، Course App محتوا را هنگام Build از این مسیر دریافت می‌کند و نباید fork مستقل محتوا داشته باشد.
+          EOF
+
+      - name: Commit migrated content safely
+        shell: bash
+        working-directory: maincourse
+        run: |
+          set -euo pipefail
+          git config user.name 'AS Academy Automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add courses/c
+          if git diff --cached --quiet; then
+            echo 'C MainCourse is already up to date.'
+            exit 0
+          fi
+          git commit -m 'content: migrate complete C course into MainCourse'
+          git pull --rebase origin main
+          git push origin HEAD:main
