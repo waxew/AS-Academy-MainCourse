@@ -1,0 +1,65 @@
+name: Migrate Python Course to MainCourse
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/migrate-python.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MainCourse
+        uses: actions/checkout@v4
+        with:
+          path: maincourse
+
+      - name: Checkout current Python course source
+        uses: actions/checkout@v4
+        with:
+          repository: waxew/AS-Academy-Python
+          ref: main
+          path: python-source
+
+      - name: Migrate complete Python Course Package
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf maincourse/courses/python/course
+          mkdir -p maincourse/courses/python/course
+          cp -a python-source/course-package/. maincourse/courses/python/course/
+
+          cat > maincourse/courses/python/README.md <<'EOF'
+          # Python Course Package
+
+          این پوشه منبع واحد محتوای آموزشی Python در AS Academy است.
+
+          - Source of Truth: `AS-Academy-MainCourse/courses/python/course`
+          - Course app/repository: `AS-Academy-Python`
+          - Shared UI: `AS-Academy-MainUi`
+          - Shared engine/runtime: `AS-Academy-Core`
+
+          از زمان این مهاجرت، درس، فصل، تمرین، Quiz، آزمون، پروژه، Capstone، Glossary، Learning Map، Outcomes و metadata آموزشی Python باید در همین پوشه تغییر کند.
+
+          ریپوی `AS-Academy-Python` دیگر منبع اصلی محتوا نیست و فقط برای سازگاری، تست مهاجرت، metadata اختصاصی و اتصال به معماری مشترک نگهداری می‌شود.
+          EOF
+
+      - name: Commit migrated content
+        shell: bash
+        working-directory: maincourse
+        run: |
+          set -euo pipefail
+          git config user.name 'AS Academy Automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add courses/python
+          if git diff --cached --quiet; then
+            echo 'Python MainCourse is already up to date.'
+          else
+            git commit -m 'content: migrate complete Python course into MainCourse'
+            git push origin HEAD:main
+          fi
