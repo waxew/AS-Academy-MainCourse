@@ -1,0 +1,1 @@
+{"id":"cs-ex-beg-001","lessonId":"cs-beg-002","title":"تحلیل فروش","description":"با List<decimal> مجموع، میانگین، کمترین و بیشترین فروش را محاسبه کنید.","type":"WRITE_CODE","difficulty":"MEDIUM","starterCode":"var sales = new List<decimal> { 100m, 250m, 90m, 400m };","hints":["از Sum، Average، Min و Max استفاده کنید."]}

@@ -1,0 +1,6 @@
+[
+  {"id":"cs-level-fundamentals","courseId":"csharp","type":"FUNDAMENTALS","title":"مبانی","order":1},
+  {"id":"cs-level-beginner","courseId":"csharp","type":"BEGINNER","title":"مقدماتی","order":2},
+  {"id":"cs-level-advanced","courseId":"csharp","type":"ADVANCED","title":"پیشرفته","order":3},
+  {"id":"cs-level-specialist","courseId":"csharp","type":"SPECIALIST","title":"تخصصی","order":4}
+]

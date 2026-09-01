@@ -1,0 +1,1 @@
+{"id":"cs-ex-adv-002","lessonId":"cs-adv-005","title":"پردازش محدود همزمان","description":"حداکثر سه عملیات async را با SemaphoreSlim همزمان اجرا کنید.","type":"BUILD_FEATURE","difficulty":"HARD","hints":["WaitAsync را در try/finally با Release جفت کنید."]}

@@ -1,0 +1,1 @@
+{"id":"cs-prj-004","title":"Academy Store API","summary":"REST API حرفه‌ای با ASP.NET Core","difficulty":"ADVANCED","steps":["Endpoints طراحی کنید","Validation اضافه کنید","JWT و Authorization اضافه کنید","Integration test بنویسید"]}

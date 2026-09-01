@@ -1,0 +1,1 @@
+{"id":"cs-prj-003","title":"سیستم فروش با EF Core","summary":"پروژه دیتابیس با محصول، مشتری و سفارش","difficulty":"ADVANCED","steps":["DbContext طراحی کنید","Migration بسازید","Transaction اضافه کنید","LINQ report بسازید"]}

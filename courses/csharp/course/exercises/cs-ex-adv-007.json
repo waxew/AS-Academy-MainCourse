@@ -1,0 +1,1 @@
+{"id":"cs-ex-adv-007","lessonId":"cs-adv-010","type":"WRITE_CODE","difficulty":"HARD","title":"گزارش فروش با LINQ","description":"از مجموعه سفارش‌ها فقط پرداخت‌شده‌ها را انتخاب کنید، بر اساس مشتری group کنید و مجموع خرید را نزولی مرتب کنید.","hints":["Where سپس GroupBy را استفاده کنید.","Sum را داخل projection انجام دهید."]}

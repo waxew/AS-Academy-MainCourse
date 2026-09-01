@@ -1,0 +1,1 @@
+{"id":"cs-ex-beg-004","lessonId":"cs-beg-010","type":"WRITE_CODE","difficulty":"MEDIUM","title":"طراحی API با params و out","description":"متدی برای محاسبه مجموع چند قیمت با params و متدی TryParse برای تبدیل ورودی کاربر با out بنویسید. ورودی نامعتبر نباید exception کنترل‌نشده ایجاد کند.","hints":["از decimal.TryParse استفاده کنید.","برای تعداد متغیر قیمت‌ها params مناسب است."]}

@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-001","lessonId":"cs-pro-002","title":"API Pagination","description":"یک endpoint با page و pageSize، validation و پاسخ metadata طراحی کنید.","type":"BUILD_FEATURE","difficulty":"EXPERT","hints":["Skip/Take و totalCount را جدا محاسبه کنید."]}

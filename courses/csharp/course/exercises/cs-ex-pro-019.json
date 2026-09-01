@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-019","lessonId":"cs-pro-029","type":"BUILD_FEATURE","difficulty":"HARD","title":"Products API حرفه‌ای","description":"endpoint لیست محصول را با pagination، filter، sort، validation محدودیت pageSize و rate limiting بسازید.","hints":["IQueryable را قبل از ToListAsync شکل دهید.","حداکثر pageSize تعریف کنید."]}

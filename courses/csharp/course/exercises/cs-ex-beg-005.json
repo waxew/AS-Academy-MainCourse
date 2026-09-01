@@ -1,0 +1,1 @@
+{"id":"cs-ex-beg-005","lessonId":"cs-beg-011","type":"BUILD_FEATURE","difficulty":"MEDIUM","title":"صف سفارش و شناسه یکتا","description":"با Queue سفارش‌ها را FIFO پردازش کنید و با HashSet از ثبت دوباره شناسه سفارش جلوگیری کنید.","hints":["Enqueue/Dequeue را بررسی کنید.","HashSet.Add مشخص می‌کند مقدار قبلاً وجود داشته یا نه."]}

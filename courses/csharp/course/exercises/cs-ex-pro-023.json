@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-023","lessonId":"cs-pro-034","type":"BUILD_FEATURE","difficulty":"EXPERT","title":"Order Testing Pyramid","description":"برای محاسبه سفارش unit test، برای repository تست دیتابیس و برای endpoint یک integration test بنویسید. مسیر success و failure را پوشش دهید.","hints":["business rule را بدون HTTP تست کنید.","برای API از host تستی استفاده کنید."]}

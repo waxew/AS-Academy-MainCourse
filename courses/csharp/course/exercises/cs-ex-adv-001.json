@@ -1,0 +1,1 @@
+{"id":"cs-ex-adv-001","lessonId":"cs-adv-001","title":"گزارش LINQ","description":"محصولات فعال را بر اساس دسته گروه‌بندی و مجموع ارزش هر دسته را محاسبه کنید.","type":"WRITE_CODE","difficulty":"HARD","hints":["Where، GroupBy و Sum را ترکیب کنید."]}

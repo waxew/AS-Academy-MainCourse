@@ -1,0 +1,1 @@
+{"id":"cs-ex-adv-006","lessonId":"cs-adv-009","type":"BUILD_FEATURE","difficulty":"HARD","title":"JSON Import/Export Streaming","description":"لیست سفارش‌ها را با JsonSerializer و FileStream ذخیره و بازیابی کنید. cancellation و مدیریت فایل خراب را در نظر بگیرید.","hints":["SerializeAsync/DeserializeAsync را بررسی کنید.","IOException و JsonException را جداگانه مدیریت کنید."]}

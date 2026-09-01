@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-021","lessonId":"cs-pro-031","type":"BUILD_FEATURE","difficulty":"EXPERT","title":"Order Event Pipeline","description":"OrderCreated را با producer، broker و consumer طراحی کنید؛ idempotency، retry و dead-letter را مشخص کنید.","hints":["consumer باید duplicate را تحمل کند.","delivery failure را از business failure جدا کنید."]}

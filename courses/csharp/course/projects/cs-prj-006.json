@@ -1,0 +1,1 @@
+{"id":"cs-prj-006","title":"AI Knowledge Assistant","summary":"دستیار دانشی با RAG و abstraction مناسب provider","difficulty":"EXPERT","steps":["Embedding abstraction طراحی کنید","Vector search abstraction بسازید","RAG pipeline بسازید","Logging و evaluation اضافه کنید"]}

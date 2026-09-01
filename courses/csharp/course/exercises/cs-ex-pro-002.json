@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-002","lessonId":"cs-pro-006","title":"Policy Authorization","description":"یک policy برای claim با نام permission و مقدار orders.read تعریف کنید.","type":"BUILD_FEATURE","difficulty":"EXPERT","hints":["RequireClaim را بررسی کنید."]}

@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-006","lessonId":"cs-pro-015","title":"TDD برای PriceCalculator","description":"قبل از پیاده‌سازی، تست‌های محاسبه تخفیف را بنویسید؛ سپس implementation را فقط تا حد عبور تست‌ها توسعه دهید.","type":"BUILD_FEATURE","difficulty":"EXPERT","hints":["ابتدا happy path را تست کنید.","بعد ورودی‌های مرزی و نامعتبر را اضافه کنید."]}

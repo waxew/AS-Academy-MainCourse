@@ -1,0 +1,1 @@
+{"id":"cs-ex-beg-006","lessonId":"cs-beg-013","type":"BUILD_FEATURE","difficulty":"HARD","title":"Shopping Cart شی‌گرا","description":"Product، CartItem، Cart و IDiscountPolicy را طراحی کنید. Cart نباید اجازه quantity منفی بدهد و سیاست تخفیف باید قابل تعویض باشد.","hints":["invariantها را داخل typeها محافظت کنید.","DiscountPolicy را از Cart جدا نگه دارید."]}

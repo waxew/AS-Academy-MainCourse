@@ -1,0 +1,22 @@
+[
+  {"id":"cs-fnd-01","levelId":"cs-level-fundamentals","title":"شروع با C# و .NET","description":"آشنایی با زبان، ابزارها و ساخت اولین برنامه","order":1},
+  {"id":"cs-fnd-02","levelId":"cs-level-fundamentals","title":"داده و عملگرها","description":"متغیرها، انواع داده، ورودی، رشته و قالب‌بندی","order":2},
+  {"id":"cs-fnd-03","levelId":"cs-level-fundamentals","title":"کنترل جریان","description":"شرط‌ها، حلقه‌ها و pattern matching مقدماتی","order":3},
+  {"id":"cs-beg-01","levelId":"cs-level-beginner","title":"متدها و Collections","description":"متد، آرایه، List، Dictionary، tuple و enum","order":1},
+  {"id":"cs-beg-02","levelId":"cs-level-beginner","title":"شی‌گرایی","description":"Class، Object، Encapsulation، Interface و SOLID","order":2},
+  {"id":"cs-beg-03","levelId":"cs-level-beginner","title":"خطا، فایل و JSON","description":"Exception handling و persistence محلی","order":3},
+  {"id":"cs-beg-04","levelId":"cs-level-beginner","title":"طراحی Type در C#","description":"static، sealed، partial، struct، record و انتخاب type مناسب","order":4},
+  {"id":"cs-adv-01","levelId":"cs-level-advanced","title":"LINQ و Functional Features","description":"Lambda، Delegate، IEnumerable و IQueryable","order":1},
+  {"id":"cs-adv-02","levelId":"cs-level-advanced","title":"Async و Concurrency","description":"Task، async/await، cancellation و همزمانی","order":2},
+  {"id":"cs-adv-03","levelId":"cs-level-advanced","title":"Generics، Reflection و Memory","description":"Generics پیشرفته، Reflection و مدیریت حافظه","order":3},
+  {"id":"cs-adv-04","levelId":"cs-level-advanced","title":"Serialization و Streams","description":"JSON، XML، CSV، FileStream، MemoryStream و پردازش داده‌های حجیم","order":4},
+  {"id":"cs-pro-01","levelId":"cs-level-specialist","title":"دیتابیس و EF Core","description":"SQL، DbContext، Migration و Performance","order":1},
+  {"id":"cs-pro-02","levelId":"cs-level-specialist","title":"ASP.NET Core و Web API","description":"REST، Minimal API، JWT و Security","order":2},
+  {"id":"cs-pro-03","levelId":"cs-level-specialist","title":"Architecture و Testing","description":"Clean Architecture، CQRS، DDD و تست","order":3},
+  {"id":"cs-pro-04","levelId":"cs-level-specialist","title":"Performance، Microservices و AI","description":"Observability، resilience و AI integration","order":4},
+  {"id":"cs-pro-05","levelId":"cs-level-specialist","title":"Desktop با WinForms و WPF","description":"رابط دسکتاپ، XAML، Data Binding و MVVM","order":5},
+  {"id":"cs-pro-06","levelId":"cs-level-specialist","title":".NET MAUI و توسعه چندسکویی","description":"ساخت اپ Android، iOS و Desktop با C# و XAML","order":6},
+  {"id":"cs-pro-07","levelId":"cs-level-specialist","title":"Networking، SignalR و ارتباط بلادرنگ","description":"HttpClient، TCP/UDP، WebSocket و SignalR","order":7},
+  {"id":"cs-pro-08","levelId":"cs-level-specialist","title":"Unity و بازی‌سازی با C#","description":"چرخه بازی، Component، Physics و معماری پروژه Unity","order":8},
+  {"id":"cs-pro-09","levelId":"cs-level-specialist","title":"C# Internals و Runtime","description":"IL، JIT، AOT، Assembly، GC، Span و interop","order":9}
+]

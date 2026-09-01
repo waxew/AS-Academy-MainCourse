@@ -1,0 +1,7 @@
+[
+  {"id":"cs-gls-clr","term":"CLR","translation":"Common Language Runtime","definition":"محیط اجرای .NET برای managed code، GC و type safety.","related":["IL","GC"]},
+  {"id":"cs-gls-il","term":"IL","translation":"Intermediate Language","definition":"زبان میانی تولیدشده توسط کامپایلرهای .NET.","related":["CLR","JIT"]},
+  {"id":"cs-gls-gc","term":"GC","translation":"Garbage Collector","definition":"مدیریت خودکار حافظه managed heap.","related":["CLR"]},
+  {"id":"cs-gls-linq","term":"LINQ","translation":"Language Integrated Query","definition":"مجموعه syntax و API برای query روی داده‌ها.","related":["IEnumerable","IQueryable"]},
+  {"id":"cs-gls-di","term":"DI","translation":"Dependency Injection","definition":"تزریق وابستگی به جای ساخت مستقیم implementation در مصرف‌کننده.","related":["SOLID"]}
+]

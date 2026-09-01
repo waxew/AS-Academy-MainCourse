@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-025","lessonId":"cs-pro-036","type":"BUILD_FEATURE","difficulty":"EXPERT","title":"Production RAG Assistant","description":"retriever قابل تعویض، citation، cancellation، streaming و مجموعه حداقل 20 سؤال ارزیابی برای RAG assistant طراحی کنید.","hints":["retrieval و generation را از هم جدا کنید.","برای پاسخ بدون evidence سیاست مشخص تعریف کنید."]}

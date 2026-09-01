@@ -1,0 +1,1 @@
+{"id":"cs-prj-002","title":"مدیریت هزینه آفلاین","summary":"CRUD هزینه‌ها با JSON persistence","difficulty":"BEGINNER","steps":["مدل Expense بسازید","CRUD را پیاده‌سازی کنید","JSON ذخیره کنید","گزارش ماهانه بسازید"]}

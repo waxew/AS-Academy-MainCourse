@@ -1,0 +1,1 @@
+{"id":"cs-prj-005","title":"Enterprise Architecture Lab","summary":"تمرین Clean Architecture، CQRS و DDD","difficulty":"EXPERT","steps":["مرز Domain را تعریف کنید","Application use cases بسازید","Infrastructure adapter اضافه کنید","Architecture tests بنویسید"]}

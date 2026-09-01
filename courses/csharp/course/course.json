@@ -1,0 +1,18 @@
+{
+  "id": "csharp",
+  "language": "fa",
+  "programmingLanguage": "C#",
+  "platform": ".NET",
+  "audience": "از صفر مطلق تا توسعه‌دهنده حرفه‌ای",
+  "levels": ["fundamentals", "beginner", "advanced", "professional"],
+  "estimatedHours": 180,
+  "prerequisites": [],
+  "outcomes": [
+    "تسلط بر مبانی و OOP در C#",
+    "کار با LINQ، Async و Collections",
+    "کار با فایل، JSON و دیتابیس",
+    "ساخت برنامه دسکتاپ و Web API",
+    "درک معماری Clean، CQRS و DDD",
+    "آشنایی عملی با تست، امنیت و Performance"
+  ]
+}

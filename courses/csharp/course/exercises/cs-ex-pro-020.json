@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-020","lessonId":"cs-pro-030","type":"BUILD_FEATURE","difficulty":"EXPERT","title":"Password Storage امن","description":"سرویس ثبت و verify رمز عبور طراحی کنید که salt و hash مناسب داشته باشد و plaintext password را ذخیره نکند.","hints":["از PasswordHasher یا primitive استاندارد استفاده کنید.","مقایسه امنیتی را به کتابخانه استاندارد بسپارید."]}

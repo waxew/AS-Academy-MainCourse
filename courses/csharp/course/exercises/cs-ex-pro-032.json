@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-032","lessonId":"cs-pro-053","type":"BUILD_FEATURE","difficulty":"EXPERT","title":"Idempotent Order Endpoint","description":"endpoint ثبت سفارش را با idempotency key، validation، transaction و structured logging طراحی کنید تا retry باعث سفارش تکراری نشود.","hints":["کلید idempotency را persist کنید.","نتیجه درخواست قبلی را برای duplicate برگردانید."]}

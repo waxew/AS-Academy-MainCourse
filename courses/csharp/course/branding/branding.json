@@ -1,0 +1,8 @@
+{
+  "brand": "AS Academy",
+  "course": "C#",
+  "primaryLabel": "C# / .NET",
+  "direction": "rtl",
+  "locale": "fa-IR",
+  "notes": "رنگ، typography و اجزای عمومی UI از AS-Academy-Core دریافت می‌شوند. این فایل فقط هویت اختصاصی دوره را تعریف می‌کند."
+}

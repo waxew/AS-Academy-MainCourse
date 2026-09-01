@@ -1,0 +1,1 @@
+{"id":"cs-ex-fnd-001","lessonId":"cs-fnd-001","title":"نقشه اجزای .NET","description":"SDK، CLR، IL، NuGet و BCL را در یک توضیح کوتاه به هم مرتبط کنید.","type":"READ_AND_ANSWER","difficulty":"EASY","hints":["از مسیر کد منبع تا اجرا شروع کنید."],"explanation":"هدف تشخیص تفاوت زبان، ابزار build، runtime و library است."}

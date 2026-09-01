@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-018","lessonId":"cs-pro-027","type":"WRITE_CODE","difficulty":"HARD","title":"ADO.NET Transaction امن","description":"کسر و افزایش موجودی دو حساب را در یک transaction انجام دهید. commandها باید parameterized باشند و در خطا rollback شود.","hints":["BeginTransaction را استفاده کنید.","هر command را به همان transaction متصل کنید."]}

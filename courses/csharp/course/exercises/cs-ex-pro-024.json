@@ -1,0 +1,1 @@
+{"id":"cs-ex-pro-024","lessonId":"cs-pro-035","type":"WRITE_CODE","difficulty":"EXPERT","title":"Length-Prefixed TCP Protocol","description":"client/server بنویسید که ابتدا طول payload و سپس payload را ارسال کند. partial read، cancellation و disconnect را مدیریت کنید.","hints":["برای خواندن N byte ممکن است چند ReadAsync لازم باشد.","حداکثر اندازه پیام تعریف کنید."]}

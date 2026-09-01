@@ -1,0 +1,1 @@
+{"id":"cs-ex-beg-002","lessonId":"cs-beg-008","title":"ذخیره هزینه‌ها","description":"لیست هزینه‌ها را در JSON ذخیره و در اجرای بعدی بازیابی کنید.","type":"BUILD_FEATURE","difficulty":"MEDIUM","hints":["Serialize و Deserialize را با System.Text.Json انجام دهید."]}
