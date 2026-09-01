@@ -1,0 +1,33 @@
+[
+{"id":"web-fnd-01-internet","levelId":"web-fundamentals","title":"اینترنت و وب چگونه کار می‌کنند؟","description":"Packet، ISP، IP، Router، TCP/UDP و مسیر کلی رسیدن درخواست به سرویس.","order":0,"prerequisites":[]},
+{"id":"web-fnd-02-web-products","levelId":"web-fundamentals","title":"Website، Web App و Mobile App","description":"تفاوت محصول، اجرا، توزیع، قابلیت‌ها و انتخاب معماری.","order":1,"prerequisites":["web-fnd-01-internet"]},
+{"id":"web-fnd-03-client-server","levelId":"web-fundamentals","title":"Client، Server و معماری درخواست/پاسخ","description":"نقش Client/Server، Request/Response، Statelessness و سرویس‌ها.","order":2,"prerequisites":["web-fnd-02-web-products"]},
+{"id":"web-fnd-04-addressing","levelId":"web-fundamentals","title":"URL، URI، IP، Port و Protocol","description":"اجزای آدرس وب، IPv4/IPv6، Port و Scheme.","order":3,"prerequisites":["web-fnd-03-client-server"]},
+{"id":"web-fnd-05-domain-dns","levelId":"web-fundamentals","title":"دامنه، Subdomain و DNS","description":"Registrar، Nameserver، Zone، A/AAAA/CNAME/MX/TXT، TTL و Resolution.","order":4,"prerequisites":["web-fnd-04-addressing"]},
+{"id":"web-fnd-06-hosting","levelId":"web-fundamentals","title":"هاست، Server، VPS و Cloud","description":"Shared Hosting، VPS، Dedicated، Cloud و معیار انتخاب.","order":5,"prerequisites":["web-fnd-05-domain-dns"]},
+{"id":"web-fnd-07-http","levelId":"web-fundamentals","title":"HTTP، HTTPS و چرخه Request/Response","description":"Method، Header، Body، Status Code، HTTP versions و HTTPS.","order":6,"prerequisites":["web-fnd-06-hosting"]},
+{"id":"web-fnd-08-browser","levelId":"web-fundamentals","title":"مرورگر و Rendering Pipeline","description":"Navigation، Parse، DOM/CSSOM مفهومی، Render و منابع صفحه.","order":7,"prerequisites":["web-fnd-07-http"]},
+
+{"id":"web-beg-01-devtools","levelId":"web-beginner","title":"Developer Tools مرورگر","description":"Elements، Console، Network، Application، Performance و Debug پایه.","order":0,"prerequisites":[]},
+{"id":"web-beg-02-tools","levelId":"web-beginner","title":"VS Code، Terminal و ابزارهای وب","description":"نصب، Workspace، Extension، Terminal و اجرای پروژه محلی.","order":1,"prerequisites":["web-beg-01-devtools"]},
+{"id":"web-beg-03-git","levelId":"web-beginner","title":"Git و GitHub برای توسعه‌دهنده وب","description":"Repo، Commit، Branch، Remote، Pull/Push، PR و GitHub Pages.","order":2,"prerequisites":["web-beg-02-tools"]},
+{"id":"web-beg-04-stacks","levelId":"web-beginner","title":"Frontend، Backend و Full Stack","description":"مرز مسئولیت‌ها، Runtime، Database و ارتباط اجزا.","order":3,"prerequisites":["web-beg-03-git"]},
+{"id":"web-beg-05-api","levelId":"web-beginner","title":"API، REST و JSON","description":"Endpoint، Resource، Method، Payload، JSON و قرارداد API.","order":4,"prerequisites":["web-beg-04-stacks"]},
+{"id":"web-beg-06-state","levelId":"web-beginner","title":"Cookie، Session و Web Storage","description":"State در وب، Cookie، Session، localStorage و sessionStorage.","order":5,"prerequisites":["web-beg-05-api"]},
+{"id":"web-beg-07-rtl","levelId":"web-beginner","title":"وب فارسی، RTL، Unicode و UTF-8","description":"جهت متن، bidi، Encoding، فونت فارسی و چیدمان راست‌به‌چپ.","order":6,"prerequisites":["web-beg-06-state"]},
+{"id":"web-beg-08-responsive","levelId":"web-beginner","title":"Responsive و Mobile First — مفاهیم","description":"Viewport، Breakpoint، دستگاه‌ها و طراحی تطبیقی پیش از ورود عمیق به CSS.","order":7,"prerequisites":["web-beg-07-rtl"]},
+
+{"id":"web-adv-01-cache-cdn","levelId":"web-advanced","title":"Cache، CDN و تحویل محتوا","description":"Browser/HTTP Cache، Cache-Control، CDN، Edge و invalidation.","order":0,"prerequisites":[]},
+{"id":"web-adv-02-tls","levelId":"web-advanced","title":"TLS، Certificate و HTTPS عمیق‌تر","description":"Handshake مفهومی، Certificate chain، CA، HSTS و خطاهای رایج.","order":1,"prerequisites":["web-adv-01-cache-cdn"]},
+{"id":"web-adv-03-security","levelId":"web-advanced","title":"امنیت پایه وب","description":"Same-Origin، CORS، CSP، XSS، CSRF، Injection، Authentication و Authorization.","order":2,"prerequisites":["web-adv-02-tls"]},
+{"id":"web-adv-04-performance","levelId":"web-advanced","title":"Web Performance و Core Web Vitals","description":"LCP، INP، CLS، Waterfall، Critical Path و بودجه Performance.","order":3,"prerequisites":["web-adv-03-security"]},
+{"id":"web-adv-05-accessibility","levelId":"web-advanced","title":"Accessibility و وب قابل‌دسترسی","description":"Semantic structure، Keyboard، Focus، Contrast، Screen Reader و WCAG مفهومی.","order":4,"prerequisites":["web-adv-04-performance"]},
+{"id":"web-adv-06-seo","levelId":"web-advanced","title":"SEO فنی مقدماتی برای توسعه‌دهنده","description":"Crawl، Index، robots، sitemap، canonical، metadata و structured data مفهومی.","order":5,"prerequisites":["web-adv-05-accessibility"]},
+{"id":"web-adv-07-network-debug","levelId":"web-advanced","title":"تحلیل Network و عیب‌یابی وب","description":"DNS lookup، status، redirect، headers، timing، cache و تشخیص خطا با DevTools/curl.","order":6,"prerequisites":["web-adv-06-seo"]},
+
+{"id":"web-spc-01-deploy","levelId":"web-specialist","title":"Deploy و انتشار Production","description":"Build artifact، static/dynamic hosting، environment و release checklist.","order":0,"prerequisites":[]},
+{"id":"web-spc-02-domain-production","levelId":"web-specialist","title":"اتصال Domain، DNS و SSL در عمل","description":"DNS records، verification، certificate، redirect و سناریوی مهاجرت.","order":1,"prerequisites":["web-spc-01-deploy"]},
+{"id":"web-spc-03-architecture","levelId":"web-specialist","title":"معماری یک سیستم وب واقعی","description":"Browser، CDN، reverse proxy، app server، API، database و object storage.","order":2,"prerequisites":["web-spc-02-domain-production"]},
+{"id":"web-spc-04-production-debug","levelId":"web-specialist","title":"Production Debugging و Observability پایه","description":"Log، metric، tracing مفهومی، correlation ID و incident workflow.","order":3,"prerequisites":["web-spc-03-architecture"]},
+{"id":"web-spc-05-capstone","levelId":"web-specialist","title":"پروژه نهایی: انتشار یک وب‌سایت فارسی Production-ready","description":"طراحی، Git، deploy، domain، HTTPS، RTL، performance، accessibility و مستندسازی.","order":4,"prerequisites":["web-spc-04-production-debug"]}
+]
