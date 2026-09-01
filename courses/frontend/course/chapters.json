@@ -1,0 +1,22 @@
+[
+ {"id":"fe-01","levelId":"frontend-fundamentals","title":"مبانی Frontend و محیط توسعه","order":1},
+ {"id":"fe-02","levelId":"frontend-fundamentals","title":"HTML از پایه تا Semantic HTML","order":2},
+ {"id":"fe-03","levelId":"frontend-beginner","title":"CSS و Box Model","order":3},
+ {"id":"fe-04","levelId":"frontend-beginner","title":"Flexbox، Grid و Responsive Design","order":4},
+ {"id":"fe-05","levelId":"frontend-beginner","title":"Animation، Sass، Bootstrap و Tailwind","order":5},
+ {"id":"fe-06","levelId":"frontend-beginner","title":"JavaScript برای Frontend","order":6},
+ {"id":"fe-07","levelId":"frontend-intermediate","title":"DOM، Event و فرم‌های پویا","order":7},
+ {"id":"fe-08","levelId":"frontend-intermediate","title":"Fetch، API، Promise و Async/Await","order":8},
+ {"id":"fe-09","levelId":"frontend-intermediate","title":"Storage، IndexedDB و Offline Data","order":9},
+ {"id":"fe-10","levelId":"frontend-intermediate","title":"TypeScript برای وب","order":10},
+ {"id":"fe-11","levelId":"frontend-advanced","title":"Web Components و معماری کامپوننت","order":11},
+ {"id":"fe-12","levelId":"frontend-advanced","title":"State Management","order":12},
+ {"id":"fe-13","levelId":"frontend-advanced","title":"PWA و Service Worker","order":13},
+ {"id":"fe-14","levelId":"frontend-advanced","title":"Tooling، Vite و کیفیت کد","order":14},
+ {"id":"fe-15","levelId":"frontend-specialist","title":"Testing رابط کاربری","order":15},
+ {"id":"fe-16","levelId":"frontend-specialist","title":"Performance و Core Web Vitals","order":16},
+ {"id":"fe-17","levelId":"frontend-specialist","title":"Accessibility و WCAG","order":17},
+ {"id":"fe-18","levelId":"frontend-specialist","title":"امنیت Frontend","order":18},
+ {"id":"fe-19","levelId":"frontend-specialist","title":"Browser Internals و Frontend Architecture","order":19},
+ {"id":"fe-20","levelId":"frontend-projects","title":"پروژه‌های واقعی و پروژه نهایی","order":20}
+]
