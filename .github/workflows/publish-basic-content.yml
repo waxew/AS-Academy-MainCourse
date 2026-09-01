@@ -4,11 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - "courses/basic/**"
+      - "courses/basic/course/**"
       - ".github/workflows/publish-basic-content.yml"
   pull_request:
     paths:
-      - "courses/basic/**"
+      - "courses/basic/course/**"
       - ".github/workflows/publish-basic-content.yml"
   workflow_dispatch:
 
