@@ -1,0 +1,14 @@
+[
+{"term":"Compiler","fa":"کامپایلر","definition":"ابزاری برای ترجمه و تحلیل کد C در فرایند build."},
+{"term":"Preprocessor","fa":"پیش پردازنده","definition":"مرحله پردازش directiveها و macroها قبل از compilation."},
+{"term":"Pointer","fa":"اشاره گر","definition":"مقداری که آدرس object یا function را نگه می دارد."},
+{"term":"Dereference","fa":"دسترسی از طریق اشاره گر","definition":"دسترسی به object اشاره شده توسط pointer معتبر."},
+{"term":"Lifetime","fa":"طول عمر","definition":"بازه ای که object وجود دارد و دسترسی به آن معتبر است."},
+{"term":"Stack","fa":"پشته","definition":"اصطلاح رایج برای storage مربوط به frameهای فراخوانی و بسیاری از objectهای automatic."},
+{"term":"Heap","fa":"حافظه پویا","definition":"اصطلاح رایج برای storage مدیریت شده توسط allocatorهایی مثل malloc/free."},
+{"term":"Undefined Behavior","fa":"رفتار تعریف نشده","definition":"وضعیتی که استاندارد C نتیجه مشخصی برای آن الزام نمی کند."},
+{"term":"Translation Unit","fa":"واحد ترجمه","definition":"کد حاصل از preprocessing یک source file برای compilation مستقل."},
+{"term":"Linker","fa":"لینکر","definition":"Objectها و libraryها را برای ساخت خروجی نهایی متصل می کند."},
+{"term":"ABI","fa":"رابط دودویی برنامه","definition":"قرارداد binary شامل calling convention، layout و linkage."},
+{"term":"Sanitizer","fa":"ابزار تشخیص خطای Runtime","definition":"Instrumentation برای کشف دسته هایی از خطاهای حافظه و UB."}
+]

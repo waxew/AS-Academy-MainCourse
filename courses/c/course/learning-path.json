@@ -1,0 +1,16 @@
+{
+  "courseId": "as-academy-c",
+  "goal": "کاربر از صفر وارد دوره شود و با مطالعه، کدنویسی، تمرین، آزمون و پروژه به توانایی ساخت برنامه واقعی C برسد.",
+  "stages": [
+    {"id":"start","title":"شروع از صفر","levelId":"fundamentals","requiredPercent":0,"outcome":"نوشتن و کامپایل برنامه های ساده C"},
+    {"id":"developer","title":"برنامه نویس مقدماتی","levelId":"beginner","requiredPercent":80,"outcome":"کار با Function، Array، String، Pointer، Struct و File"},
+    {"id":"advanced","title":"برنامه نویس پیشرفته","levelId":"advanced","requiredPercent":80,"outcome":"مدیریت حافظه، Debug، Test و طراحی ماژولار"},
+    {"id":"specialist","title":"متخصص C","levelId":"specialist","requiredPercent":85,"outcome":"System، Network، Embedded، Secure C و پروژه نهایی"}
+  ],
+  "completionRules": {
+    "lessonRequired": true,
+    "exerciseRequired": true,
+    "quizPassingPercent": 70,
+    "capstoneRequired": true
+  }
+}
