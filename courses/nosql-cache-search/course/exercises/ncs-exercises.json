@@ -1,0 +1,7 @@
+[
+{"id":"ncs-ex-001","title":"انتخاب دیتابیس برای سناریو","levelId":"ncs-fundamentals","prompt":"برای Chat، فروشگاه، شبکه اجتماعی، Telemetry و Session Store مدل داده و فناوری مناسب را انتخاب کنید و Trade-off را توضیح دهید."},
+{"id":"ncs-ex-002","title":"طراحی Schema در MongoDB","levelId":"ncs-beginner","prompt":"برای فروشگاه شامل Product، Category، Review و Inventory مدل Embedding/Referencing و Indexهای لازم را طراحی کنید."},
+{"id":"ncs-ex-003","title":"طراحی Cache","levelId":"ncs-specialist","prompt":"برای API محصول Cache-Aside با TTL، invalidation، stampede protection و معیارهای مانیتورینگ طراحی کنید."},
+{"id":"ncs-ex-004","title":"جست‌وجوی فارسی","levelId":"ncs-specialist","prompt":"برای نام و توضیح محصول فارسی pipeline نرمال‌سازی، analyzer، autocomplete، synonym و ارزیابی relevance طراحی کنید."},
+{"id":"ncs-ex-005","title":"Partition Design","levelId":"ncs-advanced","prompt":"برای ثبت Event با نرخ بالا Partition Key مناسب Cassandra یا DynamoDB را پیشنهاد دهید و Hot Partition را تحلیل کنید."}
+]
