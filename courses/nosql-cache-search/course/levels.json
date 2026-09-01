@@ -1,0 +1,7 @@
+[
+  {"id":"ncs-fundamentals","title":"مبانی","description":"از مفهوم NoSQL تا مدل‌های داده، CAP، ACID/BASE، نصب ابزارها و انتخاب فناوری","order":1},
+  {"id":"ncs-beginner","title":"مقدماتی","description":"کار عملی با MongoDB، Redis/Valkey، Firebase و عملیات پایه Search","order":2},
+  {"id":"ncs-advanced","title":"پیشرفته","description":"Cassandra، DynamoDB، Neo4j، Elasticsearch/OpenSearch، Time-Series و InfluxDB","order":3},
+  {"id":"ncs-specialist","title":"تخصصی","description":"Cache/Search Engineering، مقیاس‌پذیری، امنیت، Performance، Observability و معماری Production","order":4},
+  {"id":"ncs-projects","title":"پروژه‌ها","description":"پروژه‌های واقعی و Capstone چنددیتابیسی","order":5}
+]
