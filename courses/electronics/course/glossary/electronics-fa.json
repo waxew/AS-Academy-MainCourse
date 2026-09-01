@@ -1,0 +1,16 @@
+[
+{"term":"ولتاژ","en":"Voltage","definition":"اختلاف پتانسیل الکتریکی بین دو نقطه؛ واحد آن ولت است."},
+{"term":"جریان","en":"Current","definition":"نرخ عبور بار الکتریکی؛ واحد آن آمپر است."},
+{"term":"امپدانس","en":"Impedance","definition":"مخالفت کلی مدار AC با جریان که اثر مقاومت و راکتانس را ترکیب می‌کند."},
+{"term":"دیتاشیت","en":"Datasheet","definition":"سند فنی سازنده شامل حدود، مشخصات، پایه‌ها و شرایط عملکرد قطعه."},
+{"term":"دی‌کاپلینگ","en":"Decoupling","definition":"کاهش تغییرات و نویز تغذیه محلی، معمولاً با خازن نزدیک بار یا IC."},
+{"term":"فیدبک","en":"Feedback","definition":"بازگرداندن بخشی از خروجی به ورودی برای کنترل رفتار سیستم."},
+{"term":"وقفه","en":"Interrupt","definition":"مکانیزم سخت‌افزاری/نرم‌افزاری برای واکنش پردازنده به رخداد."},
+{"term":"PWM","en":"Pulse Width Modulation","definition":"کنترل مقدار متوسط با تغییر نسبت زمان روشن بودن پالس."},
+{"term":"EMI","en":"Electromagnetic Interference","definition":"تداخل الکترومغناطیسی ایجادشده یا دریافت‌شده توسط مدار."},
+{"term":"EMC","en":"Electromagnetic Compatibility","definition":"توانایی تجهیز برای کار صحیح در محیط الکترومغناطیسی بدون ایجاد اختلال غیرمجاز."},
+{"term":"BOM","en":"Bill of Materials","definition":"فهرست کنترل‌شده قطعات و اطلاعات تأمین موردنیاز برای ساخت محصول."},
+{"term":"DFM","en":"Design for Manufacturing","definition":"طراحی محصول با درنظرگرفتن قابلیت و هزینه ساخت."},
+{"term":"DFT","en":"Design for Test","definition":"طراحی مدار و محصول به شکلی که آزمون تولید و عیب‌یابی قابل اتکا باشد."},
+{"term":"RTOS","en":"Real-Time Operating System","definition":"سیستم‌عامل/هسته زمان‌واقعی برای زمان‌بندی قابل پیش‌بینی وظایف Embedded."}
+]
