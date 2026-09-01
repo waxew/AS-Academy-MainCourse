@@ -1,0 +1,9 @@
+{"id":"web-quiz-001","title":"آزمون جامع مبانی وب","questions":[
+{"id":"q1","type":"single-choice","prompt":"کدام گزینه رابطه Internet و Web را دقیق‌تر بیان می‌کند؟","options":["هر دو دقیقاً یک چیزند","Web یکی از سرویس‌های اجراشده روی Internet است","Internet فقط برای مرورگر است","Web بدون شبکه کار می‌کند"],"answerIndex":1,"explanation":"اینترنت زیرساخت شبکه‌ای است و وب یکی از سرویس‌های روی آن است."},
+{"id":"q2","type":"single-choice","prompt":"وظیفه اصلی DNS چیست؟","options":["رمزنگاری HTML","حل نام‌ها به اطلاعات DNS مورد نیاز مانند آدرس مقصد","ساخت دیتابیس","کامپایل JavaScript"],"answerIndex":1,"explanation":"DNS سامانه نام‌گذاری توزیع‌شده است."},
+{"id":"q3","type":"single-choice","prompt":"HTTPS چه چیزی را به HTTP اضافه می‌کند؟","options":["Database","TLS برای کانال امن","Git","CSS"],"answerIndex":1,"explanation":"HTTPS عملاً HTTP روی TLS است."},
+{"id":"q4","type":"single-choice","prompt":"کدام پنل DevTools برای waterfall درخواست‌ها مناسب است؟","options":["Network","Elements","Sources فقط","Issues فقط"],"answerIndex":0,"explanation":"Network جزئیات request/response و timing را نشان می‌دهد."},
+{"id":"q5","type":"single-choice","prompt":"برای سند فارسی کدام پایه صحیح‌تر است؟","options":["فقط text-align:right","lang=fa و dir=rtl همراه UTF-8","استفاده از transform","تبدیل متن به تصویر"],"answerIndex":1,"explanation":"زبان، جهت و encoding باید معنایی و استاندارد تنظیم شوند."},
+{"id":"q6","type":"single-choice","prompt":"CORS جایگزین کدام مورد نیست؟","options":["Authentication/Authorization","Header","Browser","HTTP"],"answerIndex":0,"explanation":"CORS سیاست دسترسی cross-origin مرورگر است، نه کنترل هویت/مجوز."},
+{"id":"q7","type":"single-choice","prompt":"کدام مورد از Core Web Vitals است؟","options":["LCP","DNSSEC","SSH","SMTP"],"answerIndex":0,"explanation":"LCP یکی از معیارهای Core Web Vitals است."}
+]}
