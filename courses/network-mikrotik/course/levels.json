@@ -1,0 +1,6 @@
+[
+  {"id":"network-mikrotik-foundation","courseId":"network-mikrotik","type":"FOUNDATION","title":"مبانی","order":1,"description":"مفاهیم پایه شبکه، مدل‌ها، آدرس‌دهی، رسانه، ابزارها و ساخت آزمایشگاه."},
+  {"id":"network-mikrotik-beginner","courseId":"network-mikrotik","type":"BEGINNER","title":"مقدماتی","order":2,"description":"RouterOS و RouterBOARD از صفر تا سطح هم‌راستا با MTCNA و سناریوهای پایه."},
+  {"id":"network-mikrotik-advanced","courseId":"network-mikrotik","type":"ADVANCED","title":"پیشرفته","order":3,"description":"Routing، Switching، Wireless، QoS، VPN، امنیت و مسیرهای مهندسی MikroTik."},
+  {"id":"network-mikrotik-specialist","courseId":"network-mikrotik","type":"SPECIALIST","title":"تخصصی","order":4,"description":"ISP/WISP، BGP/MPLS، اتوماسیون، مانیتورینگ، Hardening و طراحی شبکه‌های Production."}
+]
