@@ -1,0 +1,22 @@
+[
+ {"id":"seo-c01","levelId":"seo-foundation","order":1,"title":"SEO چیست و موتور جستجو چگونه کار می‌کند؟","topics":["تعریف SEO","SERP","Crawling","Rendering","Indexing","Ranking","Search Intent","انواع SEO","White/Gray/Black Hat"]},
+ {"id":"seo-c02","levelId":"seo-foundation","order":2,"title":"زیرساخت وب برای متخصص SEO","topics":["HTML معنایی","HTTP/HTTPS","DNS","Status Code","URL","DOM","JavaScript","DevTools"]},
+ {"id":"seo-c03","levelId":"seo-beginner","order":3,"title":"تحقیق کلمات کلیدی و Search Intent","topics":["Seed Keyword","Long-tail","Keyword Difficulty","Search Volume","Intent","Keyword Mapping","Cannibalization","Competitor Gap"]},
+ {"id":"seo-c04","levelId":"seo-beginner","order":4,"title":"On-Page SEO","topics":["Title","Meta Description","Heading","URL","Content","Image SEO","Internal Linking","Anchor Text","Breadcrumb"]},
+ {"id":"seo-c05","levelId":"seo-beginner","order":5,"title":"Google Search Console و اندازه‌گیری پایه","topics":["Property","Sitemap","URL Inspection","Performance","Indexing","Enhancements","Manual Actions"]},
+ {"id":"seo-c06","levelId":"seo-intermediate","order":6,"title":"Technical SEO","topics":["robots.txt","XML Sitemap","Canonical","Redirect","404/410","Duplicate Content","Pagination","Faceted Navigation","Crawl Budget"]},
+ {"id":"seo-c07","levelId":"seo-intermediate","order":7,"title":"Structured Data و Rich Results","topics":["Schema.org","JSON-LD","Article","Product","Breadcrumb","Organization","Validation","Rich Results"]},
+ {"id":"seo-c08","levelId":"seo-intermediate","order":8,"title":"Performance، Mobile SEO و Core Web Vitals","topics":["LCP","INP","CLS","PageSpeed Insights","Lighthouse","Caching","Images","Fonts","Mobile-first"]},
+ {"id":"seo-c09","levelId":"seo-advanced","order":9,"title":"Content SEO و Semantic SEO","topics":["Content Strategy","Topic Cluster","Pillar Page","Entity","Topical Authority","E-E-A-T","Featured Snippet","People Also Ask"]},
+ {"id":"seo-c10","levelId":"seo-advanced","order":10,"title":"Off-Page SEO و Link Building","topics":["Backlink","Referring Domain","Digital PR","Outreach","Anchor Strategy","Link Gap","Toxic Links","Disavow","Brand Mention"]},
+ {"id":"seo-c11","levelId":"seo-advanced","order":11,"title":"JavaScript SEO و فریم‌ورک‌های مدرن","topics":["Rendering","CSR","SSR","SSG","React","Next.js","Hydration","Lazy Loading","Dynamic Rendering"]},
+ {"id":"seo-c12","levelId":"seo-advanced","order":12,"title":"Local، Ecommerce و International SEO","topics":["Google Business Profile","Local Pack","Product SEO","Category SEO","Merchant Center","hreflang","Multilingual SEO","Persian SEO"]},
+ {"id":"seo-c13","levelId":"seo-specialist-level","order":13,"title":"SEO Audit حرفه‌ای و Log Analysis","topics":["Crawl Audit","Index Audit","Server Logs","Bot Behavior","Orphan Pages","Crawl Depth","Screaming Frog","Sitebulb"]},
+ {"id":"seo-c14","levelId":"seo-specialist-level","order":14,"title":"Enterprise و Programmatic SEO","topics":["Large Sites","Templates","Automation","Programmatic Pages","Quality Control","Index Management","Governance"]},
+ {"id":"seo-c15","levelId":"seo-specialist-level","order":15,"title":"Analytics، KPI و Forecasting","topics":["GA4","GSC","Organic Conversion","CTR","SEO KPI","Dashboard","Attribution","Forecasting","Anomaly Detection"]},
+ {"id":"seo-c16","levelId":"seo-specialist-level","order":16,"title":"Migration، Penalty و Recovery","topics":["Domain Migration","Redesign","URL Migration","Algorithm Updates","Manual Action","Traffic Drop Diagnosis","Recovery"]},
+ {"id":"seo-c17","levelId":"seo-specialist-level","order":17,"title":"AI Search، AI Overviews و GEO","topics":["AI Overviews","AI Mode","Generative Search","GEO","Content Quality","Citations","Entity Signals","AI-assisted SEO"]},
+ {"id":"seo-c18","levelId":"seo-specialist-level","order":18,"title":"SEO Automation و Python/API","topics":["Search Console API","PageSpeed API","Data Extraction","Bulk Audit","Automation","Reporting Pipelines"]},
+ {"id":"seo-c19","levelId":"seo-projects","order":19,"title":"پروژه عملی SEO یک سایت فارسی","topics":["Research","Audit","Strategy","Implementation","Measurement"]},
+ {"id":"seo-c20","levelId":"seo-projects","order":20,"title":"Capstone: استراتژی کامل رشد Organic","topics":["90-day Plan","Technical Backlog","Content Roadmap","Link Plan","Dashboard","Executive Report"]}
+]
