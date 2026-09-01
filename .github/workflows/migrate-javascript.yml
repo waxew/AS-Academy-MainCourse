@@ -1,0 +1,63 @@
+name: Migrate JavaScript Course to MainCourse
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/migrate-javascript.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate-javascript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MainCourse
+        uses: actions/checkout@v4
+        with:
+          path: maincourse
+
+      - name: Checkout current JavaScript course source
+        uses: actions/checkout@v4
+        with:
+          repository: waxew/AS-Academy-JavaScript
+          ref: main
+          path: javascript-source
+
+      - name: Migrate complete JavaScript Course Package
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf maincourse/courses/javascript/course
+          mkdir -p maincourse/courses/javascript/course
+          cp -a javascript-source/course/javascript/. maincourse/courses/javascript/course/
+
+          cat > maincourse/courses/javascript/README.md <<'EOF'
+          # JavaScript Course Package
+
+          این پوشه منبع واحد محتوای آموزشی JavaScript در AS Academy است.
+
+          - Source of Truth: `AS-Academy-MainCourse/courses/javascript/course`
+          - App shell: `AS-Academy-JavaScript`
+          - Shared UI: `AS-Academy-MainUi`
+          - Shared engine: `AS-Academy-Core`
+
+          از زمان این مهاجرت، درس، فصل، تمرین، Quiz، آزمون، پروژه، Capstone، Glossary و Branding دوره JavaScript باید در همین پوشه تغییر کند و App دوره فقط آن را بسته‌بندی/مصرف کند.
+          EOF
+
+      - name: Commit migrated content
+        shell: bash
+        working-directory: maincourse
+        run: |
+          set -euo pipefail
+          git config user.name 'AS Academy Automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add courses/javascript
+          if git diff --cached --quiet; then
+            echo 'JavaScript MainCourse is already up to date.'
+          else
+            git commit -m 'content: migrate complete JavaScript course into MainCourse'
+            git push origin HEAD:main
+          fi
