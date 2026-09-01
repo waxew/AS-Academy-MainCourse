@@ -1,0 +1,6 @@
+[
+  {"id":"dme-foundation","courseId":"data-management-engineering","type":"FUNDAMENTALS","title":"مبانی","order":1},
+  {"id":"dme-beginner","courseId":"data-management-engineering","type":"BEGINNER","title":"مقدماتی","order":2},
+  {"id":"dme-advanced","courseId":"data-management-engineering","type":"ADVANCED","title":"پیشرفته","order":3},
+  {"id":"dme-specialist","courseId":"data-management-engineering","type":"SPECIALIST","title":"تخصصی","order":4}
+]

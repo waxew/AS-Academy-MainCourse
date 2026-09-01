@@ -1,0 +1,12 @@
+[
+  {"id":"dme-c01","levelId":"dme-foundation","title":"مبانی مدیریت داده و عملیات دیتابیس","order":1},
+  {"id":"dme-c02","levelId":"dme-foundation","title":"Backup، Restore و تداوم کسب‌وکار","order":2},
+  {"id":"dme-c03","levelId":"dme-beginner","title":"Migration، Versioning و امنیت","order":3},
+  {"id":"dme-c04","levelId":"dme-beginner","title":"کاربر، دسترسی، Audit و Pooling","order":4},
+  {"id":"dme-c05","levelId":"dme-advanced","title":"Replication، HA و Sharding","order":5},
+  {"id":"dme-c06","levelId":"dme-advanced","title":"Monitoring، Performance و Troubleshooting","order":6},
+  {"id":"dme-c07","levelId":"dme-specialist","title":"Data Warehouse، Data Lake و Lakehouse","order":7},
+  {"id":"dme-c08","levelId":"dme-specialist","title":"ETL، ELT و Data Pipeline","order":8},
+  {"id":"dme-c09","levelId":"dme-specialist","title":"Kafka و پردازش بلادرنگ","order":9},
+  {"id":"dme-c10","levelId":"dme-specialist","title":"معماری داده در مقیاس بالا و Capstone","order":10}
+]
