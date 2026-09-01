@@ -1,0 +1,7 @@
+[
+ {"id":"seo-q001","level":"foundation","type":"mcq","question":"تفاوت اصلی Crawling و Indexing چیست؟","options":["Crawling کشف/دریافت منابع است و Indexing پردازش و امکان نگهداری در نمایه","هر دو دقیقاً یک مرحله‌اند","Indexing قبل از Crawl انجام می‌شود","Crawling فقط برای تصاویر است"],"answer":0},
+ {"id":"seo-q002","level":"beginner","type":"mcq","question":"بهترین مبنا برای تعیین نوع صفحه هدف یک Query چیست؟","options":["فقط Search Volume","Search Intent و الگوی SERP همراه با ارزش کسب‌وکار","طول Keyword","تعداد کلمات Title"],"answer":1},
+ {"id":"seo-q003","level":"intermediate","type":"mcq","question":"robots.txt عمدتاً چه چیزی را کنترل می‌کند؟","options":["Crawl access","تضمین حذف از Index","رتبه صفحه","CTR"],"answer":0},
+ {"id":"seo-q004","level":"advanced","type":"mcq","question":"در JavaScript SEO کدام بررسی مهم است؟","options":["فقط رنگ UI","مقایسه HTML اولیه و محتوای Render شده و crawlable بودن لینک‌ها","تعداد npm packageها","نام Framework"],"answer":1},
+ {"id":"seo-q005","level":"specialist","type":"mcq","question":"طبق راهنمای Google برای AI Overviews/AI Mode کدام گزاره درست‌تر است؟","options":["Schema مخفی مخصوص AI الزامی است","SEO پایه و الزامات معمول Search همچنان مبنا هستند و Requirement ویژه‌ای تضمین‌کننده حضور نیست","robots.txt باید حذف شود","فقط محتوای AI-generated پذیرفته می‌شود"],"answer":1}
+]
