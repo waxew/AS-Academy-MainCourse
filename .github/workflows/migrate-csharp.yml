@@ -1,0 +1,63 @@
+name: Migrate CSharp Course to MainCourse
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/migrate-csharp.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate-csharp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MainCourse
+        uses: actions/checkout@v4
+        with:
+          path: maincourse
+
+      - name: Checkout current C# course source
+        uses: actions/checkout@v4
+        with:
+          repository: waxew/AS-Academy-Csharp
+          ref: main
+          path: csharp-source
+
+      - name: Migrate complete C# Course Package
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf maincourse/courses/csharp/course
+          mkdir -p maincourse/courses/csharp/course
+          cp -a csharp-source/course/. maincourse/courses/csharp/course/
+
+          cat > maincourse/courses/csharp/README.md <<'EOF'
+          # C# Course Package
+
+          این پوشه منبع واحد محتوای آموزشی C# در AS Academy است.
+
+          - Source of Truth: `AS-Academy-MainCourse/courses/csharp/course`
+          - App shell: `AS-Academy-Csharp`
+          - Shared UI: `AS-Academy-MainUi`
+          - Shared engine: `AS-Academy-Core`
+
+          از زمان این مهاجرت، درس، فصل، تمرین، Quiz، آزمون، پروژه، Capstone، Glossary و Branding دوره C# باید در همین پوشه تغییر کند و App دوره فقط آن را بسته‌بندی/مصرف کند.
+          EOF
+
+      - name: Commit migrated content
+        shell: bash
+        working-directory: maincourse
+        run: |
+          set -euo pipefail
+          git config user.name 'AS Academy Automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add courses/csharp
+          if git diff --cached --quiet; then
+            echo 'C# MainCourse is already up to date.'
+          else
+            git commit -m 'content: migrate complete C# course into MainCourse'
+            git push origin HEAD:main
+          fi
