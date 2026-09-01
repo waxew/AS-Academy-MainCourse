@@ -1,0 +1,8 @@
+[
+ {"id":"seo-ex-01","chapterId":"seo-c01","title":"تحلیل Crawl تا Rank","task":"مسیر کشف تا نمایش یک URL واقعی را تحلیل و موانع هر مرحله را ثبت کنید.","acceptanceCriteria":["تفکیک Crawl/Render/Index/Serve","حداقل یک خطای محتمل در هر مرحله","پیشنهاد روش بررسی"]},
+ {"id":"seo-ex-02","chapterId":"seo-c03","title":"Keyword Map واقعی","task":"برای یک کسب‌وکار حداقل 30 Query را Cluster و به URL Type نگاشت کنید.","acceptanceCriteria":["Intent مشخص","Cluster بدون همپوشانی شدید","URL هدف برای هر Cluster"]},
+ {"id":"seo-ex-03","chapterId":"seo-c06","title":"Technical Crawl Audit","task":"یک Crawl اجرا و مشکلات Indexability، Canonical، Redirect و Internal Linking را گزارش کنید.","acceptanceCriteria":["Evidence برای هر Issue","Severity","Impact","Fix"]},
+ {"id":"seo-ex-04","chapterId":"seo-c08","title":"Core Web Vitals Lab","task":"سه Template را با Field/Lab data بررسی و Root Cause مشکلات LCP/INP/CLS را توضیح دهید.","acceptanceCriteria":["تفکیک Field و Lab","Root Cause","راهکار قابل اجرا"]},
+ {"id":"seo-ex-05","chapterId":"seo-c11","title":"JavaScript SEO Test","task":"HTML اولیه و Rendered DOM یک SPA را مقایسه کنید.","acceptanceCriteria":["Content parity","crawlable links","metadata/canonical","render errors"]},
+ {"id":"seo-ex-06","chapterId":"seo-c17","title":"AI Search Readiness","task":"یک صفحه را بدون ادعای تضمین Citation برای قابلیت استفاده در AI Search ارزیابی کنید.","acceptanceCriteria":["Index eligibility","people-first quality","evidence/entities","technical accessibility"]}
+]
