@@ -1,0 +1,9 @@
+{
+  "courseId": "backend-web",
+  "levels": [
+    {"id":"foundation","titleFa":"مبانی","order":1,"goalFa":"درک وب، HTTP، معماری Client/Server، ابزارها، زبان و محیط اجرای Backend."},
+    {"id":"beginner","titleFa":"مقدماتی","order":2,"goalFa":"ساخت Backend واقعی، CRUD، دیتابیس، REST API، احراز هویت و کار با فریم‌ورک‌های اصلی."},
+    {"id":"advanced","titleFa":"پیشرفته","order":3,"goalFa":"API پیشرفته، Realtime، امنیت، تست، Queue، Cache، فایل، پرداخت، پیام‌رسانی و استقرار."},
+    {"id":"specialist","titleFa":"تخصصی","order":4,"goalFa":"معماری Production، مقیاس‌پذیری، Observability، Multi-Tenancy، SaaS، Microservices و پروژه نهایی."}
+  ]
+}
