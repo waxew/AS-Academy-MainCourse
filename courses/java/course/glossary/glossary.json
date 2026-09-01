@@ -1,0 +1,14 @@
+[
+{"id":"java-gl-jdk","courseId":"java","term":"JDK","definition":"کیت توسعه Java شامل compiler و ابزارهای توسعه.","aliases":[],"relatedLessonIds":["java-ls-001","java-ls-002"],"tags":["java"]},
+{"id":"java-gl-jvm","courseId":"java","term":"JVM","definition":"ماشین مجازی اجراکننده Bytecode Java.","aliases":[],"relatedLessonIds":["java-ls-001","java-ls-012"],"tags":["jvm"]},
+{"id":"java-gl-bytecode","courseId":"java","term":"Bytecode","definition":"کد میانی تولیدشده توسط javac برای JVM.","aliases":[],"relatedLessonIds":["java-ls-001"],"tags":["jvm"]},
+{"id":"java-gl-encapsulation","courseId":"java","term":"Encapsulation","definition":"محافظت از state و invariant داخلی Object پشت API کنترل‌شده.","aliases":[],"relatedLessonIds":["java-ls-006"],"tags":["oop"]},
+{"id":"java-gl-polymorphism","courseId":"java","term":"Polymorphism","definition":"کار با implementationهای مختلف از طریق contract مشترک.","aliases":[],"relatedLessonIds":["java-ls-007"],"tags":["oop"]},
+{"id":"java-gl-generic","courseId":"java","term":"Generic","definition":"پارامتری‌کردن type برای type safety و reuse.","aliases":[],"relatedLessonIds":["java-ls-010"],"tags":["generics"]},
+{"id":"java-gl-stream","courseId":"java","term":"Stream","definition":"Pipeline declarative برای transformation و aggregation داده.","aliases":[],"relatedLessonIds":["java-ls-010"],"tags":["streams"]},
+{"id":"java-gl-transaction","courseId":"java","term":"Transaction","definition":"واحد تغییرات داده که باید با semantics اتمیک مدیریت شود.","aliases":[],"relatedLessonIds":["java-ls-013","java-ls-035"],"tags":["database"]},
+{"id":"java-gl-di","courseId":"java","term":"Dependency Injection","definition":"دریافت dependency از بیرون به جای ساخت hard-coded داخل class.","aliases":["DI"],"relatedLessonIds":["java-ls-015"],"tags":["spring"]},
+{"id":"java-gl-jpa","courseId":"java","term":"JPA","definition":"استاندارد persistence و ORM در Java ecosystem.","aliases":[],"relatedLessonIds":["java-ls-018"],"tags":["jpa"]},
+{"id":"java-gl-jwt","courseId":"java","term":"JWT","definition":"قالب token امضاشده برای انتقال claimها؛ payload به‌طور پیش‌فرض encrypted نیست.","aliases":[],"relatedLessonIds":["java-ls-019"],"tags":["security"]},
+{"id":"java-gl-idempotency","courseId":"java","term":"Idempotency","definition":"تکرار یک operation با همان input اثر نهایی اضافه ایجاد نکند.","aliases":[],"relatedLessonIds":["java-ls-017","java-ls-033"],"tags":["http"]}
+]
