@@ -1,0 +1,8 @@
+[
+  {"id":"frontend-fundamentals","courseId":"frontend","type":"FUNDAMENTALS","title":"مبانی","order":1},
+  {"id":"frontend-beginner","courseId":"frontend","type":"BEGINNER","title":"مقدماتی","order":2},
+  {"id":"frontend-intermediate","courseId":"frontend","type":"INTERMEDIATE","title":"متوسط","order":3},
+  {"id":"frontend-advanced","courseId":"frontend","type":"ADVANCED","title":"پیشرفته","order":4},
+  {"id":"frontend-specialist","courseId":"frontend","type":"SPECIALIST","title":"تخصصی","order":5},
+  {"id":"frontend-projects","courseId":"frontend","type":"PROJECT_BASED","title":"پروژه‌محور","order":6}
+]
