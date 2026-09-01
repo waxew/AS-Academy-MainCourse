@@ -1,0 +1,5 @@
+[
+{"id":"iot-ex-01","courseId":"iot","title":"طراحی Topic Tree برای 100 دستگاه","description":"برای دو سایت، هرکدام 50 دستگاه، Topicهای telemetry/command/status طراحی کنید و توضیح دهید ACL هر دستگاه چگونه محدود می‌شود.","difficulty":"BEGINNER","tags":["MQTT","Topic","ACL"]},
+{"id":"iot-ex-02","courseId":"iot","title":"محاسبه Battery Budget","description":"برای دستگاهی با Deep Sleep و ارسال دوره‌ای، Duty Cycle و مصرف میانگین را محاسبه و عمر تقریبی باتری را با فرض‌های روشن برآورد کنید.","difficulty":"ADVANCED","tags":["Battery","Low Power"]},
+{"id":"iot-ex-03","courseId":"iot","title":"Threat Model دستگاه هوشمند","description":"دارایی‌ها، Trust Boundary، پنج تهدید اصلی و Mitigation هرکدام را برای یک کنترلر رله Wi-Fi مشخص کنید.","difficulty":"ADVANCED","tags":["Security","Threat Modeling"]}
+]

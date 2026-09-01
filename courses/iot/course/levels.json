@@ -1,0 +1,8 @@
+[
+  {"id":"iot-fundamentals","courseId":"iot","type":"FUNDAMENTALS","title":"مبانی","order":1,"description":"شناخت اینترنت اشیا، الکترونیک لازم، معماری و آماده‌سازی محیط آزمایش"},
+  {"id":"iot-beginner","courseId":"iot","type":"BEGINNER","title":"مقدماتی","order":2,"description":"کار عملی با بردها، سنسورها، شبکه و پروتکل‌های پایه"},
+  {"id":"iot-intermediate","courseId":"iot","type":"INTERMEDIATE","title":"متوسط","order":3,"description":"ساخت سامانه کامل Device تا Backend و Dashboard"},
+  {"id":"iot-advanced","courseId":"iot","type":"ADVANCED","title":"پیشرفته","order":4,"description":"امنیت، OTA، مقیاس‌پذیری، Edge، LPWAN و قابلیت اطمینان"},
+  {"id":"iot-specialist","courseId":"iot","type":"SPECIALIST","title":"تخصصی","order":5,"description":"IIoT، Matter/Thread، TinyML، Cloud و معماری Production"},
+  {"id":"iot-projects","courseId":"iot","type":"PROJECT_BASED","title":"پروژه‌محور","order":6,"description":"پروژه‌های واقعی از سنسور ساده تا سامانه صنعتی"}
+]

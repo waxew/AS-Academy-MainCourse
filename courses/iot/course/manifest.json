@@ -1,0 +1,27 @@
+{
+  "courseId": "iot",
+  "titleFa": "آموزش جامع اینترنت اشیا (IoT)",
+  "titleEn": "AS Academy IoT",
+  "version": "1.0.0",
+  "contentSchemaVersion": 1,
+  "minimumCoreVersion": "0.1.0",
+  "rtl": true,
+  "capabilities": {
+    "codeRunner": true,
+    "terminalExamples": true,
+    "diagrams": true,
+    "quizzes": true,
+    "exercises": true,
+    "projects": true,
+    "glossary": true,
+    "bookmarks": true,
+    "userNotes": true,
+    "achievements": true,
+    "offlineContent": true
+  },
+  "defaultLocale": "fa",
+  "supportedLocales": ["fa"],
+  "curriculumVersion": "1.0.0",
+  "publisherId": "as-team",
+  "packageSha256": null
+}

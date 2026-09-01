@@ -1,0 +1,5 @@
+[
+{"id":"iot-project-01","courseId":"iot","title":"ایستگاه محیطی ESP32","description":"اندازه‌گیری محیط، MQTT، ذخیره Time-Series و Dashboard با مدیریت قطعی شبکه.","difficulty":"BEGINNER","tags":["ESP32","MQTT","Dashboard"]},
+{"id":"iot-project-02","courseId":"iot","title":"گلخانه هوشمند Offline-First","description":"کنترل محلی پمپ، سنسورها، Manual Override، Backend و تاریخچه.","difficulty":"ADVANCED","tags":["Agriculture","Edge","Offline"]},
+{"id":"iot-project-03","courseId":"iot","title":"پایش صنعتی End-to-End","description":"Device/Gateway/Broker/Backend/Time-Series/Dashboard/Security/OTA با مستند معماری و تست.","difficulty":"SPECIALIST","tags":["IIoT","Security","OTA","Capstone"]}
+]
