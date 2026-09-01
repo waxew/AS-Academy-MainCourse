@@ -1,0 +1,6 @@
+[
+ {"id":"kt-fnd","title":"مبانی","order":1,"goal":"تسلط بر نحو پایه، کنترل جریان، توابع و Null Safety"},
+ {"id":"kt-beg","title":"مقدماتی","order":2,"goal":"Collections، Lambda، OOP، فایل و تست"},
+ {"id":"kt-adv","title":"پیشرفته","order":3,"goal":"Generics، Coroutines، Flow، DSL، Gradle و Interop"},
+ {"id":"kt-spc","title":"تخصصی","order":4,"goal":"Android، Backend، Multiplatform و Production"}
+]
