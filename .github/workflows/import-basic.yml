@@ -1,0 +1,85 @@
+name: Import Basic course into MainCourse
+
+on:
+  # This push trigger bootstraps the migration when the workflow is first added.
+  # Future content changes are authored directly in MainCourse, so normal course commits do not loop back to Basic.
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-basic.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: maincourse-import-basic
+  cancel-in-progress: false
+
+jobs:
+  import-basic:
+    name: Import and validate Basic Course Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MainCourse
+        uses: actions/checkout@v5
+        with:
+          path: AS-Academy-MainCourse
+
+      - name: Checkout Basic source
+        uses: actions/checkout@v5
+        with:
+          repository: waxew/AS-Academy-Basic
+          ref: main
+          path: AS-Academy-Basic
+
+      - name: Checkout AS Academy Core
+        uses: actions/checkout@v5
+        with:
+          repository: waxew/AS-Academy-Core
+          ref: main
+          path: AS-Academy-Core
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle cache
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Import Basic Course Package
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p AS-Academy-MainCourse/courses/basic/course
+          rsync -a --delete AS-Academy-Basic/course/basic/ AS-Academy-MainCourse/courses/basic/course/
+          cat > AS-Academy-MainCourse/courses/basic/README.md <<'EOF'
+          # Basic — Programming Foundations
+
+          `courses/basic/course` is the canonical MainCourse package for AS Academy Basic.
+
+          Initial migration source: `waxew/AS-Academy-Basic/course/basic`.
+          After this bootstrap migration, educational content changes must be authored here first.
+          The Basic application repository consumes this package during CI/build and must not fork course content.
+          EOF
+
+      - name: Validate imported package with Core
+        working-directory: AS-Academy-Core
+        run: ./gradlew :tools:run --args="validate ../AS-Academy-MainCourse/courses/basic/course" --stacktrace
+
+      - name: Commit canonical Basic package
+        working-directory: AS-Academy-MainCourse
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "Basic package already matches MainCourse."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add courses/basic
+          git commit -m "feat(courses): migrate Basic course into MainCourse"
+          git push origin HEAD:main
