@@ -22,6 +22,14 @@
 منطق Android، Navigation، Database، Progress، Search، Quiz Engine و سایر قابلیت‌های مشترک در `AS-Academy-Core` قرار دارند.
 پوسته و Design System مشترک در `AS-Academy-MainUi` قرار می‌گیرد.
 
+## قرارداد یکپارچگی سه‌ریپو
+
+- `AS-Academy-Core` مالک مدل/Validator، Database، Repositoryها، Runtime composition، Navigation contract، Backup/Update و state پایدار کاربر است.
+- `AS-Academy-MainUi` فقط presentation و Screenهای مشترک را نگه می‌دارد و Runtime را از Core مصرف می‌کند.
+- `AS-Academy-MainCourse` تنها منبع قابل ویرایش محتوای آموزشی است و نباید Android/Kotlin runtime یا persistence اختصاصی داشته باشد.
+- هر پوشه `courses/<course-id>/course` که `manifest.json` دارد باید با Validator رسمی Core معتبر باشد. Workflow سراسری `validate-all-courses.yml` این قرارداد را برای همه Courseها enforce می‌کند.
+- `minimumCoreVersion` حداقل نسخه لازم برای همان Course Package است، نه نسخه فعلی کل پلتفرم؛ بنابراین Courseهای قدیمی می‌توانند تا زمانی که واقعاً از قابلیت جدیدی استفاده نکرده‌اند مقدار پایین‌تری داشته باشند.
+
 ## ساختار استاندارد
 
 ```text
@@ -71,7 +79,7 @@ Course App هیچ‌وقت محتوای اصلی را در Repository خودش F
 {
   "courseId": "basic",
   "version": "1.1.0",
-  "minimumCoreVersion": "1.3.0",
+  "minimumCoreVersion": "1.4.0",
   "sha256": "<64-hex-sha256>",
   "downloadUrl": "https://.../basic-course.json"
 }
@@ -85,6 +93,7 @@ Course App هیچ‌وقت محتوای اصلی را در Repository خودش F
 - هر تغییر محتوایی که باید به کاربران موجود برسد باید `manifest.version` را افزایش دهد؛ در غیر این صورت Runtime Updater آن را همان نسخه فعلی تشخیص می‌دهد.
 - Stable ID درس، آزمون، تمرین و پروژه بعد از انتشار نباید بدون Migration شکسته شود تا Progress و History کاربر حفظ شود.
 - Release asset خروجی Build است؛ ویرایش مستقیم آن ممنوع است. اصلاح محتوا همیشه از `courses/<id>/course` شروع می‌شود.
+- مقدار مثال بالا نسخه فعلی Core را نشان می‌دهد؛ Manifest هر Course باید کمترین نسخه‌ای را اعلام کند که واقعاً برای قابلیت‌های خودش لازم دارد.
 
 ## کانال Basic
 
