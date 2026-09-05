@@ -51,15 +51,16 @@ jobs:
           set -euo pipefail
           count=0
           while IFS= read -r course_dir; do
-            if [[ ! -f "AS-Academy-MainCourse/$course_dir/manifest.json" ]]; then
+            if [[ ! -f "$course_dir/manifest.json" ]]; then
               continue
             fi
             count=$((count + 1))
-            echo "::group::Validate $course_dir"
+            relative_dir="${course_dir#AS-Academy-MainCourse/}"
+            echo "::group::Validate $relative_dir"
             ./AS-Academy-Core/gradlew -p AS-Academy-Core :tools:run \
-              --args="validate ../AS-Academy-MainCourse/$course_dir" --stacktrace
+              --args="validate ../AS-Academy-MainCourse/$relative_dir" --stacktrace
             echo "::endgroup::"
-          done < <(find AS-Academy-MainCourse/courses -mindepth 2 -maxdepth 2 -type d -name course -printf '%P\n' | sort)
+          done < <(find AS-Academy-MainCourse/courses -mindepth 2 -maxdepth 2 -type d -name course | sort)
 
           if [[ "$count" -eq 0 ]]; then
             echo "No canonical courses/*/course/manifest.json packages were found." >&2
