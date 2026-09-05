@@ -5,7 +5,7 @@
     "mainUiRepository": "waxew/AS-Academy-MainUi",
     "mainCourseRepository": "waxew/AS-Academy-MainCourse"
   },
-  "coreVersion": "1.4.0",
+  "coreVersion": "1.5.0",
   "contentSchemaVersion": 1,
   "android": {
     "minSdk": 23,
@@ -13,10 +13,10 @@
     "javaVersion": 17
   },
   "coordinates": {
-    "core": "com.asdevelopers.academy:core:1.4.0"
+    "core": "com.asdevelopers.academy:core:1.5.0"
   },
   "compatibility": {
-    "mainUiRequiresCore": ">=1.4.0 <2.0.0",
+    "mainUiRequiresCore": ">=1.5.0 <2.0.0",
     "courseSchema": 1,
     "runtimeContentSchema": 1
   },
