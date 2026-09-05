@@ -28,13 +28,28 @@ jobs:
         with:
           path: AS-Academy-MainCourse
 
-      # Runtime content must be built with an immutable merged Core input so a published hash can be reproduced.
-      - name: Checkout AS Academy Core
+      - name: Checkout pinned AS Academy Core
         uses: actions/checkout@v5
         with:
           repository: waxew/AS-Academy-Core
-          ref: d8b42beb42894452d9420b8bf3200847c6294fb9
+          ref: 3cd7ad0a0aec73d6d1fb56e9a306fa48a2c1765c
           path: AS-Academy-Core
+
+      - name: Verify Core/MainCourse compatibility contract
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          contract = json.loads(Path("AS-Academy-Core/integration/contract.json").read_text())
+          manifest = json.loads(Path("AS-Academy-MainCourse/courses/basic/course/manifest.json").read_text())
+          missing = [k for k in contract["courseManifestRequiredFields"] if k not in manifest]
+          if missing:
+              raise SystemExit(f"Basic manifest missing required contract fields: {missing}")
+          if manifest["contentSchemaVersion"] != contract["contentSchemaVersion"]:
+              raise SystemExit("Basic content schema is incompatible with pinned Core")
+          PY
 
       - name: Set up JDK 17
         uses: actions/setup-java@v5
