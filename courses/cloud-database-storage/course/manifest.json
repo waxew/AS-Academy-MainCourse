@@ -5,6 +5,8 @@
   "language": "fa",
   "direction": "rtl",
   "version": "1.0.0",
+  "contentSchemaVersion": 1,
+  "minimumCoreVersion": "1.4.0",
   "levels": ["foundation", "beginner", "advanced", "specialist"],
   "contentRoot": "course/cloud-database-storage",
   "mainUiCompatible": true,
