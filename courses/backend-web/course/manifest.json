@@ -1,10 +1,13 @@
 {
   "id": "backend-web",
+  "courseId": "backend-web",
   "titleFa": "Backend وب",
   "categoryFa": "طراحی و توسعه وب‌سایت",
   "language": "fa-IR",
   "direction": "rtl",
   "version": "1.0.0",
+  "contentSchemaVersion": 1,
+  "minimumCoreVersion": "1.4.0",
   "levels": ["foundation", "beginner", "advanced", "specialist"],
   "contentModel": ["lesson", "example", "exercise", "quiz", "project", "capstone", "glossary"],
   "uiSource": "AS-Academy-MainUi",
