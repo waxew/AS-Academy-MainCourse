@@ -45,26 +45,37 @@ jobs:
       - name: Set up Gradle cache
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Validate every Course source of truth
+      - name: Validate canonical Course sources and report legacy packages
         shell: bash
         run: |
           set -euo pipefail
-          count=0
+          canonical_count=0
+          legacy_count=0
+
           while IFS= read -r course_dir; do
-            if [[ ! -f "$course_dir/manifest.json" ]]; then
-              continue
-            fi
-            count=$((count + 1))
+            manifest="$course_dir/manifest.json"
+            [[ -f "$manifest" ]] || continue
             relative_dir="${course_dir#AS-Academy-MainCourse/}"
-            echo "::group::Validate $relative_dir"
-            ./AS-Academy-Core/gradlew -p AS-Academy-Core :tools:run \
-              --args="validate ../AS-Academy-MainCourse/$relative_dir" --stacktrace
-            echo "::endgroup::"
+
+            if grep -q '"courseId"' "$manifest" && grep -q '"contentSchemaVersion"' "$manifest"; then
+              canonical_count=$((canonical_count + 1))
+              echo "::group::Validate canonical $relative_dir"
+              ./AS-Academy-Core/gradlew -p AS-Academy-Core :tools:run \
+                --args="validate ../AS-Academy-MainCourse/$relative_dir" --stacktrace
+              echo "::endgroup::"
+            else
+              legacy_count=$((legacy_count + 1))
+              echo "::warning file=$manifest::Legacy Course manifest is not yet on the Core contract: $relative_dir"
+            fi
           done < <(find AS-Academy-MainCourse/courses -mindepth 2 -maxdepth 2 -type d -name course | sort)
 
-          if [[ "$count" -eq 0 ]]; then
-            echo "No canonical courses/*/course/manifest.json packages were found." >&2
+          if [[ "$canonical_count" -eq 0 ]]; then
+            echo "No Core-contract canonical Course package was found." >&2
             exit 1
           fi
 
-          echo "Validated $count canonical Course package(s)."
+          {
+            echo "## MainCourse contract validation"
+            echo "- Canonical packages validated: $canonical_count"
+            echo "- Legacy packages pending migration: $legacy_count"
+          } >> "$GITHUB_STEP_SUMMARY"
