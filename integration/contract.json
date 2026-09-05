@@ -1,0 +1,42 @@
+{
+  "contractVersion": 1,
+  "foundation": {
+    "coreRepository": "waxew/AS-Academy-Core",
+    "mainUiRepository": "waxew/AS-Academy-MainUi",
+    "mainCourseRepository": "waxew/AS-Academy-MainCourse"
+  },
+  "coreVersion": "1.4.0",
+  "contentSchemaVersion": 1,
+  "android": {
+    "minSdk": 23,
+    "compileSdk": 36,
+    "javaVersion": 17
+  },
+  "coordinates": {
+    "core": "com.asdevelopers.academy:core:1.4.0"
+  },
+  "compatibility": {
+    "mainUiRequiresCore": ">=1.4.0 <2.0.0",
+    "courseSchema": 1,
+    "runtimeContentSchema": 1
+  },
+  "courseManifestRequiredFields": [
+    "courseId",
+    "version",
+    "contentSchemaVersion",
+    "minimumCoreVersion"
+  ],
+  "runtimeContentRequiredFields": [
+    "courseId",
+    "version",
+    "minimumCoreVersion",
+    "sha256",
+    "downloadUrl"
+  ],
+  "architectureRules": {
+    "mainUiConsumesCorePublicApiOnly": true,
+    "mainCourseContainsNoRuntimeImplementation": true,
+    "backendImplementationOwnedByCore": true,
+    "singleRuntimeOwner": "AS-Academy-Core"
+  }
+}
