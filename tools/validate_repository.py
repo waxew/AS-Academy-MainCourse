@@ -17,6 +17,10 @@ COURSES = ROOT / "courses"
 CONTRACT = ROOT / "integration" / "contract.json"
 SEMVER = re.compile(r"^\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$")
 SHA256 = re.compile(r"^[0-9a-fA-F]{64}$")
+FILE_SUFFIXES = {
+    ".json", ".md", ".txt", ".png", ".jpg", ".jpeg", ".webp", ".svg",
+    ".gif", ".mp3", ".mp4", ".webm", ".pdf", ".zip"
+}
 
 
 def fail(errors: list[str], path: Path, message: str) -> None:
@@ -36,9 +40,11 @@ def course_root_for(path: Path) -> Path:
     return COURSES / relative.parts[0]
 
 
+def looks_like_file_reference(value: str) -> bool:
+    return Path(value).suffix.lower() in FILE_SUFFIXES
+
+
 def validate_local_reference(course_root: Path, source: Path, value: str, errors: list[str]) -> None:
-    if not value or value.startswith(("http://", "https://")):
-        return
     candidate = (source.parent / value).resolve()
     try:
         candidate.relative_to(course_root.resolve())
@@ -64,7 +70,7 @@ def walk_references(value, course_root: Path, source: Path, errors: list[str], k
             parsed = urlparse(value)
             if not parsed.netloc:
                 fail(errors, source, f"invalid URL in {key}: {value}")
-        if lower_key.endswith(("file", "path")) and not value.startswith(("http://", "https://")):
+        if looks_like_file_reference(value) and not value.startswith(("http://", "https://")):
             validate_local_reference(course_root, source, value, errors)
 
 
