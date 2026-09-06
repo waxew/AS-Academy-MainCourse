@@ -1,0 +1,33 @@
+name: Content integrity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'courses/**'
+      - 'integration/**'
+      - 'tools/validate_repository.py'
+      - '.github/workflows/content-integrity.yml'
+  pull_request:
+    paths:
+      - 'courses/**'
+      - 'integration/**'
+      - 'tools/validate_repository.py'
+      - '.github/workflows/content-integrity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Foundation contract
+        run: python3 integration/validate_contract.py
+      - name: Validate all MainCourse content
+        run: python3 tools/validate_repository.py
