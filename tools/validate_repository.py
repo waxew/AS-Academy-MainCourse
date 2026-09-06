@@ -31,6 +31,11 @@ def load_json(path: Path, errors: list[str]):
         return None
 
 
+def course_root_for(path: Path) -> Path:
+    relative = path.relative_to(COURSES)
+    return COURSES / relative.parts[0]
+
+
 def validate_local_reference(course_root: Path, source: Path, value: str, errors: list[str]) -> None:
     if not value or value.startswith(("http://", "https://")):
         return
@@ -79,7 +84,6 @@ def main() -> int:
     seen_course_ids: dict[str, Path] = {}
     canonical = 0
 
-    # Every JSON file must remain parseable, independent of release readiness.
     parsed_cache: dict[Path, object] = {}
     for path in sorted(COURSES.rglob("*.json")):
         parsed_cache[path] = load_json(path, errors)
@@ -88,7 +92,7 @@ def main() -> int:
         manifest = parsed_cache.get(manifest_path)
         if not isinstance(manifest, dict):
             continue
-        course_root = manifest_path.parents[1]
+        course_root = course_root_for(manifest_path)
         missing = [field for field in required if field not in manifest]
         if missing:
             fail(errors, manifest_path, f"legacy/non-canonical manifest; missing {missing}")
@@ -116,10 +120,9 @@ def main() -> int:
 
         walk_references(manifest, course_root, manifest_path, errors)
 
-    # Reject path traversal/checksum defects anywhere in canonical course JSON.
     for path, payload in parsed_cache.items():
         if payload is not None:
-            walk_references(payload, path.parents[1] if "course" in path.parts else path.parent, path, errors)
+            walk_references(payload, course_root_for(path), path, errors)
 
     if errors:
         print(f"MainCourse integrity validation failed with {len(errors)} error(s):", file=sys.stderr)
