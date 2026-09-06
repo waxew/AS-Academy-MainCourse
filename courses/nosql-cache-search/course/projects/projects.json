@@ -1,0 +1,7 @@
+[
+{"id":"ncs-project-chat","title":"Chat بلادرنگ","description":"Firebase Auth + Realtime Database/Firestore، Presence، Offline، Rules و تست امنیت."},
+{"id":"ncs-project-commerce","title":"فروشگاه با Cache و Search","description":"MongoDB Catalog، Redis/Valkey Cache و Elasticsearch/OpenSearch برای Full-Text، Autocomplete و Facet فارسی."},
+{"id":"ncs-project-graph","title":"Recommendation و Fraud Graph","description":"مدل‌سازی User/Item/Transaction در Neo4j، Cypher، Path و تحلیل ارتباطات."},
+{"id":"ncs-project-iot","title":"IoT Time-Series","description":"Ingest داده سنسور، InfluxDB، Retention، Downsampling، Dashboard و Alert."},
+{"id":"ncs-project-final","title":"SaaS چنددیتابیسی Production","description":"PostgreSQL منبع تراکنش، MongoDB Document، Redis/Valkey Cache، Elasticsearch/OpenSearch Search و Object Storage؛ همراه Security، Observability، Backup، HA و DR."}
+]
