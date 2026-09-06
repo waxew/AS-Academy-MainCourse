@@ -28,11 +28,11 @@ jobs:
         with:
           path: AS-Academy-MainCourse
 
-      - name: Checkout pinned AS Academy Core
+      - name: Checkout immutable Foundation Core compiler
         uses: actions/checkout@v5
         with:
           repository: waxew/AS-Academy-Core
-          ref: 3cd7ad0a0aec73d6d1fb56e9a306fa48a2c1765c
+          ref: dd029bb51dd99a1675f4eb84ecc6d2ea0b419550
           path: AS-Academy-Core
 
       - name: Verify Core/MainCourse compatibility contract
@@ -48,7 +48,7 @@ jobs:
           if missing:
               raise SystemExit(f"Basic manifest missing required contract fields: {missing}")
           if manifest["contentSchemaVersion"] != contract["contentSchemaVersion"]:
-              raise SystemExit("Basic content schema is incompatible with pinned Core")
+              raise SystemExit("Basic content schema is incompatible with immutable Foundation Core")
           PY
 
       - name: Set up JDK 17
@@ -88,9 +88,11 @@ jobs:
           metadata = {
               "courseId": manifest["courseId"],
               "version": manifest["version"],
+              "contentSchemaVersion": manifest["contentSchemaVersion"],
               "minimumCoreVersion": manifest["minimumCoreVersion"],
               "sha256": digest,
               "downloadUrl": "https://github.com/waxew/AS-Academy-MainCourse/releases/download/basic-content/basic-course.json",
+              "storageClass": "external-content",
           }
           metadata_path.write_text(
               json.dumps(metadata, ensure_ascii=False, indent=2) + "\n",
@@ -110,6 +112,22 @@ jobs:
           EXPECTED=$(python3 -c 'import json; print(json.load(open("dist/basic/latest.json", encoding="utf-8"))["sha256"])')
           ACTUAL=$(sha256sum dist/basic/basic-course.json | awk '{print $1}')
           test "$EXPECTED" = "$ACTUAL"
+
+      - name: Enforce external-content storage policy
+        working-directory: AS-Academy-MainCourse
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          metadata = json.loads(Path("dist/basic/latest.json").read_text(encoding="utf-8"))
+          url = metadata["downloadUrl"]
+          if not url.startswith("https://"):
+              raise SystemExit("Runtime package must use HTTPS external content storage")
+          if metadata.get("storageClass") != "external-content":
+              raise SystemExit("Runtime package must be classified as external-content, never database content")
+          PY
 
       - name: Upload channel QA artifact
         uses: actions/upload-artifact@v4
@@ -138,7 +156,7 @@ jobs:
           name: basic-content-channel-${{ github.sha }}
           path: dist/basic
 
-      - name: Create or update rolling release assets
+      - name: Create or update rolling external content assets
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
@@ -147,7 +165,7 @@ jobs:
             gh release create basic-content \
               --target "$GITHUB_SHA" \
               --title "Basic Runtime Content Channel" \
-              --notes "Rolling validated Course Package for AS Academy Basic. Source of truth: courses/basic/course."
+              --notes "Rolling validated external Course Package for AS Academy Basic. Source of truth: courses/basic/course. Packages are not stored in Postgres."
           fi
           gh release upload basic-content \
             dist/basic/basic-course.json \
