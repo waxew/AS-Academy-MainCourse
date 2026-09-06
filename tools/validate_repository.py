@@ -17,9 +17,13 @@ COURSES = ROOT / "courses"
 CONTRACT = ROOT / "integration" / "contract.json"
 SEMVER = re.compile(r"^\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$")
 SHA256 = re.compile(r"^[0-9a-fA-F]{64}$")
-FILE_SUFFIXES = {
-    ".json", ".md", ".txt", ".png", ".jpg", ".jpeg", ".webp", ".svg",
-    ".gif", ".mp3", ".mp4", ".webm", ".pdf", ".zip"
+LOCAL_FILE_KEYS = {
+    "relativepath",
+    "filepath",
+    "assetpath",
+    "sourcefile",
+    "resourcefile",
+    "localfile",
 }
 
 
@@ -40,11 +44,9 @@ def course_root_for(path: Path) -> Path:
     return COURSES / relative.parts[0]
 
 
-def looks_like_file_reference(value: str) -> bool:
-    return Path(value).suffix.lower() in FILE_SUFFIXES
-
-
 def validate_local_reference(course_root: Path, source: Path, value: str, errors: list[str]) -> None:
+    if not value or value.startswith(("http://", "https://")):
+        return
     candidate = (source.parent / value).resolve()
     try:
         candidate.relative_to(course_root.resolve())
@@ -64,13 +66,13 @@ def walk_references(value, course_root: Path, source: Path, errors: list[str], k
             walk_references(child, course_root, source, errors, key)
     elif isinstance(value, str):
         lower_key = key.lower()
-        if lower_key in {"sha256", "checksum"} and value and not SHA256.fullmatch(value):
+        if lower_key in {"sha256", "checksum", "packagesha256"} and value and not SHA256.fullmatch(value):
             fail(errors, source, f"{key} must be a 64-character SHA-256 hex digest")
         if lower_key.endswith(("url", "uri")) and value.startswith(("http://", "https://")):
             parsed = urlparse(value)
             if not parsed.netloc:
                 fail(errors, source, f"invalid URL in {key}: {value}")
-        if looks_like_file_reference(value) and not value.startswith(("http://", "https://")):
+        if lower_key in LOCAL_FILE_KEYS:
             validate_local_reference(course_root, source, value, errors)
 
 
