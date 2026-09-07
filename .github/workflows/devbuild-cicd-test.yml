@@ -1,0 +1,30 @@
+name: DevBuild CICD Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  validate-and-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate repository structure
+        run: |
+          echo "Checking AS Academy MainCourse structure"
+          test -d courses
+          test -d docs
+          test -d integration
+          test -d tools
+
+      - name: Create test artifact
+        run: |
+          mkdir -p artifact
+          tar -czf artifact/as-academy-maincourse-validation.tar.gz courses docs integration tools
+
+      - name: Upload validation artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AS-Academy-MainCourse-validation
+          path: artifact/as-academy-maincourse-validation.tar.gz
